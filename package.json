@@ -1,0 +1,13 @@
+{
+  "name": "omni-report",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "JR Academy 站点健康度 / SEO / 数据健康度等运营报告归档仓库",
+  "scripts": {
+    "seo": "bun run scripts/seo-healthcheck.ts"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  }
+}
