@@ -99,8 +99,28 @@ updatedAt: 2026-05-04T12:00:00+08:00
 ## 写入路径（3 条）
 
 1. **PRD import** — Admin "导入 PRD" 按钮 → 解析 `PRD_GEO_CONTENT_FACTORY.md` 9 个 pipe table → 写 N 个 .md
-2. **Routine 写入** — 5 条 omni-report routine 跑完后解析自己的 actionable items → 写 N 个 .md（带 reportItemHash 防重）
+2. **Routine 写入** — 4 条 omni-report routine 跑完后解析自己的 actionable items → 写 N 个 .md（带 reportItemHash 防重）
 3. **Admin UI 操作** — 拖拽改 status / 加 checklist / 加发布记录 → API 事务性 改 .md + 同步 MongoDB + git commit
+
+### Routine 集成脚本
+
+| Routine | 脚本 | 输出前缀 | 解析规则 |
+|---|---|---|---|
+| `ai-visibility/{date}.md` | [`scripts/ai-visibility-to-tasks.ts`](../scripts/ai-visibility-to-tasks.ts) | `aivis-` | §推荐行动清单 pipe table（5 条） |
+| `competitor-reports/{date}.md` | [`scripts/competitor-to-tasks.ts`](../scripts/competitor-to-tasks.ts) | `competitor-` | §对 JR Academy 的建议 numbered list（3 条） |
+| `growth-playbook/{date}.md` | [`scripts/growth-playbook-to-tasks.ts`](../scripts/growth-playbook-to-tasks.ts) | `growth-` | ## 玩法 ①-⑤（5 条；本周做？✅ → p0） |
+| `marketing-topics/{date}.md` | [`scripts/marketing-topics-to-tasks.ts`](../scripts/marketing-topics-to-tasks.ts) | `topic-` | 4 子节：讲座/活动/联名/常青（共 14 条；🔴 本周 → p0；不解析「外部热点」） |
+
+每个脚本都接受 `[file-path]` 可选参数；不传则自动选最新日期。带 `reportItemHash` 唯一去重，重跑同一份周报不会产生重复任务。
+
+```bash
+# 一键全跑（每周 routine 出报告后）
+cd omni-report
+bun run scripts/ai-visibility-to-tasks.ts
+bun run scripts/competitor-to-tasks.ts
+bun run scripts/growth-playbook-to-tasks.ts
+bun run scripts/marketing-topics-to-tasks.ts
+```
 
 ## Git commit 策略
 
