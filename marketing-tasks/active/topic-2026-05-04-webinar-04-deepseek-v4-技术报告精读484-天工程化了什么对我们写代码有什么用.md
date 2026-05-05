@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: DeepSeek V4 技术报告精读：484 天工程化了什么，对我们写代码有什么用
-category: event-webinar
-module: webinar-event
+category: campaign
+module: ad-hoc-task
 source: routine-marketing-topics
 sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
-  reportSection: 推荐线上讲座 #4
+  reportSection: 推荐线上讲座
   reportItemHash: 657dee16af1e
-assignee: hello@jiangren.com.au
+assignee: intern-aurora@jiangren.com.au
 reviewer: null
 status: draft
 priority: p1

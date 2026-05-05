@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: Agent Governance Sprint：48 小时给你的 AI 应用加锁
-category: growth-experiment
-module: hackathon-event
-source: routine-growth
+category: growth-hack
+module: campaign-plan
+source: routine-growth-playbook
 sourceMeta:
   reportPath: growth-playbook/2026-05-04.md
-  reportSection: 玩法 #3
+  reportSection: 玩法
   reportItemHash: ae79a033de17
-assignee: hello@jiangren.com.au
+assignee: ada@jiangren.com.au
 reviewer: null
 status: draft
 priority: p0

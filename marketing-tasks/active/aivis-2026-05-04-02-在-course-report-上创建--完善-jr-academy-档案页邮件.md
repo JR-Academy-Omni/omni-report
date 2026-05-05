@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: 在 Course Report 上创建 / 完善 JR Academy 档案页
 category: ai-visibility-fix
 module: partnership-negotiate
 source: routine-ai-visibility
 sourceMeta:
   reportPath: ai-visibility/2026-05-04.md
-  reportSection: 推荐行动清单 #2
+  reportSection: 推荐行动清单
   reportItemHash: c2c802b098f0
-assignee: hello@jiangren.com.au
+assignee: ada@jiangren.com.au
 reviewer: null
 status: draft
 priority: p1

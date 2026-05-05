@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
-title: "用三组数字更新所有 Bootcamp 报名页\"为什么学\"区块"
-category: competitor-response
-module: linkedin-post
+id: 0
+title: 用三组数字更新所有 Bootcamp 报名页"为什么学"区块
+category: competitor-action
+module: ad-hoc-task
 source: routine-competitor
 sourceMeta:
   reportPath: competitor-reports/2026-05-03.md
-  reportSection: 对 JR Academy 的建议 #2
+  reportSection: 对 JR Academy 的建议
   reportItemHash: 3f5cd3116695
-assignee: hello@jiangren.com.au
+assignee: intern-rain@jiangren.com.au
 reviewer: null
 status: draft
 priority: p1

@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: Enterprise Agent Governance 实战：用 Agent 365 给你的 AI 系统加锁
-category: event-webinar
-module: webinar-event
+category: campaign
+module: ad-hoc-task
 source: routine-marketing-topics
 sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
-  reportSection: 推荐线上讲座 #1
+  reportSection: 推荐线上讲座
   reportItemHash: 9a4d38056ecc
-assignee: hello@jiangren.com.au
+assignee: lightman@jiangren.com.au
 reviewer: null
 status: draft
 priority: p0

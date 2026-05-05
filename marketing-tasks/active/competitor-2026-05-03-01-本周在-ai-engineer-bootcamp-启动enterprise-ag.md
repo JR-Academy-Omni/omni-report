@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
-title: "本周在 AI Engineer Bootcamp 启动\"Enterprise Agent Governance\"章节"
-category: competitor-response
-module: bootcamp-content-update
+id: 0
+title: 本周在 AI Engineer Bootcamp 启动"Enterprise Agent Governance"章节
+category: competitor-action
+module: ad-hoc-task
 source: routine-competitor
 sourceMeta:
   reportPath: competitor-reports/2026-05-03.md
-  reportSection: 对 JR Academy 的建议 #1
+  reportSection: 对 JR Academy 的建议
   reportItemHash: d551ab546c9e
-assignee: hello@jiangren.com.au
+assignee: intern-melody@jiangren.com.au
 reviewer: null
 status: draft
 priority: p0

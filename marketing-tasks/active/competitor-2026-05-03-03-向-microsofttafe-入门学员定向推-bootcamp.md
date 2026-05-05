@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: 向 Microsoft/TAFE 入门学员定向推 Bootcamp
-category: competitor-response
-module: linkedin-post
+category: competitor-action
+module: ad-hoc-task
 source: routine-competitor
 sourceMeta:
   reportPath: competitor-reports/2026-05-03.md
-  reportSection: 对 JR Academy 的建议 #3
+  reportSection: 对 JR Academy 的建议
   reportItemHash: 8285fd462a37
-assignee: hello@jiangren.com.au
+assignee: intern-rain@jiangren.com.au
 reviewer: null
 status: draft
 priority: p2

@@ -1,14 +1,16 @@
 ---
-id: 000000000000000000000000
-title: 「2026 Q2 开源大模型五选一完整测评：Gemma 4 / Kimi K2.6 / DeepSeek V4 / Mistral 128B / Muse Spark 同题实测」
-category: evergreen-content
-module: evergreen-content
+id: 0
+title: >-
+  「2026 Q2 开源大模型五选一完整测评：Gemma 4 / Kimi K2.6 / DeepSeek V4 / Mistral 128B / Muse
+  Spark 同题实测」
+category: content-topic
+module: ad-hoc-task
 source: routine-marketing-topics
 sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
-  reportSection: 长尾常青话题 #1
+  reportSection: 长尾常青话题
   reportItemHash: 619f5c51c5e9
-assignee: hello@jiangren.com.au
+assignee: lightman@jiangren.com.au
 reviewer: null
 status: draft
 priority: p2

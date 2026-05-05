@@ -23,7 +23,7 @@ const ROOT = path.resolve(import.meta.dir, '..');
 const REPORTS_DIR = path.join(ROOT, 'marketing-topics');
 const TASKS_DIR = path.join(ROOT, 'marketing-tasks', 'active');
 
-type SectionKind = 'webinar' | 'offline-event' | 'partnership' | 'evergreen';
+type SectionKind = 'webinar' | 'event-execution' | 'partnership' | 'evergreen';
 
 interface TopicItem {
 	kind: SectionKind;
@@ -35,7 +35,7 @@ interface TopicItem {
 
 const SECTION_HEADINGS: Record<SectionKind, RegExp> = {
 	webinar: /^##\s+.*推荐线上讲座/,
-	'offline-event': /^##\s+.*推荐线下活动/,
+	'event-execution': /^##\s+.*推荐线下活动/,
 	partnership: /^##\s+.*联名机会/,
 	evergreen: /^##\s+.*长尾常青话题/
 };
@@ -55,7 +55,7 @@ async function main() {
 
 	const items: TopicItem[] = [
 		...parseTableSection(raw, 'webinar'),
-		...parseTableSection(raw, 'offline-event'),
+		...parseTableSection(raw, 'event-execution'),
 		...parseBulletSection(raw, 'partnership'),
 		...parseBulletSection(raw, 'evergreen')
 	];
@@ -138,7 +138,7 @@ function extractSection(markdown: string, headingRe: RegExp): string[] {
  * 表头：| # | 标题 | 形式 | ...
  * 取 #1 = num, #2 = 标题, 其余作为 body 拼接
  */
-function parseTableSection(markdown: string, kind: 'webinar' | 'offline-event'): TopicItem[] {
+function parseTableSection(markdown: string, kind: 'webinar' | 'event-execution'): TopicItem[] {
 	const re = SECTION_HEADINGS[kind];
 	const sectionLines = extractSection(markdown, re);
 	const items: TopicItem[] = [];
@@ -240,7 +240,7 @@ function deriveFilename(reportDate: string, item: TopicItem): string {
 		.replace(/-+$/, '');
 	const prefix: Record<SectionKind, string> = {
 		webinar: 'webinar',
-		'offline-event': 'event',
+		'event-execution': 'event',
 		partnership: 'partnership',
 		evergreen: 'evergreen'
 	}[item.kind];
@@ -264,22 +264,22 @@ function renderTaskMd(item: TopicItem, reportDate: string, reportRel: string): s
 	}
 
 	const categoryMap: Record<SectionKind, string> = {
-		webinar: 'event-webinar',
-		'offline-event': 'event-offline',
+		webinar: 'campaign',
+		'event-execution': 'event-offline',
 		partnership: 'partnership',
-		evergreen: 'evergreen-content'
+		evergreen: 'content-topic'
 	};
 
 	const moduleMap: Record<SectionKind, string> = {
-		webinar: 'webinar-event',
-		'offline-event': 'offline-event',
+		webinar: 'ad-hoc-task',
+		'event-execution': 'event-execution',
 		partnership: 'partnership-negotiate',
-		evergreen: 'evergreen-content'
+		evergreen: 'content-topic'
 	};
 
 	const sectionLabelMap: Record<SectionKind, string> = {
 		webinar: '推荐线上讲座',
-		'offline-event': '推荐线下活动',
+		'event-execution': '推荐线下活动',
 		partnership: '联名机会',
 		evergreen: '长尾常青话题'
 	};
@@ -295,7 +295,7 @@ function renderTaskMd(item: TopicItem, reportDate: string, reportRel: string): s
 			'- [ ] 直播执行 + 录播剪辑',
 			'- [ ] 复盘报名转化 + 写到下周内容选题包'
 		],
-		'offline-event': [
+		'event-execution': [
 			'- [ ] 确认场地 + 日期 + 报名表单',
 			'- [ ] 嘉宾邀请 + 物料准备',
 			'- [ ] 推广（小红书 / 微信社群 / Eventbrite）',

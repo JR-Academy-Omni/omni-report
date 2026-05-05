@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: TAFE/Microsoft 入门结业 → JR 实战接力券
-category: growth-experiment
-module: viral-campaign
-source: routine-growth
+category: growth-hack
+module: campaign-plan
+source: routine-growth-playbook
 sourceMeta:
   reportPath: growth-playbook/2026-05-04.md
-  reportSection: 玩法 #2
+  reportSection: 玩法
   reportItemHash: 20b6b9c849a7
-assignee: hello@jiangren.com.au
+assignee: ada@jiangren.com.au
 reviewer: null
 status: draft
 priority: p0

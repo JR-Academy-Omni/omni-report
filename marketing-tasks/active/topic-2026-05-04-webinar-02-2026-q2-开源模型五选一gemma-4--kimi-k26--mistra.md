@@ -1,14 +1,16 @@
 ---
-id: 000000000000000000000000
-title: 2026 Q2 开源模型五选一：Gemma 4 / Kimi K2.6 / Mistral 128B / Muse Spark / DeepSeek V4——同一个任务跑五遍
-category: event-webinar
-module: webinar-event
+id: 0
+title: >-
+  2026 Q2 开源模型五选一：Gemma 4 / Kimi K2.6 / Mistral 128B / Muse Spark / DeepSeek
+  V4——同一个任务跑五遍
+category: campaign
+module: ad-hoc-task
 source: routine-marketing-topics
 sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
-  reportSection: 推荐线上讲座 #2
+  reportSection: 推荐线上讲座
   reportItemHash: 854431471d23
-assignee: hello@jiangren.com.au
+assignee: intern-melody@jiangren.com.au
 reviewer: null
 status: draft
 priority: p0

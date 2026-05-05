@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: 「Multi-Agent 系统 5 种设计模式速查：什么时候用 pipeline，什么时候用 supervisor，什么时候用 mesh」
-category: evergreen-content
-module: evergreen-content
+category: content-topic
+module: ad-hoc-task
 source: routine-marketing-topics
 sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
-  reportSection: 长尾常青话题 #3
+  reportSection: 长尾常青话题
   reportItemHash: 46d3bb5775c3
-assignee: hello@jiangren.com.au
+assignee: intern-melody@jiangren.com.au
 reviewer: null
 status: draft
 priority: p2

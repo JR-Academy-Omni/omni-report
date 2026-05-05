@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: 量子位 × JR：AIGC 峰会（5/20 北京）前置数据投稿
 category: partnership
 module: partnership-negotiate
 source: routine-marketing-topics
 sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
-  reportSection: 联名机会 #3
+  reportSection: 联名机会
   reportItemHash: bb15a552c358
-assignee: hello@jiangren.com.au
+assignee: ada@jiangren.com.au
 reviewer: null
 status: draft
 priority: p2

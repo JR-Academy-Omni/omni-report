@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: 「澳洲 AI 转型 12 个月真实账单：从第一节课到第一份 $152k offer（5 个真实学员数字）」
-category: evergreen-content
-module: evergreen-content
+category: content-topic
+module: ad-hoc-task
 source: routine-marketing-topics
 sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
-  reportSection: 长尾常青话题 #2
+  reportSection: 长尾常青话题
   reportItemHash: d860376d6662
-assignee: hello@jiangren.com.au
+assignee: intern-rain@jiangren.com.au
 reviewer: null
 status: draft
 priority: p2

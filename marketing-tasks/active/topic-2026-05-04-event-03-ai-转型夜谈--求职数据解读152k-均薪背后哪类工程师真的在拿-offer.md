@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: AI 转型夜谈 × 求职数据解读：$152k 均薪背后，哪类工程师真的在拿 offer
 category: event-offline
-module: offline-event
+module: event-execution
 source: routine-marketing-topics
 sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
-  reportSection: 推荐线下活动 #3
+  reportSection: 推荐线下活动
   reportItemHash: 120d2a871930
-assignee: hello@jiangren.com.au
+assignee: intern-melody@jiangren.com.au
 reviewer: null
 status: draft
 priority: p2

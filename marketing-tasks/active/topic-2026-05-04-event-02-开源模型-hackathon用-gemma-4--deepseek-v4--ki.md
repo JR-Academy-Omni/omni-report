@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: 开源模型 Hackathon：用 Gemma 4 / DeepSeek V4 / Kimi K2.6 三选一做一个你的 side project
 category: event-offline
-module: offline-event
+module: event-execution
 source: routine-marketing-topics
 sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
-  reportSection: 推荐线下活动 #2
+  reportSection: 推荐线下活动
   reportItemHash: 10df59799390
-assignee: hello@jiangren.com.au
+assignee: intern-aurora@jiangren.com.au
 reviewer: null
 status: draft
 priority: p2

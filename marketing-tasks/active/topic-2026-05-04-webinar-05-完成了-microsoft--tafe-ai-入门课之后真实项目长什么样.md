@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: 完成了 Microsoft / TAFE AI 入门课之后，真实项目长什么样
-category: event-webinar
-module: webinar-event
+category: campaign
+module: ad-hoc-task
 source: routine-marketing-topics
 sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
-  reportSection: 推荐线上讲座 #5
+  reportSection: 推荐线上讲座
   reportItemHash: a8886ea6d1e1
-assignee: hello@jiangren.com.au
+assignee: intern-aurora@jiangren.com.au
 reviewer: null
 status: draft
 priority: p2

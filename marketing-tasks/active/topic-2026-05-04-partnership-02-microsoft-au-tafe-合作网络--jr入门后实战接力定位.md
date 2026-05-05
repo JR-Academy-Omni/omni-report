@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: Microsoft AU TAFE 合作网络 × JR「入门后实战」接力定位
 category: partnership
 module: partnership-negotiate
 source: routine-marketing-topics
 sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
-  reportSection: 联名机会 #2
+  reportSection: 联名机会
   reportItemHash: 7ddbee42a674
-assignee: hello@jiangren.com.au
+assignee: ada@jiangren.com.au
 reviewer: null
 status: draft
 priority: p2

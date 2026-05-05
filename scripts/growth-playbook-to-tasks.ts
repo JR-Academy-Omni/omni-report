@@ -174,17 +174,17 @@ function renderTaskMd(item: Playbook, reportDate: string, reportRel: string): st
 	const text = item.body.toLowerCase();
 	let module = 'ad-hoc-task';
 	if (text.includes('prompt lab') || text.includes('lab')) {
-		module = 'lab-campaign';
+		module = 'campaign-plan';
 	} else if (text.includes('hackathon') || text.includes('挑战赛')) {
-		module = 'hackathon-event';
+		module = 'campaign-plan';
 	} else if (text.includes('小红书') && text.includes('koc')) {
-		module = 'xhs-koc-campaign';
+		module = 'redbook-hot-topic';
 	} else if (text.includes('节日') || text.includes('母亲节') || text.includes('父亲节')) {
-		module = 'seasonal-campaign';
+		module = 'campaign-plan';
 	} else if (text.includes('裂变') || text.includes('分享')) {
-		module = 'viral-campaign';
+		module = 'campaign-plan';
 	} else if (text.includes('转化') || text.includes('漏斗') || text.includes('funnel')) {
-		module = 'funnel-experiment';
+		module = 'campaign-plan';
 	}
 
 	const title = item.title.slice(0, 100).trim();
@@ -194,9 +194,9 @@ function renderTaskMd(item: Playbook, reportDate: string, reportRel: string): st
 		'---',
 		`id: ${'0'.repeat(24)}`,
 		`title: ${escapeYamlString(title)}`,
-		`category: growth-experiment`,
+		`category: growth-hack`,
 		`module: ${module}`,
-		`source: routine-growth`,
+		`source: routine-growth-playbook`,
 		`sourceMeta:`,
 		`  reportPath: ${escapeYamlString(reportRel)}`,
 		`  reportSection: 玩法 #${item.num}`,

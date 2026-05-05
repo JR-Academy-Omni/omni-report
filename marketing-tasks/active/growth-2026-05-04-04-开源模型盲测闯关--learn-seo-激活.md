@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: 开源模型盲测闯关 × /learn SEO 激活
-category: growth-experiment
-module: viral-campaign
-source: routine-growth
+category: growth-hack
+module: campaign-plan
+source: routine-growth-playbook
 sourceMeta:
   reportPath: growth-playbook/2026-05-04.md
-  reportSection: 玩法 #4
+  reportSection: 玩法
   reportItemHash: 5b0707583640
-assignee: hello@jiangren.com.au
+assignee: ada@jiangren.com.au
 reviewer: null
 status: draft
 priority: p0

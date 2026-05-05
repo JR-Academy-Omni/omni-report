@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: AI 薪资差距测算器 × AI Engineer 转化
-category: growth-experiment
-module: viral-campaign
-source: routine-growth
+category: growth-hack
+module: campaign-plan
+source: routine-growth-playbook
 sourceMeta:
   reportPath: growth-playbook/2026-05-04.md
-  reportSection: 玩法 #5
+  reportSection: 玩法
   reportItemHash: cf4c30b54ba7
-assignee: hello@jiangren.com.au
+assignee: ada@jiangren.com.au
 reviewer: null
 status: draft
 priority: p2

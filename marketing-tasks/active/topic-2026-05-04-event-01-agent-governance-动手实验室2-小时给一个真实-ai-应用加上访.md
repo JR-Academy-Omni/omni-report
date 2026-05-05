@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: Agent Governance 动手实验室：2 小时给一个真实 AI 应用加上访问控制
 category: event-offline
-module: offline-event
+module: event-execution
 source: routine-marketing-topics
 sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
-  reportSection: 推荐线下活动 #1
+  reportSection: 推荐线下活动
   reportItemHash: 9baf10f74f15
-assignee: hello@jiangren.com.au
+assignee: intern-amelia@jiangren.com.au
 reviewer: null
 status: draft
 priority: p2

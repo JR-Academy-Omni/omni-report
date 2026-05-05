@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: 多 Agent 系统从 0 到生产：用 LangGraph + Kimi K2.6 复刻一个 300 子 Agent 编排
-category: event-webinar
-module: webinar-event
+category: campaign
+module: ad-hoc-task
 source: routine-marketing-topics
 sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
-  reportSection: 推荐线上讲座 #3
+  reportSection: 推荐线上讲座
   reportItemHash: 05e3b3a59a9e
-assignee: hello@jiangren.com.au
+assignee: intern-amelia@jiangren.com.au
 reviewer: null
 status: draft
 priority: p1

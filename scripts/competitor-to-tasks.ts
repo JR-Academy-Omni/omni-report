@@ -164,13 +164,13 @@ function renderTaskMd(item: Suggestion, reportDate: string, reportRel: string): 
 	const text = item.body.toLowerCase();
 	let module = 'ad-hoc-task';
 	if (text.includes('bootcamp') && (text.includes('章节') || text.includes('lesson') || text.includes('workshop'))) {
-		module = 'bootcamp-content-update';
+		module = 'ad-hoc-task';
 	} else if (text.includes('linkedin')) {
-		module = 'linkedin-post';
+		module = 'ad-hoc-task';
 	} else if (text.includes('报名页') || text.includes('落地页') || text.includes('landing')) {
-		module = 'landing-page-update';
+		module = 'ad-hoc-task';
 	} else if (text.includes('小红书') || text.includes('xhs')) {
-		module = 'xhs-post';
+		module = 'redbook-daily';
 	} else if (text.includes('公众号') || text.includes('长文')) {
 		module = 'weixin-longform';
 	} else if (text.includes('知乎')) {
@@ -190,7 +190,7 @@ function renderTaskMd(item: Suggestion, reportDate: string, reportRel: string): 
 		'---',
 		`id: ${'0'.repeat(24)}`,
 		`title: ${escapeYamlString(title)}`,
-		`category: competitor-response`,
+		`category: competitor-action`,
 		`module: ${module}`,
 		`source: routine-competitor`,
 		`sourceMeta:`,

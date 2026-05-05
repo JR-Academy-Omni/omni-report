@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: LangChain Academy × JR：互补学习路径，DataCamp 刚做了但没中文受众
 category: partnership
 module: partnership-negotiate
 source: routine-marketing-topics
 sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
-  reportSection: 联名机会 #1
+  reportSection: 联名机会
   reportItemHash: 8b29c0f4eec6
-assignee: hello@jiangren.com.au
+assignee: ada@jiangren.com.au
 reviewer: null
 status: draft
 priority: p1
