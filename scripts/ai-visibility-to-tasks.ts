@@ -1,0 +1,300 @@
+#!/usr/bin/env bun
+/**
+ * AI Visibility Routine → Marketing Tasks 集成
+ *
+ * 读 omni-report/ai-visibility/{date}.md 最新一份周报的 §推荐行动清单 table，
+ * 把 5 条 actionable items 转成 .md 任务文件写到 marketing-tasks/active/。
+ *
+ * Watcher 自动同步到 MongoDB（jr-academy 后端的 FilesystemWatcherService 启用时）。
+ *
+ * 用法：
+ *   cd omni-report && bun run scripts/ai-visibility-to-tasks.ts
+ *   bun run scripts/ai-visibility-to-tasks.ts ai-visibility/2026-05-04.md  # 指定文件
+ *
+ * Phase 1 minimal — 仅处理 §推荐行动清单 表格。
+ * Phase 2 升级：解析所有 actionable signals（Top 3 关键洞察 / 完全空白 query 等）。
+ */
+
+import * as fs from 'node:fs/promises';
+import * as path from 'node:path';
+import * as crypto from 'node:crypto';
+
+const ROOT = path.resolve(import.meta.dir, '..');
+const AI_VIS_DIR = path.join(ROOT, 'ai-visibility');
+const TASKS_DIR = path.join(ROOT, 'marketing-tasks', 'active');
+
+interface ActionRow {
+	num: number;
+	action: string;
+	relatedQueries: string;
+	estimatedEffort: string;
+	roi: string;
+}
+
+async function main() {
+	const reportPath = await pickReportFile();
+	if (!reportPath) {
+		console.error('No ai-visibility report found.');
+		process.exit(1);
+	}
+
+	const reportName = path.basename(reportPath, '.md'); // e.g. "2026-05-04"
+	const reportRel = path.relative(ROOT, reportPath);
+	console.log(`Reading: ${reportRel}`);
+
+	const raw = await fs.readFile(reportPath, 'utf-8');
+	const rows = parseActionTable(raw);
+
+	if (rows.length === 0) {
+		console.warn('No action rows found in §推荐行动清单');
+		process.exit(0);
+	}
+
+	console.log(`Parsed ${rows.length} actions.`);
+
+	let written = 0;
+	let skipped = 0;
+
+	for (const row of rows) {
+		const filename = deriveFilename(reportName, row);
+		const targetPath = path.join(TASKS_DIR, filename);
+
+		// 去重：文件已存在则跳过
+		try {
+			await fs.access(targetPath);
+			console.log(`  ⊘ Skip ${filename} (already exists)`);
+			skipped++;
+			continue;
+		} catch {
+			// 不存在，继续写
+		}
+
+		const md = renderTaskMd(row, reportName, reportRel);
+		await fs.mkdir(path.dirname(targetPath), { recursive: true });
+		await fs.writeFile(targetPath, md, 'utf-8');
+		console.log(`  ✓ Wrote ${filename}`);
+		written++;
+	}
+
+	console.log(`\nDone: written=${written}, skipped=${skipped}, total=${rows.length}`);
+	console.log(`\n👉 启动 jr-academy backend (ENABLE_WATCHER=true bun run start) 看 MongoDB 自动同步`);
+	console.log(`   或运行: cd ../jr-academy && bun run scripts/marketing-task-reindex.ts`);
+}
+
+/**
+ * 找最新的 ai-visibility/{date}.md 文件
+ * 命令行第一个参数指定时优先用它
+ */
+async function pickReportFile(): Promise<string | null> {
+	const arg = process.argv[2];
+	if (arg) {
+		const abs = path.isAbsolute(arg) ? arg : path.resolve(ROOT, arg);
+		try {
+			await fs.access(abs);
+			return abs;
+		} catch {
+			console.error(`File not found: ${abs}`);
+			process.exit(1);
+		}
+	}
+
+	let entries: string[];
+	try {
+		entries = await fs.readdir(AI_VIS_DIR);
+	} catch {
+		return null;
+	}
+	const mdFiles = entries.filter(e => e.endsWith('.md') && /^\d{4}-\d{2}-\d{2}\.md$/.test(e));
+	if (mdFiles.length === 0) return null;
+	mdFiles.sort().reverse(); // 按文件名（日期）倒序
+	return path.join(AI_VIS_DIR, mdFiles[0]);
+}
+
+/**
+ * 解析 §推荐行动清单 pipe table
+ *
+ * 表格格式：
+ *   | # | 行动 | 解决哪个 query | 预估工作量 | 预估 ROI |
+ *   | 1 | ... | ... | ... | ... |
+ */
+function parseActionTable(markdown: string): ActionRow[] {
+	const rows: ActionRow[] = [];
+	const lines = markdown.split('\n');
+
+	let inSection = false;
+
+	for (const line of lines) {
+		if (line.match(/^##\s+.*推荐行动清单/)) {
+			inSection = true;
+			continue;
+		}
+		if (inSection && line.match(/^##\s+/)) {
+			break; // 下一个 H2 section，停止
+		}
+		if (!inSection) continue;
+
+		// 数据行：以 | <number> | 开头
+		const m = line.match(/^\|\s*(\d+)\s*\|\s*(.+)$/);
+		if (!m) continue;
+
+		const cells = line
+			.split('|')
+			.slice(1, -1)
+			.map(c => c.trim());
+
+		if (cells.length < 5) continue;
+		// 跳过表头分隔行 |---|---|---|---|---|
+		if (cells.every(c => /^-+$/.test(c))) continue;
+
+		const num = parseInt(cells[0], 10);
+		if (isNaN(num)) continue;
+
+		rows.push({
+			num,
+			action: cells[1],
+			relatedQueries: cells[2],
+			estimatedEffort: cells[3],
+			roi: cells[4]
+		});
+	}
+
+	return rows;
+}
+
+/**
+ * 派生文件名：aivis-{date}-{num}-{slug}.md
+ */
+function deriveFilename(reportDate: string, row: ActionRow): string {
+	const slug = row.action
+		.replace(/[`*\[\]()<>]/g, '')
+		.replace(/\s+/g, '-')
+		.replace(/[^\w\-一-鿿]/g, '')
+		.toLowerCase()
+		.slice(0, 40)
+		.replace(/-+$/, '');
+	return `aivis-${reportDate}-${String(row.num).padStart(2, '0')}-${slug || 'action'}.md`;
+}
+
+/**
+ * 渲染单条 actionable item → .md 任务（YAML frontmatter + 5 个固定 body section）
+ *
+ * 与 jr-academy MarkdownSyncService.serialize() 输出格式严格对齐
+ */
+function renderTaskMd(row: ActionRow, reportDate: string, reportRel: string): string {
+	const reportItemHash = crypto
+		.createHash('sha1')
+		.update(`ai-visibility::${reportDate}::${row.num}::${row.action.slice(0, 60)}`)
+		.digest('hex')
+		.slice(0, 12);
+
+	// 优先级：第 1 条 P0，第 2-3 条 P1，其余 P2
+	const priority = row.num === 1 ? 'p0' : row.num <= 3 ? 'p1' : 'p2';
+
+	// Module 推断（简化规则）
+	const action = row.action.toLowerCase();
+	let module = 'ad-hoc-task';
+	if (action.includes('gsc') || action.includes('search console') || action.includes('索引') || action.includes('noindex')) {
+		module = 'seo-404-fix';
+	} else if (action.includes('meta') || action.includes('title tag') || action.includes('cwv') || action.includes('core web vitals')) {
+		module = 'seo-meta-fix';
+	} else if (action.includes('csdn')) {
+		module = 'geo-csdn';
+	} else if (action.includes('知乎')) {
+		module = 'geo-zhihu-column';
+	} else if (action.includes('公众号') || action.includes('长文')) {
+		module = 'weixin-longform';
+	} else if (action.includes('博客') || action.includes('blog') || action.includes('文章') || action.includes('教程')) {
+		module = 'geo-auto-publish';
+	} else if (action.includes('course report') || action.includes('档案') || action.includes('评价')) {
+		module = 'partnership-negotiate';
+	}
+
+	// 标题：取 action 的第一句（截断）
+	const title = row.action.split(/[，。;；\n]/)[0].slice(0, 100).trim();
+
+	// 提取 query IDs（如 Q19、Q3、Q7、Q8、Q10）
+	const queryMatches = row.relatedQueries.match(/Q\d+/g) || [];
+	const relatedQueries = queryMatches.length > 0 ? queryMatches : [];
+
+	const now = new Date().toISOString();
+
+	const frontmatter = [
+		'---',
+		`id: ${'0'.repeat(24)}`, // 占位 ObjectId，watcher 同步时后端会生成
+		`title: ${escapeYamlString(title)}`,
+		`category: ai-visibility-fix`,
+		`module: ${module}`,
+		`source: routine-ai-visibility`,
+		`sourceMeta:`,
+		`  reportPath: ${escapeYamlString(reportRel)}`,
+		`  reportSection: 推荐行动清单 #${row.num}`,
+		`  reportItemHash: ${reportItemHash}`,
+		`assignee: hello@jiangren.com.au`,
+		`reviewer: null`,
+		`status: draft`,
+		`priority: ${priority}`,
+		`platforms: []`,
+		`wordCount: null`,
+		`estimatedHours: null`,
+		`actualHours: null`,
+		`dueDate: null`,
+		`tags:`,
+		`  - imported-from-routine`,
+		`  - ai-visibility`,
+		...relatedQueries.map(q => `  - ${q}`),
+		`createdBy: hello@jiangren.com.au`,
+		`createdAt: ${now}`,
+		`updatedAt: ${now}`,
+		`derivedFrom: null`,
+		'---',
+		''
+	].join('\n');
+
+	const body = [
+		'## 描述',
+		'',
+		row.action,
+		'',
+		`**解决哪个 query**：${row.relatedQueries}`,
+		'',
+		`**预估工作量**：${row.estimatedEffort}`,
+		'',
+		`**预估 ROI**：${row.roi}`,
+		'',
+		'## Checklist',
+		'',
+		'- [ ] 确认任务范围 + 分配 owner',
+		'- [ ] 执行核心动作',
+		'- [ ] 验证完成（截图 / URL）',
+		'- [ ] 4 周后回看 ai-visibility 周报，确认对应 query 提及率/排名变化',
+		'',
+		'## 草稿',
+		'',
+		'（暂无）',
+		'',
+		'## 发布记录',
+		'',
+		'（暂无）',
+		'',
+		'## Comments',
+		'',
+		`- @system ${now}`,
+		`  > 由 \`omni-report/scripts/ai-visibility-to-tasks.ts\` 自动从 ai-visibility 周报第 ${row.num} 条建议生成。`,
+		''
+	].join('\n');
+
+	return frontmatter + body;
+}
+
+function escapeYamlString(s: string): string {
+	// 简化的 YAML 字符串转义：含 : 或 ' 或换行时用双引号
+	if (/[:#\n'"@`*&|<>%]/.test(s)) {
+		return `"${s.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`;
+	}
+	return s;
+}
+
+main().catch(err => {
+	console.error('Failed:', err);
+	process.exit(1);
+});
