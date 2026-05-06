@@ -66,14 +66,22 @@ async function main() {
 
 	let written = 0;
 	let skipped = 0;
+	const existingHashes = await collectExistingHashes(TASKS_DIR);
 
 	for (const item of items) {
 		const filename = deriveFilename(reportName, item);
 		const targetPath = path.join(TASKS_DIR, filename);
 
+		const hash = computeReportItemHash(item);
+		const existingByHash = existingHashes.get(hash);
+		if (existingByHash) {
+			console.log(`  ⊘ Skip ${filename} — same playbook hash already in ${existingByHash}`);
+			skipped++;
+			continue;
+		}
 		try {
 			await fs.access(targetPath);
-			console.log(`  ⊘ Skip ${filename} (already exists)`);
+			console.log(`  ⊘ Skip ${filename} (filename exists)`);
 			skipped++;
 			continue;
 		} catch {}
@@ -81,6 +89,7 @@ async function main() {
 		const md = renderTaskMd(item, reportName, reportRel);
 		await fs.mkdir(path.dirname(targetPath), { recursive: true });
 		await fs.writeFile(targetPath, md, 'utf-8');
+		existingHashes.set(hash, filename);
 		console.log(`  ✓ Wrote ${filename}`);
 		written++;
 	}
@@ -173,12 +182,38 @@ function deriveFilename(reportDate: string, item: Playbook): string {
 	return `growth-${reportDate}-${String(item.num).padStart(2, '0')}-${slug || 'play'}.md`;
 }
 
-function renderTaskMd(item: Playbook, reportDate: string, reportRel: string): string {
-	const reportItemHash = crypto
+/**
+ * Hash 不带 reportDate — 同一 playbook 跨周报视作同一条
+ */
+function computeReportItemHash(item: Playbook): string {
+	return crypto
 		.createHash('sha1')
-		.update(`growth::${reportDate}::${item.num}::${item.title.slice(0, 60)}`)
+		.update(`growth::${item.title.trim()}`)
 		.digest('hex')
 		.slice(0, 12);
+}
+
+async function collectExistingHashes(dir: string): Promise<Map<string, string>> {
+	const map = new Map<string, string>();
+	let entries: string[];
+	try {
+		entries = await fs.readdir(dir);
+	} catch {
+		return map;
+	}
+	for (const f of entries) {
+		if (!f.endsWith('.md')) continue;
+		try {
+			const raw = await fs.readFile(path.join(dir, f), 'utf-8');
+			const m = raw.match(/reportItemHash:\s*(\S+)/);
+			if (m) map.set(m[1].trim(), f);
+		} catch {}
+	}
+	return map;
+}
+
+function renderTaskMd(item: Playbook, reportDate: string, reportRel: string): string {
+	const reportItemHash = computeReportItemHash(item);
 
 	// 优先级：本周推荐 = p0；前 3 条 p1；其余 p2
 	const priority = item.thisWeek ? 'p0' : item.num <= 3 ? 'p1' : 'p2';
@@ -214,7 +249,7 @@ function renderTaskMd(item: Playbook, reportDate: string, reportRel: string): st
 		`  reportPath: ${escapeYamlString(reportRel)}`,
 		`  reportSection: 玩法 #${item.num}`,
 		`  reportItemHash: ${reportItemHash}`,
-		`assignee: hello@jiangren.com.au`,
+		`assignee: TBD-mkt-content`,
 		`reviewer: null`,
 		`status: draft`,
 		`priority: ${priority}`,
@@ -227,7 +262,7 @@ function renderTaskMd(item: Playbook, reportDate: string, reportRel: string): st
 		`  - imported-from-routine`,
 		`  - growth-playbook`,
 		...(item.thisWeek ? ['  - this-week'] : []),
-		`createdBy: hello@jiangren.com.au`,
+		`createdBy: TBD-system`,
 		`createdAt: ${now}`,
 		`updatedAt: ${now}`,
 		`derivedFrom: null`,

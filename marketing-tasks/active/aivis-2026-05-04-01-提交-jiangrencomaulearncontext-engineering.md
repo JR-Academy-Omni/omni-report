@@ -1,14 +1,16 @@
 ---
-id: 000000000000000000000000
-title: "提交 `jiangren.com.au/learn/context-engineering` 至 Google Search Console URL Inspection"
+id: 0
+title: >-
+  提交 `jiangren.com.au/learn/context-engineering` 至 Google Search Console URL
+  Inspection
 category: ai-visibility-fix
 module: seo-404-fix
 source: routine-ai-visibility
 sourceMeta:
   reportPath: ai-visibility/2026-05-04.md
-  reportSection: 推荐行动清单 #1
-  reportItemHash: 2916e5917528
-assignee: hello@jiangren.com.au
+  reportSection: 推荐行动清单
+  reportItemHash: .inf
+assignee: TBD-engineering
 reviewer: null
 status: draft
 priority: p0
@@ -21,7 +23,7 @@ tags:
   - imported-from-routine
   - ai-visibility
   - Q19
-createdBy: hello@jiangren.com.au
+createdBy: TBD-system
 createdAt: 2026-05-05T02:01:50.340Z
 updatedAt: 2026-05-05T02:01:50.340Z
 derivedFrom: null

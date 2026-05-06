@@ -1,6 +1,6 @@
 ---
-id: 000000000000000000000000
-title: "示例任务：Cursor + Claude Code 双工作流（CSDN 改写）"
+id: 0
+title: 示例任务：Cursor + Claude Code 双工作流（CSDN 改写）
 category: geo-content
 module: geo-csdn
 source: prd-geo-content-factory
@@ -8,8 +8,8 @@ sourceMeta:
   topicId: B5
   reportPath: omni-report/PRD_GEO_CONTENT_FACTORY.md
   reportItemHash: example
-assignee: serena@jiangren.com.au
-reviewer: lightman@jiangren.com.au
+assignee: 2083483802@qq.com
+reviewer: TBD-founder
 status: draft
 priority: p0
 platforms:
@@ -18,14 +18,14 @@ platforms:
 wordCount: 4000
 estimatedHours: 12
 actualHours: null
-dueDate: 2026-05-08
+dueDate: 2026-05-08T00:00:00.000Z
 tags:
   - csdn-rescue
   - week-1
   - example
-createdBy: lightman@jiangren.com.au
-createdAt: 2026-05-04T12:00:00+08:00
-updatedAt: 2026-05-04T12:00:00+08:00
+createdBy: TBD-system
+createdAt: 2026-05-04T04:00:00.000Z
+updatedAt: 2026-05-04T04:00:00.000Z
 derivedFrom: null
 ---
 

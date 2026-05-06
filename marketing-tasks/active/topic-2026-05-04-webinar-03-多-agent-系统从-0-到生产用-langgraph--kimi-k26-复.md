@@ -8,7 +8,7 @@ sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
   reportSection: 推荐线上讲座
   reportItemHash: 05e3b3a59a9e
-assignee: intern-amelia@jiangren.com.au
+assignee: TBD-adhoc
 reviewer: null
 status: draft
 priority: p1
@@ -21,7 +21,7 @@ tags:
   - imported-from-routine
   - marketing-topics
   - webinar
-createdBy: hello@jiangren.com.au
+createdBy: TBD-system
 createdAt: 2026-05-05T02:08:43.464Z
 updatedAt: 2026-05-05T02:08:43.464Z
 derivedFrom: null

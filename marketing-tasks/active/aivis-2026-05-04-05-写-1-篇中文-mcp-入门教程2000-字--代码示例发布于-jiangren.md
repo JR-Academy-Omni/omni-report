@@ -1,14 +1,14 @@
 ---
-id: 000000000000000000000000
+id: 0
 title: 写 1 篇中文 MCP 入门教程（2000 字 + 代码示例）
 category: ai-visibility-fix
 module: geo-auto-publish
 source: routine-ai-visibility
 sourceMeta:
   reportPath: ai-visibility/2026-05-04.md
-  reportSection: 推荐行动清单 #5
+  reportSection: 推荐行动清单
   reportItemHash: 8ffda261f2e6
-assignee: hello@jiangren.com.au
+assignee: 2083483802@qq.com
 reviewer: null
 status: draft
 priority: p2
@@ -21,7 +21,7 @@ tags:
   - imported-from-routine
   - ai-visibility
   - Q12
-createdBy: hello@jiangren.com.au
+createdBy: TBD-system
 createdAt: 2026-05-05T02:01:50.341Z
 updatedAt: 2026-05-05T02:01:50.341Z
 derivedFrom: null

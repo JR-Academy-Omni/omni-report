@@ -1,14 +1,16 @@
 ---
-id: 000000000000000000000000
-title: "检查 Q6（AI Engineer 怎么求职 澳洲）的 jiangren.com.au/en 页面：① title tag 是否含\"AI Engineer 澳洲\"关键词 ② meta descript"
+id: 0
+title: >-
+  检查 Q6（AI Engineer 怎么求职 澳洲）的 jiangren.com.au/en 页面：① title tag 是否含"AI Engineer
+  澳洲"关键词 ② meta descript
 category: ai-visibility-fix
 module: seo-meta-fix
 source: routine-ai-visibility
 sourceMeta:
   reportPath: ai-visibility/2026-05-04.md
-  reportSection: 推荐行动清单 #4
+  reportSection: 推荐行动清单
   reportItemHash: 60bfefed7c60
-assignee: hello@jiangren.com.au
+assignee: TBD-engineering
 reviewer: null
 status: draft
 priority: p2
@@ -21,7 +23,7 @@ tags:
   - imported-from-routine
   - ai-visibility
   - Q6
-createdBy: hello@jiangren.com.au
+createdBy: TBD-system
 createdAt: 2026-05-05T02:01:50.341Z
 updatedAt: 2026-05-05T02:01:50.341Z
 derivedFrom: null

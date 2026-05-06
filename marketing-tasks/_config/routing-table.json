@@ -1,92 +1,113 @@
 {
   "$schema": "./routing-table.schema.json",
-  "description": "Module → 默认 assignee email 路由表。后端 RoutingService 启动时读取，每次任务创建时按 module 查表。员工 isActive=false 时 fallback 到对应 TBD-* 占位。",
-  "lastUpdatedAt": "2026-05-04",
-  "lastUpdatedBy": "lightman@jiangren.com.au",
+  "description": "Module → 默认 assignee email 路由表。后端 RoutingService 启动时读取，每次任务创建时按 module 查表。员工 isActive=false 时 fallback 到 TBD-* 占位。",
+  "lastUpdatedAt": "2026-05-06",
+  "lastUpdatedBy": "lightman",
+  "_emailGuide": "所有 email 来自 staff-roster.md 真实清单。用户提供的是个人邮箱（@qq/@163/@gmail/@hotmail），后端 emailToUserId 直接 findOne({ email }) 必须跟 jr-academy User 表登录 email 一致。",
 
   "moduleToAssignee": {
-    "geo-landing-page": "hello@jiangren.com.au",
-    "geo-github-repo": "hello@jiangren.com.au",
-    "geo-auto-publish": "hello@jiangren.com.au",
+    "geo-master": "TBD-mkt-content",
+    "geo-landing-page": "TBD-mkt-content",
+    "geo-github-repo": "TBD-mkt-content",
 
-    "geo-csdn": "serena@jiangren.com.au",
-    "geo-zhihu-column": "serena@jiangren.com.au",
-    "geo-sohu-netease-baijia": "serena@jiangren.com.au",
-    "geo-juejin": "serena@jiangren.com.au",
-    "geo-weixin-public": "serena@jiangren.com.au",
-    "geo-student-answer-coordination": "serena@jiangren.com.au",
-    "geo-csdn-rescue": "serena@jiangren.com.au",
+    "geo-csdn": "2083483802@qq.com",
+    "geo-zhihu-column": "2083483802@qq.com",
+    "geo-juejin": "2083483802@qq.com",
+    "geo-sohu-netease-baijia": "2083483802@qq.com",
+    "geo-csdn-rescue": "2083483802@qq.com",
+    "geo-reddit-quora": "2083483802@qq.com",
+    "geo-auto-publish": "2083483802@qq.com",
+    "geo-weixin-public": "2083483802@qq.com",
 
-    "geo-xiaohongshu": "bella@jiangren.com.au",
-    "geo-weixin-video": "bella@jiangren.com.au",
-    "geo-cross-platform-transfer": "bella@jiangren.com.au",
-    "geo-canva-design": "bella@jiangren.com.au",
+    "geo-student-answer-coordination": "2083483802@qq.com",
 
-    "geo-founder-ip": "lightman@jiangren.com.au",
+    "geo-xiaohongshu": "18634772744@163.com",
+    "geo-weixin-video": "18634772744@163.com",
+    "geo-cross-platform-transfer": "18634772744@163.com",
+    "geo-canva-design": "18634772744@163.com",
+
+    "geo-founder-ip": "TBD-founder",
     "geo-student-story": "TBD-student",
-    "geo-timely-news": "TBD-content",
+    "geo-timely-news": "TBD-mkt-content",
 
     "redbook-daily": "TBD-redbook-account",
     "redbook-hot-topic": "TBD-redbook-account",
     "redbook-account-maintenance": "TBD-redbook-account",
 
-    "video-daily": "bella@jiangren.com.au",
-    "video-live": "bella@jiangren.com.au",
+    "video-daily": "18634772744@163.com",
+    "video-live": "18634772744@163.com",
 
-    "weixin-daily": "serena@jiangren.com.au",
-    "weixin-longform": "serena@jiangren.com.au",
+    "weixin-daily": "2083483802@qq.com",
+    "weixin-longform": "2083483802@qq.com",
 
-    "seo-meta-fix": "hello@jiangren.com.au",
-    "seo-cwv-fix": "hello@jiangren.com.au",
-    "seo-sitemap": "hello@jiangren.com.au",
-    "seo-internal-link": "serena@jiangren.com.au",
-    "seo-404-fix": "hello@jiangren.com.au",
+    "seo-meta-fix": "TBD-engineering",
+    "seo-cwv-fix": "TBD-engineering",
+    "seo-sitemap": "TBD-engineering",
+    "seo-internal-link": "TBD-mkt-content",
+    "seo-404-fix": "TBD-engineering",
 
     "event-planning": "TBD-event-by-city",
     "event-execution": "TBD-event-by-city",
     "event-retrospective": "TBD-event-by-city",
 
-    "campaign-plan": "ada@jiangren.com.au",
-    "partnership-negotiate": "ada@jiangren.com.au",
-    "kol-outreach": "ada@jiangren.com.au",
-    "growth-hack-launch": "ada@jiangren.com.au",
+    "campaign-plan": "1982723658@qq.com",
+    "partnership-negotiate": "1982723658@qq.com",
+    "kol-outreach": "1982723658@qq.com",
+    "growth-hack-launch": "1982723658@qq.com",
 
-    "taobao-listing": "neomi@jiangren.com.au",
-    "taobao-promotion": "neomi@jiangren.com.au",
-    "taobao-customer-service": "neomi@jiangren.com.au",
+    "taobao-listing": "261073251@qq.com",
+    "taobao-promotion": "261073251@qq.com",
+    "taobao-customer-service": "261073251@qq.com",
 
     "cross-team-support": "TBD-crossteam",
     "ad-hoc-task": "TBD-adhoc"
   },
 
+  "_moduleNotes": {
+    "_principle": "分工原则：原创内容（master draft / 落地页 / GitHub repo）派 MKT 全职；copy 改写发布到第三方平台的搬运行为派实习生（Bella）。",
+    "_intern_modules_split": "GEO 发布工作分两位实习生：(1) Serena (2083483802@qq.com) 接文字搬运 11 个 module — CSDN / 知乎 / 掘金 / 搜狐网易百家 / Medium-devto / Reddit-Quora / 公众号 / 公众号日常 / 公众号长文 / CSDN 账号修复 / 学员答主协调；(2) Bella (18634772744@163.com) 接视觉/视频 6 个 module — 小红书 / 视频号 / 跨平台搬运 / Canva 设计 / video-daily / video-live。",
+    "TBD-mkt-content": "原创内容写作（master draft / 落地页 / 学员答主协调 / 时事新闻）— admin 拨 master 卡 ready 前必须显式指派给 Aurora（暂停） / Seren（casual）/ Summer / KIKI / Lily 之一。",
+    "TBD-engineering": "SEO meta/CWV/sitemap/404 修复 — 工程任务，admin 显式指派。",
+    "TBD-founder": "创始人 IP 长文 — 由 lightman 本人发，admin 显式指派。",
+    "TBD-event-by-city": "线下活动按 city 路由，见 eventCityRouting。",
+    "TBD-event-bne": "Brisbane 线下活动 owner 待 admin 指派。"
+  },
+
   "redbookAccountRouting": {
     "description": "小红书任务 targetAccount → owner（账号级路由，不走 module）",
     "accounts": {
-      "澳洲匠人学院": "summer@jiangren.com.au",
-      "Rain姐说求职": "summer@jiangren.com.au",
-      "澳洲实习猿": "summer@jiangren.com.au",
-      "Kiki的分享日记": "summer@jiangren.com.au",
-      "Amelia在悉尼": "lily@jiangren.com.au",
-      "momo在澳洲": "lily@jiangren.com.au",
-      "JR匠人学院": "lily@jiangren.com.au",
-      "UQ课代表": "kiki-cd@jiangren.com.au",
-      "UNSW课代表": "kiki-cd@jiangren.com.au",
-      "墨大课代表": "kiki-cd@jiangren.com.au",
-      "素人号": "kiki-cd@jiangren.com.au"
+      "澳洲匠人学院": "1134583264@qq.com",
+      "Rain姐说求职": "1134583264@qq.com",
+      "澳洲实习猿": "1134583264@qq.com",
+      "Kiki的分享日记": "1134583264@qq.com",
+      "Amelia在悉尼": "2363843954@qq.com",
+      "momo在澳洲": "2363843954@qq.com",
+      "JR匠人学院": "2363843954@qq.com",
+      "UQ课代表": "2838684082@qq.com",
+      "UNSW课代表": "2838684082@qq.com",
+      "墨大课代表": "2838684082@qq.com",
+      "素人号": "2838684082@qq.com"
+    },
+    "_owners": {
+      "1134583264@qq.com": "Summer（新媒体运营，成都）",
+      "2363843954@qq.com": "Lily（新媒体运营，成都）",
+      "2838684082@qq.com": "KIKI（新媒体运营，成都）— 课代表系列 4 个账号全归成都团队，与 UQ/UNSW/墨大物理位置无关"
     }
   },
 
   "eventCityRouting": {
     "description": "线下活动 targetCity → owner",
     "cities": {
-      "Sydney": "seren@jiangren.com.au",
-      "Melbourne": "seren@jiangren.com.au",
-      "Brisbane": "kiki-bne@jiangren.com.au",
-      "Chengdu": "ada@jiangren.com.au",
-      "online": "ada@jiangren.com.au"
+      "Sydney": "jiahewan362@gmail.com",
+      "Melbourne": "jiahewan362@gmail.com",
+      "Brisbane": "huangdg755@gmail.com",
+      "Chengdu": "1982723658@qq.com",
+      "online": "1982723658@qq.com"
     },
-    "secondaryAssignees": {
-      "Melbourne": "han@jiangren.com.au"
+    "_owners": {
+      "jiahewan362@gmail.com": "Seren（MKT casual，仅周四+周五）",
+      "huangdg755@gmail.com": "KIKI Huang（Brisbane MKT Intern）",
+      "1982723658@qq.com": "Ada（产品运营）"
     }
   },
 
@@ -95,35 +116,50 @@
     "rules": [
       {
         "if": "primaryAssignee.isActive === false",
-        "fallbackTo": "TBD-content",
+        "fallbackTo": "TBD-mkt-content",
         "note": "员工离职 → 转人工分配"
       },
       {
-        "if": "primaryAssignee === aurora",
-        "note": "Aurora 已暂停 routine 派活，EVENT_* 类任务自动 fallback 到 seren / han"
+        "if": "primaryAssignee === aurora.gg.zhou@gmail.com",
+        "note": "Aurora 已暂停 routine 派活，EVENT_* 类任务自动 fallback 到 jiahewan362@gmail.com (Seren)"
       },
       {
-        "if": "primaryAssignee === seren",
-        "constraint": "dueDate 必须包含周四或周五（casual 节奏）"
+        "if": "primaryAssignee === jiahewan362@gmail.com",
+        "constraint": "Seren casual — dueDate 必须包含周四或周五"
       },
       {
-        "if": "primaryAssignee === bella",
-        "constraint": "派活节奏减半（实习生 3 天/周）"
+        "if": "primaryAssignee === 18634772744@163.com",
+        "constraint": "Bella 实习生 — 派活节奏减半（3 天/周）"
       },
       {
-        "if": "primaryAssignee === han || primaryAssignee === kiki-bne",
-        "constraint": "工作日待标注，未标注前进待办池"
+        "if": "primaryAssignee === 2083483802@qq.com",
+        "constraint": "Serena 实习生 — 派活节奏减半，可分担 Bella 搬运任务"
+      },
+      {
+        "if": "primaryAssignee === yuyi2003yu@163.com",
+        "constraint": "Yulia 实习生 — 派活节奏减半"
+      },
+      {
+        "if": "primaryAssignee === huangdg755@gmail.com",
+        "constraint": "KIKI Huang Brisbane intern — 工作日待标注，未标注前进待办池"
       }
     ],
     "blockedAssignees": {
-      "description": "这些员工不接 marketing 任务",
+      "description": "这些员工不接 marketing routine 任务",
       "list": [
-        "melody@jiangren.com.au",
-        "amelia@jiangren.com.au",
-        "rain@jiangren.com.au",
-        "angela@jiangren.com.au",
-        "aurora@jiangren.com.au"
-      ]
+        "career@jiangren.com.au",
+        "414452979@qq.com",
+        "qy1219@hotmail.com",
+        "angela727hl@gmail.com",
+        "aurora.gg.zhou@gmail.com"
+      ],
+      "_owners": {
+        "career@jiangren.com.au": "Melody（HRM, HR only）",
+        "414452979@qq.com": "Amelia（课程顾问，前线销售）",
+        "qy1219@hotmail.com": "Rain（课程顾问，前线销售）",
+        "angela727hl@gmail.com": "Angela（课程顾问，前线销售）",
+        "aurora.gg.zhou@gmail.com": "Aurora（MKT，已暂停）"
+      }
     }
   }
 }

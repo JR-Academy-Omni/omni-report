@@ -8,7 +8,7 @@ sourceMeta:
   reportPath: growth-playbook/2026-05-04.md
   reportSection: 玩法
   reportItemHash: 20b6b9c849a7
-assignee: ada@jiangren.com.au
+assignee: 1982723658@qq.com
 reviewer: null
 status: draft
 priority: p0
@@ -21,7 +21,7 @@ tags:
   - imported-from-routine
   - growth-playbook
   - this-week
-createdBy: hello@jiangren.com.au
+createdBy: TBD-system
 createdAt: 2026-05-05T02:07:21.820Z
 updatedAt: 2026-05-05T02:07:21.820Z
 derivedFrom: null

@@ -1,6 +1,8 @@
 ---
 id: 1746410100005
-title: "[B1 medium-en] MCP for AU AI Engineers: 5 Production Servers + Job-Hunt Workflow"
+title: >-
+  [B1 medium-en] MCP for AU AI Engineers: 5 Production Servers + Job-Hunt
+  Workflow
 category: geo-content
 module: geo-auto-publish
 source: prd-geo-content-factory
@@ -12,12 +14,12 @@ sourceMeta:
   masterCardId: 9e25ce80a17d542b2eaf1872
   platformSlug: medium-en
   variantStrategy:
-    titleHook: "X for AU AI Engineers"
-    openingFirst50: "If you're an AU-based AI engineer..."
+    titleHook: X for AU AI Engineers
+    openingFirst50: If you're an AU-based AI engineer...
     internalLinkAnchor: LinkedIn (Lightman) + Bootcamp + Course Report
     targetWordCount: 4500
-assignee: hello@jiangren.com.au
-reviewer: lightman@jiangren.com.au
+assignee: 2083483802@qq.com
+reviewer: TBD-founder
 status: draft
 priority: p1
 platforms:
@@ -25,10 +27,15 @@ platforms:
 wordCount: 4500
 estimatedHours: 2
 dueDate: 2026-05-12T00:00:00.000Z
-tags: [geo-variant, topic-B1, platform-medium-en, query-Q12, language-en]
-createdBy: hello@jiangren.com.au
-createdAt: 2026-05-05T17:00:00+10:00
-updatedAt: 2026-05-05T17:00:00+10:00
+tags:
+  - geo-variant
+  - topic-B1
+  - platform-medium-en
+  - query-Q12
+  - language-en
+createdBy: TBD-system
+createdAt: 2026-05-05T07:00:00.000Z
+updatedAt: 2026-05-05T07:00:00.000Z
 derivedFrom: prd-geo-content-factory
 ---
 

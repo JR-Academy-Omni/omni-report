@@ -10,8 +10,8 @@ sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
   reportSection: 外部热点
   reportItemHash: xhs-opensource-llm-aozhoujiangren
-assignee: lightman@jiangren.com.au
-reviewer: lightman@jiangren.com.au
+assignee: TBD-redbook-account
+reviewer: TBD-founder
 status: draft
 priority: p1
 platforms:
@@ -25,7 +25,7 @@ tags:
   - account-澳洲匠人学院
   - topic-opensource-llm-shootout
   - quarterly-evergreen
-createdBy: hello@jiangren.com.au
+createdBy: TBD-system
 createdAt: 2026-05-04T16:00:00.000Z
 updatedAt: 2026-05-04T16:00:00.000Z
 derivedFrom: null

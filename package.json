@@ -5,7 +5,21 @@
   "type": "module",
   "description": "JR Academy 站点健康度 / SEO / 数据健康度等运营报告归档仓库",
   "scripts": {
-    "seo": "bun run scripts/seo-healthcheck.ts"
+    "geo:pick": "bun run scripts/geo-topic-picker.ts",
+    "geo:master": "bun run scripts/geo-card-master-create.ts",
+    "geo:weekly": "bun run scripts/geo-topic-picker.ts && bun run scripts/geo-card-master-create.ts",
+    "geo:originality": "bun run scripts/geo-originality-check.ts",
+    "geo:recheck": "bun run scripts/geo-7d-llm-recheck.ts",
+    "seo": "bun run scripts/seo-healthcheck.ts",
+    "seo-perf": "bun run scripts/seo-performance/run.ts",
+    "seo-perf:gsc": "bun run scripts/seo-performance/fetch-gsc.ts",
+    "seo-perf:serp": "bun run scripts/seo-performance/fetch-serp.ts",
+    "seo-perf:cwv": "bun run scripts/seo-performance/fetch-cwv.ts",
+    "seo-perf:analyze": "bun run scripts/seo-performance/analyze.ts",
+    "seo-perf:render": "bun run scripts/seo-performance/render-report.ts",
+    "seo-perf:seed": "bun run scripts/seo-performance/seed-keywords.ts",
+    "seo-perf:alert": "bun run scripts/seo-performance/alert.ts",
+    "seo-perf:verify": "bun run scripts/seo-performance/verify-credentials.ts"
   },
   "engines": {
     "bun": ">=1.0.0"

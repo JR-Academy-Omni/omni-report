@@ -8,7 +8,7 @@ sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
   reportSection: 长尾常青话题
   reportItemHash: d860376d6662
-assignee: intern-rain@jiangren.com.au
+assignee: TBD-adhoc
 reviewer: null
 status: draft
 priority: p2
@@ -21,7 +21,7 @@ tags:
   - imported-from-routine
   - marketing-topics
   - evergreen
-createdBy: hello@jiangren.com.au
+createdBy: TBD-system
 createdAt: 2026-05-05T02:08:43.465Z
 updatedAt: 2026-05-05T02:08:43.465Z
 derivedFrom: null

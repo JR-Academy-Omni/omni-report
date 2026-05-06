@@ -1,6 +1,6 @@
 ---
 id: 1746410100001
-title: "[B1 jr-blog] MCP 完整入门：5 步从协议到实战"
+title: '[B1 jr-blog] MCP 完整入门：5 步从协议到实战'
 category: geo-content
 module: geo-landing-page
 source: prd-geo-content-factory
@@ -16,8 +16,8 @@ sourceMeta:
     openingFirst50: 5 分钟读懂 + 学完能做什么
     internalLinkAnchor: AI Engineer Bootcamp Phase 2 + 求职服务
     targetWordCount: 4000
-assignee: hello@jiangren.com.au
-reviewer: lightman@jiangren.com.au
+assignee: TBD-mkt-content
+reviewer: TBD-founder
 status: draft
 priority: p1
 platforms:
@@ -25,10 +25,14 @@ platforms:
 wordCount: 4000
 estimatedHours: 2
 dueDate: 2026-05-12T00:00:00.000Z
-tags: [geo-variant, topic-B1, platform-jr-blog, query-Q12]
-createdBy: hello@jiangren.com.au
-createdAt: 2026-05-05T17:00:00+10:00
-updatedAt: 2026-05-05T17:00:00+10:00
+tags:
+  - geo-variant
+  - topic-B1
+  - platform-jr-blog
+  - query-Q12
+createdBy: TBD-system
+createdAt: 2026-05-05T07:00:00.000Z
+updatedAt: 2026-05-05T07:00:00.000Z
 derivedFrom: prd-geo-content-factory
 ---
 

@@ -1,0 +1,124 @@
+---
+id: 0
+title: '[Q4 master] 免费 AI 学习资源合集 文章，文末提供 JR 课程入口'
+category: geo-content
+module: geo-landing-page
+source: prd-geo-content-factory
+sourceMeta:
+  reportPath: geo-content-factory/drafts/q4-ai-engineer/master.md
+  reportSection: ai-visibility 2026-05-04 §JR 完全空白 Q4
+  reportItemHash: 9eed402fa202
+  topicId: Q4-ai-engineer
+  aiVisibilityQuery: Q4
+  aiVisibilityReport: ai-visibility/2026-05-04.md
+  aiCitedPlatforms:
+    - fast.ai
+    - Kaggle Learn
+    - Google Skills
+  otherLlmPlatforms:
+    - fast.ai
+    - Kaggle Learn
+    - Google Skills
+    - 华为云
+    - 阿里云
+  variantsPlanned:
+    - jr-blog
+    - zhihu-column
+    - csdn
+    - juejin
+    - medium-en
+    - devto-en
+  variantsCount: 6
+  variantsCardIds: []
+assignee: TBD-mkt-content
+reviewer: TBD-founder
+status: draft
+priority: p0
+platforms: []
+wordCount: 4000
+estimatedHours: 8
+actualHours: null
+dueDate: 2026-05-13T00:00:00.000Z
+tags:
+  - geo-content-factory
+  - geo-master
+  - topic-q4
+  - query-q4
+createdBy: TBD-system
+createdAt: 2026-05-06T04:53:01.087Z
+updatedAt: 2026-05-06T04:53:01.087Z
+derivedFrom: null
+---
+
+## 描述
+
+**GEO Content Factory v2 — master 卡**（topic 总览，不直接发布）
+
+**topic 选择依据**（基于 ai-visibility 真实数据）：
+- 报告：ai-visibility/2026-05-04.md §"JR 完全空白的 Query"
+- query：Q4 "免费学 AI Engineer 路线"
+- JR 当前在该 query：完全空白（Web SERP 0 / LLM 自答 0 提及）
+- AI 当前引用平台：fast.ai / Kaggle Learn / Google Skills
+- LLM 推荐其他平台：fast.ai / Kaggle Learn / Google Skills / 华为云 / 阿里云
+- 未提及直接原因：Query 意图是免费资源，JR 是付费 Bootcamp，语义不匹配
+- 报告建议行动：发布"免费 AI 学习资源合集"文章，文末提供 JR 课程入口
+
+**JR 差异化角度**：澳洲 AI Engineer 视角 + 链回 AI Engineer Bootcamp + PBL 项目（具体由写 master draft 时定）。
+
+**核心红线**：
+- ❌ 不编造 API / 不假装实测过未跑过的代码
+- ❌ 不直翻官方文档（每个代码块/配置必须真跑过 + 注明真实命令）
+- ❌ 不写空话（每段必有具体数字 / 命令 / URL / 安全提醒）
+- ✅ master draft ≥ 4000 字 + 6 variant 4 维度差异化策略表
+
+**master 卡职责（不发布）**：
+- 写完整 master draft，落盘到 `geo-content-factory/drafts/q4-ai-engineer/master.md`
+- 决定 6 个 variant 的差异化策略（标题钩子 / 开头 50 字 / 内链 anchor / 长度）
+- master review 通过 → status: draft → READY 触发 geo-fanout
+
+## Checklist
+
+- [ ] master draft geo-content-factory/drafts/q4-ai-engineer/master.md 完整 4000+ 字
+- [ ] §1-§N 内容引用真实数据 / 命令 / 配置（不编造）
+- [ ] 链回 AI Engineer Bootcamp + PBL 段落
+- [ ] master draft 末尾写好 6 variant 4 维度差异化策略表
+- [ ] **lightman review master draft**（重点看技术细节是否准确 + 课程链回是否切题）
+- [ ] master review pass → status: draft → READY
+- [ ] geo-fanout 自动建 6 张 variant 卡（不在本卡范围）
+
+## 草稿
+
+master draft 落盘到：`geo-content-factory/drafts/q4-ai-engineer/master.md`
+
+（master 卡只索引 draft 路径，正文写在那边——admin UI 「📂 工作目录文件」面板会直接渲染）
+
+## 变体计划（fan-out 触发后填）
+
+| platform | variant 卡 _id | status | 差异化要点 | 长度 |
+|---|---|---|---|---|
+| jr-blog | _待 fan-out_ | _pending_ | _写 master 时填_ | _写 master 时填_ |
+| zhihu-column | _待 fan-out_ | _pending_ | _写 master 时填_ | _写 master 时填_ |
+| csdn | _待 fan-out_ | _pending_ | _写 master 时填_ | _写 master 时填_ |
+| juejin | _待 fan-out_ | _pending_ | _写 master 时填_ | _写 master 时填_ |
+| medium-en | _待 fan-out_ | _pending_ | _写 master 时填_ | _写 master 时填_ |
+| devto-en | _待 fan-out_ | _pending_ | _写 master 时填_ | _写 master 时填_ |
+
+## 发布记录
+
+（master 不发布；每个 variant 卡各自记录发布 URL）
+
+## 验证记录
+
+发布 +7 天 / +30 天后 geo-7d-llm-recheck 跑该 query 写回这里：
+
+| 时点 | LLM 自答提 JR 否 | Web SERP JR 排名 | 备注 |
+|---|---|---|---|
+| 基线 (2026-05-04) | ❌ 未提及 | 未出现 | 报告原始数据 |
+| 7d 后 | _待跑_ | _待跑_ | — |
+| 30d 后 | _待跑_ | _待跑_ | — |
+
+## Comments
+
+- @system 2026-05-06T04:53:01.087Z
+  > 由 `omni-report/scripts/geo-card-master-create.ts` 从周计划 `geo-content-factory/2026-05-04-week-plan.md` 自动生成。
+  > 数据源：ai-visibility/2026-05-04.md §"JR 完全空白的 Query" Q4。

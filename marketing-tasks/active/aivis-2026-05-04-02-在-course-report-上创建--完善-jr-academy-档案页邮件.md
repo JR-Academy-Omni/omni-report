@@ -8,7 +8,7 @@ sourceMeta:
   reportPath: ai-visibility/2026-05-04.md
   reportSection: 推荐行动清单
   reportItemHash: c2c802b098f0
-assignee: ada@jiangren.com.au
+assignee: 1982723658@qq.com
 reviewer: null
 status: draft
 priority: p1
@@ -24,7 +24,7 @@ tags:
   - Q7
   - Q8
   - Q10
-createdBy: hello@jiangren.com.au
+createdBy: TBD-system
 createdAt: 2026-05-05T02:01:50.341Z
 updatedAt: 2026-05-05T02:01:50.341Z
 derivedFrom: null

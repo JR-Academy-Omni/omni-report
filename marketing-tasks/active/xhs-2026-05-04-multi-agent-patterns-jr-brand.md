@@ -8,8 +8,8 @@ sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
   reportSection: 长尾常青
   reportItemHash: xhs-multi-agent-patterns-jr-brand
-assignee: intern-rain@jiangren.com.au
-reviewer: lightman@jiangren.com.au
+assignee: TBD-redbook-account
+reviewer: TBD-founder
 status: draft
 priority: p1
 platforms:
@@ -24,7 +24,7 @@ tags:
   - topic-multi-agent-patterns
   - evergreen-tech
   - brand-account
-createdBy: hello@jiangren.com.au
+createdBy: TBD-system
 createdAt: 2026-05-04T16:00:00.000Z
 updatedAt: 2026-05-04T16:00:00.000Z
 derivedFrom: null

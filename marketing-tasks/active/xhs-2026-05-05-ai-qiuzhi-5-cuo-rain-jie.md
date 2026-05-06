@@ -9,12 +9,12 @@ sourceMeta:
   reportSection: xhs-content-factory pipeline
   reportItemHash: xhs-content-factory-2026-05-05-001-rain-jie
   draftPath: omni-report/xhs-content-factory/drafts/2026-05-05/001-rain-jie/
-  topicId: "001"
+  topicId: '001'
   topicSlug: ai-qiuzhi-5-cuo
   scoreFile: 05-score.md
   scoreTotal: 81
-assignee: summer@jiangren.com.au
-reviewer: lightman@jiangren.com.au
+assignee: TBD-redbook-account
+reviewer: TBD-founder
 status: ready
 priority: p1
 platforms:
@@ -29,9 +29,9 @@ tags:
   - topic-ai-qiuzhi-5-cuo
   - score-81
   - angle-expert
-createdBy: hello@jiangren.com.au
-createdAt: 2026-05-05T11:30:00+10:00
-updatedAt: 2026-05-05T11:30:00+10:00
+createdBy: TBD-system
+createdAt: 2026-05-05T01:30:00.000Z
+updatedAt: 2026-05-05T01:30:00.000Z
 derivedFrom: xhs-content-factory
 ---
 

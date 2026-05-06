@@ -8,7 +8,7 @@ sourceMeta:
   reportPath: competitor-reports/2026-05-03.md
   reportSection: 对 JR Academy 的建议
   reportItemHash: 3f5cd3116695
-assignee: intern-rain@jiangren.com.au
+assignee: TBD-adhoc
 reviewer: null
 status: draft
 priority: p1
@@ -20,7 +20,7 @@ dueDate: null
 tags:
   - imported-from-routine
   - competitor-weekly
-createdBy: hello@jiangren.com.au
+createdBy: TBD-system
 createdAt: 2026-05-05T02:06:30.559Z
 updatedAt: 2026-05-05T02:06:30.559Z
 derivedFrom: null

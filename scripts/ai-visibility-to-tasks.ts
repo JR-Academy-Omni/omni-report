@@ -55,23 +55,31 @@ async function main() {
 	let written = 0;
 	let skipped = 0;
 
+	const existingHashes = await collectExistingHashes(TASKS_DIR);
+
 	for (const row of rows) {
 		const filename = deriveFilename(reportName, row);
 		const targetPath = path.join(TASKS_DIR, filename);
 
-		// 去重：文件已存在则跳过
-		try {
-			await fs.access(targetPath);
-			console.log(`  ⊘ Skip ${filename} (already exists)`);
+		// 去重双闸：(1) 同文件名已存在，(2) 同 actionable hash 已存在（跨周报）
+		const hash = computeReportItemHash(row);
+		const existingByHash = existingHashes.get(hash);
+		if (existingByHash) {
+			console.log(`  ⊘ Skip ${filename} — same actionable hash already in ${existingByHash}`);
 			skipped++;
 			continue;
-		} catch {
-			// 不存在，继续写
 		}
+		try {
+			await fs.access(targetPath);
+			console.log(`  ⊘ Skip ${filename} (filename exists)`);
+			skipped++;
+			continue;
+		} catch {}
 
 		const md = renderTaskMd(row, reportName, reportRel);
 		await fs.mkdir(path.dirname(targetPath), { recursive: true });
 		await fs.writeFile(targetPath, md, 'utf-8');
+		existingHashes.set(hash, filename); // 同次跑也别重复写
 		console.log(`  ✓ Wrote ${filename}`);
 		written++;
 	}
@@ -180,12 +188,42 @@ function deriveFilename(reportDate: string, row: ActionRow): string {
  *
  * 与 jr-academy MarkdownSyncService.serialize() 输出格式严格对齐
  */
-function renderTaskMd(row: ActionRow, reportDate: string, reportRel: string): string {
-	const reportItemHash = crypto
+/**
+ * Hash 不带 reportDate — 同一 actionable 在不同周报里出现也算同一条，避免 dedupe 失效。
+ * action 内容相同就视作同一 task。
+ */
+function computeReportItemHash(row: ActionRow): string {
+	return crypto
 		.createHash('sha1')
-		.update(`ai-visibility::${reportDate}::${row.num}::${row.action.slice(0, 60)}`)
+		.update(`ai-visibility::${row.action.trim()}`)
 		.digest('hex')
 		.slice(0, 12);
+}
+
+/**
+ * 扫 TASKS_DIR 现有 .md，提取 frontmatter.sourceMeta.reportItemHash → filename 反向索引
+ */
+async function collectExistingHashes(dir: string): Promise<Map<string, string>> {
+	const map = new Map<string, string>();
+	let entries: string[];
+	try {
+		entries = await fs.readdir(dir);
+	} catch {
+		return map;
+	}
+	for (const f of entries) {
+		if (!f.endsWith('.md')) continue;
+		try {
+			const raw = await fs.readFile(path.join(dir, f), 'utf-8');
+			const m = raw.match(/reportItemHash:\s*(\S+)/);
+			if (m) map.set(m[1].trim(), f);
+		} catch {}
+	}
+	return map;
+}
+
+function renderTaskMd(row: ActionRow, reportDate: string, reportRel: string): string {
+	const reportItemHash = computeReportItemHash(row);
 
 	// 优先级：第 1 条 P0，第 2-3 条 P1，其余 P2
 	const priority = row.num === 1 ? 'p0' : row.num <= 3 ? 'p1' : 'p2';
@@ -229,7 +267,7 @@ function renderTaskMd(row: ActionRow, reportDate: string, reportRel: string): st
 		`  reportPath: ${escapeYamlString(reportRel)}`,
 		`  reportSection: 推荐行动清单 #${row.num}`,
 		`  reportItemHash: ${reportItemHash}`,
-		`assignee: hello@jiangren.com.au`,
+		`assignee: TBD-mkt-content`,
 		`reviewer: null`,
 		`status: draft`,
 		`priority: ${priority}`,
@@ -242,7 +280,7 @@ function renderTaskMd(row: ActionRow, reportDate: string, reportRel: string): st
 		`  - imported-from-routine`,
 		`  - ai-visibility`,
 		...relatedQueries.map(q => `  - ${q}`),
-		`createdBy: hello@jiangren.com.au`,
+		`createdBy: TBD-system`,
 		`createdAt: ${now}`,
 		`updatedAt: ${now}`,
 		`derivedFrom: null`,

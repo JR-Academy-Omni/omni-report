@@ -1,6 +1,6 @@
 ---
 id: 1746410100004
-title: "[B1 juejin] 实战：5 个 MCP Server 串起来做 AI 求职助手"
+title: '[B1 juejin] 实战：5 个 MCP Server 串起来做 AI 求职助手'
 category: geo-content
 module: geo-juejin
 source: prd-geo-content-factory
@@ -16,8 +16,8 @@ sourceMeta:
     openingFirst50: 项目背景导入 + 架构图（"我想做一个..."）
     internalLinkAnchor: Author 主页 + 课程入口
     targetWordCount: 3000
-assignee: serena@jiangren.com.au
-reviewer: lightman@jiangren.com.au
+assignee: 2083483802@qq.com
+reviewer: TBD-founder
 status: draft
 priority: p1
 platforms:
@@ -25,10 +25,14 @@ platforms:
 wordCount: 3000
 estimatedHours: 1.5
 dueDate: 2026-05-12T00:00:00.000Z
-tags: [geo-variant, topic-B1, platform-juejin, query-Q12]
-createdBy: hello@jiangren.com.au
-createdAt: 2026-05-05T17:00:00+10:00
-updatedAt: 2026-05-05T17:00:00+10:00
+tags:
+  - geo-variant
+  - topic-B1
+  - platform-juejin
+  - query-Q12
+createdBy: TBD-system
+createdAt: 2026-05-05T07:00:00.000Z
+updatedAt: 2026-05-05T07:00:00.000Z
 derivedFrom: prd-geo-content-factory
 ---
 

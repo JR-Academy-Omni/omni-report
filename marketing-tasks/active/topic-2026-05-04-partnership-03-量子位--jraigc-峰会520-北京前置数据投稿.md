@@ -8,7 +8,7 @@ sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
   reportSection: 联名机会
   reportItemHash: bb15a552c358
-assignee: ada@jiangren.com.au
+assignee: 1982723658@qq.com
 reviewer: null
 status: draft
 priority: p2
@@ -21,7 +21,7 @@ tags:
   - imported-from-routine
   - marketing-topics
   - partnership
-createdBy: hello@jiangren.com.au
+createdBy: TBD-system
 createdAt: 2026-05-05T02:08:43.465Z
 updatedAt: 2026-05-05T02:08:43.465Z
 derivedFrom: null

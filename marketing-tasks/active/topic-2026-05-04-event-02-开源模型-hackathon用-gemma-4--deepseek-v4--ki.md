@@ -8,7 +8,7 @@ sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
   reportSection: 推荐线下活动
   reportItemHash: 10df59799390
-assignee: intern-aurora@jiangren.com.au
+assignee: TBD-event-by-city
 reviewer: null
 status: draft
 priority: p2
@@ -21,7 +21,7 @@ tags:
   - imported-from-routine
   - marketing-topics
   - offline-event
-createdBy: hello@jiangren.com.au
+createdBy: TBD-system
 createdAt: 2026-05-05T02:08:43.465Z
 updatedAt: 2026-05-05T02:08:43.465Z
 derivedFrom: null

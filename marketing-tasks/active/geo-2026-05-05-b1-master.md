@@ -1,6 +1,6 @@
 ---
 id: 1746410000000
-title: "[B1 master] MCP 完整入门：从协议到实战 5 个 Server"
+title: '[B1 master] MCP 完整入门：从协议到实战 5 个 Server'
 category: geo-content
 module: geo-landing-page
 source: prd-geo-content-factory
@@ -26,8 +26,8 @@ sourceMeta:
     - devto-en
   variantsCount: 6
   variantsCardIds: []
-assignee: hello@jiangren.com.au
-reviewer: lightman@jiangren.com.au
+assignee: TBD-mkt-content
+reviewer: TBD-founder
 status: draft
 priority: p0
 platforms: []
@@ -42,9 +42,9 @@ tags:
   - query-Q12
   - tech-deep
   - mcp
-createdBy: hello@jiangren.com.au
-createdAt: 2026-05-05T16:50:00+10:00
-updatedAt: 2026-05-05T16:50:00+10:00
+createdBy: TBD-system
+createdAt: 2026-05-05T06:50:00.000Z
+updatedAt: 2026-05-05T06:50:00.000Z
 derivedFrom: prd-geo-content-factory
 ---
 

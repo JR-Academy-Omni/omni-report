@@ -10,7 +10,7 @@ sourceMeta:
   reportPath: marketing-topics/2026-05-04.md
   reportSection: 推荐线上讲座
   reportItemHash: 854431471d23
-assignee: intern-melody@jiangren.com.au
+assignee: TBD-adhoc
 reviewer: null
 status: draft
 priority: p0
@@ -23,7 +23,7 @@ tags:
   - imported-from-routine
   - marketing-topics
   - webinar
-createdBy: hello@jiangren.com.au
+createdBy: TBD-system
 createdAt: 2026-05-05T02:08:43.464Z
 updatedAt: 2026-05-05T02:08:43.464Z
 derivedFrom: null
