@@ -220,4 +220,142 @@ ai-visibility/{YYYY-MM-DD}.md
 
 - `PRD_COMPETITOR_WEEKLY.md` — 竞品周报 PRD（数据上游）
 - `PRD_MARKETING_TOPICS.md` — 内容选题包 PRD（行动下游）
+- `PRD_MARKETING_TASKS_CI_SYNC.md` — 周报 → 任务卡 → prod Mongo 的同步通道
+- `ai-visibility/CONTENT_BACKLOG.md` — 三期累积 75 篇文章选题 + 4 件工程任务（含黑/白名单 + 课程映射 + 跨平台回链规则）
+- `.claude/skills/_shared/content-brand-attribution-rules.md` — content-creator skill 共享 pre-publish gate
+- `geo-content-factory/drafts/2026-AI-Engineer-Roadmap/` — 第一篇端到端样本稿件（jr-blog + 5 平台 variant）
+
+---
+
+## 9. v1 端到端实施记录（2026-05-07）
+
+### 9.1 Routine 状态升级
+
+从 v0「报告产出但任务无人执行」升级为 v1「报告→任务卡→草稿→发布」全链路打通。**实测验证**端到端 5 stages 全绿。
+
+```
+✅ stage 1  周报扫描（cron / 手动）              → ai-visibility/{date}.md
+✅ stage 2  to-tasks.ts 脚本                     → marketing-tasks/active/aivis-*.md
+✅ stage 3  git push                             → GitHub Actions sync workflow
+✅ stage 4  workflow POST sync/import            → prod MongoDB
+✅ stage 5  写稿件 + 关联草稿 + status 流转      → admin Kanban 实测显示
+```
+
+### 9.2 to-tasks 脚本（`scripts/ai-visibility-to-tasks.ts`）
+
+**用法**：
+
+```bash
+# 默认跑最新一份周报
+bun run scripts/ai-visibility-to-tasks.ts
+
+# 指定文件
+bun run scripts/ai-visibility-to-tasks.ts ai-visibility/2026-05-04.md
+
+# Backfill：重算 active/aivis-* 现有卡的 reportItemHash 字段（修算法时用）
+bun run scripts/ai-visibility-to-tasks.ts --backfill
+```
+
+**逻辑**：
+1. 找最新 `ai-visibility/YYYY-MM-DD.md`
+2. 解析 `## ⚡ 推荐行动清单` pipe table（5 行 × 5 列：# / 行动 / 解决哪个 query / 工作量 / ROI）
+3. 每行生成一张 `aivis-{date}-{NN}-{slug}.md` 任务卡
+4. Dedup 双闸：filename 已存在 + reportItemHash 已存在（跨周报合并）
+5. Frontmatter 含 `source: routine-ai-visibility` + `sourceMeta.reportPath` + `sourceMeta.reportSection #N` + `sourceMeta.reportItemHash`
+6. 优先级映射：第 1 条 P0，2-3 条 P1，其余 P2
+7. Module 推断：含 GSC/索引 → seo-404-fix；含 meta/CWV → seo-meta-fix；含 csdn → geo-csdn；等
+
+### 9.3 Hash 归一化算法（v1 升级）
+
+**v0 bug**：`row.action.trim()` 精确比对，05-04 跟 05-06 文字微调（"创建/完善" vs "创建 / 完善"）就生成重复卡。10 张卡里 1 对 Course Report 是真重复。
+
+**v1 修复**：
+
+```ts
+function normalizeAction(action: string): string {
+  return action
+    .replace(/[`*_#\[\]()<>{}『』「」'"""''.,，。;；:：!！?？、\s ]/g, '')
+    .replace(/[—\-\/\\|]/g, '')
+    .toLowerCase();
+}
+
+function computeReportItemHash(row: ActionRow): string {
+  return crypto
+    .createHash('sha1')
+    .update(`ai-visibility::${normalizeAction(row.action)}`)
+    .digest('hex')
+    .slice(0, 12);
+}
+```
+
+**实测**：10 张 aivis-* 卡 backfill 后，Course Report 对的 hash 一致（`66da48313345`），其他 9 张实质有别（学习路线图 05-06 加 fast.ai 渠道、Q6 优化两期排序换位）→ 不合并是正确行为。
+
+**Backfill 流程**（修算法后必跑一次）：
+1. 扫 `marketing-tasks/active/aivis-*.md`
+2. 从 frontmatter 拿 `reportPath` + `reportSection #N`
+3. 回去读源 report，按 #N 找回 `row.action` 原文
+4. 用新算法重算 hash，sed 更新文件 frontmatter
+
+### 9.4 GitHub Actions partial-success 行为（v1 升级）
+
+**v0 bug**：sync workflow 在 `errors.length > 0` 即 exit 1，导致 workflow 永远 red。但**主路径成功**（`created/updated > 0`）+ 部分卡 frontmatter 校验失败（其他 sessions 的旧卡）这种 partial success 被误报为完全 fail。
+
+**v1 修复**（`.github/workflows/sync-marketing-tasks.yml`）：
+
+```js
+const totalProcessed = (json.created ?? 0) + (json.updated ?? 0);
+const errorCount = json.errors?.length ?? 0;
+
+if (errorCount > 0) {
+  if (totalProcessed === 0) {
+    console.error(`::error::All ${errorCount} task(s) failed validation`);
+    process.exit(1);
+  } else {
+    console.warn(`::warning::Partial success: ${totalProcessed} synced, ${errorCount} failed validation`);
+  }
+}
+```
+
+**实测**：56 synced + 34 failed，workflow status `success`（之前是 `failure`）。
+
+### 9.5 第一篇端到端样本（学习路线图 5000 字 × 6 平台）
+
+**触发**：05-06 周报 `## ⚡ 推荐行动清单 #4` —— 写 1 篇"2026 AI Engineer 完整学习路线图（含澳洲求职路径）"长文。
+
+**链路实测打通**：
+
+| 节点 | 实证 |
+|---|---|
+| **任务卡生成** | `aivis-2026-05-06-04-写-1-篇2026-ai-engineer-完整学习路线图含澳洲求职路径长文50.md` |
+| **稿件成稿** | `geo-content-factory/drafts/2026-AI-Engineer-Roadmap/`（jr-blog/zhihu/csdn/juejin/medium/devto 6 文件，1.8 万字）|
+| **Gate 自检全过** | 品牌提及 ≥ 5 次 / 内链 ≥ 6 次（3 独立 URL）/ 黑名单 0 命中 / 推荐第三方全白名单 |
+| **草稿关联** | 任务卡 `## 草稿` 段填了 6 文件路径表 + commit hash |
+| **状态流转** | `status: draft → review` / `platforms` 填 6 个 enum slug / `wordCount: 18000` / `actualHours: 4` |
+| **prod 实测** | `curl /marketing-tasks?source=routine-ai-visibility&status=review` 返回该卡，所有字段写入正确 |
+
+**已发现的 platform slug 陷阱**：后端 enum 是 `jiangren-blog / zhihu-column / dev-to`，不是直觉的 `jr-blog / zhihu / devto`。to-tasks 脚本生成时 `platforms: []` 是空的，员工人工填要查 enum。已在 PRD 中标记，未来 to-tasks 脚本可加一个 `--validate` flag 防呆。
+
+### 9.6 已知尾巴（不在本 v1 范围）
+
+| # | 问题 | 修复路径 | 状态 |
+|---|---|---|---|
+| **B1** | archive/ 闭环未接通——卡片 review→done 后归档机制需要后端加 endpoint | 后端 schema 加 `archived: boolean` + sync.service 处理 archive payload | ⏳ 单独 PR |
+| **B2** | 34 张其他 sessions 的旧卡 frontmatter 不合规（platforms 用错 enum / status 字段缺失等）| 各 session owner 自己修 | ⏳ 跟本 routine 解耦 |
+| **B3** | to-tasks 脚本生成时 `platforms: []` 是空的，员工要人工填正确 enum slug | 加 `--validate` flag + 在 frontmatter 注释合法 slug 列表 | ⏳ next iteration |
+| **B4** | 学员/讲师真实署名占位"匠人学院 AI Engineer 课程教研团队"未替换 | 上线前人工换成具体讲师 + LinkedIn / GitHub | ⏳ 每篇上线时做 |
+
+### 9.7 Routine 完成度评级
+
+| Stage | v0 (2026-05-06) | v1 (2026-05-07) |
+|---|---|---|
+| 周报扫描 | ✅ 3 期产出 | ✅ |
+| 转任务卡 | ❌ 脚本写好但 0 张实跑 | ✅ 10 张卡（去重后 9 张） |
+| Push → prod sync | ❌ 第一次跑 EACCES（prod 容器无文件系统） | ✅ syncStringToMongoDB 脱钩文件系统，端到端通 |
+| 写稿件 | ❌ 0 篇 | ✅ 1 篇 × 6 平台 1.8 万字（gate 全过） |
+| 草稿关联 + 状态流转 | ❌ 没人改 | ✅ 1 张卡 draft→review prod 实测验证 |
+| 反馈环（archive 闭环） | ❌ | ⏳ 待后端改造 |
+
+**5/6 stage 完成**——archive 闭环留给下一迭代（需要后端配合）。
+
+ai-visibility 是 5 个 routine 中**第一个**走完 v1 端到端的。其他 4 个（competitor / growth-playbook / marketing-topics / SEO）的 to-tasks 脚本已写好但未实跑，可参照本 routine 的 v1 模式快速接入。
 - `https://claude.ai/code/routines` — Routine 控制台

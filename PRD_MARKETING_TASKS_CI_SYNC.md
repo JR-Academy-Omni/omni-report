@@ -394,6 +394,66 @@ if (opts?.replaceActive) {
 
 - `PRD_MARKETING_TASKS_ADMIN.md` — Marketing tasks admin 模块完整设计
 - `jr-academy/src/modules/marketing-task/services/marketing-task-sync.service.ts` — `importBatch` 当前实现
-- `jr-academy/src/modules/marketing-task/services/markdown-sync.service.ts` — `syncToMongoDB` 实现 + selfWrite 机制
+- `jr-academy/src/modules/marketing-task/services/markdown-sync.service.ts` — `syncToMongoDB` + `syncStringToMongoDB` 实现
 - jr-wiki workflow（同模式参考）
 - training-rag `.github/workflows/ingest-knowledge-prod.yml`（同模式参考）
+
+---
+
+## 8. v1 实施记录（2026-05-07）
+
+### 8.1 端到端打通
+
+3 期 ai-visibility 周报 → `scripts/ai-visibility-to-tasks.ts` → 10 张 `marketing-tasks/active/aivis-*.md` → push → workflow → prod MongoDB → admin Kanban 实测可见。详细记录见 `PRD_AI_VISIBILITY.md § 9`。
+
+### 8.2 Service 脱钩文件系统（关键修复）
+
+**问题**：第一次 sync workflow 跑 `EACCES: permission denied, mkdir '/omni-report'`——prod 容器没有 omni-report 目录，旧 importBatch 实现尝试 `fs.access` 并通过 watcher 链路 selfWrite，永远失败。
+
+**修复**（已 commit `2136ebb2` + `b8c5bf71`）：
+
+`marketing-task-sync.service.ts:importBatch` 改成完全脱离文件系统：
+- 不读 `active/` 目录（prod 容器没这个）
+- 不写文件（旧 writeFile + watcher 链路废弃）
+- 不做 snapshot（prod 没文件可备份；版本管理交给 omni-report git repo）
+- 用 `markdownSync.existsByMarkdownPath(logicalPath)` 做 Mongo-truth 判断（替代 fs.access）
+- 主路径走 `markdownSync.syncStringToMongoDB(filename, rawMarkdown)` 直接从字符串解析后写 Mongo
+
+**结果**：第二次 push 后 sync 成功，`created: 10, updated: 26`。
+
+### 8.3 Workflow partial-success 修复
+
+**问题**：sync workflow 在 `errors.length > 0` 即 exit 1，让 workflow 永远 red。但**主路径成功**（`created+updated > 0`）+ 部分卡 frontmatter 校验失败这种 partial success 被误报为完全 fail。
+
+**修复**（`.github/workflows/sync-marketing-tasks.yml`）：
+
+```js
+const totalProcessed = (json.created ?? 0) + (json.updated ?? 0);
+const errorCount = json.errors?.length ?? 0;
+
+if (errorCount > 0) {
+  if (totalProcessed === 0) {
+    console.error(`::error::All ${errorCount} task(s) failed validation`);
+    process.exit(1);
+  } else {
+    console.warn(`::warning::Partial success: ${totalProcessed} synced, ${errorCount} failed validation`);
+  }
+}
+```
+
+**实测**：56 synced + 34 failed validation，workflow status 从 `failure` → `success`。
+
+### 8.4 已发现的 schema 陷阱
+
+| 陷阱 | 后端 enum 值 | 直觉错值 |
+|---|---|---|
+| platform slug | `jiangren-blog` / `zhihu-column` / `dev-to` | `jr-blog` / `zhihu` / `devto` |
+
+`platforms` 字段用 `IsEnum(TaskPlatform, { each: true })` 校验，错值会让 `syncStringToMongoDB` 返回 null，sync 报 `errors[].error: "sync returned null (frontmatter check failed?)"`。
+
+**修复方向**：to-tasks 脚本生成时 `platforms: []` 是空的，员工人工填容易踩坑。next iteration 加 `--validate` flag + frontmatter 注释合法 slug 列表。
+
+### 8.5 已知尾巴
+
+- ❌ archive 闭环（卡片 review→done 后归档机制）—— 需要后端加 `archived` 字段 + sync 处理 archive 路径，单独 PR
+- ❌ 34 张其他 sessions 的旧卡 frontmatter 不合规—— 跟本 PRD 解耦，各 session owner 自己修
