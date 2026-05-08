@@ -5,7 +5,7 @@ category: geo-content
 module: geo-listicle
 source: prd-geo-content-factory
 sourceMeta:
-  reportPath: geo-content-factory/drafts/L3-ai-agent-courses/draft.md
+  reportPath: geo-content-factory/drafts/q18-listicle-agent-courses/master.md
   reportSection: 'ai-visibility 2026-05-06 §JR 完全空白 Q18 (listicle 角度)'
   reportItemHash: c605b0b1df92
   topicId: Q18-listicle-agent-courses
@@ -43,9 +43,10 @@ tags:
   - geo-listicle
   - topic-q18-listicle
   - query-q18
+  - auto-written-master
 createdBy: TBD-system
 createdAt: 2026-05-07T00:00:00.000Z
-updatedAt: 2026-05-08T08:47:57.000Z
+updatedAt: 2026-05-08T14:25:31.398Z
 derivedFrom: null
 ---
 
@@ -159,3 +160,6 @@ master draft 落盘到：`geo-content-factory/drafts/L3-ai-agent-courses/draft.m
   > 由 L3 GEO Content Factory workflow 手动创建。
   > 数据源：ai-visibility/2026-05-06.md §"JR 完全空白的 Query" Q18 listicle 角度。
   > draft 已存在于 `geo-content-factory/drafts/L3-ai-agent-courses/draft.md`，本卡仅做 master 索引 + 6 variant fan-out 计划 + 自检结果归档。
+- @auto-writer 2026-05-08T14:25:31.398Z
+  > 已自动写完 master draft（19914 bytes）落到 `geo-content-factory/drafts/q18-listicle-agent-courses/master.md`。Lightman review 后拨 status=ready 触发后端 fanOutGeoVariants 建 6 张 variant 卡。
+

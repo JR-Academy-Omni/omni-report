@@ -5,7 +5,7 @@ category: geo-content
 module: geo-zhihu-column
 source: prd-geo-content-factory
 sourceMeta:
-  reportPath: geo-content-factory/drafts/L4-mcp-resources/variants/zhihu-column.md
+  reportPath: geo-content-factory/drafts/L4-mcp-resources/variants/zhihu.md
   reportSection: 'ai-visibility 2026-05-06 §JR 完全空白 Q12 (listicle 角度) — variant'
   reportItemHash: geo-variant-l4-q12-zhihu
   topicId: Q12-listicle-mcp
