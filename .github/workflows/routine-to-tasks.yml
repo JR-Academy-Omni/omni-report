@@ -6,8 +6,10 @@ name: Routine → Marketing Tasks (cron)
 
 on:
   schedule:
-    # ai-visibility 周三 09:30 Brisbane (UTC+10) = UTC 周三 23:30
-    - cron: '30 23 * * 2'
+    # ⏸️ ai-visibility cron temporarily DISABLED 2026-05-08 by user
+    # （见 scripts/ai-visibility-to-tasks.ts 顶部注释 — 早退 no-op）
+    # 重启时取消下行注释 + 删脚本里的 process.exit 守卫
+    # - cron: '30 23 * * 2'   # 周三 09:30 Brisbane = UTC 周三 23:30
     # competitor 周日 21:00 Brisbane = UTC 周日 11:00
     - cron: '0 11 * * 0'
   workflow_dispatch:
@@ -49,11 +51,15 @@ jobs:
           shopt -s nocaseglob
 
           # 决定跑哪些脚本
-          if [[ "$ROUTINE" == "ai-visibility" || "$ROUTINE" == "all" ]]; then
-            echo "::group::ai-visibility-to-tasks"
-            bun run scripts/ai-visibility-to-tasks.ts || echo "::warning::ai-visibility-to-tasks failed (non-fatal)"
-            echo "::endgroup::"
+          # ⏸️ ai-visibility-to-tasks DISABLED 2026-05-08 by user — script self-exits early
+          if [[ "$ROUTINE" == "ai-visibility" ]]; then
+            echo "::warning::ai-visibility-to-tasks is DISABLED — see scripts/ai-visibility-to-tasks.ts top comment"
           fi
+          # if [[ "$ROUTINE" == "ai-visibility" || "$ROUTINE" == "all" ]]; then
+          #   echo "::group::ai-visibility-to-tasks"
+          #   bun run scripts/ai-visibility-to-tasks.ts || echo "::warning::ai-visibility-to-tasks failed (non-fatal)"
+          #   echo "::endgroup::"
+          # fi
 
           if [[ "$ROUTINE" == "competitor" || "$ROUTINE" == "all" ]]; then
             echo "::group::competitor-to-tasks"

@@ -2,6 +2,14 @@
 /**
  * AI Visibility Routine → Marketing Tasks 集成
  *
+ * 🚨 TEMPORARILY DISABLED 2026-05-08 by lightman 🚨
+ * 用户决定 AI 可见度 routine 暂时不再自动产生 marketing-tasks 卡。
+ * 原因：aivis-* 卡跟实际 marketing 团队产能不匹配，先暂停堆积。
+ * 重启方法：
+ *   1. 删除本注释 + 取消下方 process.exit 早退
+ *   2. 反注释 .github/workflows/routine-to-tasks.yml 里的 ai-visibility 块
+ *   3. 跟 growth-playbook / marketing-topics 同套路
+ *
  * 读 omni-report/ai-visibility/{date}.md 最新一份周报的 §推荐行动清单 table，
  * 把 5 条 actionable items 转成 .md 任务文件写到 marketing-tasks/active/。
  *
@@ -14,6 +22,10 @@
  * Phase 1 minimal — 仅处理 §推荐行动清单 表格。
  * Phase 2 升级：解析所有 actionable signals（Top 3 关键洞察 / 完全空白 query 等）。
  */
+
+// ⏸️  Disabled guard — early exit so the script no-ops even if invoked manually
+console.warn('[ai-visibility-to-tasks] DISABLED 2026-05-08 by user — exiting without producing cards.');
+process.exit(0);
 
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
