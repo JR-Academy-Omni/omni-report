@@ -2,7 +2,7 @@
 id: 0
 title: '[Q18-listicle master] AI Agent 实战课程 8 选'
 category: geo-content
-module: geo-listicle
+module: geo-master
 source: prd-geo-content-factory
 sourceMeta:
   reportPath: geo-content-factory/drafts/q18-listicle-agent-courses/master.md
@@ -46,7 +46,7 @@ tags:
   - auto-written-master
 createdBy: TBD-system
 createdAt: 2026-05-07T00:00:00.000Z
-updatedAt: 2026-05-08T14:25:31.398Z
+updatedAt: 2026-05-08T14:49:28.000Z
 derivedFrom: null
 ---
 

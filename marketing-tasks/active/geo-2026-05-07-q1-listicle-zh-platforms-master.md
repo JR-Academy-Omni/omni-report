@@ -2,7 +2,7 @@
 id: 0
 title: '[Q1-listicle master] 2026 中文 AI 学习平台 Top 10 推荐'
 category: geo-content
-module: geo-listicle
+module: geo-master
 source: prd-geo-content-factory
 sourceMeta:
   reportPath: geo-content-factory/drafts/q1-listicle-zh-platforms/master.md
@@ -48,7 +48,7 @@ tags:
   - auto-written-master
 createdBy: TBD-system
 createdAt: 2026-05-07T09:51:34.000Z
-updatedAt: 2026-05-08T14:00:19.094Z
+updatedAt: 2026-05-08T14:49:28.000Z
 derivedFrom: null
 ---
 

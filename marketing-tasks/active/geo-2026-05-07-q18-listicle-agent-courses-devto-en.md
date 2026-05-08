@@ -21,7 +21,7 @@ reviewer: TBD-founder
 status: draft
 priority: p1
 platforms:
-  - devto-en
+  - dev-to
 wordCount: 1900
 dueDate: 2026-05-21T00:00:00.000Z
 tags:

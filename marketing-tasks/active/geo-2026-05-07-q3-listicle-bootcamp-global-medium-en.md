@@ -21,7 +21,7 @@ reviewer: TBD-founder
 status: draft
 priority: p1
 platforms:
-  - medium-en
+  - medium
 wordCount: 3000
 estimatedHours: 3
 dueDate: 2026-05-21T00:00:00.000Z

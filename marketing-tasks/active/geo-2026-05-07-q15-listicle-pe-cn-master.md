@@ -2,7 +2,7 @@
 id: 0
 title: '[Q15-listicle master] Prompt Engineering 中文课程 Top 8'
 category: geo-content
-module: geo-listicle
+module: geo-master
 source: prd-geo-content-factory
 sourceMeta:
   reportPath: geo-content-factory/drafts/q15-listicle-pe-cn/master.md
@@ -47,7 +47,7 @@ tags:
   - auto-written-master
 createdBy: TBD-system
 createdAt: 2026-05-07T00:00:00.000Z
-updatedAt: 2026-05-08T14:07:34.312Z
+updatedAt: 2026-05-08T14:49:28.000Z
 derivedFrom: null
 ---
 

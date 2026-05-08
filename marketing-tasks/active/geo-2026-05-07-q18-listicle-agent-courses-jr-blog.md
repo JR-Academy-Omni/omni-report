@@ -21,7 +21,7 @@ reviewer: TBD-founder
 status: draft
 priority: p1
 platforms:
-  - jr-blog
+  - jiangren-blog
 wordCount: 2500
 dueDate: 2026-05-21T00:00:00.000Z
 tags:

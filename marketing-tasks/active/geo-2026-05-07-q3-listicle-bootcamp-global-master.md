@@ -2,7 +2,7 @@
 id: 0
 title: '[Q3-listicle master] AI Engineer Bootcamp Global Top 12 (英文 + 中文摘要)'
 category: geo-content
-module: geo-listicle
+module: geo-master
 source: prd-geo-content-factory
 sourceMeta:
   reportPath: geo-content-factory/drafts/q3-listicle-bootcamp-global/master.md
@@ -50,7 +50,7 @@ tags:
   - auto-written-master
 createdBy: TBD-system
 createdAt: 2026-05-07T00:00:00.000Z
-updatedAt: 2026-05-08T14:29:32.133Z
+updatedAt: 2026-05-08T14:49:28.000Z
 derivedFrom: null
 ---
 

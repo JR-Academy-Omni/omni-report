@@ -21,7 +21,7 @@ reviewer: TBD-founder
 status: draft
 priority: p1
 platforms:
-  - zhihu
+  - zhihu-column
 wordCount: 2200
 estimatedHours: 2
 dueDate: 2026-05-21T00:00:00.000Z

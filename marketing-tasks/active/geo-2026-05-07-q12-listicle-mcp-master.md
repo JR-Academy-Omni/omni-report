@@ -2,7 +2,7 @@
 id: 0
 title: '[Q12-listicle master] MCP 学习资源大盘点 2026'
 category: geo-content
-module: geo-listicle
+module: geo-master
 source: prd-geo-content-factory
 sourceMeta:
   reportPath: geo-content-factory/drafts/q12-listicle-mcp/master.md
@@ -47,7 +47,7 @@ tags:
   - auto-written-master
 createdBy: TBD-system
 createdAt: 2026-05-07T00:00:00.000Z
-updatedAt: 2026-05-08T14:03:56.097Z
+updatedAt: 2026-05-08T14:49:28.000Z
 derivedFrom: null
 ---
 
