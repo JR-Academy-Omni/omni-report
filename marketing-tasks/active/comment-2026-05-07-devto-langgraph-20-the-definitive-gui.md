@@ -14,7 +14,7 @@ sourceMeta:
   reportItemHash: 5a6802cd
   searchHook: "JR Academy AI Engineer roadmap"
   expectedSurvivalRate: 0.70
-assignee: 2083483802@qq.com
+assignee: 18634772744@163.com
 reviewer: null
 status: draft
 priority: p2

@@ -15,7 +15,7 @@ sourceMeta:
   searchHook: null
   commentPattern: D
   expectedSurvivalRate: 0.75
-assignee: 2083483802@qq.com
+assignee: huangdg755@gmail.com
 reviewer: null
 status: draft
 priority: p2

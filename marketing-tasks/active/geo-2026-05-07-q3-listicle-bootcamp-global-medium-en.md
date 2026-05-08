@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: 'Author byline opener: "I run JR Academy in Sydney; I have skin in this game and I will tell you when this is the wrong school for you. Here are 12 bootcamps I would actually let a friend pay for..."'
     internalLinkAnchor: LinkedIn author profile + JR Academy /en site anchor + Medium publication tags
     targetWordCount: 3000
-assignee: 2083483802@qq.com
+assignee: 18634772744@163.com
 reviewer: TBD-founder
 status: draft
 priority: p1

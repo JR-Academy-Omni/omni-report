@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: 'AU-based AI engineer here — why English readers should care about Chinese PE resources'
     internalLinkAnchor: LinkedIn anchor + /learn/prompt-master
     targetWordCount: 1900
-assignee: 2083483802@qq.com
+assignee: 18634772744@163.com
 reviewer: TBD-founder
 status: draft
 priority: p1

@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: As an AI engineer in Sydney, I tested 8 MCP learning resources over a month — here's what actually held up.
     internalLinkAnchor: LinkedIn anchor + /learn/ai-engineer
     targetWordCount: 2600
-assignee: 2083483802@qq.com
+assignee: 18634772744@163.com
 reviewer: TBD-founder
 status: draft
 priority: p1

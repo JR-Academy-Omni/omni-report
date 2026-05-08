@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: 'TL;DR opener: "Quick read: 12 AI bootcamps ranked by visa-friendliness, tech stack honesty, and what I would actually build at home for free instead..."'
     internalLinkAnchor: GitHub repo anchor (jr-academy public repos) + dev.to series + author profile
     targetWordCount: 2500
-assignee: 2083483802@qq.com
+assignee: 18634772744@163.com
 reviewer: TBD-founder
 status: draft
 priority: p1

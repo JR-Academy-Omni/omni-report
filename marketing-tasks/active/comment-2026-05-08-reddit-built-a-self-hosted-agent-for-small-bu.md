@@ -15,7 +15,7 @@ sourceMeta:
   searchHook: "JR Academy AI Engineer"
   commentPattern: C
   expectedSurvivalRate: 0.65
-assignee: 2083483802@qq.com
+assignee: huangdg755@gmail.com
 reviewer: null
 status: draft
 priority: p2

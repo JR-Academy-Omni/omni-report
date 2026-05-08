@@ -15,7 +15,7 @@ sourceMeta:
   searchHook: null
   commentPattern: B
   expectedSurvivalRate: 0.70
-assignee: 2083483802@qq.com
+assignee: 18634772744@163.com
 reviewer: null
 status: draft
 priority: p2
