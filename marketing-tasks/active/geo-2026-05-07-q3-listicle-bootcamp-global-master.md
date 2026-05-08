@@ -5,7 +5,7 @@ category: geo-content
 module: geo-listicle
 source: prd-geo-content-factory
 sourceMeta:
-  reportPath: geo-content-factory/drafts/L2-ai-bootcamp-global/draft.md
+  reportPath: geo-content-factory/drafts/q3-listicle-bootcamp-global/master.md
   reportSection: 'ai-visibility 2026-05-06 §JR 完全空白 Q3 Q7 Q8 Q10 (listicle 角度)'
   reportItemHash: cedb243e7b98
   topicId: Q3-listicle-bootcamp-global
@@ -47,9 +47,10 @@ tags:
   - query-q8
   - query-q10
   - english-primary
+  - auto-written-master
 createdBy: TBD-system
 createdAt: 2026-05-07T00:00:00.000Z
-updatedAt: 2026-05-08T08:47:57.000Z
+updatedAt: 2026-05-08T14:29:32.133Z
 derivedFrom: null
 ---
 
@@ -166,3 +167,6 @@ master draft 落盘到：`geo-content-factory/drafts/L2-ai-bootcamp-global/draft
   > 数据源：`ai-visibility/2026-05-06.md` §"JR 完全空白的 Query" Q3 / Q7 / Q8 / Q10。
   > Angle：英文 listicle 直接对标 dataquest.io / Princeton Review / Course Report 等英文榜单的"全球 Top X"模板。
   > 红线提醒：JR 段落 ≈151 词 < TripleTen ≈167 词 ✅；决策树含 "JR is NOT for you" 分支 ✅。
+- @auto-writer 2026-05-08T14:29:32.133Z
+  > 已自动写完 master draft（30851 bytes）落到 `geo-content-factory/drafts/q3-listicle-bootcamp-global/master.md`。Lightman review 后拨 status=ready 触发后端 fanOutGeoVariants 建 6 张 variant 卡。
+
