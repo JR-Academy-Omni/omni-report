@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: 国内开发者视角开篇（"作为 8 年开发，最近帮三个朋友看 AI bootcamp 选型，我把全球 12 家课程大纲拉出来一一比了一遍..."），重技术栈
     internalLinkAnchor: GitHub repo（jr-academy 公开仓库）+ CSDN 专栏其他文章
     targetWordCount: 2800
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: draft
 priority: p1
@@ -32,7 +32,7 @@ tags:
   - query-q3
 createdBy: TBD-system
 createdAt: 2026-05-07T00:00:00.000Z
-updatedAt: 2026-05-07T00:00:00.000Z
+updatedAt: 2026-05-08T06:59:57.000Z
 derivedFrom: prd-geo-content-factory
 ---
 

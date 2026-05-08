@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: '第一人称故事化 — "上周一个墨大学员问我学 Agent 该选哪个课…"'
     internalLinkAnchor: 创始人专栏 + 评论区互动钩子
     targetWordCount: 2300
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: draft
 priority: p1

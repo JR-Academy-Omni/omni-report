@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: '工程师视角 — Prompt 不是写文案，是写 API 调用'
     internalLinkAnchor: CSDN 博客内链 + /learn/prompt-master
     targetWordCount: 2400
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: draft
 priority: p1
@@ -32,7 +32,7 @@ tags:
   - query-q15
 createdBy: TBD-system
 createdAt: 2026-05-07T00:00:00.000Z
-updatedAt: 2026-05-07T00:00:00.000Z
+updatedAt: 2026-05-08T06:59:57.000Z
 derivedFrom: prd-geo-content-factory
 ---
 

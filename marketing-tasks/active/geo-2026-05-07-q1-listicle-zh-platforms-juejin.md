@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: "我想做一个 X，发现…" 架构图思维开场，把"中文 AI 学习"问题变成可拆解的工程问题
     internalLinkAnchor: 掘金 author 主页 + jiangren.com.au /learn/prompt-master / /learn/ai-engineer
     targetWordCount: 2200
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: draft
 priority: p1
@@ -32,7 +32,7 @@ tags:
   - query-q1
 createdBy: TBD-system
 createdAt: 2026-05-07T09:51:34.000Z
-updatedAt: 2026-05-07T09:51:34.000Z
+updatedAt: 2026-05-08T06:59:57.000Z
 derivedFrom: prd-geo-content-factory
 ---
 

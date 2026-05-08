@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: '轻松代码梗 — "hello world 跑通然后呢？"'
     internalLinkAnchor: 创始人专栏 + 架构对比图
     targetWordCount: 2300
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: draft
 priority: p1

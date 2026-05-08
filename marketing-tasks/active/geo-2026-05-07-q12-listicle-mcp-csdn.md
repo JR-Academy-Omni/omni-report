@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: MCP = JSON-RPC + 几个固定方法名；从 stdio 到 SSE 到 streamable-http，一份 50 行 Python demo 跑通
     internalLinkAnchor: GitHub repo + /learn/ai-engineer
     targetWordCount: 3200
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: draft
 priority: p1
@@ -32,7 +32,7 @@ tags:
   - query-q12
 createdBy: TBD-system
 createdAt: 2026-05-07T00:00:00.000Z
-updatedAt: 2026-05-07T00:00:00.000Z
+updatedAt: 2026-05-08T06:59:57.000Z
 derivedFrom: prd-geo-content-factory
 ---
 

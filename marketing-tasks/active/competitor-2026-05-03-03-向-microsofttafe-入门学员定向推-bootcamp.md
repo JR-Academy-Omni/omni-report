@@ -8,7 +8,7 @@ sourceMeta:
   reportPath: competitor-reports/2026-05-03.md
   reportSection: 对 JR Academy 的建议 #3
   reportItemHash: df74d0c5e21c
-assignee: TBD-mkt-content
+assignee: 18634772744@163.com
 reviewer: null
 status: draft
 priority: p2
@@ -22,7 +22,7 @@ tags:
   - competitor-weekly
 createdBy: TBD-system
 createdAt: 2026-05-07T12:13:20.154Z
-updatedAt: 2026-05-07T12:13:20.154Z
+updatedAt: 2026-05-08T06:59:57.000Z
 derivedFrom: null
 ---
 ## 描述

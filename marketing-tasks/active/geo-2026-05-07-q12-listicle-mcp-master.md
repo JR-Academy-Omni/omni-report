@@ -29,7 +29,7 @@ sourceMeta:
     - devto-en
   variantsCount: 6
   variantsCardIds: []
-assignee: TBD-mkt-content
+assignee: 18634772744@163.com
 reviewer: TBD-founder
 status: draft
 priority: p0
@@ -46,7 +46,7 @@ tags:
   - query-q12
 createdBy: TBD-system
 createdAt: 2026-05-07T00:00:00.000Z
-updatedAt: 2026-05-07T00:00:00.000Z
+updatedAt: 2026-05-08T06:59:57.000Z
 derivedFrom: null
 ---
 

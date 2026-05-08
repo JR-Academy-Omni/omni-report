@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: TLDR 列表式开场，把核心结论压成 5 条 bullet 放在第一段
     internalLinkAnchor: GitHub repo 指向 + jiangren.com.au English landing
     targetWordCount: 2200
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: draft
 priority: p1
@@ -32,7 +32,7 @@ tags:
   - query-q1
 createdBy: TBD-system
 createdAt: 2026-05-07T09:51:34.000Z
-updatedAt: 2026-05-07T09:51:34.000Z
+updatedAt: 2026-05-08T06:59:57.000Z
 derivedFrom: prd-geo-content-factory
 ---
 

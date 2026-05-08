@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: 'TLDR + bullet list, personal review tone'
     internalLinkAnchor: GitHub anchor + JR Academy English landing
     targetWordCount: 1900
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: draft
 priority: p1

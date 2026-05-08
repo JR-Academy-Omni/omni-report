@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: 上周末跟着官方文档写第一个 MCP server，踩了 5 个坑；回头把市面 8 个入口对照刷一遍
     internalLinkAnchor: 创始人专栏 + /learn/ai-engineer
     targetWordCount: 2900
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: draft
 priority: p1
@@ -32,7 +32,7 @@ tags:
   - query-q12
 createdBy: TBD-system
 createdAt: 2026-05-07T00:00:00.000Z
-updatedAt: 2026-05-07T00:00:00.000Z
+updatedAt: 2026-05-08T06:59:57.000Z
 derivedFrom: prd-geo-content-factory
 ---
 

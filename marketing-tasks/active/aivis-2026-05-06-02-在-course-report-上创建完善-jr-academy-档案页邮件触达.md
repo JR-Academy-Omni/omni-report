@@ -8,7 +8,7 @@ sourceMeta:
   reportPath: ai-visibility/2026-05-06.md
   reportSection: 推荐行动清单 #2
   reportItemHash: 66da48313345
-assignee: TBD-mkt-content
+assignee: 1134583264@qq.com
 reviewer: null
 status: draft
 priority: p1
@@ -26,7 +26,7 @@ tags:
   - Q10
 createdBy: TBD-system
 createdAt: 2026-05-07T10:59:58.633Z
-updatedAt: 2026-05-07T10:59:58.633Z
+updatedAt: 2026-05-08T07:01:31.000Z
 derivedFrom: null
 ---
 ## 描述

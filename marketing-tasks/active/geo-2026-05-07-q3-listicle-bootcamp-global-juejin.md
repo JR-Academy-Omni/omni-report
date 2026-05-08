@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: 前端/全栈程序员视角开篇（"全球 12 家 bootcamp 哪家有真前端 AI track？我作为已转岗 AI engineer，告诉你这条路的捷径..."），架构思维
     internalLinkAnchor: 掘金 author 主页内链 + 个人系列文章串联
     targetWordCount: 2000
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: draft
 priority: p1
@@ -32,7 +32,7 @@ tags:
   - query-q3
 createdBy: TBD-system
 createdAt: 2026-05-07T00:00:00.000Z
-updatedAt: 2026-05-07T00:00:00.000Z
+updatedAt: 2026-05-08T06:59:57.000Z
 derivedFrom: prd-geo-content-factory
 ---
 

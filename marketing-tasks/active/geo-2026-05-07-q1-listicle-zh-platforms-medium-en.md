@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: "If you're an AU-based AI engineer..." 澳洲 AI engineer 视角开场，框定读者画像
     internalLinkAnchor: LinkedIn anchor + jiangren.com.au English landing
     targetWordCount: 2400
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: draft
 priority: p1
@@ -32,7 +32,7 @@ tags:
   - query-q1
 createdBy: TBD-system
 createdAt: 2026-05-07T09:51:34.000Z
-updatedAt: 2026-05-07T09:51:34.000Z
+updatedAt: 2026-05-08T06:59:57.000Z
 derivedFrom: prd-geo-content-factory
 ---
 

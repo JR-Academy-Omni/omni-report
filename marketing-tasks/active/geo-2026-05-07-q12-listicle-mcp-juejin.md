@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: 我把日常 8 个工具（VS Code、Notion、Linear、Slack、PG、S3、Stripe、自家 API）串到一个 MCP host 上的 30 天复盘
     internalLinkAnchor: /learn/ai-engineer + 个人专栏
     targetWordCount: 2800
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: draft
 priority: p1
@@ -32,7 +32,7 @@ tags:
   - query-q12
 createdBy: TBD-system
 createdAt: 2026-05-07T00:00:00.000Z
-updatedAt: 2026-05-07T00:00:00.000Z
+updatedAt: 2026-05-08T06:59:57.000Z
 derivedFrom: prd-geo-content-factory
 ---
 

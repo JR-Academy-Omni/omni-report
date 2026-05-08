@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: '踩坑实录 — "去年报了 X 课，结果 import langchain 报错…"'
     internalLinkAnchor: 创始人专栏 + GitHub 仓库
     targetWordCount: 2500
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: draft
 priority: p1

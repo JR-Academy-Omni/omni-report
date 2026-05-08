@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: 直接抛技术读者关心的问题（"工程师转 AI 选哪个平台不踩坑"），第一段给具体配置/命令路径
     internalLinkAnchor: 结尾 GitHub repo 链接 + 跳 jiangren.com.au /learn/ai-engineer
     targetWordCount: 2500
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: draft
 priority: p1
@@ -32,7 +32,7 @@ tags:
   - query-q1
 createdBy: TBD-system
 createdAt: 2026-05-07T09:51:34.000Z
-updatedAt: 2026-05-07T09:51:34.000Z
+updatedAt: 2026-05-08T06:59:57.000Z
 derivedFrom: prd-geo-content-factory
 ---
 

@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: 第一人称故事开场（"上周一个学员问我…"），把反转钩子前置到第一段
     internalLinkAnchor: 知乎专栏内链跳到 jiangren.com.au 主站对应 /learn 页
     targetWordCount: 2200
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: draft
 priority: p1
@@ -32,7 +32,7 @@ tags:
   - query-q1
 createdBy: TBD-system
 createdAt: 2026-05-07T09:51:34.000Z
-updatedAt: 2026-05-07T09:51:34.000Z
+updatedAt: 2026-05-08T06:59:57.000Z
 derivedFrom: prd-geo-content-factory
 ---
 

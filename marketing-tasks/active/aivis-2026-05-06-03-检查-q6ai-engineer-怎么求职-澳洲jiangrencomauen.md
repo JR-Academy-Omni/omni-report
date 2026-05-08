@@ -8,7 +8,7 @@ sourceMeta:
   reportPath: ai-visibility/2026-05-06.md
   reportSection: 推荐行动清单 #3
   reportItemHash: 9820502e005a
-assignee: TBD-mkt-content
+assignee: 18634772744@163.com
 reviewer: null
 status: draft
 priority: p1
@@ -23,7 +23,7 @@ tags:
   - Q6
 createdBy: TBD-system
 createdAt: 2026-05-07T10:59:58.633Z
-updatedAt: 2026-05-07T10:59:58.633Z
+updatedAt: 2026-05-08T07:01:31.000Z
 derivedFrom: null
 ---
 ## 描述

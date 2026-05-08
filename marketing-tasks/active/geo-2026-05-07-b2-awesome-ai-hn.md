@@ -9,11 +9,11 @@ sourceMeta:
   topicId: B2
   reportItemHash: awesome-ai-hn-2026-05-07
   variantStrategy:
-    titleHook: After 9 years, 80% was dead（事实陈述钩子）
-    targetWordCount: 200（标题 + URL + 评论区运营）
-    backlinks: 1 处（jr-blog）
-    submissionAngles: 3 个 angle 任选
-    riskLevel: 高（HN 封号难恢复）
+    titleHook: 'After 9 years, 80% was dead（事实陈述钩子）'
+    targetWordCount: '200（标题 + URL + 评论区运营）'
+    backlinks: '1 处（jr-blog）'
+    submissionAngles: '3 个 angle 任选'
+    riskLevel: '高（HN 封号难恢复）'
 assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: blocked

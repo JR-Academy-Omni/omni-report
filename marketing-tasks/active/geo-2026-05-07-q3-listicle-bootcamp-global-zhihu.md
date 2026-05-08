@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: 第一人称故事化（"我是澳洲 AI 工程师，写这篇是因为留学生群里被问烦了，上周一个墨大学生又问我..."），去营销腔
     internalLinkAnchor: 知乎创始人专栏 + JR 专栏文章互链（不直接放外链 URL）
     targetWordCount: 2500
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: draft
 priority: p1
@@ -32,7 +32,7 @@ tags:
   - query-q3
 createdBy: TBD-system
 createdAt: 2026-05-07T00:00:00.000Z
-updatedAt: 2026-05-07T00:00:00.000Z
+updatedAt: 2026-05-08T06:59:57.000Z
 derivedFrom: prd-geo-content-factory
 ---
 

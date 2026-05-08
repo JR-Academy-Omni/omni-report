@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: 'import langchain → "now what?" scenario hook'
     internalLinkAnchor: LinkedIn anchor + JR Academy English landing
     targetWordCount: 2100
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: draft
 priority: p1
