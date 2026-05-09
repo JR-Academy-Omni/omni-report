@@ -83,6 +83,106 @@ const PLATFORMS: PlatformVariant[] = [
 	{ name: 'devto', enumSlug: 'dev-to', tone: 'short reference 简洁代码块为主（1800 英文字）', wordCount: '1800', language: 'en' }
 ];
 
+// ───── 平台 frontmatter / 发布前 checklist 注释自动 prepend ─────
+
+/**
+ * 给每个 variant draft 顶部 prepend 平台特定 frontmatter / HTML 注释
+ * 让员工 copy-paste 到平台编辑器后不用再手填 tag / 分类 / 封面信息。
+ *
+ * 两类处理：
+ * - jr-blog / medium / dev.to：YAML frontmatter（Next.js / Medium publication / dev.to 直接读）
+ * - csdn / juejin / zhihu / weixin：HTML 注释（网页编辑器，员工照着填）
+ */
+function buildPlatformHeader(task: TaskCard, platform: PlatformVariant): string {
+	const today = new Date().toISOString().split('T')[0];
+	const titleSafe = task.title.replace(/['"]/g, '');
+
+	switch (platform.name) {
+		case 'jr-blog':
+			// jr-academy-web-zh markdown frontmatter（Next.js BlogPage）
+			return `---
+slug: 'TODO-kebab-case-slug'
+title: '${titleSafe.slice(0, 60)}'
+type: 'career'
+publishedDate: '${today}'
+description: 'TODO 40-90 字独立写，不要复制正文开头'
+keywords: ['AI Engineer', '澳洲求职', '转行', 'Bootcamp']
+author: 'JR Academy'
+thumbnail: '/image/post/TODO-cover.png'
+thumbnailAlt: 'TODO 具体描述能被盲人读出来'
+tags: ['ai-engineer', 'career-change', 'australia']
+---
+
+`;
+
+		case 'medium':
+			return `<!--
+Medium 发布前手填：
+  - Subtitle (~100 chars): TODO
+  - Tags (max 5): ai-engineering, llm, career-change, australia, bootcamp
+  - Canonical URL: https://jiangren.com.au/blog/TODO-slug (canonical 指向 jr-blog)
+  - Publication: TODO（如果有 Medium publication 关联）
+  - Cover image: 1500x600 px, hero image
+-->
+
+`;
+
+		case 'devto':
+			return `---
+title: "${titleSafe.slice(0, 60)}"
+published: false
+description: "TODO 一句话 60-160 chars 给 dev.to feed 摘要"
+tags: aiengineering, llm, career, australia
+canonical_url: https://jiangren.com.au/blog/TODO-slug
+cover_image: TODO-uploaded-cover-url
+series: AI Engineer Career Change Australia
+---
+
+`;
+
+		case 'zhihu':
+			return `<!--
+知乎专栏发布前手填：
+  - 专栏归属：澳洲匠人学院 / AI 工程师转行 / 海外求职
+  - 话题（5 个）：人工智能 / AI Engineer / 转行 / 程序员 / 澳大利亚
+  - 封面图：横版 2:1（800x400 推荐）— 走 xhs-poster 跑 gpt-image-2 出
+  - 知乎 markdown 限制：不支持 footnote、嵌套 list 部分平台抽风、图片得在编辑器内传不能直链
+  - 发布前先用「保存为草稿」预览一遍格式
+-->
+
+`;
+
+		case 'csdn':
+			return `<!--
+CSDN 发布前手填：
+  - 标签（5 个上限）：AI Engineer / LLM / RAG / Python / 求职
+  - 分类专栏：AI 工程师 / 转行经验
+  - 原创/转载：原创
+  - 封面图：上传后填（5MB 内 jpg/png）
+  - 文章类型：原创
+  - 公开范围：全部可见
+-->
+
+`;
+
+		case 'juejin':
+			return `<!--
+掘金发布前手填：
+  - 分类：AI（一级）/ 后端 或 架构（二级）
+  - 标签（最多 5 个）：LLM / RAG / Python / 教程 / AI 工程
+  - 封面图：上传后填（5MB 内 jpg/png）
+  - 文章类型：原创
+  - 文章简介：TODO 60 字
+  - Mermaid 图表自动渲染 ✓ 不用手画
+-->
+
+`;
+
+		default:
+			return '';
+	}
+}
+
 // ───── Brand attribution rules（嵌入 prompt） ─────
 
 const SYSTEM_PROMPT = `你是匠人学院（JR Academy）AI Engineer 课程教研团队的资深技术写作者。
@@ -186,9 +286,10 @@ async function runRoutineFlow(task: TaskCard): Promise<void> {
 		console.log(`\n→ Writing ${platform.name} (${platform.tone})...`);
 		const content = await writeVariant(task, platform);
 		const fname = platform.name === 'jr-blog' ? 'draft.md' : `${platform.name}.md`;
-		await fs.writeFile(path.join(draftDir, fname), content, 'utf-8');
-		variants[platform.name] = content;
-		console.log(`  ✓ Wrote ${fname} (${content.length} chars)`);
+		const finalContent = buildPlatformHeader(task, platform) + content;
+		await fs.writeFile(path.join(draftDir, fname), finalContent, 'utf-8');
+		variants[platform.name] = content; // gate 检查仍走纯正文，不含 frontmatter
+		console.log(`  ✓ Wrote ${fname} (${finalContent.length} chars, +${finalContent.length - content.length} platform header)`);
 	}
 
 	const gateResult = runGate(variants);
@@ -267,8 +368,9 @@ async function runVariantFlow(task: TaskCard, type: CardType): Promise<void> {
 	const content = await writeVariantFromMaster(task, platform, masterContent);
 	const fname = platform.name === 'jr-blog' ? 'draft.md' : `${platform.name}.md`;
 	const variantPath = path.join(DRAFTS_DIR, topicSlug, fname);
-	await fs.writeFile(variantPath, content, 'utf-8');
-	console.log(`  ✓ Wrote ${fname} (${content.length} chars) → ${path.relative(ROOT, variantPath)}`);
+	const finalContent = buildPlatformHeader(task, platform) + content;
+	await fs.writeFile(variantPath, finalContent, 'utf-8');
+	console.log(`  ✓ Wrote ${fname} (${finalContent.length} chars, +${finalContent.length - content.length} platform header) → ${path.relative(ROOT, variantPath)}`);
 
 	const gate = runGate({ [platform.name]: content })[platform.name];
 	console.log(`\n🚪 Variant gate (${platform.name}):`);
