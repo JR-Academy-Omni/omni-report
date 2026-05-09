@@ -8,7 +8,7 @@ sourceMeta:
   reportPath: xhs-content-factory/drafts/2026-05-05/001-rain-jie/
   reportSection: xhs-content-factory pipeline
   reportItemHash: xhs-content-factory-2026-05-05-001-rain-jie
-  draftPath: omni-report/xhs-content-factory/drafts/2026-05-05/001-rain-jie/
+  draftPath: xhs-content-factory/drafts/2026-05-05/001-rain-jie/
   topicId: '001'
   topicSlug: ai-qiuzhi-5-cuo
   scoreFile: 05-score.md

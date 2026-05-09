@@ -712,6 +712,18 @@ done → in_progress                 ❌ 已发布不可回退
 
 非法流转抛 `BadRequestException`。
 
+### 4.5 🚨 占位卡禁入派活池
+
+Phase 0 / 演示 / 模板卡只能停在 `draft`，**禁止进 `ready` 派给真人**。判定规则（任意一条命中即算占位卡）：
+
+- `title` 含「示例」「example」「模板」「template」「占位」「placeholder」「demo」（大小写不敏感）
+- `markdownPath` 指向 `marketing-tasks/active/example-task.md` 或文件名形如 `example-*.md` / `template-*.md`
+- `description` 起始为「待 Claude 起草」「TODO」「占位」且 checklist 全空且 `draftPath` 文件不存在
+
+`MarketingTaskService.transition(draft → ready)` 命中规则时抛 `BadRequestException('placeholder card cannot be assigned: <reason>')`。Source PRD/导入侧也要在写入时校验，不要让占位卡进 DB。
+
+历史残留卡（如 `69fc129ff4b41f060eee0b91` "示例任务：Cursor + Claude Code 双工作流"）直接 `DELETE /admin-cms/marketing-tasks/:id`，不要走归档（归档不可恢复，会污染未来数据看板）。
+
 ---
 
 ## 5. Admin UI 设计
