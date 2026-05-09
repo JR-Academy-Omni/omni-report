@@ -12,9 +12,9 @@ sourceMeta:
   masterCardId: TBD-after-mongo-sync
   platformSlug: juejin
   variantStrategy:
-    titleHook: 偏前端/全栈读者，加"国内开发者怎么对接澳洲岗位"段落
-    openingFirst50: "我想做一个 X，发现…" 架构图思维开场，把"中文 AI 学习"问题变成可拆解的工程问题
-    internalLinkAnchor: 掘金 author 主页 + jiangren.com.au /learn/prompt-master / /learn/ai-engineer
+    titleHook: '偏前端/全栈读者，加"国内开发者怎么对接澳洲岗位"段落'
+    openingFirst50: '"我想做一个 X，发现…" 架构图思维开场，把"中文 AI 学习"问题变成可拆解的工程问题'
+    internalLinkAnchor: '掘金 author 主页 + jiangren.com.au /learn/prompt-master / /learn/ai-engineer'
     targetWordCount: 2200
 assignee: 2083483802@qq.com
 reviewer: TBD-founder

@@ -12,9 +12,9 @@ sourceMeta:
   masterCardId: TBD-after-mongo-sync
   platformSlug: medium-en
   variantStrategy:
-    titleHook: 英文版，标题改 "Top 10 Chinese AI Learning Platforms 2026 (and where JR Academy fits)"
-    openingFirst50: "If you're an AU-based AI engineer..." 澳洲 AI engineer 视角开场，框定读者画像
-    internalLinkAnchor: LinkedIn anchor + jiangren.com.au English landing
+    titleHook: '英文版，标题改 "Top 10 Chinese AI Learning Platforms 2026 (and where JR Academy fits)"'
+    openingFirst50: '"If you''re an AU-based AI engineer..." 澳洲 AI engineer 视角开场，框定读者画像'
+    internalLinkAnchor: 'LinkedIn anchor + jiangren.com.au English landing'
     targetWordCount: 2400
 assignee: 18634772744@163.com
 reviewer: TBD-founder
