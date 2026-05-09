@@ -5,13 +5,15 @@ name: Routine → Marketing Tasks (cron)
 # 卡产生后 sync-marketing-tasks.yml 监听 active/**/*.md push 自动同步到 prod Mongo。
 
 on:
-  schedule:
-    # ⏸️ ai-visibility cron temporarily DISABLED 2026-05-08 by user
-    # （见 scripts/ai-visibility-to-tasks.ts 顶部注释 — 早退 no-op）
-    # 重启时取消下行注释 + 删脚本里的 process.exit 守卫
-    # - cron: '30 23 * * 2'   # 周三 09:30 Brisbane = UTC 周三 23:30
-    # competitor 周日 21:00 Brisbane = UTC 周日 11:00
-    - cron: '0 11 * * 0'
+  # ⏸️ 全部 routine-to-tasks cron 已 DISABLED 2026-05-09 by user
+  # 当前 active/ 战略聚焦 GEO + 小红书 两条流水线，其他 routine（ai-visibility /
+  # competitor / marketing-topics / growth-playbook）一律不自动产任务卡。
+  # 周报本身按各自 routine 跑，但不再转任务进 active/。
+  # 重启某条：反注释下方对应 cron 行 + 删 scripts/<name>-to-tasks.ts 里的 process.exit 守卫。
+  schedule: []
+  # 历史 cron（暂停，留作记录）：
+  #   - cron: '30 23 * * 2'   # ai-visibility 周三 09:30 Brisbane (DISABLED 2026-05-08)
+  #   - cron: '0 11 * * 0'    # competitor 周日 21:00 Brisbane (DISABLED 2026-05-09)
   workflow_dispatch:
     inputs:
       routine:
@@ -61,15 +63,20 @@ jobs:
           #   echo "::endgroup::"
           # fi
 
-          if [[ "$ROUTINE" == "competitor" || "$ROUTINE" == "all" ]]; then
-            echo "::group::competitor-to-tasks"
-            bun run scripts/competitor-to-tasks.ts || echo "::warning::competitor-to-tasks failed (non-fatal)"
-            echo "::endgroup::"
+          # ⏸️ competitor-to-tasks DISABLED 2026-05-09 by user — script self-exits early
+          if [[ "$ROUTINE" == "competitor" ]]; then
+            echo "::warning::competitor-to-tasks is DISABLED — see scripts/competitor-to-tasks.ts top comment"
           fi
+          # if [[ "$ROUTINE" == "competitor" || "$ROUTINE" == "all" ]]; then
+          #   echo "::group::competitor-to-tasks"
+          #   bun run scripts/competitor-to-tasks.ts || echo "::warning::competitor-to-tasks failed (non-fatal)"
+          #   echo "::endgroup::"
+          # fi
 
-          # growth-playbook 和 marketing-topics 已被用户主动 disabled
-          # （见 scripts/growth-playbook-to-tasks.ts + marketing-topics-to-tasks.ts 顶部注释）
-          # 不在 cron 自动化范围内 — 报告本身仍按其它 routine 产出。
+          # 全部 4 条 routine（ai-visibility / competitor / marketing-topics / growth-playbook）
+          # 已被用户 disabled — 见各自 scripts/<name>-to-tasks.ts 顶部注释。
+          # 当前阶段 marketing-tasks active/ 仅接收 GEO + 小红书 两条流水线产出。
+          echo "::notice::All routine-to-tasks scripts disabled. active/ only accepts geo-* and xhs-* cards now."
 
       - name: Commit + push if changed
         run: |

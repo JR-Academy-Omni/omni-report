@@ -8,7 +8,21 @@
  * 用法：
  *   bun run scripts/competitor-to-tasks.ts
  *   bun run scripts/competitor-to-tasks.ts competitor-reports/2026-05-03.md
+ *
+ * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ * ⛔ 已禁用（2026-05-09 by user request）
+ *
+ * 当前阶段 marketing-tasks active/ 战略聚焦 GEO + 小红书 两条流水线，
+ * 其他渠道（含 competitor 行动卡）一律不自动产任务卡。
+ * 周报本身仍按 cron 跑（competitor-reports/{date}.md 仍产出），但不再转任务卡。
+ *
+ * 同步关闭：.github/workflows/routine-to-tasks.yml 里的 competitor cron（注释掉）。
+ * 重新启用：删 process.exit(0) + 反注释 routine-to-tasks.yml competitor 段 + cron。
+ * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  */
+
+console.error('[disabled] competitor-to-tasks 已禁用 — 见文件顶部注释');
+process.exit(0);
 
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
