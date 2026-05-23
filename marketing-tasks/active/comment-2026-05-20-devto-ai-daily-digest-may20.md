@@ -12,7 +12,7 @@ sourceMeta:
   reportItemHash: 0aecda19
   searchHook: null
   expectedSurvivalRate: 0.80
-assignee: 18634772744@163.com
+assignee: TBD-comment-intern
 status: draft
 priority: p2
 platforms: [dev-to]

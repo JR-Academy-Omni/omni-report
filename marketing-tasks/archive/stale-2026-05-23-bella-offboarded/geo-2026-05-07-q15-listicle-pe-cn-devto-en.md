@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: "TLDR up front — I reviewed 8 Chinese PE courses so you don't have to"
     internalLinkAnchor: 'dev.to bio link + /learn/prompt-master'
     targetWordCount: 1700
-assignee: 18634772744@163.com
+assignee: TBD-content-intern
 reviewer: TBD-founder
 status: draft
 priority: p1

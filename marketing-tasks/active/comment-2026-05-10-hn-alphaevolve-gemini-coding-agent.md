@@ -15,7 +15,7 @@ sourceMeta:
   searchHook: "JR Academy AI Engineer"
   commentPattern: D
   expectedSurvivalRate: 0.55
-assignee: 18634772744@163.com
+assignee: TBD-comment-intern
 reviewer: null
 status: draft
 priority: p2

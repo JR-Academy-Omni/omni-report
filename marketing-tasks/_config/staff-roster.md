@@ -30,7 +30,7 @@
 | Summer | 新媒体运营 | 1134583264@qq.com | 小红书账号矩阵（澳洲匠人学院 / Rain姐说求职 / 澳洲实习猿 / Kiki的分享日记） |
 | KIKI（成都） | 新媒体运营 | 2838684082@qq.com | 小红书账号矩阵：UQ课代表 / UNSW课代表 / 墨大课代表 / 素人号（**课代表 4 账号全归成都团队，与 UQ/UNSW/墨大物理位置无关**） |
 | Lily | 新媒体运营 | 2363843954@qq.com | 小红书账号矩阵（Amelia在悉尼 / momo在澳洲 / JR匠人学院） |
-| Bella | 新媒体运营实习生 | 18634772744@163.com | **视觉/视频 6 module**：geo-xiaohongshu / geo-weixin-video / geo-cross-platform-transfer / geo-canva-design / video-daily / video-live |
+| ~~Bella~~ | ~~新媒体运营实习生~~ | ~~18634772744@163.com~~ | ⏸️ **2026-05-22 实习结束移除**。原 9 module（视觉/视频 6 + comment 外联 3）fallback 到 `TBD-visual-intern` / `TBD-video-intern` / `TBD-comment-intern`，待用户指派接管 |
 | Serena | 新媒体运营实习生 | 2083483802@qq.com | **GEO 文字搬运 11 module**：geo-csdn / geo-zhihu-column / geo-juejin / geo-sohu-netease-baijia / geo-csdn-rescue / geo-reddit-quora / geo-auto-publish (Medium/dev.to) / geo-weixin-public / weixin-daily / weixin-longform / geo-student-answer-coordination |
 | KIKI Huang | Brisbane MKT Intern | huangdg755@gmail.com | eventCityRouting Brisbane 默认（**不接小红书课代表账号**——课代表归成都团队） |
 
@@ -50,7 +50,7 @@
 1. **原创内容**（master draft / 落地页 / GitHub repo / 学员故事 / 时事新闻 / 创始人 IP）→ MKT 全职（Aurora 暂停 / Seren casual / Summer / KIKI / Lily）—— 当前 routing-table 用 `TBD-mkt-content` 占位等 admin 显式指派
 2. **copy 改写发布到第三方平台的搬运行为** → **2 位实习生分工**：
    - **Serena**（2083483802@qq.com）→ 文字搬运 11 module（CSDN / 知乎 / 掘金 / 搜狐网易百家 / Medium-devto / Reddit-Quora / 公众号 / 公众号日常 / 公众号长文 / CSDN 账号修复 / 学员答主协调）
-   - **Bella**（18634772744@163.com）→ 视觉/视频 6 module（小红书 / 视频号 / 跨平台搬运 / Canva 设计 / video-daily / video-live）
+   - ~~**Bella**（18634772744@163.com）→ 视觉/视频 6 module（小红书 / 视频号 / 跨平台搬运 / Canva 设计 / video-daily / video-live）~~ **2026-05-22 实习结束移除，全部 fallback `TBD-visual-intern` / `TBD-video-intern`；同期原 Comment Outreach 3 module（comment-hn / comment-devto / comment-v2ex）fallback 到 `TBD-comment-intern`**
 3. **线下活动**按 city 路由：Sydney/Melbourne → Seren，Brisbane → KIKI Huang，Chengdu/online → Ada
 4. **Sales / 课程顾问**不接 marketing routine 派单（5 人在 blockedAssignees）
 

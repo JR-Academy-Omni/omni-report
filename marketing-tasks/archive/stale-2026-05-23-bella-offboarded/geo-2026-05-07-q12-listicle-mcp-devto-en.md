@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: 'TLDR: MCP = USB-C for AI tools. Here are 5 servers I actually use weekly + 3 resources worth your time.'
     internalLinkAnchor: GitHub anchor + /learn/ai-engineer
     targetWordCount: 2700
-assignee: 18634772744@163.com
+assignee: TBD-content-intern
 reviewer: TBD-founder
 status: draft
 priority: p1

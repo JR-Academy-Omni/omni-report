@@ -14,7 +14,7 @@ sourceMeta:
   reportItemHash: b604e221
   searchHook: null
   expectedSurvivalRate: 0.75
-assignee: 18634772744@163.com
+assignee: TBD-comment-intern
 status: draft
 priority: p2
 platforms: [hacker-news]

@@ -14,7 +14,7 @@ sourceMeta:
     backlinks: '1 处（jr-blog）'
     submissionAngles: '3 个 angle 任选'
     riskLevel: '高（HN 封号难恢复）'
-assignee: 18634772744@163.com
+assignee: TBD-content-intern
 reviewer: TBD-founder
 status: blocked
 priority: p2

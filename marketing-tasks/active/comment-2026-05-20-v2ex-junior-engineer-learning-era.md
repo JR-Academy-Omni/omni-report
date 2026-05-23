@@ -12,7 +12,7 @@ sourceMeta:
   reportItemHash: 8832a910
   searchHook: "匠人学院 AI Engineer 训练营"
   expectedSurvivalRate: 0.70
-assignee: 18634772744@163.com
+assignee: TBD-comment-intern
 status: draft
 priority: p2
 platforms: [v2ex]

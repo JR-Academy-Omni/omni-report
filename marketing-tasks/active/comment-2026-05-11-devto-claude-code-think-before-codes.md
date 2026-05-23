@@ -15,7 +15,7 @@ sourceMeta:
   searchHook: "JR Academy Vibe Coding"
   commentPattern: C
   expectedSurvivalRate: 0.72
-assignee: 18634772744@163.com
+assignee: TBD-comment-intern
 reviewer: null
 status: draft
 priority: p2

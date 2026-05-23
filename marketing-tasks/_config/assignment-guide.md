@@ -27,12 +27,12 @@
 
 ## ✅ 接 marketing 派单的 6 人
 
-### 实习生（20/34 张 = 59% 工作量）
+### 实习生（当前 2 位，原 3 位 Bella 2026-05-22 离职）
 
 | 中文名 | Email | 主要负责 |
 |---|---|---|
-| **Bella** 新媒体运营实习生 | `18634772744@163.com` | **GEO master / 落地页**（JR 自家网站长文）+ 视觉/视频/Canva/小红书重写/视频脚本 |
-| **Serena** 新媒体运营实习生 | `2083483802@qq.com` | **第三方平台搬运**（CSDN / 知乎 / 掘金 / Dev.to / Medium / 公众号 / Reddit-Quora / 搜狐网易百家 / 学员答主协调）|
+| ~~**Bella** 新媒体运营实习生~~ | ~~`18634772744@163.com`~~ | ⏸️ **2026-05-22 实习结束移除**。原 GEO master / 落地页 + 视觉/视频/Canva/小红书重写/视频脚本 + Comment Outreach HN/dev.to/V2EX 全部 fallback 到 `TBD-visual-intern` / `TBD-video-intern` / `TBD-comment-intern`，待用户指派接管 |
+| **Serena** 新媒体运营实习生 | `2083483802@qq.com` | **第三方平台搬运**（CSDN / 知乎 / 掘金 / Dev.to / Medium / 公众号 / Reddit-Quora / 搜狐网易百家 / 学员答主协调）+ Comment Outreach 4 平台（reddit / github / zhihu / hashnode）|
 | **KIKI Huang** Brisbane MKT 实习生 | `huangdg755@gmail.com` | Brisbane 线下活动 + 跨城市 webinar |
 
 ### 全职（14/34 张 = 41% 工作量）
@@ -49,13 +49,13 @@
 
 ## 分配规则（按内容类型）
 
-### 1. GEO 内容 → **全部派实习生**（Bella + Serena），不派全职
+### 1. GEO 内容 → 历史是 Bella + Serena 分工，Bella 2026-05-22 离职后她那半暂时无 owner
 
 | 内容类型 | module | 派谁 | 理由 |
 |---|---|---|---|
-| **JR 自家网站 master / 落地页**（jr-blog / 长文） | `geo-landing-page` | **Bella** | JR 自家长文，Bella 接原创 + 视觉重写 |
+| **JR 自家网站 master / 落地页**（jr-blog / 长文） | `geo-landing-page` | `TBD-mkt-content`（原 Bella，5-22 离职） | JR 自家长文，待用户指派接管（候选 Summer / Lily / KIKI-CD 全职轮，或重新招实习）|
 | **第三方平台搬运** | `geo-csdn` / `geo-zhihu-column` / `geo-juejin` / `geo-auto-publish` (Medium/dev.to) / `geo-sohu-netease-baijia` / `geo-reddit-quora` / `geo-weixin-public` / `geo-csdn-rescue` / `geo-student-answer-coordination` | **Serena** | Serena 主管文字搬运到第三方 |
-| **视觉/视频重写** | `geo-xiaohongshu` / `geo-weixin-video` / `geo-cross-platform-transfer` / `geo-canva-design` / `video-daily` / `video-live` | **Bella** | Bella 视觉/视频专项 |
+| **视觉/视频重写** | `geo-xiaohongshu` / `geo-weixin-video` / `geo-cross-platform-transfer` / `geo-canva-design` / `video-daily` / `video-live` | `TBD-visual-intern` / `TBD-video-intern`（原 Bella，5-22 离职） | 视觉/视频专项产线暂无 owner，TEAM.md §1 标待站会决定 |
 
 ### 2. 小红书账号日常 → 按账号 owner 派（不看 module）
 
@@ -89,23 +89,25 @@
 
 | 主题 | 派谁 |
 |---|---|
-| 技术深度（Agent Governance / DeepSeek / LangGraph）| **Bella**（写策划 + 视觉素材）|
+| 技术深度（Agent Governance / DeepSeek / LangGraph）| 待派（原 Bella 5-22 离职，视觉素材 fallback `TBD-visual-intern`，策划文字可由 Summer / KIKI-CD 补）|
 | 模型对比 / 评测 | Summer |
 | 求职 / 转型故事 | Lily |
 | 大模型动手 / hackathon | KIKI 成都 |
 | Brisbane 本地 webinar | KIKI Huang |
 
-### 6. ad-hoc / evergreen 长文 → 派 Bella（视觉/视频重写）
+### 6. ad-hoc / evergreen 长文 → 原派 Bella（5-22 离职后 fallback `TBD-visual-intern`）
 
-> evergreen 是给 Bella 做"小红书图文 / 视频脚本 / 公众号长图"重写源材料用的。
+> evergreen 历史定位：给 Bella 做"小红书图文 / 视频脚本 / 公众号长图"重写源材料用。Bella 2026-05-22 实习结束后，evergreen 源材料暂无 owner 用 — 站会决定是否暂停 evergreen 产出 / 三人组兼一点 / 重新招实习。
 
 ---
 
 ## 实例：2026-05-04 ~ 2026-05-06 这批 34 张分配结果
 
+> ⚠️ 历史快照（已发生的派单记录）。Bella 2026-05-22 实习结束移除——下次新批 routine 派单时她那 11 张份额需重分（候选：拆给 Summer / Lily / KIKI-CD 全职轮，或重新招实习；evergreen 暂停）。
+
 | 派给 | 张 | 卡 |
 |---|---:|---|
-| **Bella** 实习 | 11 | b1-jr-blog / b1-master / q1 / q2 / q4 / q5 / q9 + evergreen-01/02/03 + webinar-01 |
+| **Bella** 实习（5-22 已离职） | 11 | b1-jr-blog / b1-master / q1 / q2 / q4 / q5 / q9 + evergreen-01/02/03 + webinar-01 |
 | **Serena** 实习 | 6 | example / b1-csdn / b1-zhihu / b1-juejin / b1-devto-en / b1-medium-en |
 | **Summer** | 5 | partnership-01-langchain / webinar-02 / xhs-rain-12month / xhs-aozhoujiangren / xhs-rain-5cuo |
 | **KIKI 成都** | 5 | partnership-03-量子位 / event-03-yetan / webinar-04-deepseek / xhs-unsw / xhs-uq |

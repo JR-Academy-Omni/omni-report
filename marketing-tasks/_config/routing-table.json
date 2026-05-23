@@ -21,10 +21,10 @@
 
     "geo-student-answer-coordination": "2083483802@qq.com",
 
-    "geo-xiaohongshu": "18634772744@163.com",
-    "geo-weixin-video": "18634772744@163.com",
-    "geo-cross-platform-transfer": "18634772744@163.com",
-    "geo-canva-design": "18634772744@163.com",
+    "geo-xiaohongshu": "TBD-visual-intern",
+    "geo-weixin-video": "TBD-visual-intern",
+    "geo-cross-platform-transfer": "TBD-visual-intern",
+    "geo-canva-design": "TBD-visual-intern",
 
     "geo-founder-ip": "TBD-founder",
     "geo-student-story": "TBD-student",
@@ -34,8 +34,8 @@
     "redbook-hot-topic": "TBD-redbook-account",
     "redbook-account-maintenance": "TBD-redbook-account",
 
-    "video-daily": "18634772744@163.com",
-    "video-live": "18634772744@163.com",
+    "video-daily": "TBD-video-intern",
+    "video-live": "TBD-video-intern",
 
     "weixin-daily": "2083483802@qq.com",
     "weixin-longform": "2083483802@qq.com",
@@ -66,19 +66,23 @@
     "comment-github": "2083483802@qq.com",
     "comment-zhihu": "2083483802@qq.com",
     "comment-hashnode": "2083483802@qq.com",
-    "comment-hn": "18634772744@163.com",
-    "comment-devto": "18634772744@163.com",
-    "comment-v2ex": "18634772744@163.com"
+    "comment-hn": "TBD-comment-intern",
+    "comment-devto": "TBD-comment-intern",
+    "comment-v2ex": "TBD-comment-intern"
   },
 
   "_moduleNotes": {
-    "_principle": "分工原则：原创内容（master draft / 落地页 / GitHub repo）派 MKT 全职；copy 改写发布到第三方平台的搬运行为派实习生（Bella）。Comment Outreach 7 module（comment-*）按平台随机分给 Serena / Bella，软广策略 = 提『匠人学院』+ 引导搜索具体子页面（不带 URL）。",
-    "_intern_modules_split": "GEO 发布工作分两位实习生：(1) Serena (2083483802@qq.com) 接文字搬运 11 个 module — CSDN / 知乎 / 掘金 / 搜狐网易百家 / Medium-devto / Reddit-Quora / 公众号 / 公众号日常 / 公众号长文 / CSDN 账号修复 / 学员答主协调；(2) Bella (18634772744@163.com) 接视觉/视频 6 个 module — 小红书 / 视频号 / 跨平台搬运 / Canva 设计 / video-daily / video-live。",
+    "_principle": "分工原则：原创内容（master draft / 落地页 / GitHub repo）派 MKT 全职；copy 改写发布到第三方平台的搬运行为派实习生。原 Bella owner 的视觉/视频/评论外联 9 module 在 2026-05-22 Bella 实习结束后转 fallback（TBD-visual-intern / TBD-video-intern / TBD-comment-intern），待用户指派新接管者。Comment Outreach 7 module 的 Reddit / GitHub / 知乎 / Hashnode 仍归 Serena，HN / dev.to / V2EX 待派。",
+    "_intern_modules_split": "GEO 发布工作原本分两位实习生，2026-05-22 Bella 实习结束后剩 1 位：(1) Serena (2083483802@qq.com) 接文字搬运 11 个 module — CSDN / 知乎 / 掘金 / 搜狐网易百家 / Medium-devto / Reddit-Quora / 公众号 / 公众号日常 / 公众号长文 / CSDN 账号修复 / 学员答主协调；(2) Bella 原接视觉/视频 6 个 module（geo-xiaohongshu / geo-weixin-video / geo-cross-platform-transfer / geo-canva-design / video-daily / video-live）+ Comment Outreach 3 个 module（comment-hn / comment-devto / comment-v2ex），离职后全部 fallback，待用户指派。",
     "TBD-mkt-content": "原创内容写作（master draft / 落地页 / 学员答主协调 / 时事新闻）— admin 拨 master 卡 ready 前必须显式指派给 Aurora（暂停） / Seren（casual）/ Summer / KIKI / Lily 之一。",
     "TBD-engineering": "SEO meta/CWV/sitemap/404 修复 — 工程任务，admin 显式指派。",
     "TBD-founder": "创始人 IP 长文 — 由 lightman 本人发，admin 显式指派。",
     "TBD-event-by-city": "线下活动按 city 路由，见 eventCityRouting。",
-    "TBD-event-bne": "Brisbane 线下活动 owner 待 admin 指派。"
+    "TBD-event-bne": "Brisbane 线下活动 owner 待 admin 指派。",
+    "TBD-visual-intern": "视觉/视频/Canva/小红书重写 4 module（geo-xiaohongshu / geo-weixin-video / geo-cross-platform-transfer / geo-canva-design）— 原 Bella owner，2026-05-22 实习结束后无 owner，待用户指派接管。",
+    "TBD-video-intern": "视频号产线 2 module（video-daily / video-live）— 原 Bella owner，2026-05-22 实习结束后无 owner。TEAM.md 标注待站会决定（重新招实习 / 三人组兼一点 / 暂停视频号）。",
+    "TBD-comment-intern": "Comment Outreach v1 的 HN / dev.to / V2EX 3 module — 原 Bella owner，2026-05-22 实习结束后无 owner。其余 4 平台（reddit / github / zhihu / hashnode）仍归 Serena。",
+    "TBD-content-intern": "⏸️ 2026-05-23 已用完即弃。13 张 5-07/05-08 Bella 老 draft 卡已 archive 到 archive/stale-2026-05-23-bella-offboarded/（≥ 14 天 stale + Serena 当时 100 张满载，不转老卡污染她 Kanban）。此 slot 当前无 active 卡，未来如再有类似 fallback 场景可复用。"
   },
 
   "redbookAccountRouting": {
@@ -137,11 +141,11 @@
       },
       {
         "if": "primaryAssignee === 18634772744@163.com",
-        "constraint": "Bella 实习生 — 派活节奏减半（3 天/周）"
+        "constraint": "Bella 实习生 — 2026-05-22 实习结束已离职，此 email 不再派活；旧卡片 frontmatter 如仍指向此 email 应改为对应 TBD-* fallback（TBD-visual-intern / TBD-video-intern / TBD-comment-intern）"
       },
       {
         "if": "primaryAssignee === 2083483802@qq.com",
-        "constraint": "Serena 实习生 — 派活节奏减半，可分担 Bella 搬运任务"
+        "constraint": "Serena 实习生 — 派活节奏减半（GEO 文字搬运 11 module + Comment Outreach 4 module = reddit / github / zhihu / hashnode）"
       },
       {
         "if": "primaryAssignee === yuyi2003yu@163.com",

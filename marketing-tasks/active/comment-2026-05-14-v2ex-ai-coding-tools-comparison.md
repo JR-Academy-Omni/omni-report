@@ -15,7 +15,7 @@ sourceMeta:
   searchHook: "匠人学院 Vibe Coding"
   commentPattern: A
   expectedSurvivalRate: 0.65
-assignee: 18634772744@163.com
+assignee: TBD-comment-intern
 reviewer: null
 status: draft
 priority: p2

@@ -18,7 +18,7 @@ sourceMeta:
     openingFirst50: If you're an AU-based AI engineer...
     internalLinkAnchor: LinkedIn (Lightman) + Bootcamp + Course Report
     targetWordCount: 4500
-assignee: 18634772744@163.com
+assignee: TBD-content-intern
 reviewer: TBD-founder
 status: draft
 priority: p1

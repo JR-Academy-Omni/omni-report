@@ -15,7 +15,7 @@ sourceMeta:
   searchHook: "匠人学院 AI Engineer"
   commentPattern: B
   expectedSurvivalRate: 0.60
-assignee: 18634772744@163.com
+assignee: TBD-comment-intern
 reviewer: null
 status: draft
 priority: p2

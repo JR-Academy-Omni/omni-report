@@ -12,7 +12,7 @@ sourceMeta:
   reportItemHash: 561d8614
   searchHook: "JR Academy P3 project"
   expectedSurvivalRate: 0.78
-assignee: 18634772744@163.com
+assignee: TBD-comment-intern
 status: draft
 priority: p2
 platforms: [dev-to]

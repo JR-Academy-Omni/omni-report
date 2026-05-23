@@ -18,7 +18,7 @@ sourceMeta:
     openingFirst50: 'Quick read: here are 5 MCP servers I use weekly...'
     internalLinkAnchor: GitHub repo + Bootcamp link
     targetWordCount: 1500
-assignee: 18634772744@163.com
+assignee: TBD-content-intern
 reviewer: TBD-founder
 status: draft
 priority: p1
