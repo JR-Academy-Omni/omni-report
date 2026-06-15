@@ -74,7 +74,7 @@ jobs:
         if: steps.files.outputs.count != '0'
         env:
           # repo-level secret，名字早就配着。
-          # 维护说明：去 https://github.com/JR-Academy-AI/omni-report/settings/secrets/actions
+          # 维护说明：去 https://github.com/JR-Academy-Omni/omni-report/settings/secrets/actions
           # 更新 JR_ACADEMY_SUPERADMIN_TOKEN 值时，请粘一个长效 superAdmin JWT（建议 365d 有效）。
           PROD_API: ${{ secrets.JR_ACADEMY_PROD_API || 'https://api.jiangren.com.au' }}
           TOKEN: ${{ secrets.JR_ACADEMY_SUPERADMIN_TOKEN }}
