@@ -53,7 +53,7 @@ omni-report/xhs-content-factory/
 9. 员工手动发布 → 回填 published/{date}/{topic-id}-{account}.json + 更新任务卡 ## 发布记录
 ```
 
-## 11 账号 slug 对照表
+## 12 账号 slug 对照表
 
 | 账号 | slug | 归属 |
 |---|---|---|
@@ -64,10 +64,13 @@ omni-report/xhs-content-factory/
 | Amelia在悉尼 | `amelia` | Lily |
 | momo在澳洲 | `momo` | Lily |
 | JR 匠人学院 | `jr-brand` | Lily |
+| 悉尼猎头rainy | `xini-lietou-rainy` | Lily |
 | UQ 课代表 | `uq-kedaibiao` | KIKI |
 | UNSW 课代表 | `unsw-kedaibiao` | KIKI |
 | 墨大课代表 | `mudai-kedaibiao` | KIKI |
 | 素人号 | `suren` | KIKI |
+
+> 账号人设档：`accounts/{slug}/PERSONA.md`（写稿前读对应账号的人设档）。
 
 ## topic-id 命名规则
 
