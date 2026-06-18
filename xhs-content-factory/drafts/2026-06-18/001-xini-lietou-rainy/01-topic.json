@@ -1,0 +1,30 @@
+{
+  "topic_id": "001",
+  "source": "manual-jd-screenshot",
+  "title": "这个 AI Engineer 岗，到底在招谁",
+  "account": "悉尼猎头rainy",
+  "account_slug": "xini-lietou-rainy",
+  "angle": "招人方视角拆一条真实 LinkedIn AI Engineer JD（H2O.ai · Melbourne）",
+  "jd_source": {
+    "company": "H2O.ai",
+    "role": "AI Engineer",
+    "location": "Melbourne, Victoria, Australia",
+    "mode": "Hybrid · Full-time",
+    "platform": "LinkedIn",
+    "captured_at": "2026-06-18"
+  },
+  "hook": "招聘要求写一堆，真正卡你的就那几条——招人方帮你圈出真门槛",
+  "key_signals": [
+    "Exposure to GenAI = 接触过即可，不是要训大模型，门槛比想象低",
+    "真门槛是工程能力：Python / API・后端 / CI/CD",
+    "customer-facing field team = 要面客，沟通是硬门槛不是加分项",
+    "2-5 年 mid-level；带队 VP 是 Kaggle Grandmaster，简历要实在"
+  ],
+  "image_briefs": [
+    "图1 封面+原JD圈点：标题『这个 AI Engineer 岗，到底在招谁』+ JD 截图 + 手写圈点批注 + 机器人 mascot",
+    "图2：① 这个岗做什么 + ② 行业趋势信号",
+    "图3：③ 核心工作内容 + ④ 谁适合/谁先别投",
+    "图4：⑤ 真门槛 + ⑥ 应届转码突围点 + 核心价值便签"
+  ],
+  "risk": "不承诺包就业/保offer；图上不写绝对化词与加微信"
+}

@@ -1,0 +1,38 @@
+{
+  "topic_id": "001",
+  "topic_slug": "ai-engineer-jd-zhaoshui",
+  "account": "悉尼猎头rainy",
+  "account_slug": "xini-lietou-rainy",
+  "owner": "Lily",
+  "owner_email": "2363843954@qq.com",
+  "date": "2026-06-18",
+
+  "selected_angle": "A-痛点版",
+  "selected_cover": null,
+
+  "status": "draft",
+
+  "pipeline": {
+    "topic_at": "2026-06-18T12:00:00+10:00",
+    "draft_at": "2026-06-18T12:00:00+10:00",
+    "final_at": "2026-06-18T12:00:00+10:00",
+    "review_at": null,
+    "poster_at": "2026-06-18T12:00:00+10:00",
+    "score_at": null,
+    "task_card_at": null
+  },
+
+  "files": {
+    "topic": "01-topic.json",
+    "draft": "02-draft.md",
+    "final": "03-final.md",
+    "review": null,
+    "score": null,
+    "poster_prompts": "posters/prompts.md"
+  },
+
+  "marketing_task_card": null,
+  "score_total": null,
+
+  "_note": "源自 LinkedIn JD 截图（H2O.ai AI Engineer · Melbourne）手动建，非 picker。配图走 jd-visual-breakdown 手绘知识卡风格，4 张 3:4。发布前需跑 /xhs-review + /xhs-score。"
+}
