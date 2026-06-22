@@ -1,0 +1,38 @@
+{
+  "topic_id": "001",
+  "topic_slug": "ai-networking-canva-wule",
+  "account": "悉尼猎头rainy",
+  "account_slug": "xini-lietou-rainy",
+  "owner": "Lily",
+  "owner_email": "2363843954@qq.com",
+  "date": "2026-06-22",
+
+  "selected_angle": "故事种草版（Canva 开场，招人方视角）",
+  "selected_cover": null,
+
+  "status": "draft",
+
+  "pipeline": {
+    "topic_at": "2026-06-22T12:00:00+10:00",
+    "draft_at": "2026-06-22T12:00:00+10:00",
+    "final_at": "2026-06-22T12:00:00+10:00",
+    "review_at": null,
+    "poster_at": null,
+    "score_at": null,
+    "task_card_at": null
+  },
+
+  "files": {
+    "topic": "01-topic.json",
+    "draft": null,
+    "final": "03-final.md",
+    "review": null,
+    "score": null,
+    "poster_copy": "posters/copy.md"
+  },
+
+  "marketing_task_card": null,
+  "score_total": null,
+
+  "_note": "用户定稿的种草笔记（匠人 AI 圈 6/26 四城 Networking 活动推广）。01-topic.json 内含本场 campaign 的 5 个备选切角 + 四城场地信息。posters/copy.md 是配套海报文案 2 版（A 轻松局 / B 破圈局）。发布前建议跑 /xhs-review + /xhs-score。"
+}

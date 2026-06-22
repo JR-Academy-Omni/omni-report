@@ -1,0 +1,33 @@
+{
+  "topic_id": "001",
+  "source": "manual-campaign",
+  "title": "在悉尼跟 Canva 大佬聊完 AI 后，我悟了…",
+  "account": "悉尼猎头rainy",
+  "account_slug": "xini-lietou-rainy",
+  "campaign": "匠人 AI 圈 · 6月 Networking Night（四城）",
+  "angle": "招人方/猎头视角，故事种草——AI 渗进各行各业 + 人脉破圈，软推四城线下局",
+  "event": {
+    "name": "匠人 AI 圈 · 6月 Networking Night",
+    "date": "2026-06-26",
+    "weekday": "周五",
+    "time": "18:00-21:00（当地时间）",
+    "fee": "AA 制，自理消费",
+    "format": "轻社交，无 PPT、无推销",
+    "register": "提供 名字 + 微信 → 拉进活动微信群",
+    "cities": [
+      { "city": "悉尼", "venue": "BrewDog", "address": "Bay 1 Locomotive Workshops South, Eveleigh NSW 2015" },
+      { "city": "墨尔本", "venue": "Stomping Ground Brewery & Beer Hall", "address": "Collingwood VIC" },
+      { "city": "布里斯班", "venue": "The Wickham", "address": "308 Wickham St, Fortitude Valley QLD 4006" },
+      { "city": "珀斯", "venue": "The Globe Perth", "address": "497 Wellington St, Perth WA 6000" }
+    ],
+    "audience": ["AI 行业从业者", "IT 职场人（程序员/PM/Tech Lead）", "创业者 / 小老板", "AI 爱好者"]
+  },
+  "campaign_topic_ideas": [
+    { "id": 1, "type": "反常识·招人方独家", "title": "做猎头 10 年，我劝你别只投简历，多去『喝酒局』", "note": "招聘漏斗外的隐藏机会，推荐打头" },
+    { "id": 2, "type": "故事种草", "title": "在悉尼一个 AI 局聊了 2 小时，她从 marketing 转去做 AI", "note": "本篇定稿即此切角的演化版（Canva 开场）" },
+    { "id": 3, "type": "痛点共鸣", "title": "受够了交钱听课的『networking』？这个 AI 局没 PPT 没推销", "note": "对标活动卖点，四城通用" },
+    { "id": 4, "type": "干货", "title": "猎头教你 AI 局怎么聊，3 句话换到有用的人脉", "note": "降社恐门槛，高收藏长尾" },
+    { "id": 5, "type": "盘点·FOMO", "title": "6/26 同一晚，悉尼墨尔本布里斯班珀斯的 AI 圈都去哪了", "note": "四城总宣帖，临近活动催报名" }
+  ],
+  "risk": "不承诺包就业/赚钱；医疗例子用『研究/探索』措辞；与 rainy JD 笔记口径一致（人脉是经验之外的加速器，非取代经验）"
+}
