@@ -11,6 +11,7 @@ competitor-reports/{YYYY-MM-DD}.md   每周日 23 家竞品 × 5 维度情报简
 marketing-topics/{YYYY-MM-DD}.md     每周一+三 基于热点 + 竞品周报的内容/活动选题包
 ai-visibility/{YYYY-MM-DD}.md        每周三 GEO 可见度（20 query 测 AI 是否推荐 JR）
 growth-playbook/{YYYY-MM-DD}.md      每周二 5 个增长玩法 idea（裂变 / 游戏 / 限时 / 联名）
+hackathon-radar/{YYYY-MM-DD}.md      隔天 hackathon / AI 奖金比赛 / 加速器 grant / solo founder 案例雷达（OPC 创业营视角）
 daily-assignments/{YYYY-MM-DD}.md    每工作日 10:30 CST 把上面 4 份报告切成 10 人 todo（消费层）
 marketing-tasks/                      🆕 Marketing 任务 .md 文件（Markdown-First / git audit 单一权威源）
   active/                              进行中（status != archived）
