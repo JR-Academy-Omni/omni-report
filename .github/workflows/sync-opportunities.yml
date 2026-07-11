@@ -1,0 +1,132 @@
+name: Sync Hackathon Radar to Opportunities DB
+
+# 雷达 routine 每期产出 hackathon-radar/{date}.json（结构化 sidecar，仅含有确切 URL 的条目）。
+# 本 workflow 在 push 时把本次改动的 JSON 逐条 POST 给 prod /admin-cms/opportunities/upsert
+# （按 url 去重，直接发布 isPublished: true —— 老板 2026-07-11 拍板），
+# 学习中心「搞钱机会」tab 和公开页 /opportunities 即时可见。
+# 手册见 ROUTINE_MARKETING_TOPICS.md Phase 2.5；schema 见 hackathon-radar/_SOURCES.md。
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'hackathon-radar/*.json'
+      - '.github/workflows/sync-opportunities.yml'
+  workflow_dispatch:
+    inputs:
+      file:
+        description: '指定要同步的 JSON 文件名（如 2026-07-11.json）；留空 = 最新一份'
+        required: false
+        default: ''
+
+concurrency:
+  group: sync-opportunities
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Determine files to sync
+        id: files
+        run: |
+          set -e
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            if [ -n "${{ github.event.inputs.file }}" ]; then
+              echo "hackathon-radar/${{ github.event.inputs.file }}" > /tmp/files.txt
+            else
+              ls hackathon-radar/2*.json 2>/dev/null | sort | tail -1 > /tmp/files.txt || true
+            fi
+          else
+            BEFORE="${{ github.event.before }}"
+            [ "$BEFORE" = "0000000000000000000000000000000000000000" ] || [ -z "$BEFORE" ] && BEFORE="HEAD^"
+            git diff --name-only "$BEFORE" "${{ github.event.after }}" -- 'hackathon-radar/*.json' > /tmp/files.txt || true
+          fi
+          # 过滤已删除的文件
+          grep -v '^$' /tmp/files.txt | while read -r f; do [ -f "$f" ] && echo "$f"; done > /tmp/files-exist.txt || true
+          COUNT=$(wc -l < /tmp/files-exist.txt | tr -d ' ')
+          echo "count=$COUNT" | tee -a "$GITHUB_OUTPUT"
+          cat /tmp/files-exist.txt
+
+      - name: Upsert to prod opportunities
+        if: steps.files.outputs.count != '0'
+        env:
+          PROD_API: ${{ secrets.JR_ACADEMY_PROD_API || 'https://api.jiangren.com.au' }}
+          TOKEN: ${{ secrets.JR_ACADEMY_SUPERADMIN_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::error::JR_ACADEMY_SUPERADMIN_TOKEN secret is empty"
+            exit 1
+          fi
+          node <<'EOF'
+          const fs = require('fs');
+
+          const VALID_TYPES = new Set(['hackathon', 'prize', 'accelerator', 'grant']);
+          const files = fs.readFileSync('/tmp/files-exist.txt', 'utf8').split('\n').filter(Boolean);
+
+          (async () => {
+            let ok = 0, skipped = 0, failed = 0;
+            for (const file of files) {
+              let entries;
+              try {
+                entries = JSON.parse(fs.readFileSync(file, 'utf8'));
+              } catch (e) {
+                console.error(`::error::${file} 不是合法 JSON: ${e.message}`);
+                failed++;
+                continue;
+              }
+              if (!Array.isArray(entries)) {
+                console.error(`::error::${file} 顶层必须是数组`);
+                failed++;
+                continue;
+              }
+              for (const e of entries) {
+                if (!e.url || !e.title || !VALID_TYPES.has(e.type)) {
+                  console.log(`⏭️ skip（缺 url/title 或 type 非法）: ${JSON.stringify(e).slice(0, 100)}`);
+                  skipped++;
+                  continue;
+                }
+                const body = {
+                  type: e.type,
+                  title: e.title,
+                  organizer: e.organizer || undefined,
+                  prize: e.prize || undefined,
+                  deadline: e.deadline || undefined,
+                  url: e.url,
+                  region: e.region === 'AU' ? 'AU' : 'global',
+                  status: 'open',
+                  source: e.source || `hackathon-radar ${file.replace(/^.*\/|\.json$/g, '')}`,
+                  summary: e.summary || undefined,
+                  isPublished: true
+                };
+                try {
+                  const res = await fetch(`${process.env.PROD_API}/admin-cms/opportunities/upsert`, {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                      Authorization: `Bearer ${process.env.TOKEN}`
+                    },
+                    body: JSON.stringify(body)
+                  });
+                  if (res.ok) {
+                    ok++;
+                    console.log(`✅ ${e.type} | ${e.title.slice(0, 50)}`);
+                  } else {
+                    failed++;
+                    console.error(`::error::HTTP ${res.status} for ${e.title.slice(0, 50)}: ${(await res.text()).slice(0, 200)}`);
+                  }
+                } catch (err) {
+                  failed++;
+                  console.error(`::error::${e.title.slice(0, 50)}: ${err.message}`);
+                }
+              }
+            }
+            console.log(`\ndone: ${ok} upserted, ${skipped} skipped, ${failed} failed`);
+            if (failed > 0) process.exit(1);
+          })();
+          EOF

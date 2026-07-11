@@ -46,7 +46,12 @@ Write `marketing-topics/$DATE.md` 骨架（_TBD_ 占位）。commit: `feat(marke
    commit `feat(hackathon-radar): scaffold $DATE` + push。
 3. 按 `_SOURCES.md` 逐面 WebSearch 当期状态，分 2-3 批 Edit + commit + push。**🇦🇺 澳洲本地生态最高优先**：孵化器/加速器开营动态（Antler / Startmate / Google AI First AU / Techstars / Skalata / Cicada / UNSW Founders / INCUBATE / MAP / UQ Ventures / Stone & Chalk / LaunchVic 系——谁开了新 cohort、申请截止哪天、要不要股权）写进「🇦🇺 本地生态雷达」段，**哪怕当期没有本地 hackathon 这段也必须有内容**；政府 grant（RDTI / CSIRO Kick-Start / AI Adopt / EMDG / 州级 voucher）round 变动也归这段。
 4. 硬规则：澳洲条目 🇦🇺 标记并置于各段最前；开营/截止日期必须当期核实出处（官网/官方公告链接），查不到确切日期写「⚠️ 日期待确认」，禁止凭记忆编造；无确切官网/报名 URL 的条目不收录。
-5. 完成后 commit `feat(hackathon-radar): complete $DATE` + push。
+5. **结构化 sidecar（必做）**：Write `hackathon-radar/$DATE.json` —— 顶层数组，把本期报告里**有确切 URL 的机会条目**（不含 Solo Founder 案例）逐条结构化：
+   ```json
+   [{ "type": "hackathon|prize|accelerator|grant", "title": "…", "organizer": "…", "prize": "奖金/权益原文", "deadline": "2026-07-22T13:59:00.000Z 或省略(rolling/待确认)", "url": "https://确切官网或报名页", "region": "AU|global", "summary": "一两句人话说明适合谁" }]
+   ```
+   规则：deadline 不确定就**省略字段**（不许编 ISO 日期）；url 必须是报告里核实过的那个；🇦🇺 条目 region 填 "AU"。push 后 GitHub Action 会自动 upsert 进 prod 机会库并**直接发布**（按 url 去重，重复无害），学习中心「搞钱机会」tab 即时可见。
+6. 完成后 commit `feat(hackathon-radar): complete $DATE` + push（md 和 json 一起）。
 
 ━━━━━━━━━━━━━━
 【Phase 3：Notion 全文同步（1 步完事）】
