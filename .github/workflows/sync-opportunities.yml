@@ -98,7 +98,7 @@ jobs:
                   prize: e.prize || undefined,
                   deadline: e.deadline || undefined,
                   url: e.url,
-                  region: e.region === 'AU' ? 'AU' : 'global',
+                  region: ['AU', 'NZ', 'SG', 'MY', 'US', 'GB', 'CN'].includes(e.region) ? e.region : 'global',
                   status: 'open',
                   source: e.source || `hackathon-radar ${file.replace(/^.*\/|\.json$/g, '')}`,
                   summary: e.summary || undefined,
