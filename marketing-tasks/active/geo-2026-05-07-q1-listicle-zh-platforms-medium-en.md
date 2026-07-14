@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: '"If you''re an AU-based AI engineer..." 澳洲 AI engineer 视角开场，框定读者画像'
     internalLinkAnchor: 'LinkedIn anchor + jiangren.com.au English landing'
     targetWordCount: 2400
-assignee: TBD-content-intern
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: ready
 priority: p1
@@ -32,7 +32,7 @@ tags:
   - query-q1
 createdBy: TBD-system
 createdAt: 2026-05-07T09:51:34.000Z
-updatedAt: 2026-07-14T06:25:13.000Z
+updatedAt: 2026-07-14T06:41:57.000Z
 derivedFrom: prd-geo-content-factory
 ---
 
@@ -321,3 +321,6 @@ If you want to ask me anything specific about Australia-targeted AI engineering 
 
 - @claude 2026-07-14T06:25:13.000Z
   > 从 `marketing-tasks/archive/stale-2026-05-23-bella-offboarded/` 恢复回 active。稿 `geo-content-factory/drafts/L1-chinese-ai-platforms/variants/medium-en.md`（26685 字节）内容完整但从未发布（archive/ 下无 published/ 目录 = 归档脚本从未在任何 GEO 卡上检测到 publishedUrl）。weekly `archive-stale-tasks.ts` 按「14 天无 checklist 进展」把它扫走了。status → ready。
+
+- @claude 2026-07-14T06:41:57.000Z
+  > assignee 按 `marketing-tasks/_config/routing-table.json` 的 module→负责人路由表派单：`geo-auto-publish` → 2083483802@qq.com。（此前是占位 TBD-mkt-content = 无主，后端 emailToUserId 见 TBD-* 返回 null，卡永远没人认领。）

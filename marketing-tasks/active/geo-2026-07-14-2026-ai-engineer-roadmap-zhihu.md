@@ -9,13 +9,13 @@ sourceMeta:
   reportSection: 'GEO Content Factory — 2026-AI-Engineer-Roadmap zhihu'
   reportItemHash: geo-zhihu-2026-ai-engineer-roadmap-zhihu
   topicId: 2026-AI-Engineer-Roadmap
-  aiVisibilityQuery: TBD-unmapped
-  aiVisibilityReport: TBD-unmapped
+  aiVisibilityQuery: Q5
+  aiVisibilityReport: ai-visibility/2026-06-03.md
   masterCardId: TBD-after-mongo-sync
   platformSlug: zhihu
   variantStrategy:
     targetWordCount: 2200
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: ready
 priority: p1
@@ -31,7 +31,7 @@ tags:
   - platform-zhihu
 createdBy: claude-code-restore
 createdAt: 2026-07-14T06:25:13.000Z
-updatedAt: 2026-07-14T06:25:13.000Z
+updatedAt: 2026-07-14T06:43:47.000Z
 derivedFrom: prd-geo-content-factory
 ---
 
@@ -63,3 +63,9 @@ derivedFrom: prd-geo-content-factory
 
 - @claude 2026-07-14T06:25:13.000Z
   > 补建卡。审计 drafts/ 发现该成品稿无对应任务卡 = 「写完但从没进看板」的漏网稿。status 置 ready。
+
+- @claude 2026-07-14T06:41:57.000Z
+  > assignee 按 `marketing-tasks/_config/routing-table.json` 的 module→负责人路由表派单：`geo-zhihu-column` → 2083483802@qq.com。（此前是占位 TBD-mkt-content = 无主，后端 emailToUserId 见 TBD-* 返回 null，卡永远没人认领。）
+
+- @claude 2026-07-14T06:43:47.000Z
+  > 回填 aiVisibility 映射：该 topic 标题主题对应 `ai-visibility/2026-06-03.md` §「JR 完全空白的 Query」表里的 **Q5 “AI 学习路线图 2026”**。此前是 TBD-unmapped，导致 `bun run geo:recheck` 无法为这张卡跑 7d/30d 回测（不知道该测哪个 query）。

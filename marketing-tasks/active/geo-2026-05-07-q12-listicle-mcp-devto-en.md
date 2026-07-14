@@ -16,7 +16,7 @@ sourceMeta:
     openingFirst50: 'TLDR: MCP = USB-C for AI tools. Here are 5 servers I actually use weekly + 3 resources worth your time.'
     internalLinkAnchor: GitHub anchor + /learn/ai-engineer
     targetWordCount: 2700
-assignee: TBD-content-intern
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: ready
 priority: p1
@@ -32,7 +32,7 @@ tags:
   - query-q12
 createdBy: TBD-system
 createdAt: 2026-05-07T00:00:00.000Z
-updatedAt: 2026-07-14T06:25:13.000Z
+updatedAt: 2026-07-14T06:41:57.000Z
 derivedFrom: prd-geo-content-factory
 ---
 
@@ -264,3 +264,6 @@ Practical implication for your career: building real MCP servers is a low-risk s
 
 - @claude 2026-07-14T06:25:13.000Z
   > 从 `marketing-tasks/archive/stale-2026-05-23-bella-offboarded/` 恢复回 active。稿 `geo-content-factory/drafts/L4-mcp-resources/variants/devto-en.md`（16410 字节）内容完整但从未发布（archive/ 下无 published/ 目录 = 归档脚本从未在任何 GEO 卡上检测到 publishedUrl）。weekly `archive-stale-tasks.ts` 按「14 天无 checklist 进展」把它扫走了。status → ready。
+
+- @claude 2026-07-14T06:41:57.000Z
+  > assignee 按 `marketing-tasks/_config/routing-table.json` 的 module→负责人路由表派单：`geo-auto-publish` → 2083483802@qq.com。（此前是占位 TBD-mkt-content = 无主，后端 emailToUserId 见 TBD-* 返回 null，卡永远没人认领。）

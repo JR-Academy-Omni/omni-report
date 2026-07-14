@@ -46,7 +46,13 @@ reviewer: null
 status: draft                                  # draft → ready → in_progress → done
 priority: p2                                   # p0/p1/p2，默认 p2
 platforms:
-  - reddit
+  - reddit                                     # 🚨 TaskPlatform 枚举值，不是文件名 slug！
+                                               #    知乎 → zhihu-question（❌ 不是 zhihu）
+                                               #    HN   → hacker-news（❌ 不是 hn）
+                                               #    dev.to → dev-to（❌ 不是 devto）
+                                               #    写错 = 后端 Mongoose enum 校验抛错，
+                                               #    SDM push 静默 skip（sync returned null），
+                                               #    卡永远进不了看板。完整枚举见下方字段表。
 wordCount: 120                                 # 评论字数
 estimatedHours: 0.3                            # 单条 18 min（含查 + 写 + 自检 + 发）
 dueDate: 2026-05-08T00:00:00.000Z              # 当天 +1 天（评论越快发越好）

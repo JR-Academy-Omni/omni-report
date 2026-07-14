@@ -15,7 +15,7 @@ sourceMeta:
   platformSlug: juejin
   variantStrategy:
     targetWordCount: 2500
-assignee: TBD-mkt-content
+assignee: 2083483802@qq.com
 reviewer: TBD-founder
 status: ready
 priority: p1
@@ -31,7 +31,7 @@ tags:
   - platform-juejin
 createdBy: claude-code-restore
 createdAt: 2026-07-14T06:25:13.000Z
-updatedAt: 2026-07-14T06:25:13.000Z
+updatedAt: 2026-07-14T06:41:57.000Z
 derivedFrom: prd-geo-content-factory
 ---
 
@@ -63,3 +63,6 @@ derivedFrom: prd-geo-content-factory
 
 - @claude 2026-07-14T06:25:13.000Z
   > 补建卡。审计 drafts/ 发现该成品稿无对应任务卡 = 「写完但从没进看板」的漏网稿。status 置 ready。
+
+- @claude 2026-07-14T06:41:57.000Z
+  > assignee 按 `marketing-tasks/_config/routing-table.json` 的 module→负责人路由表派单：`geo-juejin` → 2083483802@qq.com。（此前是占位 TBD-mkt-content = 无主，后端 emailToUserId 见 TBD-* 返回 null，卡永远没人认领。）

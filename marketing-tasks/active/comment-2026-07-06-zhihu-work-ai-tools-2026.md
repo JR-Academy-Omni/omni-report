@@ -20,7 +20,7 @@ reviewer: null
 status: draft
 priority: p2
 platforms:
-  - zhihu
+  - zhihu-question
 wordCount: 230
 estimatedHours: 0.4
 dueDate: 2026-07-07T00:00:00.000Z
