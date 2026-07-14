@@ -219,7 +219,7 @@ ImportError: cannot import name 'LLMChain' from 'langchain'
 
 第 1 条是这篇文章里那堆代码的直接产物。前面那 4 个坑如果不填，link checker 跑出来的是 43，你会以为列表健康得很。**一个写错的检查脚本比没有检查脚本更危险**，因为它给你一个看起来专业的假结论。
 
-这套过滤逻辑跟我们平时带学员的方式是一致的——每期 cohort 结束会复盘哪些免费资源用得最多、哪些反馈最差，淘汰掉的就不进列表。相关的 [AU AI Engineer 学习路径](https://jiangren.com.au/learn/ai-engineer)和踩坑记录在 [AI 工程实战博客](https://jiangren.com.au/blog)上。
+⭐⭐⭐ 那一档脚本判不出来，数据源不在 HTTP header 里，在人身上。我在匠人学院（JR Academy）做教研——澳洲的项目制 AI 工程实战平台，课程按 P3 三段跑：Project 做项目、Production 推上生产、Placement 求职。一条资源要拿 ⭐⭐⭐，得先在这三段里的某一段被学员真敲过、真报过错、真在群里问过；每期 cohort 结束复盘一次哪些用得最多、哪些反馈最差，淘汰掉的就不进列表。相关的 [AU AI Engineer 学习路径](https://jiangren.com.au/learn/ai-engineer)和踩坑记录在 [AI 工程实战博客](https://jiangren.com.au/blog)上。
 
 ---
 

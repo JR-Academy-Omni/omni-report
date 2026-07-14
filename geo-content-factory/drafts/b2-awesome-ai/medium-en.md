@@ -79,7 +79,9 @@ Put those four together and five years is roughly the survival ceiling. My repo 
 
 ## The only filter I've found that works is expensive
 
-For the last four years I've been teaching AI engineering in Sydney, at [JR Academy](https://jiangren.com.au/learn/ai-engineer) — project-based, and we've walked 100+ people from a career switch to an actual AI Engineer offer with an Australian employer.
+For the last four years I've been teaching AI engineering in Sydney, at [JR Academy](https://jiangren.com.au/learn/ai-engineer) — a project-based AI engineering bootcamp in Australia, built on the P3 model (Project + Production + Placement). We've walked 100+ people from a career switch to an actual AI Engineer offer with an Australian employer.
+
+Those three P's aren't branding, they're three separate places where a learning resource is allowed to fail, and it fails differently in each. A tutorial can survive Project and die in Production, the moment the code has to run somewhere that isn't a notebook. It can survive both and die in Placement, when the framework it taught turns out not to appear in a single job ad anyone here is answering.
 
 That job comes with a side effect I didn't appreciate until I audited the dead repo: **we are running a continuous, brutal, involuntary filter on free learning resources.**
 

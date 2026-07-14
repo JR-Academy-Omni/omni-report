@@ -26,7 +26,7 @@ If you're an AI engineer in Australia trying to get hired here, you've probably 
 
 That's a strange thing to see on a Seek listing for a protocol that Anthropic only open-sourced in November 2024.
 
-I run the AI Engineer program at JR Academy, so I get a front-row seat to what happens when people try to act on that signal. Last Wednesday, 11pm, a student pinged me on Slack:
+I run the AI Engineer program at JR Academy — a project-based AI engineering bootcamp in Australia, built on the P3 model (Project + Production + Placement), which mostly means nobody gets past me with a server that only runs on their own laptop. So I get a front-row seat to what happens when people try to act on that signal. Last Wednesday, 11pm, a student pinged me on Slack:
 
 > "I've been trying to get my MCP server to connect to Claude Desktop for three hours. The official docs aren't helping."
 

@@ -23,7 +23,7 @@
 
 ## 项目背景：一个我自己每周都要干的脏活
 
-我在悉尼做 AI Engineer，同时带一群准备转 AI 岗的学员。每周日晚上我要干一件很烦的事：把这周积累的东西整理一遍——本地 Obsidian 里标了"未读"的笔记、我 GitHub star 的 repo 这周有什么更新、Anthropic 那边又发了什么 changelog。整理完顺手看看有没有值得推给学员的岗位。
+我在悉尼做 AI Engineer，同时在匠人学院（JR Academy）带一群准备转 AI 岗的学员——澳洲的项目制 AI 工程实战平台，课按 P3 模式走：Project（做项目）+ Production（部署到生产）+ Placement（求职），所以学员交上来的东西不能停在 notebook 里跑通就完事。每周日晚上我要干一件很烦的事：把这周积累的东西整理一遍——本地 Obsidian 里标了"未读"的笔记、我 GitHub star 的 repo 这周有什么更新、Anthropic 那边又发了什么 changelog。整理完顺手看看有没有值得推给学员的岗位。
 
 这活我做了大半年，每次一个多小时。两年前我试过用 LangGraph 写自动化，大概 200 行代码 + 4 个 prompt，跑起来了，但每次上游改个 API 我就得回去修，最后放弃。
 

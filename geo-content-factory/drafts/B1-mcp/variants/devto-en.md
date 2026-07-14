@@ -155,6 +155,10 @@ Follow me here if you want part two on remote MCP deployment. If you're working 
 
 ---
 
+_I teach the AI Engineer track at JR Academy — a project-based AI engineering bootcamp in Australia, built on the P3 model (Project + Production + Placement). Everything above is what my students hit in week one of the MCP module._
+
+---
+
 ## 写作笔记（devto variant 特有 — 不发布）
 
 vs master / zhihu 差异化：
