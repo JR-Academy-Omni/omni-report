@@ -202,9 +202,9 @@ faux_bold_text(d, (48, 252), "7月15日", font(66, 8), "#101114", [(0, 0), (1, 0
 faux_bold_text(d, (48, 344), "AI 新闻榜", font(72, 8), "#101114", [(0, 0), (1, 0), (0, 1)])
 d.text((48, 442), "what changed today, why it matters, and what to watch next.", font=font(23, 1), fill="#5f5a58")
 draw_target_icon(d, 50, 486, "#ff3a2d")
-d.text((84, 486), "头条：全球 AI 看门人、个人 Agent 实验、模型发布与 Meta 隐私回撤。", font=font(17, 6), fill="#2f3034")
-d.rounded_rectangle((48, 536, 720, 580), 22, fill="#ef140d", outline="#ef140d", width=2)
-d.text((68, 545), "今天更像监管与 Agent 落地日，不是单一模型发版日", font=font(17, 8), fill="white")
+d.text((84, 486), "头条：DeepSeek 融资、Claude 印度定价、Meta 回撤、OpenAI 股权与 WAIC 冲刺。", font=font(16, 6), fill="#2f3034")
+d.rounded_rectangle((48, 536, 760, 580), 22, fill="#ef140d", outline="#ef140d", width=2)
+d.text((68, 545), "今天回到硬变化：融资、定价、权限回撤、股权安排和中文发布窗口", font=font(16, 8), fill="white")
 d.text((768, 546), "5 条", font=font(22, 6), fill="#ff2a1e")
 
 mc = Image.open(
@@ -221,11 +221,11 @@ draw_star4(d, 670, 220, 14, "#ffb11d")
 draw_squiggle(d, 888, 346, "#ff2a1e")
 
 items = [
-    ("01", "#ff2a1e", "监管政策", "DeepMind CEO 呼吁建立美国牵头的全球 AI 看门人", "#ff6b6b", draw_shield),
-    ("02", "#1f6dff", "Agent 编程", "400 万美元级个人 AI Agent Olive 曝光", "#2d7cf3", draw_agent),
-    ("03", "#ff8b10", "模型发布", "美国大厂 72 小时密集上新，价格、语音和办公 Agent 一起卷", "#ff9c1e", draw_model),
-    ("04", "#8c59ff", "模型发布", "OpenAI ChatGPT 5.6 获批扩大发布，安全审查开始嵌入上线流程", "#9a71ff", draw_model),
-    ("05", "#18a05e", "产品治理", "Meta Muse Image 因 Instagram 图像调用争议收口", "#2eb670", draw_image_icon),
+    ("01", "#ff2a1e", "AI 基建", "DeepSeek 启动新一轮融资讨论，估值抬到 710 亿美元", "#ff6b6b", draw_chip),
+    ("02", "#1f6dff", "产品更新", "Anthropic 在印度为 Claude 切到卢比定价", "#2d7cf3", draw_model),
+    ("03", "#ff8b10", "产品治理", "Meta 收回 Muse Image 争议能力，默认图像调用被踩刹车", "#ff9c1e", draw_image_icon),
+    ("04", "#8c59ff", "资本治理", "OpenAI 提议向美国政府让出 5% 股权", "#9a71ff", draw_shield),
+    ("05", "#18a05e", "中文市场", "WAIC 2026 两天后在上海开幕，中文 AI 发布窗口升温", "#2eb670", draw_calendar),
 ]
 ys = [630, 764, 898, 1032, 1166]
 temp = Image.new("RGBA", (10, 10))
@@ -260,7 +260,10 @@ for (num, nc, tag, title, bc, icon_fn), y in zip(items, ys):
     glow = glow.filter(ImageFilter.GaussianBlur(5))
     base.alpha_composite(glow)
     d.rounded_rectangle((ix1, iy1, ix2, iy2), 18, fill=bc, outline=(255, 255, 255, 210), width=2)
-    icon_fn(d, (ix1, iy1, ix2, iy2), "white")
+    if icon_fn is draw_calendar:
+        draw_calendar(d, 862, y + 39, 36, "white")
+    else:
+        icon_fn(d, (ix1, iy1, ix2, iy2), "white")
 
 footer = (20, 1328, W - 20, 1366)
 d.rounded_rectangle(footer, 16, fill="white", outline=rgb("ebe4df"), width=2)
