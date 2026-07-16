@@ -202,9 +202,9 @@ faux_bold_text(d, (48, 246), "7月15日", font(72, 8), "#101114", [(0, 0), (1, 0
 faux_bold_text(d, (48, 342), "AI 新闻榜", font(78, 8), "#101114", [(0, 0), (1, 0), (0, 1)])
 d.text((48, 446), "what changed today, why it matters, and what to watch next.", font=font(25, 1), fill="#5f5a58")
 draw_target_icon(d, 50, 486, "#ff3a2d")
-d.text((84, 484), "头条：DeepSeek、Claude India、新规生效、DFSX 芯片与 Nvidia 白名单。", font=font(18, 6), fill="#2f3034")
+d.text((84, 484), "头条：近24小时主线是 DeepSeek、Claude India 与新规生效，补位聚焦芯片。", font=font(17, 6), fill="#2f3034")
 d.rounded_rectangle((48, 536, 760, 580), 22, fill="#ef140d", outline="#ef140d", width=2)
-d.text((68, 543), "今天回到硬变化：融资、定价、合规边界与芯片供给链", font=font(18, 8), fill="white")
+d.text((68, 543), "近24小时看融资、定价、合规边界；补位看自研芯片与供给链", font=font(16, 8), fill="white")
 d.text((766, 543), "5 条", font=font(26, 6), fill="#ff2a1e")
 
 mc = Image.open(
