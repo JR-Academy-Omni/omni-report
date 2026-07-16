@@ -173,8 +173,8 @@ logo = logo.crop(logo.getbbox())
 ratio = 64 / logo.height
 logo = logo.resize((int(logo.width * ratio), 64), Image.LANCZOS)
 base.alpha_composite(logo, (30, 42))
-d.text((300, 48), "AI", font=font(34, 8), fill="#ff2419")
-d.text((364, 48), "日报 · TOP 5", font=font(34, 8), fill="#111216")
+d.text((296, 46), "AI", font=font(38, 8), fill="#ff2419")
+d.text((370, 46), "日报 · TOP 5", font=font(38, 8), fill="#111216")
 d.rounded_rectangle((607, 42, 748, 94), 20, fill="white", outline=rgb("e6dfdb"), width=2)
 d.text((623, 57), "学AI来匠人", font=font(17, 6), fill="#2b2c31")
 d.text((725, 57), "✦", font=font(16, 6), fill="#ff3128")
@@ -197,15 +197,15 @@ base.alpha_composite(hero_card, (hero[0], hero[1]))
 d.rounded_rectangle((50, 182, 404, 236), 26, fill="#ff1f13", outline="#ff1f13", width=2)
 d.ellipse((62, 193, 104, 235), fill="white", outline="#ff4a3d", width=2)
 draw_flame_icon(d, 71, 198, 1.1, "#ff2619")
-d.text((112, 196), "今日 AI 日历 · HIGHLIGHT", font=font(18, 8), fill="white")
-faux_bold_text(d, (48, 252), "7月15日", font(66, 8), "#101114", [(0, 0), (1, 0), (0, 1)])
-faux_bold_text(d, (48, 344), "AI 新闻榜", font(72, 8), "#101114", [(0, 0), (1, 0), (0, 1)])
-d.text((48, 442), "what changed today, why it matters, and what to watch next.", font=font(23, 1), fill="#5f5a58")
+d.text((112, 195), "今日 AI 日历 · HIGHLIGHT", font=font(20, 8), fill="white")
+faux_bold_text(d, (48, 246), "7月15日", font(72, 8), "#101114", [(0, 0), (1, 0), (0, 1)])
+faux_bold_text(d, (48, 342), "AI 新闻榜", font(78, 8), "#101114", [(0, 0), (1, 0), (0, 1)])
+d.text((48, 446), "what changed today, why it matters, and what to watch next.", font=font(25, 1), fill="#5f5a58")
 draw_target_icon(d, 50, 486, "#ff3a2d")
-d.text((84, 486), "头条：DeepSeek、Claude India、新规生效、DFSX 芯片与 Nvidia 白名单。", font=font(16, 6), fill="#2f3034")
+d.text((84, 484), "头条：DeepSeek、Claude India、新规生效、DFSX 芯片与 Nvidia 白名单。", font=font(18, 6), fill="#2f3034")
 d.rounded_rectangle((48, 536, 760, 580), 22, fill="#ef140d", outline="#ef140d", width=2)
-d.text((68, 545), "今天回到硬变化：融资、定价、合规边界与芯片供给链", font=font(16, 8), fill="white")
-d.text((768, 546), "5 条", font=font(22, 6), fill="#ff2a1e")
+d.text((68, 543), "今天回到硬变化：融资、定价、合规边界与芯片供给链", font=font(18, 8), fill="white")
+d.text((766, 543), "5 条", font=font(26, 6), fill="#ff2a1e")
 
 mc = Image.open(
     "/Users/chengduyuanqizhishukejiyouxiangongsi/Desktop/aaa/jr-omni/jr-academy-brand/assets/mascot/official/01-hero-fullbody.png"
@@ -232,18 +232,18 @@ temp = Image.new("RGBA", (10, 10))
 td = ImageDraw.Draw(temp)
 for (num, nc, tag, title, bc, icon_fn), y in zip(items, ys):
     d.rounded_rectangle((20, y, W - 20, y + 118), 22, fill="white", outline=rgb("ece6e1"), width=2)
-    outline_text(d, (40, y + 26), num, font(44, 8), nc, (255, 255, 255, 0), stroke=2)
+    outline_text(d, (38, y + 24), num, font(48, 8), nc, (255, 255, 255, 0), stroke=2)
     d.line((150, y + 22, 150, y + 94), fill=rgb("ddd6d1"), width=2)
-    bbox = td.textbbox((0, 0), tag, font=font(18, 8))
+    bbox = td.textbbox((0, 0), tag, font=font(20, 8))
     tw = bbox[2] - bbox[0]
     d.rounded_rectangle((176, y + 14, 176 + tw + 22, y + 44), 15, fill="white", outline=rgb("ebe3df"), width=2)
-    d.text((187, y + 15), tag, font=font(18, 8), fill=nc)
-    maxw = 585
+    d.text((186, y + 13), tag, font=font(20, 8), fill=nc)
+    maxw = 595
     cur = ""
     lines = []
     for ch in title:
         trial = cur + ch
-        if td.textbbox((0, 0), trial, font=font(21, 8))[2] <= maxw:
+        if td.textbbox((0, 0), trial, font=font(24, 8))[2] <= maxw:
             cur = trial
         else:
             lines.append(cur)
@@ -252,8 +252,8 @@ for (num, nc, tag, title, bc, icon_fn), y in zip(items, ys):
         lines.append(cur)
     ty = y + 54
     for line in lines[:2]:
-        d.text((180, ty), line, font=font(21, 8), fill="#141518")
-        ty += 27
+        d.text((180, ty), line, font=font(24, 8), fill="#141518")
+        ty += 30
     ix1, iy1, ix2, iy2 = 832, y + 18, 940, y + 98
     glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     ImageDraw.Draw(glow).ellipse((ix1 - 5, iy1 - 2, ix2 + 5, iy2 + 5), fill=rgb(bc) + (18,))
