@@ -197,9 +197,9 @@ faux_bold_text(d, (48, 342), "AI 新闻榜", font(78, 8), "#101114", [(0, 0), (1
 d.text((48, 446), "what changed today, why it matters, and what to watch next.", font=font(25, 1), fill="#5f5a58")
 draw_target_icon(d, 50, 486, "#ff3a2d")
 d.text((84, 484), "头条：xAI Grok Build 踩雷、英国拟限青少年 AI、Meta 5GW 计划扩容。", font=font(16, 6), fill="#2f3034")
-d.rounded_rectangle((48, 536, 760, 580), 22, fill="#ef140d", outline="#ef140d", width=2)
-d.text((68, 543), "近24小时看代码边界与默认限制方案；补位看园区、路由与欧洲算力", font=font(14, 8), fill="white")
-d.text((766, 543), "5 条", font=font(26, 6), fill="#ff2a1e")
+d.rounded_rectangle((48, 536, 732, 580), 22, fill="#ef140d", outline="#ef140d", width=2)
+d.text((68, 543), "近24小时看代码边界与默认限制；补位看园区、路由、欧洲算力", font=font(14, 8), fill="white")
+d.text((772, 543), "5 条", font=font(26, 6), fill="#ff2a1e")
 
 mc = Image.open(
     "/Users/chengduyuanqizhishukejiyouxiangongsi/Desktop/aaa/jr-omni/jr-academy-brand/assets/mascot/official/01-hero-fullbody.png"
