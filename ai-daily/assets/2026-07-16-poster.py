@@ -196,9 +196,9 @@ faux_bold_text(d, (48, 246), "7月16日", font(72, 8), "#101114", [(0, 0), (1, 0
 faux_bold_text(d, (48, 342), "AI 新闻榜", font(78, 8), "#101114", [(0, 0), (1, 0), (0, 1)])
 d.text((48, 446), "what changed today, why it matters, and what to watch next.", font=font(25, 1), fill="#5f5a58")
 draw_target_icon(d, 50, 486, "#ff3a2d")
-d.text((84, 484), "头条：Grok Build 踩雷、英国限青少年 AI、Meta 5GW 园区扩容。", font=font(17, 6), fill="#2f3034")
+d.text((84, 484), "头条：xAI Grok Build 踩雷、英国拟限青少年 AI、Meta 5GW 计划扩容。", font=font(16, 6), fill="#2f3034")
 d.rounded_rectangle((48, 536, 760, 580), 22, fill="#ef140d", outline="#ef140d", width=2)
-d.text((68, 543), "近24小时看代码边界与青少年限制；补位看园区、路由与欧洲算力", font=font(15, 8), fill="white")
+d.text((68, 543), "近24小时看代码边界与默认限制方案；补位看园区、路由与欧洲算力", font=font(14, 8), fill="white")
 d.text((766, 543), "5 条", font=font(26, 6), fill="#ff2a1e")
 
 mc = Image.open(
@@ -215,9 +215,9 @@ draw_star4(d, 670, 220, 14, "#ffb11d")
 draw_squiggle(d, 888, 346, "#ff2a1e")
 
 items = [
-    ("01", "#ff2a1e", "Agent 编程", "Grok Build 被曝上传整仓代码", "#ff6b6b", draw_code),
-    ("02", "#1f6dff", "产品治理", "英国拟限制青少年 AI 聊天连续使用", "#2d7cf3", draw_shield),
-    ("03", "#ff8b10", "AI 基建", "Meta 把 Hyperion 园区扩到 5GW", "#ff9c1e", draw_chip),
+    ("01", "#ff2a1e", "Agent 编程", "xAI 的 Grok Build 被曝上传整仓代码", "#ff6b6b", draw_code),
+    ("02", "#1f6dff", "产品治理", "英国拟对青少年 AI 聊天加默认限制", "#2d7cf3", draw_shield),
+    ("03", "#ff8b10", "AI 基建", "媒体披露 Meta 计划把 Hyperion 园区扩到 5GW", "#ff9c1e", draw_chip),
     ("04", "#8c59ff", "产品商业化", "Anthropic 考虑在 Claude 里做模型路由", "#9a71ff", draw_route),
     ("05", "#18a05e", "AI 基建", "Cerebras 加码欧洲 AI 基础设施", "#2eb670", draw_globe),
 ]
