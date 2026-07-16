@@ -174,7 +174,7 @@ ratio = 64 / logo.height
 logo = logo.resize((int(logo.width * ratio), 64), Image.LANCZOS)
 base.alpha_composite(logo, (30, 42))
 d.text((300, 48), "AI", font=font(34, 8), fill="#ff2419")
-d.text((364, 48), "日报 · TOP 5", font=font(34, 8), fill="#111216")
+d.text((364, 48), "日报 · TOP 3", font=font(34, 8), fill="#111216")
 d.rounded_rectangle((607, 42, 748, 94), 20, fill="white", outline=rgb("e6dfdb"), width=2)
 d.text((623, 57), "学AI来匠人", font=font(17, 6), fill="#2b2c31")
 d.text((725, 57), "✦", font=font(16, 6), fill="#ff3128")
@@ -202,10 +202,10 @@ faux_bold_text(d, (48, 252), "7月15日", font(66, 8), "#101114", [(0, 0), (1, 0
 faux_bold_text(d, (48, 344), "AI 新闻榜", font(72, 8), "#101114", [(0, 0), (1, 0), (0, 1)])
 d.text((48, 442), "what changed today, why it matters, and what to watch next.", font=font(23, 1), fill="#5f5a58")
 draw_target_icon(d, 50, 486, "#ff3a2d")
-d.text((84, 486), "头条：DeepSeek 融资、Claude 印度定价、Meta 回撤、OpenAI 股权与 WAIC 冲刺。", font=font(16, 6), fill="#2f3034")
+d.text((84, 486), "头条：DeepSeek 融资、Claude 印度定价和中国 AI 新规生效。", font=font(16, 6), fill="#2f3034")
 d.rounded_rectangle((48, 536, 760, 580), 22, fill="#ef140d", outline="#ef140d", width=2)
-d.text((68, 545), "今天回到硬变化：融资、定价、权限回撤、股权安排和中文发布窗口", font=font(16, 8), fill="white")
-d.text((768, 546), "5 条", font=font(22, 6), fill="#ff2a1e")
+d.text((68, 545), "今天回到硬变化：融资、定价和产品边界进入执行期", font=font(16, 8), fill="white")
+d.text((768, 546), "3 条", font=font(22, 6), fill="#ff2a1e")
 
 mc = Image.open(
     "/Users/chengduyuanqizhishukejiyouxiangongsi/Desktop/aaa/jr-omni/jr-academy-brand/assets/mascot/official/01-hero-fullbody.png"
@@ -223,17 +223,15 @@ draw_squiggle(d, 888, 346, "#ff2a1e")
 items = [
     ("01", "#ff2a1e", "AI 基建", "DeepSeek 启动新一轮融资讨论，估值抬到 710 亿美元", "#ff6b6b", draw_chip),
     ("02", "#1f6dff", "产品更新", "Anthropic 在印度为 Claude 切到卢比定价", "#2d7cf3", draw_model),
-    ("03", "#ff8b10", "产品治理", "Meta 收回 Muse Image 争议能力，默认图像调用被踩刹车", "#ff9c1e", draw_image_icon),
-    ("04", "#8c59ff", "资本治理", "OpenAI 提议向美国政府让出 5% 股权", "#9a71ff", draw_shield),
-    ("05", "#18a05e", "中文市场", "WAIC 2026 两天后在上海开幕，中文 AI 发布窗口升温", "#2eb670", draw_calendar),
+    ("03", "#8c59ff", "产品治理", "中国 AI 拟人化互动服务新规今天生效", "#9a71ff", draw_shield),
 ]
-ys = [630, 764, 898, 1032, 1166]
+ys = [700, 856, 1012]
 temp = Image.new("RGBA", (10, 10))
 td = ImageDraw.Draw(temp)
 for (num, nc, tag, title, bc, icon_fn), y in zip(items, ys):
-    d.rounded_rectangle((20, y, W - 20, y + 118), 22, fill="white", outline=rgb("ece6e1"), width=2)
+    d.rounded_rectangle((20, y, W - 20, y + 134), 22, fill="white", outline=rgb("ece6e1"), width=2)
     outline_text(d, (40, y + 26), num, font(44, 8), nc, (255, 255, 255, 0), stroke=2)
-    d.line((150, y + 22, 150, y + 94), fill=rgb("ddd6d1"), width=2)
+    d.line((150, y + 22, 150, y + 108), fill=rgb("ddd6d1"), width=2)
     bbox = td.textbbox((0, 0), tag, font=font(18, 8))
     tw = bbox[2] - bbox[0]
     d.rounded_rectangle((176, y + 14, 176 + tw + 22, y + 44), 15, fill="white", outline=rgb("ebe3df"), width=2)
@@ -254,7 +252,7 @@ for (num, nc, tag, title, bc, icon_fn), y in zip(items, ys):
     for line in lines[:2]:
         d.text((180, ty), line, font=font(21, 8), fill="#141518")
         ty += 27
-    ix1, iy1, ix2, iy2 = 832, y + 18, 940, y + 98
+    ix1, iy1, ix2, iy2 = 832, y + 25, 940, y + 109
     glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     ImageDraw.Draw(glow).ellipse((ix1 - 5, iy1 - 2, ix2 + 5, iy2 + 5), fill=rgb(bc) + (18,))
     glow = glow.filter(ImageFilter.GaussianBlur(5))
@@ -268,7 +266,7 @@ for (num, nc, tag, title, bc, icon_fn), y in zip(items, ys):
 footer = (20, 1328, W - 20, 1366)
 d.rounded_rectangle(footer, 16, fill="white", outline=rgb("ebe4df"), width=2)
 d.text((40, 1338), "AI DAILY", font=font(16, 6), fill="#66676f")
-d.text((814, 1338), "TOP 5   ✧", font=font(16, 6), fill="#66676f")
+d.text((814, 1338), "TOP 3   ✧", font=font(16, 6), fill="#66676f")
 
 out = Path(
     "/Users/chengduyuanqizhishukejiyouxiangongsi/Desktop/aaa/jr-omni/omni-report/ai-daily/assets/2026-07-15-poster-generated.png"
