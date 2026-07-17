@@ -1,0 +1,31 @@
+{
+  "topic_id": "001",
+  "topic_slug": "unsw-ai-training-hackathon",
+  "account": "UNSW课代表",
+  "account_slug": "unsw-kedaibiao",
+  "owner": "KIKI",
+  "owner_email": "2838684082@qq.com",
+  "date": "2026-07-17",
+  "selected_angle": "B-故事版",
+  "selected_cover": null,
+  "status": "draft",
+  "pipeline": {
+    "topic_at": "2026-07-17T00:00:00+08:00",
+    "draft_at": "2026-07-17T00:00:00+08:00",
+    "final_at": "2026-07-17T15:30:00+08:00",
+    "review_at": null,
+    "poster_at": null,
+    "score_at": null,
+    "task_card_at": null
+  },
+  "files": {
+    "topic": "01-topic.json",
+    "draft": "02-draft.md",
+    "final": "03-final.md",
+    "review": null,
+    "score": null,
+    "poster_prompts": null
+  },
+  "marketing_task_card": null,
+  "score_total": null
+}

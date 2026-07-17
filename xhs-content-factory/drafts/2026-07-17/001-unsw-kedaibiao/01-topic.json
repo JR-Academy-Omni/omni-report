@@ -1,0 +1,12 @@
+{
+  "topic_id": "001",
+  "title": "UNSW AI Industry Training and Hackathon",
+  "account": "UNSW课代表",
+  "source": "user_request",
+  "angle": "面向有技术基础的UNSW学生和开发者，拆解三天AI工程训练与Hackathon的真实门槛、内容和费用",
+  "official_sources": [
+    "https://www.events.unsw.edu.au/event/ai-industry-training-and-hackathon",
+    "https://www.unsw.edu.au/research/faic/industry-courses/ai-industry-training-hackathon"
+  ],
+  "risk": "不得写成零基础活动；费用为A$1,500；需Python及Linux/命令行基础；限40人；报名状态以官网为准"
+}
