@@ -1,5 +1,7 @@
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parents[3]
+
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 W, H = 979, 1386
@@ -167,7 +169,7 @@ d.rounded_rectangle(page, 26, fill=(255, 255, 255, 246), outline=rgb("e8e3df"), 
 header = (20, 26, W - 20, 138)
 d.rounded_rectangle(header, 22, fill="white", outline=rgb("ebe5e0"), width=2)
 logo = Image.open(
-    "/Users/chengduyuanqizhishukejiyouxiangongsi/Desktop/aaa/jr-omni/jr-academy-brand/assets/logo/logo-zh-full.png"
+    ROOT / "jr-academy-brand/assets/logo/logo-zh-full.png"
 ).convert("RGBA")
 logo = logo.crop(logo.getbbox())
 ratio = 64 / logo.height
@@ -208,7 +210,7 @@ d.text((68, 543), "近24小时看融资、定价、合规边界；补位看自�
 d.text((766, 543), "5 条", font=font(26, 6), fill="#ff2a1e")
 
 mc = Image.open(
-    "/Users/chengduyuanqizhishukejiyouxiangongsi/Desktop/aaa/jr-omni/jr-academy-brand/assets/mascot/official/01-hero-fullbody.png"
+    ROOT / "jr-academy-brand/assets/mascot/official/01-hero-fullbody.png"
 ).convert("RGBA")
 ratio = 360 / mc.height
 mc = mc.resize((int(mc.width * ratio), 360), Image.LANCZOS)
@@ -270,8 +272,6 @@ d.rounded_rectangle(footer, 16, fill="white", outline=rgb("ebe4df"), width=2)
 d.text((40, 1338), "AI DAILY", font=font(16, 6), fill="#66676f")
 d.text((814, 1338), "TOP 5   ✧", font=font(16, 6), fill="#66676f")
 
-out = Path(
-    "/Users/chengduyuanqizhishukejiyouxiangongsi/Desktop/aaa/jr-omni/omni-report/ai-daily/assets/2026-07-15-poster-generated.png"
-)
+out = ROOT / "omni-report/ai-daily/assets/2026-07-15-poster-generated.png"
 Image.alpha_composite(img, base).save(out)
 print(out)
