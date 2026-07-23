@@ -1,0 +1,157 @@
+<svg width="979" height="1386" viewBox="0 0 979 1386" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="90" y1="60" x2="900" y2="1320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF9"/>
+      <stop offset="1" stop-color="#F6F0EA"/>
+    </linearGradient>
+    <linearGradient id="heroGlow" x1="150" y1="120" x2="860" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE9E4"/>
+      <stop offset="0.58" stop-color="#FFF4EC"/>
+      <stop offset="1" stop-color="#FFF9F5"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="979" height="1386" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#DCCFC4" flood-opacity="0.28"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <style>
+      .cn { font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
+      .en { font-family: "Avenir Next", "Helvetica Neue", sans-serif; }
+      .title { font-weight: 800; font-size: 60px; letter-spacing: -0.02em; fill: #121317; }
+      .subtitle { font-weight: 600; font-size: 24px; fill: #43464d; }
+      .meta { font-weight: 600; font-size: 18px; fill: #5C6067; }
+      .pill { font-weight: 700; font-size: 19px; }
+      .itemTag { font-weight: 700; font-size: 18px; }
+      .itemText { font-weight: 700; font-size: 25px; fill: #15171B; }
+      .small { font-weight: 600; font-size: 16px; fill: #666B72; }
+      .num { font-weight: 800; font-size: 46px; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="979" height="1386" rx="30" fill="url(#bg)"/>
+  <rect x="10" y="12" width="959" height="1362" rx="28" fill="#FFFFFF" stroke="#E9E2DA" stroke-width="2"/>
+
+  <g filter="url(#shadow)">
+    <rect x="24" y="28" width="931" height="106" rx="24" fill="#FFFFFF" stroke="#ECE5DE" stroke-width="2"/>
+  </g>
+  <image href="/Users/chengduyuanqizhishukejiyouxiangongsi/Desktop/aaa/jr-omni/jr-academy-brand/assets/logo/logo-zh-full.png" x="38" y="43" width="232" height="64" preserveAspectRatio="xMinYMid meet"/>
+  <text x="298" y="72" class="cn" style="font-weight:800;font-size:36px;fill:#FF2A1A;">AI</text>
+  <text x="366" y="72" class="cn" style="font-weight:800;font-size:36px;fill:#17191E;">日报</text>
+  <rect x="612" y="44" width="146" height="48" rx="18" fill="#FFFFFF" stroke="#E8E0D9" stroke-width="2"/>
+  <text x="633" y="74" class="cn meta">学AI来匠人</text>
+  <text x="727" y="74" class="cn" style="font-weight:700;font-size:18px;fill:#FF3A2A;">✦</text>
+  <rect x="776" y="44" width="160" height="48" rx="18" fill="#FFFFFF" stroke="#E8E0D9" stroke-width="2"/>
+  <rect x="791" y="56" width="18" height="18" rx="5" fill="none" stroke="#70757D" stroke-width="2"/>
+  <path d="M797 52V59M803 52V59M794 64H806" stroke="#70757D" stroke-width="2" stroke-linecap="round"/>
+  <text x="818" y="74" class="cn meta">2026 · 07 · 23</text>
+
+  <g>
+    <rect x="24" y="152" width="931" height="474" rx="28" fill="url(#heroGlow)" stroke="#F1E4DC" stroke-width="2"/>
+    <ellipse cx="318" cy="288" rx="174" ry="114" fill="#FFE2DA" opacity="0.6" filter="url(#soft)"/>
+    <ellipse cx="736" cy="258" rx="140" ry="88" fill="#FFEFD6" opacity="0.45" filter="url(#soft)"/>
+
+    <rect x="54" y="182" width="212" height="50" rx="24" fill="#FF2A1A"/>
+    <circle cx="81" cy="207" r="16" fill="#FFFFFF"/>
+    <path d="M77 196C82 199 87 206 85 212C83 219 78 221 75 217C72 214 72 208 74 203C75 200 76 198 77 196Z" fill="#FF2A1A"/>
+    <path d="M80 204C82 206 83 209 82 211C81 213 79 214 78 213C77 212 77 209 78 207C78 206 79 205 80 204Z" fill="#FFFFFF"/>
+    <text x="106" y="214" class="cn pill" fill="#FFFFFF">今日主线</text>
+
+    <text x="56" y="286" class="cn title">
+      <tspan x="56" dy="0">AI 工具开始补企业</tspan>
+      <tspan x="56" dy="72">真正会买单的那一层</tspan>
+    </text>
+
+    <text x="58" y="446" class="cn subtitle">
+      <tspan x="58" dy="0">Presence 进流程，Copilot 开始被按 ROI 和预算管理，</tspan>
+      <tspan x="58" dy="34">长期算力继续被模型公司提前锁走。</tspan>
+    </text>
+
+    <g>
+      <circle cx="64" cy="515" r="15" fill="none" stroke="#FF4A33" stroke-width="3"/>
+      <circle cx="64" cy="515" r="7" fill="none" stroke="#FF4A33" stroke-width="3"/>
+      <path d="M74 505L89 492M81 495H89M85 491V499" stroke="#FF4A33" stroke-width="3" stroke-linecap="round"/>
+      <text x="96" y="522" class="cn" style="font-weight:600;font-size:20px;fill:#2F3136;">OpenAI、GitHub、AMD / Anthropic 三条线同时指向企业化落地。</text>
+    </g>
+
+    <rect x="56" y="554" width="664" height="44" rx="22" fill="#F1180D"/>
+    <text x="78" y="582" class="cn" style="font-weight:700;font-size:17px;fill:#FFFFFF;">不是继续卷模型名字，而是开始补流程入口、管理面板和算力合同</text>
+
+    <rect x="748" y="552" width="118" height="46" rx="23" fill="#FFFFFF"/>
+    <text x="775" y="582" class="cn" style="font-weight:800;font-size:26px;fill:#F22A1A;">TOP 5</text>
+
+    <image href="/Users/chengduyuanqizhishukejiyouxiangongsi/Desktop/aaa/jr-omni/jr-academy-brand/assets/mascot/official/01-hero-fullbody.png" x="678" y="178" width="250" height="392" preserveAspectRatio="xMidYMid meet"/>
+    <path d="M684 208L694 220L708 209L700 227L717 231L701 238L706 255L693 243L680 252L686 236L669 230L685 223L684 208Z" fill="#FFB11D"/>
+    <path d="M881 404C891 412 899 425 899 438C899 456 888 469 872 469" stroke="#FF4A33" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <rect x="24" y="646" width="931" height="120" rx="24" fill="#FFFFFF" stroke="#ECE4DD" stroke-width="2"/>
+    <text x="44" y="716" class="cn num" fill="#FF2A1A">01</text>
+    <line x1="150" y1="670" x2="150" y2="742" stroke="#DDD6CF" stroke-width="2"/>
+    <rect x="174" y="666" width="112" height="30" rx="15" fill="#FFFFFF" stroke="#ECE3DD" stroke-width="2"/>
+    <text x="188" y="687" class="cn itemTag" fill="#FF2A1A">产品上线</text>
+    <text x="178" y="728" class="cn itemText">OpenAI 发布 Presence：企业 Agent 进入真实流程</text>
+    <rect x="838" y="664" width="94" height="84" rx="20" fill="#FF6B63"/>
+    <path d="M862 704H882M872 694V714M892 688C900 692 906 700 906 710C906 722 897 732 885 732H867" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g>
+    <rect x="24" y="786" width="931" height="120" rx="24" fill="#FFFFFF" stroke="#ECE4DD" stroke-width="2"/>
+    <text x="44" y="856" class="cn num" fill="#1F6DFF">02</text>
+    <line x1="150" y1="810" x2="150" y2="882" stroke="#DDD6CF" stroke-width="2"/>
+    <rect x="174" y="806" width="96" height="30" rx="15" fill="#FFFFFF" stroke="#ECE3DD" stroke-width="2"/>
+    <text x="188" y="827" class="cn itemTag" fill="#1F6DFF">AI 基建</text>
+    <text x="178" y="850" class="cn itemText">
+      <tspan x="178" dy="0">AMD 与 Anthropic 锁 2GW 级长期算力，</tspan>
+      <tspan x="178" dy="30">芯片合作开始按多年合同走</tspan>
+    </text>
+    <rect x="838" y="804" width="94" height="84" rx="20" fill="#2D7CF3"/>
+    <rect x="865" y="827" width="40" height="40" rx="8" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+    <path d="M871 819V827M881 819V827M891 819V827M900 819V827M871 867V875M881 867V875M891 867V875M900 867V875M857 833H865M857 847H865M905 833H913M905 847H913" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <rect x="24" y="926" width="931" height="120" rx="24" fill="#FFFFFF" stroke="#ECE4DD" stroke-width="2"/>
+    <text x="44" y="996" class="cn num" fill="#FF8B10">03</text>
+    <line x1="150" y1="950" x2="150" y2="1022" stroke="#DDD6CF" stroke-width="2"/>
+    <rect x="174" y="946" width="112" height="30" rx="15" fill="#FFFFFF" stroke="#ECE3DD" stroke-width="2"/>
+    <text x="188" y="967" class="cn itemTag" fill="#FF8B10">产品更新</text>
+    <text x="178" y="1008" class="cn itemText">GitHub 上线 Copilot 影响力仪表盘，开始按 phase 盘 ROI</text>
+    <rect x="838" y="944" width="94" height="84" rx="20" fill="#FF9C1E"/>
+    <path d="M860 1002L874 988L886 997L902 978" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M860 1020H908M860 1000V1020" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <rect x="24" y="1066" width="931" height="120" rx="24" fill="#FFFFFF" stroke="#ECE4DD" stroke-width="2"/>
+    <text x="44" y="1136" class="cn num" fill="#8A59FF">04</text>
+    <line x1="150" y1="1090" x2="150" y2="1162" stroke="#DDD6CF" stroke-width="2"/>
+    <rect x="174" y="1086" width="112" height="30" rx="15" fill="#FFFFFF" stroke="#ECE3DD" stroke-width="2"/>
+    <text x="188" y="1107" class="cn itemTag" fill="#8A59FF">产品更新</text>
+    <text x="178" y="1148" class="cn itemText">GitHub 把 AI credit pool 搬进 Billing UI，企业可直接控预算</text>
+    <rect x="838" y="1084" width="94" height="84" rx="20" fill="#9A71FF"/>
+    <path d="M865 1112H906M865 1128H894M865 1144H886" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="900" cy="1140" r="12" stroke="#FFFFFF" stroke-width="4"/>
+    <path d="M900 1133V1147M893 1140H907" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <rect x="24" y="1206" width="931" height="120" rx="24" fill="#FFFFFF" stroke="#ECE4DD" stroke-width="2"/>
+    <text x="44" y="1276" class="cn num" fill="#18A05E">05</text>
+    <line x1="150" y1="1230" x2="150" y2="1302" stroke="#DDD6CF" stroke-width="2"/>
+    <rect x="174" y="1226" width="112" height="30" rx="15" fill="#FFFFFF" stroke="#ECE3DD" stroke-width="2"/>
+    <text x="188" y="1247" class="cn itemTag" fill="#18A05E">Agent 编程</text>
+    <text x="178" y="1268" class="cn itemText">
+      <tspan x="178" dy="0">Copilot Code Review 补齐防火墙、</tspan>
+      <tspan x="178" dy="30">自定义 setup 与 head branch 指令</tspan>
+    </text>
+    <rect x="838" y="1224" width="94" height="84" rx="20" fill="#2EB670"/>
+    <path d="M885 1246L906 1254V1271C906 1284 897 1294 885 1298C873 1294 864 1284 864 1271V1254L885 1246Z" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M876 1270L883 1277L894 1262" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <rect x="24" y="1340" width="931" height="28" rx="14" fill="#FFFFFF" stroke="#ECE4DD" stroke-width="2"/>
+  <text x="42" y="1359" class="en small">AI DAILY</text>
+  <text x="822" y="1359" class="cn small">日期是副信息，主线判断才是主视觉</text>
+</svg>
