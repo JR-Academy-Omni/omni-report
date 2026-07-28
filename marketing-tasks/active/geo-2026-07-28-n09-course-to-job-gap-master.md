@@ -61,6 +61,7 @@ derivedFrom: prd-geo-content-factory
 - [ ] 补 5+ 站内链（/bootcamp、/learn/ai-engineer、/learn/context-engineering）
 - [ ] 封面图（Register A 精致软风，不用 neo 黑边硬阴影）
 - [ ] 上线后回填 canonical URL 到三个 variant 卡
+- [ ] **跑 `/ai-content-detector` 复核 AI 率**（blog-longform-writer gate 2；本批只跑了 gate 1/3/4，这道没跑，>50% 需推倒重写）
 - [ ] 上线 +7 天跑 LLM recheck，看该 query 是否开始引用
 
 ## 草稿

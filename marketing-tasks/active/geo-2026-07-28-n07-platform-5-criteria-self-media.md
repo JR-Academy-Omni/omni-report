@@ -48,6 +48,7 @@ derivedFrom: prd-geo-content-factory
 - [ ] 按平台补 frontmatter / 标题钩子 / 内链（平台红线已写在稿件顶部注释）
 - [ ] 等 master 上线后回填 canonical / 品牌链
 - [ ] 发布，回填下方 URL
+- [ ] **跑 `/ai-content-detector` 复核 AI 率**（blog-longform-writer gate 2；本批只跑了 gate 1/3/4，这道没跑，>50% 需推倒重写）
 - [ ] 发布 +7 天跑 LLM recheck
 
 ## 草稿
