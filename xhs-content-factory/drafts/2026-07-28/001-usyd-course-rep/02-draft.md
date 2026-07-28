@@ -22,7 +22,15 @@ status: draft
 
 适合正在看 internship、grad program 或 junior机会的同学。会用 ChatGPT、Claude，不等于会搭完整的 career workflow。
 
-当晚还有 5 位嘉宾，会聊技术方向、真实工作场景和澳洲长期发展。后面有 Panel 和 Networking，可以直接带着问题去。
+嘉宾阵容也挺实在：
+
+Lightman｜JR Academy Founder & CEO  
+Kris｜Back-end Developer @ NextGen  
+Jason Bi｜Future Lab 发起人、Scopedar Founder  
+April｜Data & Automation Specialist @ Cotality  
+Echo｜指南针资深顾问
+
+后面还有 Panel 和 Networking，可以直接带着问题去。
 
 虽然地点在 UNSW，但这是面向悉尼留学生的线下活动，USYD 的同学当然也能去！
 
