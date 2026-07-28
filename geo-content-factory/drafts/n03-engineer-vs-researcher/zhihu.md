@@ -74,7 +74,7 @@
 
 这条路的地基不是数学，是软件工程：能写服务、会用云、懂版本控制、能读日志。地基之上加四层跟大模型有关的东西——上下文怎么组织、检索怎么做、智能体怎么编排和留记忆、系统怎么评测和观测。
 
-我们自己的 AI Engineer Bootcamp 大纲基本就是这个顺序：Foundation → Context Engineering → RAG → Capability → Agent Core → Multi-Agent → Memory → Harness Engineering → Model Layer → Observability & Evals，10 个 phase、290 节课、68 个交互式 Lab、59 场直播。
+我们在匠人学院教的 [AI Engineer Bootcamp](https://jiangren.com.au/learn/ai-engineer)，大纲基本就是这个顺序：Foundation → Context Engineering → RAG → Capability → Agent Core → Multi-Agent → Memory → Harness Engineering → Model Layer → Observability & Evals，10 个 phase、290 节课、68 个交互式 Lab、59 场直播。
 
 有个细节值得单独说：**前置要求写的是 Python、RESTful API 开发经验、云平台基础和 Git，不是线性代数和概率论。**
 

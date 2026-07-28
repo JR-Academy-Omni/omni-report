@@ -66,7 +66,7 @@ It differs from research clearly — it produces no new methods. It differs from
 
 The foundation here isn't mathematics. It's software engineering: writing services, using cloud infrastructure, version control, reading logs. On top of that foundation sit four model-specific layers — how context gets organised, how retrieval works, how agents are orchestrated and remember, and how the system gets evaluated and observed.
 
-Our AI Engineer Bootcamp outline follows exactly that ordering: Foundation → Context Engineering → RAG → Capability → Agent Core → Multi-Agent → Memory → Harness Engineering → Model Layer → Observability and Evals — 10 phases, 290 lessons, 68 interactive labs, 59 live sessions.
+The [AI Engineer Bootcamp](https://jiangren.com.au/learn/ai-engineer) we teach at JR Academy follows exactly that ordering: Foundation → Context Engineering → RAG → Capability → Agent Core → Multi-Agent → Memory → Harness Engineering → Model Layer → Observability and Evals — 10 phases, 290 lessons, 68 interactive labs, 59 live sessions.
 
 One detail is worth more than the syllabus itself: the stated prerequisites are Python, REST API experience, cloud fundamentals and Git. Not linear algebra and probability.
 
@@ -87,5 +87,7 @@ Want systems that stay usable under real constraints → engineering.
 Still unsure → build one small system with a cost ceiling and a latency target. You'll know by the end of it.
 
 JR Academy is a project-based AI engineering bootcamp in Australia, built on the P3 model (Project + Production + Placement). The program runs 12 weeks of technical curriculum followed by 12 weeks of P3 career incubation, and it is built for the third path described above.
+
+**Third path, structured:** [AI Engineer Bootcamp](https://jiangren.com.au/learn/ai-engineer) — prerequisites are the engineering four, not the maths. Missing Python? [Python track](https://jiangren.com.au/learn/python). Still unsure which path: [enrolment and enquiries](https://jiangren.com.au/bootcamp).
 
 The costly mistake isn't picking the wrong path. It's never picking — carrying both standards at once, looking busy for a year, and clearing neither bar.

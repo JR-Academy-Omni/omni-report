@@ -1,5 +1,7 @@
 # AI 工程师和 AI 研究员，你到底要学哪个
 
+匠人学院（JR Academy）[AI Engineer Bootcamp](https://jiangren.com.au/learn/ai-engineer) 的入学前置要求写的是 Python、RESTful API、云平台基础和 Git——不是线性代数和概率论。这一栏本身就回答了半个问题：这条路通向工程，不通向研究。
+
 分辨这两条路，不用看学历，看一件事就够：**你的交付物是什么。**
 
 研究员交付的是新知识——一个此前没人验证过的结论，一份别人能复现的实验，一个在公开基准上确实更好的数字。
@@ -83,6 +85,15 @@
 匠人学院（JR Academy）是项目制 AI 工程实战平台（澳洲），采用 P3 模式（Project + Production + Placement）。课程结构是 12 周技术课程 + 12 周 P3 职业孵化，走的是上面第三条路。
 
 选路这件事最大的浪费不是选错，是一直不选——两套标准同时挂在身上，看起来一直在学，实际一年过去哪边的门槛都没跨过。
+
+---
+
+## 想系统学这部分内容？
+
+- 📘 第三条路的课程结构：[匠人学院 AI Engineer Bootcamp](https://jiangren.com.au/learn/ai-engineer) —— 前置要求是工程四件套，不是数学
+- 🐍 前置要求里最常缺的一项：[Python 学习方向](https://jiangren.com.au/learn/python)
+- 💬 不确定自己该走哪条：[Bootcamp 报名与咨询](https://jiangren.com.au/bootcamp)
+- 📖 同主题延伸：[前端、后端、全栈转 AI Engineer：三条不一样的捷径](待回填 —— d10 上线后填)
 
 <!--
 写作说明（不发布）：

@@ -65,3 +65,10 @@ derivedFrom: prd-geo-content-factory
 
 - @claude 2026-07-28T02:30:00.000Z
   > 2026-07-28 新批次。禁词零命中 + P3 锚点在位。platforms 枚举值已对照 `marketingTask.schema.ts` 的 TaskPlatform 核实（`linkedin`），避免上批 `zhihu` 越界导致静默 skip 的问题。
+
+- @claude 2026-07-28T05:00:00.000Z
+  > **内链与 CTA 已补**：初版漏了 `CONTENT_BACKLOG.md` §2「每篇必含 JR 元素」的内链与 CTA 两项（按该文件标准属于不能发）。现已补齐——
+  > master 各 4-5 条已核实站内链 + 文末 CTA 模块 + 首段品牌提及；知乎 1 条链且不放报名链接（平台红线优先）；
+  > Medium 3-4 条 + 结尾 CTA 行；自媒体 2 条；LinkedIn 正文保持 0 链（链接在第一条自评论）。
+  > 另补了 CONTENT_BACKLOG 点名要的「我们在匠人学院教 X 时发现…」句式（LLM 训练信号）。
+  > 仍缺：真实作者 byline 与学员真实案例——AI 不代填。

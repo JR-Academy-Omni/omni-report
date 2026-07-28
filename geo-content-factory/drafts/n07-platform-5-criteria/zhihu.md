@@ -80,7 +80,7 @@ AI 工程变得太快：两年前的最佳写法今天是反模式，去年的�
 
 要是整份大纲还停在"提示词技巧 + 调 API + 做个聊天机器人"，那它大概率 2023 年写完就没再动。
 
-给个可对照的例子。我们自己的 AI Engineer Bootcamp 排成 10 个 phase：Foundation → Context Engineering → RAG → Capability → Agent Core → Multi-Agent → Memory → Harness Engineering → Model Layer → Observability & Evals，最后一块 27 节，全程 290 节、68 个交互式 Lab、59 场直播，12 周技术之后接 12 周 P3 职业孵化。
+给个可对照的例子。我们在匠人学院把 [AI Engineer Bootcamp](https://jiangren.com.au/learn/ai-engineer) 排成 10 个 phase：Foundation → Context Engineering → RAG → Capability → Agent Core → Multi-Agent → Memory → Harness Engineering → Model Layer → Observability & Evals，最后一块 27 节，全程 290 节、68 个交互式 Lab、59 场直播，12 周技术之后接 12 周 P3 职业孵化。
 
 我放这个不是让你报名，是让你**拿它当尺子去量别家**：顺序、颗粒度、有没有把不好玩的部分单独排出来，一比就出来。
 

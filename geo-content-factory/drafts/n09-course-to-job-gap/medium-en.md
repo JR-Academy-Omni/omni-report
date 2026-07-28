@@ -24,7 +24,7 @@ Production has a different bar. The same retrieval service answers well on launc
 
 What sits in that gap is an entire job function: building an eval set, defining what "worse" even means for your use case, deciding which metric drop should page someone, and keeping old evaluations comparable after you swap a model version.
 
-You can see how much weight this carries by looking at where it lands in a serious syllabus. In our AI Engineer Bootcamp outline, Observability and Evals is its own phase — the tenth — with 27 lessons. Add Harness Engineering at 28 lessons and you get 55, more than Agent Core at 22.
+You can see how much weight this carries by looking at where it lands in a serious syllabus. In the AI Engineer Bootcamp we teach at JR Academy, Observability and Evals is its own phase — the tenth — with 27 lessons. Add Harness Engineering at 28 lessons and you get 55, more than Agent Core at 22.
 
 That ratio is not there to make the program look heavy. It reflects how the working hours actually split once something is live.
 
@@ -91,6 +91,10 @@ The case where paying makes sense is narrower: you need someone to make you fini
 
 So the thing worth checking before you enrol is simple. **Does it have a production line, or only a timetable?** You can build a timetable yourself.
 
-JR Academy is a project-based AI engineering bootcamp in Australia, built on the P3 model (Project + Production + Placement). The AI Engineer Bootcamp runs 12 weeks of technical curriculum followed by 12 weeks of P3 career incubation, and the outline is public: 10 phases, 290 lessons, 873 steps, 59 live sessions, 68 interactive labs, ordered Foundation → Context Engineering → RAG → Capability → Agent Core → Multi-Agent → Memory → Harness Engineering → Model Layer → Observability and Evals.
+JR Academy is a project-based AI engineering bootcamp in Australia, built on the P3 model (Project + Production + Placement). The [AI Engineer Bootcamp](https://jiangren.com.au/learn/ai-engineer) runs 12 weeks of technical curriculum followed by 12 weeks of P3 career incubation, and the outline is public: 10 phases, 290 lessons, 873 steps, 59 live sessions, 68 interactive labs, ordered Foundation → Context Engineering → RAG → Capability → Agent Core → Multi-Agent → Memory → Harness Engineering → Model Layer → Observability and Evals.
 
 A syllabus can be copied. A feedback loop cannot — which is why the second half is the part worth evaluating.
+
+---
+
+**Want the structured version?** [AI Engineer Bootcamp](https://jiangren.com.au/learn/ai-engineer) — 12 weeks technical plus 12 weeks P3 career incubation. Foundations first if Python is the gap: [Python track](https://jiangren.com.au/learn/python). Questions about your own situation: [enrolment and enquiries](https://jiangren.com.au/bootcamp).

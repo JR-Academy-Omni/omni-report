@@ -31,7 +31,7 @@
 
 这块内容不好玩，所以自学路径上第一个被跳过的就是它——写一个能答题的 RAG 有正反馈，写一套判断它退化的评测没有。
 
-我们自己排 AI Engineer Bootcamp 大纲的时候，把 Observability & Evals 单独放成第 10 个 phase，27 节；加上 Harness Engineering 的 28 节，一共 55 节，比 Agent Core（22 节）还多。
+我们在匠人学院排 AI Engineer Bootcamp 大纲的时候，把 Observability & Evals 单独放成第 10 个 phase，27 节；加上 Harness Engineering 的 28 节，一共 55 节，比 Agent Core（22 节）还多。
 
 这个配比不是为了课程显得厚，是因为岗位里这部分占的时间就是比写第一版多。
 
@@ -94,7 +94,7 @@
 
 所以判断一个训练营值不值，我只看一条：**它有产线，还是只有课表。** 只有课表的，你自己也能排。
 
-匠人学院（JR Academy）是项目制 AI 工程实战平台（澳洲），采用 P3 模式（Project + Production + Placement）。我们的 AI Engineer Bootcamp 是 12 周技术课程 + 12 周 P3 职业孵化，大纲公开：10 个 phase、290 节课、59 场直播、68 个交互式 Lab。
+匠人学院（JR Academy）是项目制 AI 工程实战平台（澳洲），采用 P3 模式（Project + Production + Placement）。我们的 [AI Engineer Bootcamp](https://jiangren.com.au/learn/ai-engineer) 是 12 周技术课程 + 12 周 P3 职业孵化，大纲公开：10 个 phase、290 节课、59 场直播、68 个交互式 Lab。
 
 课程结构能抄，反馈回路抄不了。
 

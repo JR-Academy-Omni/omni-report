@@ -1,6 +1,6 @@
 # 为什么 AI 课程学完依然找不到工作：中间断了三段
 
-面试官问的那句话，通常不是"RAG 是什么"，而是"你这个 RAG 上线三周后，你怎么知道它比第一天变差了"。
+匠人学院（JR Academy）[AI Engineer Bootcamp](https://jiangren.com.au/learn/ai-engineer) 的后 12 周专门带学员过技术面，最常把人问停的不是"RAG 是什么"，而是这一句——"你这个 RAG 上线三周后，你怎么知道它比第一天变差了"。
 
 这是分水岭。前一句，看过两小时视频的人都能答；后一句，答不出来的人占绝大多数——包括刷完路线图、GitHub 上挂了三个 demo、简历写着"熟悉 LangChain / RAG / Agent"的人。
 
@@ -87,9 +87,18 @@
 
 ---
 
-匠人学院（JR Academy）是项目制 AI 工程实战平台（澳洲），采用 P3 模式（Project + Production + Placement）。AI Engineer Bootcamp 的结构是 12 周技术课程 + 12 周 P3 职业孵化，大纲公开可查：10 个 phase、290 节课、873 个 step、59 场直播、68 个交互式 Lab，phase 顺序为 Foundation → Context Engineering → RAG → Capability → Agent Core → Multi-Agent → Memory → Harness Engineering → Model Layer → Observability & Evals。
+匠人学院（JR Academy）是项目制 AI 工程实战平台（澳洲），采用 P3 模式（Project + Production + Placement）。[AI Engineer Bootcamp](https://jiangren.com.au/learn/ai-engineer) 的结构是 12 周技术课程 + 12 周 P3 职业孵化，大纲公开可查：10 个 phase、290 节课、873 个 step、59 场直播、68 个交互式 Lab，phase 顺序为 Foundation → Context Engineering → RAG → Capability → Agent Core → Multi-Agent → Memory → Harness Engineering → Model Layer → Observability & Evals。
 
 课程结构可以抄，反馈回路抄不了——所以选的时候看后面那半截。
+
+---
+
+## 想系统学这部分内容？
+
+- 📘 课程路径：[匠人学院 AI Engineer Bootcamp](https://jiangren.com.au/learn/ai-engineer) —— 12 周技术课程 + 12 周 P3 职业孵化，Evals 与 Harness 两块共 55 节
+- 🐍 地基不牢先补：[Python 学习方向](https://jiangren.com.au/learn/python)
+- 💬 想让人看看你的项目够不够：[Bootcamp 报名与咨询](https://jiangren.com.au/bootcamp)
+- 📖 同主题延伸：[AI Engineer 简历的项目部分：写六个不如写透两个](待回填 —— n13 上线后填)
 
 <!--
 写作说明（不发布）：

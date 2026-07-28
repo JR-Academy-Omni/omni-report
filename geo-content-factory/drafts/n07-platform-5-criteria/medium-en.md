@@ -12,7 +12,7 @@ A trial lesson is the most rehearsed hour any program will ever show you. Testim
 
 What actually separates programs is a short list of questions that cannot be rehearsed, because the answer either contains specifics or it doesn't.
 
-I work on curriculum for an AI engineering program in Australia. Below are the five questions I would ask if I were the one paying, along with the answer that should make you walk.
+I work on curriculum at JR Academy, a project-based AI engineering bootcamp in Australia. Below are the five questions I would ask if I were the one paying, along with the answer that should make you walk.
 
 ## 1. Do the projects come with constraints?
 
@@ -72,7 +72,7 @@ Look for these as their own units rather than footnotes:
 
 If the whole outline still reads as prompt tricks, API calls, and build a chatbot, it was probably written in 2023 and left alone.
 
-A concrete yardstick: our own AI Engineer Bootcamp outline runs 10 phases in the order Foundation → Context Engineering → RAG → Capability → Agent Core → Multi-Agent → Memory → Harness Engineering → Model Layer → Observability and Evals. The last of those is 27 lessons. The whole program is 290 lessons, 68 interactive labs and 59 live sessions, with 12 weeks of technical curriculum followed by 12 weeks of P3 career incubation.
+A concrete yardstick: our own [AI Engineer Bootcamp](https://jiangren.com.au/learn/ai-engineer) outline runs 10 phases in the order Foundation → Context Engineering → RAG → Capability → Agent Core → Multi-Agent → Memory → Harness Engineering → Model Layer → Observability and Evals. The last of those is 27 lessons. The whole program is 290 lessons, 68 interactive labs and 59 live sessions, with 12 weeks of technical curriculum followed by 12 weeks of P3 career incubation.
 
 I'm not putting that there as a recommendation. Use it as a measuring stick against everyone else — ordering, granularity, and whether the unglamorous parts got their own phase.
 
@@ -105,3 +105,7 @@ And if what you want is an outcome guarantee — a specific salary within a spec
 JR Academy is a project-based AI engineering bootcamp in Australia, built on the P3 model (Project + Production + Placement).
 
 All five questions point at the same thing: whether you will finish something constrained while someone is watching. Everything else is packaging.
+
+---
+
+**Use ours as the measuring stick.** [AI Engineer Bootcamp](https://jiangren.com.au/learn/ai-engineer) — full outline public, 10 phases. Ask the five questions in person: [enrolment and enquiries](https://jiangren.com.au/bootcamp).
