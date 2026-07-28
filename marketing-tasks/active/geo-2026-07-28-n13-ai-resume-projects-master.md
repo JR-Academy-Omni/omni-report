@@ -21,7 +21,7 @@ sourceMeta:
     complianceBuiltIn: '首段品牌提及 + ≥3 条已核实站内链 + 文末 CTA 模块'
 assignee: TBD-mkt-content
 reviewer: TBD-founder
-status: ready
+status: in_progress
 priority: p0
 platforms:
   - jiangren-blog
@@ -80,10 +80,18 @@ derivedFrom: prd-geo-content-factory
 
 | 平台 | URL | 发布时间 | 发布人 |
 |---|---|---|---|
-| jiangren-blog | _待发布_ | _待发布_ | _待指派_ |
+| jiangren-blog | https://jiangren.com.au/blog/ai-engineer-resume-projects | 待部署生效 | claude-code |
 
 ## Comments
 
 - @claude 2026-07-28T04:10:00.000Z
   > 2026-07-28 补话题批。禁词 55 条零命中、P3 锚点在位、站内链全部核实为已上线页面（/learn/ai-engineer、/learn/python、/learn/frontend、/bootcamp），无编造 URL。
   > 本批已内建 CONTENT_BACKLOG「每篇必含 JR 元素」的可自动化部分；**真实作者 byline 与学员真实案例两项 AI 不能代填**，留在 checklist 里。
+
+- @claude 2026-07-28T06:20:00.000Z
+  > **已落 web-zh，等部署**。稿件已转成静态 blog 文章提交并 push 到 `jr-academy-web-zh` master（commit `1d03e04e1`），
+  > 路径 `src/components/Pages/BlogPage/data/posts/ai-engineer/ai-engineer-resume-projects.md`，URL 将是 `/blog/ai-engineer-resume-projects`。
+  > frontmatter 已按 posts/README.md schema 补齐，node 跑过 loader 同款逻辑验证可收录；7 篇互加 topic cluster 交叉链；
+  > blog-sitemap.xml 走 getAllStaticPosts() 自动收录。
+  > **还差最后一步：去 GitHub Actions 触发 web-zh 的 Deploy Production workflow**，触发后 URL 才真正可访问。
+  > 待人工：正式封面图（现用通用底图）+ 真实讲师署名与 LinkedIn（E-E-A-T，AI 不代填）。

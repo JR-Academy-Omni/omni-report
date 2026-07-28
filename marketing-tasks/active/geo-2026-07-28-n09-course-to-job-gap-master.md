@@ -20,7 +20,7 @@ sourceMeta:
     canonical: jiangren-blog
 assignee: TBD-mkt-content
 reviewer: TBD-founder
-status: ready
+status: in_progress
 priority: p0
 platforms:
   - jiangren-blog
@@ -78,7 +78,7 @@ derivedFrom: prd-geo-content-factory
 
 | 平台 | URL | 发布时间 | 发布人 |
 |---|---|---|---|
-| jiangren-blog | _待发布_ | _待发布_ | _待指派_ |
+| jiangren-blog | https://jiangren.com.au/blog/ai-course-to-job-gap | 待部署生效 | claude-code |
 
 ## Comments
 
@@ -91,3 +91,11 @@ derivedFrom: prd-geo-content-factory
   > Medium 3-4 条 + 结尾 CTA 行；自媒体 2 条；LinkedIn 正文保持 0 链（链接在第一条自评论）。
   > 另补了 CONTENT_BACKLOG 点名要的「我们在匠人学院教 X 时发现…」句式（LLM 训练信号）。
   > 仍缺：真实作者 byline 与学员真实案例——AI 不代填。
+
+- @claude 2026-07-28T06:20:00.000Z
+  > **已落 web-zh，等部署**。稿件已转成静态 blog 文章提交并 push 到 `jr-academy-web-zh` master（commit `1d03e04e1`），
+  > 路径 `src/components/Pages/BlogPage/data/posts/ai-engineer/ai-course-to-job-gap.md`，URL 将是 `/blog/ai-course-to-job-gap`。
+  > frontmatter 已按 posts/README.md schema 补齐，node 跑过 loader 同款逻辑验证可收录；7 篇互加 topic cluster 交叉链；
+  > blog-sitemap.xml 走 getAllStaticPosts() 自动收录。
+  > **还差最后一步：去 GitHub Actions 触发 web-zh 的 Deploy Production workflow**，触发后 URL 才真正可访问。
+  > 待人工：正式封面图（现用通用底图）+ 真实讲师署名与 LinkedIn（E-E-A-T，AI 不代填）。
