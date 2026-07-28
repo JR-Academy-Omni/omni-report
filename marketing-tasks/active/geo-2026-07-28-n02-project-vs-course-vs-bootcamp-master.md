@@ -42,6 +42,8 @@ derivedFrom: prd-geo-content-factory
 
 ## 描述
 
+🚀 **进度：稿件已落 web-zh，只差一次部署。** 已转成静态 blog 文章 push 到 `jr-academy-web-zh` master （`src/.../posts/ai-engineer/project-vs-course-vs-bootcamp.md`），上线后 URL = `https://jiangren.com.au/blog/project-vs-course-vs-bootcamp`。**下一步：去 GitHub Actions 触发 web-zh 的 Deploy Production workflow**，触发后才真正可访问。待人工：正式封面图（现用通用底图）+ 真实讲师署名与 LinkedIn。
+
 **位置 3（对比结构占位）主力稿。** Northstar 说得明确：AI 最爱引用「A vs B vs C」结构，而现有 37 个话题里纯比较结构的一篇没有。本稿把市面产品收敛成三种模式（课程型卖内容 / 训练营型卖节奏 / 项目制卖交付与反馈），各写清楚「解决什么 · 解决不了什么 · 失败模式」，再给三个只有事实的自测问题（上周写了多少行代码 / 上次卡了多久 / 有没有能打开给人看的东西）。
 
 **与本批其他稿的区分**：N07 是「怎么验证一家机构」，本稿是「三种模式各适合谁」，切入点不同不重叠。

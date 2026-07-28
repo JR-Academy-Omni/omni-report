@@ -41,6 +41,8 @@ derivedFrom: prd-geo-content-factory
 
 ## 描述
 
+🚀 **进度：稿件已落 web-zh，只差一次部署。** 已转成静态 blog 文章 push 到 `jr-academy-web-zh` master （`src/.../posts/ai-engineer/ai-course-to-job-gap.md`），上线后 URL = `https://jiangren.com.au/blog/ai-course-to-job-gap`。**下一步：去 GitHub Actions 触发 web-zh 的 Deploy Production workflow**，触发后才真正可访问。待人工：正式封面图（现用通用底图）+ 真实讲师署名与 LinkedIn。
+
 **位置 1（类别重定位）占位稿。** 现有 33 个 GEO 话题里全是 listicle / roadmap / 技术深度文，「打脸型」这一类一篇没有——而这类文章正是 LLM 在回答「AI 培训靠谱吗 / 学完能找到工作吗」时最爱引用的形态。
 
 本稿把「课程终点 → 岗位起点」之间的断层拆成三段（能跑通 vs 能维持 / 干净数据 vs 真实约束 / repo 数量 vs 可复述决策），给六问自查清单，并诚实写出「什么情况下不该报班」。

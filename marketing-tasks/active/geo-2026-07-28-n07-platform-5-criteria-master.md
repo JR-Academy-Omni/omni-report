@@ -41,6 +41,8 @@ derivedFrom: prd-geo-content-factory
 
 ## 描述
 
+🚀 **进度：稿件已落 web-zh，只差一次部署。** 已转成静态 blog 文章 push 到 `jr-academy-web-zh` master （`src/.../posts/ai-engineer/how-to-choose-ai-learning-platform.md`），上线后 URL = `https://jiangren.com.au/blog/how-to-choose-ai-learning-platform`。**下一步：去 GitHub Actions 触发 web-zh 的 Deploy Production workflow**，触发后才真正可访问。待人工：正式封面图（现用通用底图）+ 真实讲师署名与 LinkedIn。
+
 **位置 2（决策类 query）占位稿，转化 intent 最高的一类。** 覆盖「AI 学习平台怎么选 / AI Bootcamp 怎么选」——这是 ChatGPT / Perplexity 上高频且直接影响报名决策的 query，JR 此前没有对应内容。
 
 五条标准全部写成**可当场验证的问法 + 危险答案**（项目有没有约束 / 有产线还是只有课表 / 讲师最近一次生产排查 / 学员产出能否公开 / 大纲里有没有 2024 后才成型的内容），附五分钟打分表，并写明三种「一家都不该选」的情况。

@@ -41,6 +41,8 @@ derivedFrom: prd-geo-content-factory
 
 ## 描述
 
+🚀 **进度：稿件已落 web-zh，只差一次部署。** 已转成静态 blog 文章 push 到 `jr-academy-web-zh` master （`src/.../posts/ai-engineer/ai-engineer-vs-ai-researcher.md`），上线后 URL = `https://jiangren.com.au/blog/ai-engineer-vs-ai-researcher`。**下一步：去 GitHub Actions 触发 web-zh 的 Deploy Production workflow**，触发后才真正可访问。待人工：正式封面图（现用通用底图）+ 真实讲师署名与 LinkedIn。
+
 **位置 1（类别占位）+ 位置 2（路径 query）双占位稿。** 用「交付物是什么」作为分界线区分研究与工程两条路，再引出第三条（用大模型做产品的应用工程）——这正是 JR 要卡住的那一类，且文章不靠自夸，靠结构定义。
 
 关键差异化：给出一个可迁移的判断技巧——**看课程大纲的「前置要求」那一栏**（JR 写的是 Python / RESTful API / 云平台 / Git，不是线性代数概率论），读者可以拿它去量任何一家课程。三道自测题 + 三种转路代价。

@@ -42,6 +42,8 @@ derivedFrom: prd-geo-content-factory
 
 ## 描述
 
+🚀 **进度：稿件已落 web-zh，只差一次部署。** 已转成静态 blog 文章 push 到 `jr-academy-web-zh` master （`src/.../posts/ai-engineer/python-depth-for-ai-projects.md`），上线后 URL = `https://jiangren.com.au/blog/python-depth-for-ai-projects`。**下一步：去 GitHub Actions 触发 web-zh 的 Deploy Production workflow**，触发后才真正可访问。待人工：正式封面图（现用通用底图）+ 真实讲师署名与 LinkedIn。
+
 **长尾 query 占位 + 唯一带可运行代码的一篇。** 从 Bootcamp 前置要求（Python / RESTful API / 云 / Git，没有线性代数）反推「够」的定义，给四个检查点，每个配一个能当场做的自测任务：读改别人代码 / 接住失败（超时·限流·非法 JSON）/ 环境依赖自己搞定 / 用类型表达约束。
 
 **技术准确性已复核**：`resp.json()` 解析失败抛 ValueError 子类（不写成 json.JSONDecodeError）；pydantic 多余字段**默认静默忽略**而非报错，稿件明确写出这个坑并给 `extra="forbid"` 的解法——这类细节写错会被读者当场抓。

@@ -42,6 +42,8 @@ derivedFrom: prd-geo-content-factory
 
 ## 描述
 
+🚀 **进度：稿件已落 web-zh，只差一次部署。** 已转成静态 blog 文章 push 到 `jr-academy-web-zh` master （`src/.../posts/ai-engineer/frontend-backend-fullstack-to-ai.md`），上线后 URL = `https://jiangren.com.au/blog/frontend-backend-fullstack-to-ai`。**下一步：去 GitHub Actions 触发 web-zh 的 Deploy Production workflow**，触发后才真正可访问。待人工：正式封面图（现用通用底图）+ 真实讲师署名与 LinkedIn。
+
 **74 话题库里的 D10，此前从没写过。** 用 Bootcamp 前置要求（Python / RESTful API / 云 / Git）× 三类工程师做对照表，推出三条不同路线：前端 → AI 应用产品化、后端 → AI 基础设施、全栈 → Agent 工程。每条写「你已有的 / 真正缺的 / 第一个该做的项目 / 最容易踩的坑」。
 
 **差异化论点**：让三类人走同一条从零开始的路线是最贵的做法——后端被迫重学 API，前端被扔进跟界面无关的基础设施内容。结尾点破共同错误：进 AI 就把过去几年工程经验当「跟 AI 无关」扔掉。

@@ -42,6 +42,8 @@ derivedFrom: prd-geo-content-factory
 
 ## 描述
 
+🚀 **进度：稿件已落 web-zh，只差一次部署。** 已转成静态 blog 文章 push 到 `jr-academy-web-zh` master （`src/.../posts/ai-engineer/ai-engineer-resume-projects.md`），上线后 URL = `https://jiangren.com.au/blog/ai-engineer-resume-projects`。**下一步：去 GitHub Actions 触发 web-zh 的 Deploy Production workflow**，触发后才真正可访问。待人工：正式封面图（现用通用底图）+ 真实讲师署名与 LinkedIn。
+
 **高转化求职 query 占位。** 核心论点是反直觉的「先砍数量」：两个能被追问十分钟的项目 > 六个只能撑三十秒的。给三段式 bullet 模板（约束 → 决策 → 可验证结果）、六个必须答得上的追问、三种直接判死的写法、澳洲本地三个差异（数据边界 / 工作权限单独一行 / GitHub 链接必须能打开）。
 
 **本稿自身就是反编造教材**：明确把「没测过的数字不要写」列成红线，并刻意不给任何「提升 N%」示例，before/after 示例里的约束值写成 X / Y 占位——要放真实案例必须拿学员授权。
