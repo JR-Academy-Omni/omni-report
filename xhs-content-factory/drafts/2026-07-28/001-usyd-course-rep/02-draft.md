@@ -24,10 +24,14 @@ status: draft
 
 嘉宾阵容也挺实在：
 
-Lightman｜JR Academy Founder & CEO  
-Kris｜Back-end Developer @ NextGen  
-Jason Bi｜Future Lab 发起人、Scopedar Founder  
-April｜Data & Automation Specialist @ Cotality  
+Lightman｜JR Academy Founder & CEO
+
+Kris｜Back-end Developer @ NextGen
+
+Jason Bi｜Future Lab 发起人、Scopedar Founder
+
+April｜Data & Automation Specialist @ Cotality
+
 Echo｜指南针资深顾问
 
 后面还有 Panel 和 Networking，可以直接带着问题去。
