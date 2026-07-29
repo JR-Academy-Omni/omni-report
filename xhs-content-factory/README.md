@@ -2,6 +2,20 @@
 
 > AI 驱动的小红书内容生产工作区。从选题到打分跑完整 pipeline，最后自动生成 marketing-tasks 任务卡给员工手动发布。
 
+## 🚨 定位（2026-07-15 起）：这里是「工作区」，成品统一落 new-media
+
+本目录只放**过程文件**（topic / 3 切角 draft / review / score / 备选海报）。
+**定稿正文 + 选定的封面/内文图**必须按统一规范再落一份到：
+
+```
+jr-omni/new-media/xiaohongshu/{account-slug}/posts/{YYYY-MM-DD}-{slug}.md      ← 带 frontmatter
+jr-omni/new-media/xiaohongshu/{account-slug}/posts/assets/{YYYY-MM-DD}-{slug}/  ← cover.png 等
+```
+
+然后在 jr-omni 根跑 `python3 new-media/xiaohongshu/build_xhs_index.py` + push。
+admin 后台「小红书内容库」（admin.jiangren.com.au → 团队工作台 → 小红书内容库）展示的就是那份索引。
+完整规范 → `jr-omni/new-media/xiaohongshu/CONTENT_FORMAT.md`。
+
 ## 路径红线 — 绝不放 curriculum/
 
 ```
