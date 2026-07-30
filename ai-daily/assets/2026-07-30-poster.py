@@ -4,7 +4,7 @@ import textwrap
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parents[3]
-W, H = 1054, 1492
+W, H = 1024, 1536
 
 
 def font(size, weight=6):
@@ -150,8 +150,8 @@ logo = logo.resize((int(logo.width * 70 / logo.height), 70), Image.LANCZOS)
 canvas.alpha_composite(logo, (48, 52))
 d.text((330, 64), "AI", font=font(34, 8), fill="#ff2419")
 d.text((390, 60), "日报 · TOP 5", font=font(38, 8), fill="#15161b")
-d.rounded_rectangle((828, 54, 1014, 104), 25, fill="#f7f7fb")
-d.text((858, 64), "2026 · 07 · 30", font=font(22, 8), fill="#132199")
+d.rounded_rectangle((804, 54, 988, 104), 25, fill="#f7f7fb")
+d.text((834, 64), "2026 · 07 · 30", font=font(22, 8), fill="#132199")
 d.line((24, 164, W - 24, 164), fill=rgb("eee8e4"), width=1)
 
 # Hero
@@ -189,21 +189,21 @@ mascot = mascot.resize((int(mascot.width * 500 / mascot.height), 500), Image.LAN
 shadow = Image.new("RGBA", mascot.size, (0, 0, 0, 0))
 shadow.paste((0, 0, 0, 22), (8, 10), mascot.getchannel("A"))
 shadow = shadow.filter(ImageFilter.GaussianBlur(7))
-canvas.alpha_composite(shadow, (680, 232))
-canvas.alpha_composite(mascot, (676, 222))
+canvas.alpha_composite(shadow, (650, 232))
+canvas.alpha_composite(mascot, (646, 222))
 
 # Cards
 items = [
-    ("01", "#ff2a1e", "模型能力", "GPT-5.6 Sol：记忆机制让 ARC-AGI-3 分数提升 3 倍", "#fffafa", "#ffe7e7", [draw_memory, draw_speed]),
-    ("02", "#1976ff", "科研分发", "OpenAI 向 10 万科研人员开放前沿模型与工具", "#fbfdff", "#e7f0ff", [draw_research, draw_memory]),
+    ("01", "#ff2a1e", "模型能力", "GPT-5.6 Sol：记忆机制让分数提升 3 倍", "#fffafa", "#ffe7e7", [draw_memory, draw_speed]),
+    ("02", "#1976ff", "科研分发", "OpenAI 向 10 万科研人员开放前沿工具", "#fbfdff", "#e7f0ff", [draw_research, draw_memory]),
     ("03", "#ff8300", "Agent 编程", "Copilot review 接入 Agent skills 与 MCP", "#fffdf9", "#fff0df", [draw_review, draw_memory]),
     ("04", "#8b55ff", "模型效率", "GPT-5.6 优化推理栈，服务成本降 20%", "#fdfbff", "#efe6ff", [draw_speed, draw_memory]),
-    ("05", "#11a66a", "安全治理", "OpenAI 研究 Agent 失控，另涉 4 个服务账号", "#fbfffd", "#dcf5ee", [draw_shield, draw_review]),
+    ("05", "#11a66a", "安全治理", "OpenAI 研究 Agent 失控，波及 4 个账号", "#fbfffd", "#dcf5ee", [draw_shield, draw_review]),
 ]
 
-y0 = 802
+y0 = 806
 gap = 14
-card_h = 112
+card_h = 120
 for idx, (num, num_color, tag, title, grad_a, grad_b, icon_fns) in enumerate(items):
     y = y0 + idx * (card_h + gap)
     canvas.alpha_composite(rounded_gradient((36, y, W - 36, y + card_h), grad_a, grad_b, 22), (36, y))
@@ -214,14 +214,14 @@ for idx, (num, num_color, tag, title, grad_a, grad_b, icon_fns) in enumerate(ite
     tag_w = d.textbbox((0, 0), tag, font=font(20, 8))[2] + 32
     d.rounded_rectangle((214, y + 22, 214 + tag_w, y + 56), 17, fill="white", outline=rgb("e7dcd6"), width=2)
     d.text((230, y + 24), tag, font=font(20, 8), fill=num_color)
-    lines = fit_text(d, title, font(24, 8), 500)
-    ty = y + 66 if len(lines) == 1 else y + 56
+    lines = fit_text(d, title, font(24, 8), 470)
+    ty = y + 70 if len(lines) == 1 else y + 59
     for line in lines[:2]:
         d.text((216, ty), line, font=font(24, 8), fill="#15161b")
         ty += 31
-    icon_x = 742
+    icon_x = 708
     for fn in icon_fns:
-        fn(d, (icon_x, y + 30, icon_x + 68, y + 88), num_color)
+        fn(d, (icon_x, y + 32, icon_x + 68, y + 92), num_color)
         icon_x += 104
 
 # Footer
