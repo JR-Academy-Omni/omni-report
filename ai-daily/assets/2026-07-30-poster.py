@@ -153,10 +153,13 @@ d.text((138, 210), "今日 AI 日历 · HIGHLIGHT", font=font(22, 8), fill="whit
 
 d.text((54, 300), "7月30日", font=font(68, 8), fill="#111216")
 d.text((54, 416), "AI 新闻榜", font=font(68, 8), fill="#111216")
-d.text((56, 510), "OpenAI 连发记忆、科研、效率栈，GitHub 把团队上下文带进 review。", font=font(24, 6), fill="#55575e")
-d.text((500, 462), "今日 5 条", font=font(34, 8), fill="#ff1f13")
-d.rounded_rectangle((56, 584, 750, 636), 26, fill="#f51d14")
-d.text((78, 598), "今日 5 条：ARC-AGI-3、科研计划、Copilot review、推理降本、Agent 安全", font=font(18, 8), fill="white")
+summary = "OpenAI 连发模型记忆、科研分发和效率栈，GitHub 把团队上下文带进 code review。"
+for i, line in enumerate(fit_text(d, summary, font(23, 6), 600)[:2]):
+    d.text((56, 504 + i * 31), line, font=font(23, 6), fill="#55575e")
+d.rounded_rectangle((56, 586, 64, 636), 4, fill="#f51d14")
+highlight = "今日重点：ARC-AGI-3、科研计划、Copilot review、推理降本、Agent 安全"
+for i, line in enumerate(fit_text(d, highlight, font(19, 8), 620)[:2]):
+    d.text((82, 586 + i * 26), line, font=font(19, 8), fill="#f51d14")
 
 mascot = Image.open(ROOT / "jr-academy-brand/assets/mascot/official/01-hero-fullbody.png").convert("RGBA")
 mascot = mascot.crop(mascot.getbbox())
