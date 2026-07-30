@@ -1,319 +1,206 @@
 from pathlib import Path
-
-ROOT = Path(__file__).resolve().parents[3]
+import textwrap
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
-W, H = 979, 1318
-img = Image.new("RGBA", (W, H), "#fcfbf8")
-base = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-d = ImageDraw.Draw(base)
-
-
-def rgb(h):
-    h = h.lstrip("#")
-    return tuple(int(h[i : i + 2], 16) for i in (0, 2, 4))
+ROOT = Path(__file__).resolve().parents[3]
+W, H = 1054, 1492
 
 
 def font(size, weight=6):
     return ImageFont.truetype("/System/Library/Fonts/PingFang.ttc", size, index=weight)
 
 
-def draw_calendar(draw, x, y, s, color):
-    draw.rounded_rectangle((x, y, x + s, y + s), 6, outline=color, width=2)
-    draw.line((x + 6, y + 12, x + s - 6, y + 12), fill=color, width=2)
-    draw.line((x + 10, y - 2, x + 10, y + 7), fill=color, width=2)
-    draw.line((x + s - 10, y - 2, x + s - 10, y + 7), fill=color, width=2)
+def rgb(value):
+    value = value.lstrip("#")
+    return tuple(int(value[i : i + 2], 16) for i in (0, 2, 4))
 
 
-def draw_flame_icon(draw, x, y, scale=1.0, color="#ff2619"):
-    outer = [
-        (x + 12 * scale, y + 1 * scale),
-        (x + 17 * scale, y + 6 * scale),
-        (x + 18 * scale, y + 12 * scale),
-        (x + 15 * scale, y + 18 * scale),
-        (x + 12 * scale, y + 22 * scale),
-        (x + 8 * scale, y + 18 * scale),
-        (x + 6 * scale, y + 13 * scale),
-        (x + 6 * scale, y + 8 * scale),
-        (x + 9 * scale, y + 4 * scale),
-    ]
-    inner = [
-        (x + 12 * scale, y + 8 * scale),
-        (x + 14 * scale, y + 12 * scale),
-        (x + 13 * scale, y + 16 * scale),
-        (x + 10 * scale, y + 17 * scale),
-        (x + 9 * scale, y + 14 * scale),
-        (x + 10 * scale, y + 11 * scale),
-    ]
-    draw.polygon(outer, fill=color)
-    draw.polygon(inner, fill="white")
-    draw.ellipse((x + 7 * scale, y + 17 * scale, x + 17 * scale, y + 27 * scale), fill=color)
-    draw.ellipse((x + 10 * scale, y + 20 * scale, x + 14 * scale, y + 24 * scale), fill="white")
+def fit_text(draw, text, font_obj, max_width):
+    current = ""
+    lines = []
+    for ch in text:
+        trial = current + ch
+        if draw.textbbox((0, 0), trial, font=font_obj)[2] <= max_width:
+            current = trial
+        else:
+            if current:
+                lines.append(current)
+            current = ch
+    if current:
+        lines.append(current)
+    return lines
 
 
-def draw_target_icon(draw, x, y, color="#ff3a2d"):
-    draw.ellipse((x, y, x + 22, y + 22), outline=color, width=3)
-    draw.ellipse((x + 6, y + 6, x + 16, y + 16), outline=color, width=3)
-    draw.line((x + 17, y + 5, x + 26, y - 4), fill=color, width=3)
-    draw.line((x + 20, y - 2, x + 27, y - 2), fill=color, width=3)
-    draw.line((x + 25, y - 1, x + 25, y + 6), fill=color, width=3)
+def draw_centered(draw, box, text, font_obj, fill):
+    x1, y1, x2, y2 = box
+    bbox = draw.textbbox((0, 0), text, font=font_obj)
+    tw = bbox[2] - bbox[0]
+    th = bbox[3] - bbox[1]
+    draw.text((x1 + (x2 - x1 - tw) / 2, y1 + (y2 - y1 - th) / 2 - 2), text, font=font_obj, fill=fill)
 
 
-def draw_star4(draw, cx, cy, r, color):
+def draw_calendar(draw, x, y, color="#5b5f66"):
+    draw.rounded_rectangle((x, y, x + 20, y + 20), 5, outline=color, width=2)
+    draw.line((x + 5, y + 8, x + 15, y + 8), fill=color, width=2)
+    draw.line((x + 6, y - 2, x + 6, y + 5), fill=color, width=2)
+    draw.line((x + 14, y - 2, x + 14, y + 5), fill=color, width=2)
+
+
+def draw_memory(draw, box, color="white"):
+    x1, y1, x2, y2 = box
+    cx, cy = (x1 + x2) / 2, (y1 + y2) / 2
+    draw.rounded_rectangle((cx - 32, cy - 24, cx + 32, cy + 24), 9, outline=color, width=5)
+    for dx in (-20, -8, 8, 20):
+        draw.line((cx + dx, cy - 36, cx + dx, cy - 25), fill=color, width=4)
+        draw.line((cx + dx, cy + 25, cx + dx, cy + 36), fill=color, width=4)
+    draw.line((cx - 20, cy + 2, cx - 7, cy + 14), fill=color, width=5)
+    draw.line((cx - 7, cy + 14, cx + 24, cy - 16), fill=color, width=5)
+
+
+def draw_research(draw, box, color="white"):
+    x1, y1, x2, y2 = box
+    cx, cy = (x1 + x2) / 2, (y1 + y2) / 2
+    draw.rounded_rectangle((cx - 34, cy - 35, cx + 22, cy + 30), 8, outline=color, width=5)
+    for yy, w in [(-18, 28), (-3, 32), (12, 22)]:
+        draw.line((cx - 22, cy + yy, cx - 22 + w, cy + yy), fill=color, width=4)
+    draw.ellipse((cx + 8, cy + 5, cx + 40, cy + 37), outline=color, width=5)
+    draw.line((cx + 34, cy + 31, cx + 48, cy + 45), fill=color, width=5)
+
+
+def draw_review(draw, box, color="white"):
+    x1, y1, x2, y2 = box
+    cx, cy = (x1 + x2) / 2, (y1 + y2) / 2
+    draw.rounded_rectangle((cx - 38, cy - 28, cx + 38, cy + 28), 9, outline=color, width=5)
+    draw.line((cx - 20, cy - 4, cx - 6, cy + 12), fill=color, width=5)
+    draw.line((cx - 6, cy + 12, cx + 24, cy - 16), fill=color, width=5)
+    draw.line((cx - 24, cy + 28, cx - 8, cy + 42), fill=color, width=5)
+
+
+def draw_speed(draw, box, color="white"):
+    x1, y1, x2, y2 = box
+    cx, cy = (x1 + x2) / 2, (y1 + y2) / 2
+    draw.arc((cx - 38, cy - 28, cx + 38, cy + 48), 200, 340, fill=color, width=5)
+    draw.line((cx, cy + 11, cx + 26, cy - 18), fill=color, width=5)
+    draw.ellipse((cx - 7, cy + 4, cx + 7, cy + 18), fill=color)
+    draw.line((cx - 40, cy + 45, cx + 40, cy + 45), fill=color, width=5)
+    draw.line((cx - 36, cy - 16, cx - 14, cy - 16), fill=color, width=5)
+    draw.line((cx - 36, cy, cx - 22, cy), fill=color, width=5)
+
+
+def draw_shield(draw, box, color="white"):
+    x1, y1, x2, y2 = box
+    cx, cy = (x1 + x2) / 2, (y1 + y2) / 2
     pts = [
-        (cx, cy - r),
-        (cx + r * 0.35, cy - r * 0.35),
-        (cx + r, cy),
-        (cx + r * 0.35, cy + r * 0.35),
-        (cx, cy + r),
-        (cx - r * 0.35, cy + r * 0.35),
-        (cx - r, cy),
-        (cx - r * 0.35, cy - r * 0.35),
+        (cx, cy - 42),
+        (cx + 36, cy - 25),
+        (cx + 30, cy + 18),
+        (cx, cy + 45),
+        (cx - 30, cy + 18),
+        (cx - 36, cy - 25),
     ]
-    draw.polygon(pts, fill=color)
+    draw.line(pts + [pts[0]], fill=color, width=5, joint="curve")
+    draw.line((cx - 15, cy + 2, cx - 4, cy + 15), fill=color, width=5)
+    draw.line((cx - 4, cy + 15, cx + 20, cy - 16), fill=color, width=5)
 
 
-def draw_squiggle(draw, x, y, color):
-    pts = [
-        (x, y + 12),
-        (x + 8, y + 20),
-        (x + 18, y + 19),
-        (x + 28, y + 11),
-        (x + 34, y - 2),
-        (x + 34, y - 15),
-        (x + 27, y - 25),
-    ]
-    draw.line(pts, fill=color, width=3)
-    draw.arc((x - 8, y + 3, x + 6, y + 18), 40, 250, fill=color, width=3)
-
-
-def outline_text(draw, pos, text, font_obj, outline_color, fill_color, stroke=2):
-    draw.text(pos, text, font=font_obj, fill=fill_color, stroke_width=stroke, stroke_fill=outline_color)
-
-
-def faux_bold_text(draw, pos, text, font_obj, fill, offsets):
-    x, y = pos
-    for dx, dy in offsets:
-        draw.text((x + dx, y + dy), text, font=font_obj, fill=fill)
-
-
-def draw_chip(draw, box, color="white"):
+def draw_icon_tile(draw, box, color, icon_fn):
     x1, y1, x2, y2 = box
-    cx = (x1 + x2) / 2
-    cy = (y1 + y2) / 2
-    draw.rounded_rectangle((cx - 16, cy - 16, cx + 16, cy + 16), 6, outline=color, width=4)
-    for offset in (-22, -14, -6, 6, 14, 22):
-        draw.line((cx + offset, cy - 24, cx + offset, cy - 16), fill=color, width=3)
-        draw.line((cx + offset, cy + 16, cx + offset, cy + 24), fill=color, width=3)
-    draw.line((cx - 24, cy - 8, cx - 16, cy - 8), fill=color, width=3)
-    draw.line((cx - 24, cy + 8, cx - 16, cy + 8), fill=color, width=3)
-    draw.line((cx + 16, cy - 8, cx + 24, cy - 8), fill=color, width=3)
-    draw.line((cx + 16, cy + 8, cx + 24, cy + 8), fill=color, width=3)
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    gd = ImageDraw.Draw(glow)
+    gd.rounded_rectangle((x1 - 6, y1 - 4, x2 + 6, y2 + 4), 18, fill=rgb(color) + (22,))
+    glow = glow.filter(ImageFilter.GaussianBlur(8))
+    canvas.alpha_composite(glow)
+    draw.rounded_rectangle(box, 18, fill=color)
+    icon_fn(draw, box, "white")
 
 
-def draw_code(draw, box, color="white"):
-    x1, y1, x2, y2 = box
-    cx = (x1 + x2) / 2
-    cy = (y1 + y2) / 2
-    draw.line((cx - 24, cy, cx - 8, cy - 14), fill=color, width=4)
-    draw.line((cx - 24, cy, cx - 8, cy + 14), fill=color, width=4)
-    draw.line((cx + 24, cy, cx + 8, cy - 14), fill=color, width=4)
-    draw.line((cx + 24, cy, cx + 8, cy + 14), fill=color, width=4)
-    draw.line((cx - 2, cy + 18, cx + 8, cy - 18), fill=color, width=4)
+img = Image.new("RGBA", (W, H), "#fbfaf8")
+canvas = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+d = ImageDraw.Draw(canvas)
 
+outer = (10, 12, W - 10, H - 10)
+d.rounded_rectangle(outer, 28, fill=(255, 255, 255, 248), outline=rgb("e8e0dc"), width=2)
 
-def draw_orbit(draw, box, color="white"):
-    x1, y1, x2, y2 = box
-    cx = (x1 + x2) / 2
-    cy = (y1 + y2) / 2
-    draw.ellipse((cx - 22, cy - 14, cx + 22, cy + 14), outline=color, width=3)
-    draw.ellipse((cx - 12, cy - 22, cx + 12, cy + 22), outline=color, width=3)
-    draw.ellipse((cx - 5, cy - 5, cx + 5, cy + 5), fill=color)
-    draw.ellipse((cx + 16, cy - 3, cx + 24, cy + 5), fill=color)
-
-
-def draw_auto(draw, box, color="white"):
-    x1, y1, x2, y2 = box
-    cx = (x1 + x2) / 2
-    cy = (y1 + y2) / 2
-    draw.arc((cx - 24, cy - 20, cx + 8, cy + 12), 45, 300, fill=color, width=4)
-    draw.polygon([(cx + 8, cy - 16), (cx + 24, cy - 18), (cx + 16, cy - 4)], fill=color)
-    draw.arc((cx - 8, cy - 12, cx + 24, cy + 20), 225, 120, fill=color, width=4)
-    draw.polygon([(cx - 8, cy + 16), (cx - 24, cy + 18), (cx - 16, cy + 4)], fill=color)
-
-
-def draw_image_icon(draw, box, color="white"):
-    x1, y1, x2, y2 = box
-    cx = (x1 + x2) / 2
-    cy = (y1 + y2) / 2
-    draw.rounded_rectangle((cx - 22, cy - 18, cx + 22, cy + 18), 6, outline=color, width=4)
-    draw.ellipse((cx - 13, cy - 9, cx - 5, cy - 1), fill=color)
-    draw.line((cx - 18, cy + 10, cx - 4, cy - 2), fill=color, width=4)
-    draw.line((cx - 4, cy - 2, cx + 6, cy + 6), fill=color, width=4)
-    draw.line((cx + 6, cy + 6, cx + 18, cy - 8), fill=color, width=4)
-
-
-def draw_memory_icon(draw, box, color="white"):
-    x1, y1, x2, y2 = box
-    cx = (x1 + x2) / 2
-    cy = (y1 + y2) / 2
-    draw.rounded_rectangle((cx - 24, cy - 18, cx + 24, cy + 18), 8, outline=color, width=4)
-    for dx in (-14, 0, 14):
-        draw.line((cx + dx, cy - 26, cx + dx, cy - 18), fill=color, width=3)
-        draw.line((cx + dx, cy + 18, cx + dx, cy + 26), fill=color, width=3)
-    draw.line((cx - 14, cy, cx - 4, cy + 8), fill=color, width=4)
-    draw.line((cx - 4, cy + 8, cx + 16, cy - 10), fill=color, width=4)
-
-
-def draw_research_icon(draw, box, color="white"):
-    x1, y1, x2, y2 = box
-    cx = (x1 + x2) / 2
-    cy = (y1 + y2) / 2
-    draw.rounded_rectangle((cx - 22, cy - 24, cx + 18, cy + 24), 6, outline=color, width=4)
-    draw.line((cx - 12, cy - 12, cx + 8, cy - 12), fill=color, width=3)
-    draw.line((cx - 12, cy, cx + 10, cy), fill=color, width=3)
-    draw.line((cx - 12, cy + 12, cx + 4, cy + 12), fill=color, width=3)
-    draw.ellipse((cx + 4, cy + 4, cx + 26, cy + 26), outline=color, width=4)
-    draw.line((cx + 21, cy + 21, cx + 30, cy + 30), fill=color, width=4)
-
-
-def draw_review_icon(draw, box, color="white"):
-    x1, y1, x2, y2 = box
-    cx = (x1 + x2) / 2
-    cy = (y1 + y2) / 2
-    draw.rounded_rectangle((cx - 26, cy - 21, cx + 26, cy + 21), 8, outline=color, width=4)
-    draw.line((cx - 14, cy - 7, cx - 3, cy + 6), fill=color, width=4)
-    draw.line((cx - 3, cy + 6, cx + 17, cy - 12), fill=color, width=4)
-    draw.line((cx - 18, cy + 16, cx - 5, cy + 26), fill=color, width=4)
-
-
-def draw_efficiency_icon(draw, box, color="white"):
-    x1, y1, x2, y2 = box
-    cx = (x1 + x2) / 2
-    cy = (y1 + y2) / 2
-    draw.arc((cx - 26, cy - 20, cx + 26, cy + 32), 200, 340, fill=color, width=4)
-    draw.line((cx, cy + 7, cx + 18, cy - 12), fill=color, width=4)
-    draw.ellipse((cx - 5, cy + 2, cx + 5, cy + 12), fill=color)
-    draw.line((cx - 26, cy + 30, cx + 26, cy + 30), fill=color, width=4)
-    draw.line((cx - 20, cy - 10, cx - 5, cy - 10), fill=color, width=4)
-    draw.line((cx - 20, cy, cx - 10, cy), fill=color, width=4)
-
-
-def draw_shield_icon(draw, box, color="white"):
-    x1, y1, x2, y2 = box
-    cx = (x1 + x2) / 2
-    cy = (y1 + y2) / 2
-    pts = [
-        (cx, cy - 28),
-        (cx + 25, cy - 17),
-        (cx + 21, cy + 12),
-        (cx, cy + 29),
-        (cx - 21, cy + 12),
-        (cx - 25, cy - 17),
-    ]
-    draw.line(pts + [pts[0]], fill=color, width=4, joint="curve")
-    draw.line((cx - 10, cy + 1, cx - 2, cy + 10), fill=color, width=4)
-    draw.line((cx - 2, cy + 10, cx + 13, cy - 9), fill=color, width=4)
-
-
-page = (8, 10, W - 8, H - 10)
-d.rounded_rectangle(page, 26, fill=(255, 255, 255, 246), outline=rgb("e8e3df"), width=2)
-
-header = (20, 26, W - 20, 138)
-d.rounded_rectangle(header, 22, fill="white", outline=rgb("ebe5e0"), width=2)
+# Header
+header = (24, 28, W - 24, 150)
+d.rounded_rectangle(header, 24, fill="white", outline=rgb("e6ddd8"), width=2)
 logo = Image.open(ROOT / "jr-academy-brand/assets/logo/logo-zh-full.png").convert("RGBA")
 logo = logo.crop(logo.getbbox())
-ratio = 64 / logo.height
-logo = logo.resize((int(logo.width * ratio), 64), Image.LANCZOS)
-base.alpha_composite(logo, (30, 42))
-d.text((296, 46), "AI", font=font(38, 8), fill="#ff2419")
-d.text((370, 46), "日报 · TOP 5", font=font(38, 8), fill="#111216")
-d.rounded_rectangle((607, 42, 748, 94), 20, fill="white", outline=rgb("e6dfdb"), width=2)
-d.text((623, 57), "学AI来匠人", font=font(17, 6), fill="#2b2c31")
-d.text((725, 57), "✦", font=font(16, 6), fill="#ff3128")
-d.rounded_rectangle((776, 42, 954, 94), 20, fill="white", outline=rgb("e6dfdb"), width=2)
-draw_calendar(d, 790, 55, 18, "#6d6f76")
-d.text((816, 58), "2026 · 07 · 30", font=font(17, 6), fill="#4f5258")
+logo = logo.resize((int(logo.width * 70 / logo.height), 70), Image.LANCZOS)
+canvas.alpha_composite(logo, (48, 52))
+d.text((330, 64), "AI", font=font(34, 8), fill="#ff2419")
+d.text((390, 60), "日报 · TOP 5", font=font(38, 8), fill="#15161b")
+d.rounded_rectangle((650, 48, 802, 102), 18, fill="white", outline=rgb("dfd2cc"), width=2)
+draw_centered(d, (650, 48, 802, 102), "学AI来匠人", font(18, 6), "#2f3035")
+d.rounded_rectangle((832, 48, 1028, 102), 18, fill="white", outline=rgb("dfd2cc"), width=2)
+draw_calendar(d, 854, 66)
+d.text((884, 64), "2026 · 07 · 30", font=font(18, 6), fill="#555963")
 
-hero = (20, 152, W - 20, 606)
-hero_card = Image.new("RGBA", (hero[2] - hero[0], hero[3] - hero[1]), (0, 0, 0, 0))
-hd = ImageDraw.Draw(hero_card)
-hd.rounded_rectangle((0, 0, hero_card.size[0], hero_card.size[1]), 24, fill=(255, 250, 250, 255), outline=rgb("f0e4e0"), width=2)
-layer = Image.new("RGBA", hero_card.size, (0, 0, 0, 0))
-g = ImageDraw.Draw(layer)
-g.ellipse((180, 80, 660, 330), fill=(255, 235, 235, 50))
-g.ellipse((600, 100, 860, 290), fill=(255, 245, 230, 28))
-layer = layer.filter(ImageFilter.GaussianBlur(55))
-hero_card = Image.alpha_composite(hero_card, layer)
-base.alpha_composite(hero_card, (hero[0], hero[1]))
+# Hero
+hero = (24, 162, W - 24, 664)
+d.rounded_rectangle(hero, 24, fill=(255, 251, 251, 255), outline=rgb("ecded9"), width=2)
+soft = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+sd = ImageDraw.Draw(soft)
+sd.ellipse((520, 190, 1040, 630), fill=(255, 235, 230, 70))
+sd.ellipse((20, 170, 520, 600), fill=(255, 245, 245, 55))
+soft = soft.filter(ImageFilter.GaussianBlur(40))
+canvas.alpha_composite(soft)
 
-d.rounded_rectangle((50, 182, 404, 236), 26, fill="#ff1f13", outline="#ff1f13", width=2)
-d.ellipse((62, 193, 104, 235), fill="white", outline="#ff4a3d", width=2)
-draw_flame_icon(d, 71, 198, 1.1, "#ff2619")
-d.text((112, 195), "今日 AI 日历 · HIGHLIGHT", font=font(20, 8), fill="white")
-faux_bold_text(d, (48, 246), "7月30日", font(72, 8), "#101114", [(0, 0), (1, 0), (0, 1)])
-faux_bold_text(d, (48, 342), "AI 新闻榜", font(78, 8), "#101114", [(0, 0), (1, 0), (0, 1)])
-d.text((48, 446), "what changed today, why it matters.", font=font(25, 1), fill="#5f5a58")
-draw_target_icon(d, 50, 486, "#ff3a2d")
-d.text((84, 484), "头条：OpenAI 连发记忆、科研、效率栈，GitHub 把团队上下文带进 review。", font=font(16, 6), fill="#2f3034")
-d.rounded_rectangle((48, 536, 732, 580), 22, fill="#ef140d", outline="#ef140d", width=2)
-d.text((68, 543), "今天看 ARC-AGI-3、科研计划、Copilot review、推理降本和 Agent 安全", font=font(14, 8), fill="white")
-d.text((772, 543), "5 条", font=font(26, 6), fill="#ff2a1e")
+d.rounded_rectangle((54, 194, 424, 254), 30, fill="#ff1f13")
+d.ellipse((76, 206, 122, 252), fill="white")
+d.text((138, 210), "今日 AI 日历 · HIGHLIGHT", font=font(22, 8), fill="white")
 
-mc = Image.open(ROOT / "jr-academy-brand/assets/mascot/official/03-laptop-code-bubble.png").convert("RGBA")
-ratio = 360 / mc.height
-mc = mc.resize((int(mc.width * ratio), 360), Image.LANCZOS)
-shadow = Image.new("RGBA", mc.size, (0, 0, 0, 0))
-shadow.paste((0, 0, 0, 14), (5, 7), mc.getchannel("A"))
-shadow = shadow.filter(ImageFilter.GaussianBlur(5))
-base.alpha_composite(shadow, (632, 174))
-base.alpha_composite(mc, (632, 166))
-draw_star4(d, 670, 220, 14, "#ffb11d")
+d.text((54, 300), "7月30日", font=font(68, 8), fill="#111216")
+d.text((54, 416), "AI 新闻榜", font=font(68, 8), fill="#111216")
+d.text((56, 510), "OpenAI 连发记忆、科研、效率栈，GitHub 把团队上下文带进 review。", font=font(24, 6), fill="#55575e")
+d.text((500, 462), "今日 5 条", font=font(34, 8), fill="#ff1f13")
+d.rounded_rectangle((56, 584, 750, 636), 26, fill="#f51d14")
+d.text((78, 598), "今日 5 条：ARC-AGI-3、科研计划、Copilot review、推理降本、Agent 安全", font=font(18, 8), fill="white")
 
+mascot = Image.open(ROOT / "jr-academy-brand/assets/mascot/official/01-hero-fullbody.png").convert("RGBA")
+mascot = mascot.crop(mascot.getbbox())
+mascot = mascot.resize((int(mascot.width * 410 / mascot.height), 410), Image.LANCZOS)
+shadow = Image.new("RGBA", mascot.size, (0, 0, 0, 0))
+shadow.paste((0, 0, 0, 22), (8, 10), mascot.getchannel("A"))
+shadow = shadow.filter(ImageFilter.GaussianBlur(7))
+canvas.alpha_composite(shadow, (710, 206))
+canvas.alpha_composite(mascot, (708, 198))
+d.text((694, 218), "✦", font=font(42, 8), fill="#ffb51f")
+
+# Cards
 items = [
-    ("01", "#ff2a1e", "模型能力", "GPT-5.6 Sol 因保留推理与压缩记忆，ARC-AGI-3 分数提升 3 倍", "#ff6b6b", draw_memory_icon),
-    ("02", "#1f6dff", "科研分发", "OpenAI 向 10 万名科研人员免费开放 ChatGPT 前沿模型与工具", "#2d7cf3", draw_research_icon),
-    ("03", "#ff8b10", "Agent 编程", "Copilot review：Agent skills 与 MCP 正式 GA", "#ff9c1e", draw_review_icon),
-    ("04", "#8c59ff", "模型效率", "GPT-5.6 参与优化 OpenAI 推理栈，端到端 serving 成本降 20%", "#9a71ff", draw_efficiency_icon),
-    ("05", "#18a05e", "安全治理", "OpenAI 失控研究 Agent 事件扩大：另涉 4 个服务账号", "#2eb670", draw_shield_icon),
+    ("01", "#ff2a1e", "模型能力", "GPT-5.6 Sol 因保留推理与压缩记忆，ARC-AGI-3 分数提升 3 倍", "#ff5b5b", draw_memory),
+    ("02", "#1976ff", "科研分发", "OpenAI 向 10 万名科研人员免费开放 ChatGPT 前沿模型与工具", "#2f7df3", draw_research),
+    ("03", "#ff8300", "Agent 编程", "Copilot review：Agent skills 与 MCP 正式 GA", "#ff9215", draw_review),
+    ("04", "#8b55ff", "模型效率", "GPT-5.6 优化 OpenAI 推理栈，端到端服务成本降 20%", "#9367f5", draw_speed),
+    ("05", "#11a66a", "安全治理", "OpenAI 失控研究 Agent 事件扩大：另涉 4 个服务账号", "#20b975", draw_shield),
 ]
-ys = [630, 764, 898, 1032, 1166]
-temp = Image.new("RGBA", (10, 10))
-td = ImageDraw.Draw(temp)
-for (num, nc, tag, title, bc, icon_fn), y in zip(items, ys):
-    d.rounded_rectangle((20, y, W - 20, y + 118), 22, fill="white", outline=rgb("ece6e1"), width=2)
-    outline_text(d, (38, y + 24), num, font(48, 8), nc, (255, 255, 255, 0), stroke=2)
-    d.line((150, y + 22, 150, y + 94), fill=rgb("ddd6d1"), width=2)
-    bbox = td.textbbox((0, 0), tag, font=font(20, 8))
-    tw = bbox[2] - bbox[0]
-    d.rounded_rectangle((176, y + 14, 176 + tw + 22, y + 44), 15, fill="white", outline=rgb("ebe3df"), width=2)
-    d.text((186, y + 13), tag, font=font(20, 8), fill=nc)
-    maxw = 595
-    cur = ""
-    lines = []
-    for ch in title:
-        trial = cur + ch
-        if td.textbbox((0, 0), trial, font=font(24, 8))[2] <= maxw:
-            cur = trial
-        else:
-            lines.append(cur)
-            cur = ch
-    if cur:
-        lines.append(cur)
-    ty = y + 54
-    for line in lines[:2]:
-        d.text((180, ty), line, font=font(24, 8), fill="#141518")
-        ty += 30
-    ix1, iy1, ix2, iy2 = 832, y + 18, 940, y + 98
-    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    ImageDraw.Draw(glow).ellipse((ix1 - 5, iy1 - 2, ix2 + 5, iy2 + 5), fill=rgb(bc) + (18,))
-    glow = glow.filter(ImageFilter.GaussianBlur(5))
-    base.alpha_composite(glow)
-    d.rounded_rectangle((ix1, iy1, ix2, iy2), 18, fill=bc, outline=(255, 255, 255, 210), width=2)
-    icon_fn(d, (ix1, iy1, ix2, iy2), "white")
 
-img = Image.alpha_composite(img, base).convert("RGB")
+y0 = 686
+gap = 16
+card_h = 132
+for idx, (num, num_color, tag, title, tile_color, icon_fn) in enumerate(items):
+    y = y0 + idx * (card_h + gap)
+    d.rounded_rectangle((24, y, W - 24, y + card_h), 22, fill="white", outline=rgb("ece4df"), width=2)
+    d.text((52, y + 38), num, font=font(46, 8), fill="white", stroke_width=2, stroke_fill=num_color)
+    d.line((176, y + 28, 176, y + card_h - 28), fill=rgb("ded6d1"), width=2)
+    tag_w = d.textbbox((0, 0), tag, font=font(20, 8))[2] + 32
+    d.rounded_rectangle((214, y + 22, 214 + tag_w, y + 56), 17, fill="white", outline=rgb("e7dcd6"), width=2)
+    d.text((230, y + 24), tag, font=font(20, 8), fill=num_color)
+    lines = fit_text(d, title, font(27, 8), 600)
+    ty = y + 70 if len(lines) == 1 else y + 60
+    for line in lines[:2]:
+        d.text((216, ty), line, font=font(27, 8), fill="#15161b")
+        ty += 34
+    draw_icon_tile(d, (850, y + 24, 1014, y + 108), tile_color, icon_fn)
+
+# Footer
+d.rounded_rectangle((24, H - 68, W - 24, H - 20), 18, fill="white", outline=rgb("eadfd9"), width=2)
+d.text((52, H - 55), "AI DAILY", font=font(18, 6), fill="#6b6f76")
+d.text((910, H - 55), "TOP 5", font=font(18, 6), fill="#6b6f76")
+
+img = Image.alpha_composite(img, canvas).convert("RGB")
 out = ROOT / "omni-report/ai-daily/assets/2026-07-30-poster-generated.png"
 img.save(out, quality=95)
 print(out)
