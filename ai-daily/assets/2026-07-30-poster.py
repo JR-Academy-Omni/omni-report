@@ -115,6 +115,25 @@ def draw_icon_tile(draw, box, color, icon_fn):
     icon_fn(draw, box, "white")
 
 
+def rounded_gradient(box, start_hex, end_hex, radius=22):
+    x1, y1, x2, y2 = box
+    w, h = x2 - x1, y2 - y1
+    grad = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    gd = ImageDraw.Draw(grad)
+    sr, sg, sb = rgb(start_hex)
+    er, eg, eb = rgb(end_hex)
+    for x in range(w):
+        t = x / max(1, w - 1)
+        r = int(sr * (1 - t) + er * t)
+        g = int(sg * (1 - t) + eg * t)
+        b = int(sb * (1 - t) + eb * t)
+        gd.line((x, 0, x, h), fill=(r, g, b, 255))
+    mask = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, w, h), radius, fill=255)
+    grad.putalpha(mask)
+    return grad
+
+
 img = Image.new("RGBA", (W, H), "#fbfaf8")
 canvas = Image.new("RGBA", (W, H), (0, 0, 0, 0))
 d = ImageDraw.Draw(canvas)
@@ -123,7 +142,7 @@ outer = (10, 12, W - 10, H - 10)
 d.rounded_rectangle(outer, 28, fill=(255, 255, 255, 248), outline=rgb("e8e0dc"), width=2)
 
 # Header
-header = (24, 28, W - 24, 150)
+header = (24, 28, W - 24, 158)
 d.rounded_rectangle(header, 24, fill="white", outline=rgb("e6ddd8"), width=2)
 logo = Image.open(ROOT / "jr-academy-brand/assets/logo/logo-zh-full.png").convert("RGBA")
 logo = logo.crop(logo.getbbox())
@@ -131,72 +150,79 @@ logo = logo.resize((int(logo.width * 70 / logo.height), 70), Image.LANCZOS)
 canvas.alpha_composite(logo, (48, 52))
 d.text((330, 64), "AI", font=font(34, 8), fill="#ff2419")
 d.text((390, 60), "日报 · TOP 5", font=font(38, 8), fill="#15161b")
-d.rounded_rectangle((650, 48, 802, 102), 18, fill="white", outline=rgb("dfd2cc"), width=2)
-draw_centered(d, (650, 48, 802, 102), "学AI来匠人", font(18, 6), "#2f3035")
-d.rounded_rectangle((832, 48, 1028, 102), 18, fill="white", outline=rgb("dfd2cc"), width=2)
-draw_calendar(d, 854, 66)
-d.text((884, 64), "2026 · 07 · 30", font=font(18, 6), fill="#555963")
+d.rounded_rectangle((828, 54, 1014, 104), 25, fill="#f7f7fb")
+d.text((858, 64), "2026 · 07 · 30", font=font(22, 8), fill="#132199")
+d.line((24, 164, W - 24, 164), fill=rgb("eee8e4"), width=1)
 
 # Hero
-hero = (24, 162, W - 24, 664)
-d.rounded_rectangle(hero, 24, fill=(255, 251, 251, 255), outline=rgb("ecded9"), width=2)
+hero = (36, 184, W - 36, 782)
+d.rounded_rectangle(hero, 24, fill=(255, 250, 250, 255), outline=rgb("ecdeda"), width=2)
 soft = Image.new("RGBA", (W, H), (0, 0, 0, 0))
 sd = ImageDraw.Draw(soft)
-sd.ellipse((520, 190, 1040, 630), fill=(255, 235, 230, 70))
-sd.ellipse((20, 170, 520, 600), fill=(255, 245, 245, 55))
+sd.ellipse((560, 210, 1040, 740), fill=(255, 232, 230, 86))
+sd.ellipse((20, 190, 610, 740), fill=(255, 247, 247, 60))
 soft = soft.filter(ImageFilter.GaussianBlur(40))
 canvas.alpha_composite(soft)
 
-d.rounded_rectangle((54, 194, 424, 254), 30, fill="#ff1f13")
-d.ellipse((76, 206, 122, 252), fill="white")
-d.text((138, 210), "今日 AI 日历 · HIGHLIGHT", font=font(22, 8), fill="white")
+d.rounded_rectangle((54, 194, 226, 248), 27, fill="#ff1f13")
+d.ellipse((70, 206, 112, 248), fill="white")
+d.ellipse((80, 216, 102, 238), outline="#ff1f13", width=5)
+d.line((91, 206, 91, 248), fill="#ff1f13", width=4)
+d.text((124, 209), "今日主线", font=font(23, 8), fill="white")
 
-d.text((54, 300), "7月30日", font=font(68, 8), fill="#111216")
-d.text((54, 416), "AI 新闻榜", font=font(68, 8), fill="#111216")
-summary = "OpenAI 连发模型记忆、科研分发和效率栈，GitHub 把团队上下文带进 code review。"
-for i, line in enumerate(fit_text(d, summary, font(23, 6), 600)[:2]):
-    d.text((56, 504 + i * 31), line, font=font(23, 6), fill="#55575e")
-d.rounded_rectangle((56, 586, 64, 636), 4, fill="#f51d14")
-highlight = "今日重点：ARC-AGI-3、科研计划、Copilot review、推理降本、Agent 安全"
-for i, line in enumerate(fit_text(d, highlight, font(19, 8), 620)[:2]):
-    d.text((82, 586 + i * 26), line, font=font(19, 8), fill="#f51d14")
+headline_lines = ["OpenAI 把模型", "记忆、科研分发", "和效率栈连续公开"]
+for i, line in enumerate(headline_lines):
+    d.text((74, 280 + i * 82), line, font=font(64, 8), fill="#050506")
+
+summary_lines = ["GitHub 把团队上下文带进 code review，", "Agent 安全事件提醒治理不能事后补丁"]
+for i, line in enumerate(summary_lines):
+    d.text((76, 545 + i * 35), line, font=font(24, 4), fill="#111827")
+
+d.rounded_rectangle((76, 662, 84, 740), 4, fill="#ff1f13")
+insight_lines = ["今天主线不是单一模型榜单，", "而是 AI 产品继续变成真实系统。"]
+for i, line in enumerate(insight_lines):
+    d.text((102, 662 + i * 36), line, font=font(25, 8), fill="#111216")
 
 mascot = Image.open(ROOT / "jr-academy-brand/assets/mascot/official/01-hero-fullbody.png").convert("RGBA")
 mascot = mascot.crop(mascot.getbbox())
-mascot = mascot.resize((int(mascot.width * 410 / mascot.height), 410), Image.LANCZOS)
+mascot = mascot.resize((int(mascot.width * 500 / mascot.height), 500), Image.LANCZOS)
 shadow = Image.new("RGBA", mascot.size, (0, 0, 0, 0))
 shadow.paste((0, 0, 0, 22), (8, 10), mascot.getchannel("A"))
 shadow = shadow.filter(ImageFilter.GaussianBlur(7))
-canvas.alpha_composite(shadow, (710, 206))
-canvas.alpha_composite(mascot, (708, 198))
-d.text((694, 218), "✦", font=font(42, 8), fill="#ffb51f")
+canvas.alpha_composite(shadow, (680, 232))
+canvas.alpha_composite(mascot, (676, 222))
 
 # Cards
 items = [
-    ("01", "#ff2a1e", "模型能力", "GPT-5.6 Sol 因保留推理与压缩记忆，ARC-AGI-3 分数提升 3 倍", "#ff5b5b", draw_memory),
-    ("02", "#1976ff", "科研分发", "OpenAI 向 10 万名科研人员免费开放 ChatGPT 前沿模型与工具", "#2f7df3", draw_research),
-    ("03", "#ff8300", "Agent 编程", "Copilot review：Agent skills 与 MCP 正式 GA", "#ff9215", draw_review),
-    ("04", "#8b55ff", "模型效率", "GPT-5.6 优化 OpenAI 推理栈，端到端服务成本降 20%", "#9367f5", draw_speed),
-    ("05", "#11a66a", "安全治理", "OpenAI 失控研究 Agent 事件扩大：另涉 4 个服务账号", "#20b975", draw_shield),
+    ("01", "#ff2a1e", "模型能力", "GPT-5.6 Sol：记忆机制让 ARC-AGI-3 分数提升 3 倍", "#fffafa", "#ffe7e7", [draw_memory, draw_speed]),
+    ("02", "#1976ff", "科研分发", "OpenAI 向 10 万科研人员开放前沿模型与工具", "#fbfdff", "#e7f0ff", [draw_research, draw_memory]),
+    ("03", "#ff8300", "Agent 编程", "Copilot review 接入 Agent skills 与 MCP", "#fffdf9", "#fff0df", [draw_review, draw_memory]),
+    ("04", "#8b55ff", "模型效率", "GPT-5.6 优化推理栈，服务成本降 20%", "#fdfbff", "#efe6ff", [draw_speed, draw_memory]),
+    ("05", "#11a66a", "安全治理", "OpenAI 研究 Agent 失控，另涉 4 个服务账号", "#fbfffd", "#dcf5ee", [draw_shield, draw_review]),
 ]
 
-y0 = 686
-gap = 16
-card_h = 132
-for idx, (num, num_color, tag, title, tile_color, icon_fn) in enumerate(items):
+y0 = 802
+gap = 14
+card_h = 112
+for idx, (num, num_color, tag, title, grad_a, grad_b, icon_fns) in enumerate(items):
     y = y0 + idx * (card_h + gap)
+    canvas.alpha_composite(rounded_gradient((36, y, W - 36, y + card_h), grad_a, grad_b, 22), (36, y))
     d.rounded_rectangle((24, y, W - 24, y + card_h), 22, fill="white", outline=rgb("ece4df"), width=2)
-    d.text((52, y + 38), num, font=font(46, 8), fill="white", stroke_width=2, stroke_fill=num_color)
+    canvas.alpha_composite(rounded_gradient((36, y + 2, W - 36, y + card_h - 2), grad_a, grad_b, 22), (36, y + 2))
+    d.text((52, y + 30), num, font=font(46, 8), fill="white", stroke_width=2, stroke_fill=num_color)
     d.line((176, y + 28, 176, y + card_h - 28), fill=rgb("ded6d1"), width=2)
     tag_w = d.textbbox((0, 0), tag, font=font(20, 8))[2] + 32
     d.rounded_rectangle((214, y + 22, 214 + tag_w, y + 56), 17, fill="white", outline=rgb("e7dcd6"), width=2)
     d.text((230, y + 24), tag, font=font(20, 8), fill=num_color)
-    lines = fit_text(d, title, font(27, 8), 600)
-    ty = y + 70 if len(lines) == 1 else y + 60
+    lines = fit_text(d, title, font(24, 8), 500)
+    ty = y + 66 if len(lines) == 1 else y + 56
     for line in lines[:2]:
-        d.text((216, ty), line, font=font(27, 8), fill="#15161b")
-        ty += 34
-    draw_icon_tile(d, (850, y + 24, 1014, y + 108), tile_color, icon_fn)
+        d.text((216, ty), line, font=font(24, 8), fill="#15161b")
+        ty += 31
+    icon_x = 742
+    for fn in icon_fns:
+        fn(d, (icon_x, y + 30, icon_x + 68, y + 88), num_color)
+        icon_x += 104
 
 # Footer
 d.rounded_rectangle((24, H - 68, W - 24, H - 20), 18, fill="white", outline=rgb("eadfd9"), width=2)
