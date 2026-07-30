@@ -282,7 +282,7 @@ for idx, (num, num_color, tag, title, grad_a, grad_b, icon_fn) in enumerate(item
     d.rounded_rectangle((214, y + 22, 214 + tag_w, y + 56), 17, fill="white", outline=rgb("e7dcd6"), width=2)
     d.text((230, y + 24), tag, font=font(20, 8), fill=num_color)
     lines = fit_text(d, title, font(24, 8), 470)
-    ty = y + 70 if len(lines) == 1 else y + 59
+    ty = y + 66 if len(lines) == 1 else y + 54
     for line in lines[:2]:
         d.text((216, ty), line, font=font(24, 8), fill="#15161b")
         ty += 31
