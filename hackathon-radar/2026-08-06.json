@@ -1,0 +1,147 @@
+[
+  {
+    "type": "hackathon",
+    "title": "AI Factory — Native.builder Hackathon",
+    "organizer": "lablab.ai × native.builder",
+    "prize": "⚠️ 奖励待公告（90 天内发放）",
+    "deadline": "2026-08-10T00:00:00.000Z",
+    "url": "https://lablab.ai/ai-hackathons/nativebuilder-build-without-limits",
+    "region": "global",
+    "summary": "用 native.builder 生成并发布完整 AI 产品；零代码可参加；4 天截止，今天报名还来得及"
+  },
+  {
+    "type": "hackathon",
+    "title": "Build with DataHub: The Agent Hackathon",
+    "organizer": "DataHub Cloud",
+    "prize": "⚠️ 奖励待核实",
+    "deadline": "2026-08-10T21:00:00.000Z",
+    "url": "https://datahub.devpost.com/",
+    "region": "global",
+    "summary": "用 DataHub 开源 Context Platform 构建 AI agent；适合 AI Engineer + Data Engineer；8/10 @ 5pm EDT 截止"
+  },
+  {
+    "type": "hackathon",
+    "title": "Open Atlas — AI for Social Good 2026",
+    "organizer": "Open Atlas",
+    "prize": "前排队伍 8/21 在加州 Milpitas 线下 pitch，奖励待核实",
+    "deadline": "2026-08-20T00:00:00.000Z",
+    "url": "https://oa-ai-for-social-good.devpost.com/",
+    "region": "global",
+    "summary": "移民/医疗/教育/金融包容 AI 解决方案赛道；JR 澳洲华人学员的移民背景是天然选题优势；14 天截止"
+  },
+  {
+    "type": "prize",
+    "title": "Build with Gemini XPRIZE",
+    "organizer": "XPRIZE + Google",
+    "prize": "$2,000,000 总奖池（大奖 $500K，第 2 名 $200K，共 25 名获奖）",
+    "deadline": "2026-08-17T20:00:00.000Z",
+    "url": "https://www.geminixprize.com/",
+    "region": "global",
+    "summary": "须有真实用户 + 真实收入；教育/创业/小企业/金融/专业服务五赛道；Live Finals 9/25 洛杉矶；11 天截止"
+  },
+  {
+    "type": "hackathon",
+    "title": "AI Builders Hackathon 2026",
+    "organizer": "AI Builders 社区",
+    "prize": "⚠️ 奖金待公告",
+    "deadline": "2026-08-25T00:00:00.000Z",
+    "url": "https://ai-builders-hackathon-2026.devpost.com/",
+    "region": "global",
+    "summary": "把 demo 变成有真实用户的产品；今天入场还有 19 天 build 期；找一个真实有人愿意付费的垂直需求"
+  },
+  {
+    "type": "prize",
+    "title": "AI Agent Security — Multi-Step Tool Attacks",
+    "organizer": "Kaggle × OpenAI × Google × IEEE",
+    "prize": "$50,000 奖池",
+    "deadline": "2026-08-25T00:00:00.000Z",
+    "url": "https://www.kaggle.com/competitions/ai-agent-security-multi-step-tool-attacks",
+    "region": "global",
+    "summary": "研究 LLM tool-use 多步攻击路径；适合懂 AI 安全的学员；Kaggle 线上"
+  },
+  {
+    "type": "hackathon",
+    "title": "AI Infra Summit Hackathon",
+    "organizer": "AI DevSummit 社区",
+    "prize": "⚠️ 奖励待公告",
+    "deadline": "2026-09-17T00:00:00.000Z",
+    "url": "https://aidevsummit.co/hackathon/",
+    "region": "US",
+    "summary": "AI 基础设施（inference/serving/fine-tuning）方向；在线 build + 线下 Demo（美国，可线上参与）"
+  },
+  {
+    "type": "prize",
+    "title": "Biohub Cell Tracking During Development",
+    "organizer": "Chan Zuckerberg Biohub",
+    "prize": "~$60,000",
+    "deadline": "2026-09-22T00:00:00.000Z",
+    "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development",
+    "region": "global",
+    "summary": "3D 计算机视觉/医学图像处理 Kaggle 竞赛；适合计算机视觉方向学员"
+  },
+  {
+    "type": "hackathon",
+    "title": "AI Genesis 2026",
+    "organizer": "lablab.ai × /function1 AI Conference",
+    "prize": "⚠️ 奖金待公告",
+    "deadline": "2026-11-02T00:00:00.000Z",
+    "url": "https://lablab.ai/ai-hackathons/ai-genesis-2026",
+    "region": "global",
+    "summary": "全球线上 build（10/26-11/2）+ 迪拜线下 Demo Day（11/3）；想进中东市场的学员适合"
+  },
+  {
+    "type": "prize",
+    "title": "ARC Prize 2026 — ARC-AGI-2",
+    "organizer": "François Chollet × Mike Knoop × Kaggle",
+    "prize": "$700,000（含 $275K Progress Prizes + $150K Bonus）",
+    "deadline": "2026-11-02T00:00:00.000Z",
+    "url": "https://arcprize.org/competitions/2026",
+    "region": "global",
+    "summary": "AI reasoning/抽象推理方向；1-5 人团队；须开源解决方案；顶级研究竞赛"
+  },
+  {
+    "type": "accelerator",
+    "title": "Antler Australia — 第 14 期",
+    "organizer": "Antler",
+    "prize": "AU$260,000 换 12% 股权 + AU$75,000 计划费；ARC 跟进资本",
+    "url": "https://www.antler.co/apply",
+    "region": "AU",
+    "summary": "9/21 悉尼/墨尔本/布里斯班三城开营；申请滚动接受；距开营 46 天，今天申请仍有机会"
+  },
+  {
+    "type": "grant",
+    "title": "CSIRO Kick-Start",
+    "organizer": "CSIRO",
+    "prize": "$10,000–$50,000 配对资金（自筹 ≥$10K，CSIRO 配套至 $50K）",
+    "url": "https://www.csiro.au/en/work-with-us/funding-programs/sme/csiro-kick-start/",
+    "region": "AU",
+    "summary": "随时滚动申请；适合有技术项目的澳洲 AI 初创；EOI 发 kickstart@csiro.au"
+  },
+  {
+    "type": "grant",
+    "title": "OpenAI for Startups — 澳洲专属计划",
+    "organizer": "OpenAI",
+    "prize": "USD $50,000（~AUD $70K）API credits + 10 个 ChatGPT Business 座位",
+    "url": "https://openai.com/global-affairs/openai-for-australia/",
+    "region": "AU",
+    "summary": "Pre-seed 至 Series A 澳洲早期 AI 公司；零股权；随时滚动申请"
+  },
+  {
+    "type": "grant",
+    "title": "Microsoft Founders Hub",
+    "organizer": "Microsoft",
+    "prize": "最多 $150,000 Azure credits + GitHub Enterprise + Azure OpenAI 访问",
+    "url": "https://www.microsoft.com/en-au/startups",
+    "region": "AU",
+    "summary": "零股权；澳洲 ABN 直接申请；随时滚动"
+  },
+  {
+    "type": "grant",
+    "title": "AWS Activate",
+    "organizer": "Amazon Web Services",
+    "prize": "最多 $200,000 AWS credits；2026 新增 AI Tier 面向 GPU 密集型任务",
+    "url": "https://aws.amazon.com/startups/credits",
+    "region": "global",
+    "summary": "基础 $1,000 无需 VC 背书；随时滚动申请；适合任何早期 AI 产品团队"
+  }
+]
