@@ -1,0 +1,198 @@
+{
+  "date": "2026-08-05",
+  "campaign": "2026 S2 布里斯班新生节｜5000+礼物",
+  "audience": ["UQ 留学生", "QUT 留学生", "Griffith 留学生", "布里斯班新生及在读学生"],
+  "official_source": "https://jiangren.com.au/events/6a616fb6bbc08a65e1586c71",
+  "event_facts": {
+    "fact_status": "confirmed",
+    "organizer": "JR Academy（匠人学院）",
+    "date": "2026-08-21",
+    "time": "14:00-17:00（布里斯班时间）",
+    "venue": "Market Square Sunnybank, 341 Mains Rd, Sunnybank QLD 4109",
+    "schools": ["UQ", "QUT", "Griffith"],
+    "capacity": 1200,
+    "registrations_snapshot": 217,
+    "registrations_checked_at": "2026-08-05",
+    "price": "免费",
+    "gift_claim": "5000+ 份现场礼物，按各摊位当天库存发放，先到先得",
+    "announced_prizes": ["DJI OSMO Pocket 3", "Philips Air Fryer", "ASUS 23.8-inch monitor", "Goodlife nationwide gym quarterly membership"]
+  },
+  "editorial_note": "主叙事不是泛泛介绍活动，而是把5000+礼物拆成看得见、拿得到、愿意组队分享的内容。所有笔记必须写明活动时间、地点、免费报名与提前报名要求；不得把5000+礼物写成5000个大奖，也不得暗示人人中奖。",
+  "competitor_audit": {
+    "status": "public-web-search-inconclusive",
+    "note": "公开网页搜索未能可靠统计小红书站内同类笔记数量；发布前建议在小红书 App 内复查“布里斯班新生节、UQ新生、澳洲新生礼物、留学生抽奖”近30天内容。当前公开结果以泛开学好物和抽奖活动为主，三校联合线下礼物攻略具有差异化。"
+  },
+  "candidates": [
+    {
+      "id": 1,
+      "priority": "S",
+      "title": "5000份礼物，布村新生怎么拿",
+      "hook": "别只盯大奖，现场礼物才是大头。",
+      "angle": "用一张图讲清提前报名、签到、逛摊、互动和抽奖的完整路径，主打收藏与报名转化。",
+      "school_adaptation": "总帖同时点名 UQ、QUT、Griffith；评论区让三校学生报校组队。",
+      "images": ["首图：5000+礼物大字+三校校名", "礼物获取流程图", "时间地点与报名提醒卡"],
+      "viral_score": 9.0,
+      "risk": "不能写成报名即领5000份或人人有大奖；礼物按现场库存和摊位规则发放。"
+    },
+    {
+      "id": 2,
+      "priority": "S",
+      "title": "5000+礼物里到底有什么",
+      "hook": "不是一袋传单，是新生真用得上的东西。",
+      "angle": "按校园周边、日用品、文具、零食饮品、生活福利、抽奖大奖六类做礼物图鉴。",
+      "school_adaptation": "分别补 UQ 通勤、QUT 城市校园、Griffith 校园生活场景，但不虚构具体单品。",
+      "images": ["六宫格礼物类别", "已公布四大奖品", "5000+与四大奖的区别"],
+      "viral_score": 8.8,
+      "risk": "未公布品牌和数量的普通礼物只写类别，不自行补图或品牌。"
+    },
+    {
+      "id": 3,
+      "priority": "S",
+      "title": "中奖绝缘体也值得去新生节吗",
+      "hook": "抽不到大奖，也不等于空手回家。",
+      "angle": "反转“抽奖活动只靠运气”的顾虑，突出摊位礼物、打卡互动和本地生活资源。",
+      "school_adaptation": "用三校新生共同痛点切入：刚落地、缺朋友、缺生活信息。",
+      "images": ["抽奖与摊位礼物对比", "现场可做的四件事", "三校见面场景"],
+      "viral_score": 8.6,
+      "risk": "不能保证到场一定拿到实物，需加“以现场库存和规则为准”。"
+    },
+    {
+      "id": 4,
+      "priority": "A",
+      "title": "布村新生开学补给挑战",
+      "hook": "开学缺的那些小东西，现场能补多少？",
+      "angle": "把礼物转译成新生开学补给清单，活动后可接真实开箱复盘。",
+      "school_adaptation": "三校学生各列一份最想拿到的开学物品，形成评论互动。",
+      "images": ["开学缺货清单", "现场礼物类别勾选卡", "活动后真实战利品照"],
+      "viral_score": 8.2,
+      "risk": "活动前只能做愿望清单，不能提前断言实际能领取哪些单品。"
+    },
+    {
+      "id": 5,
+      "priority": "A",
+      "title": "UQ新生的5000份礼物攻略",
+      "hook": "UQ新生别只在St Lucia认识同学。",
+      "angle": "UQ 专属版本：礼物攻略加跨校社交，强调能一次遇见 QUT、Griffith 新生。",
+      "school_adaptation": "适合 UQ课代表发布；正文邀请 UQ 学生留言学院或专业。",
+      "images": ["UQ紫色首图", "UQ×QUT×Griffith关系图", "报名与到场步骤"],
+      "viral_score": 8.0,
+      "risk": "不要使用未经授权的校徽；可使用校名文字和校园生活元素。"
+    },
+    {
+      "id": 6,
+      "priority": "A",
+      "title": "QUT新生别错过这波开学礼",
+      "hook": "QUT下课后，别直接回家躺平。",
+      "angle": "QUT 专属版本：用“下课后的第一场跨校活动”承接5000+礼物和认识新朋友。",
+      "school_adaptation": "标题和首图只打 QUT，正文再带出 UQ、Griffith。",
+      "images": ["QUT校园感首图", "5000+礼物数字卡", "活动信息卡"],
+      "viral_score": 7.9,
+      "risk": "不写具体下课时间或交通时长，避免课程与实时交通信息不准确。"
+    },
+    {
+      "id": 7,
+      "priority": "A",
+      "title": "Griffith新生的礼物局来了",
+      "hook": "Griffith新生，这次别只在群里潜水。",
+      "angle": "Griffith 专属版本：用线下见面、组队打卡和礼物作为走出群聊的理由。",
+      "school_adaptation": "评论区按 Nathan、Gold Coast 等校区收集意向，但不承诺交通或接送。",
+      "images": ["Griffith红色系首图", "三校组队任务感画面", "礼物类别拼贴"],
+      "viral_score": 7.9,
+      "risk": "活动位于 Sunnybank，不要暗示所有 Griffith 校区都近。"
+    },
+    {
+      "id": 8,
+      "priority": "A",
+      "title": "UQ×QUT×Griffith谁最会拿礼物",
+      "hook": "三校第一次比的不是排名，是拿礼攻略。",
+      "angle": "做三校轻PK投票，评论区选校站队，活动后再用真实领取结果做第二篇。",
+      "school_adaptation": "三个校园账号可发不同封面，正文保持友好玩梗。",
+      "images": ["三校名称PK封面", "你最想拿哪类礼物投票", "活动后战利品复盘模板"],
+      "viral_score": 8.4,
+      "risk": "不做学校优劣和排名比较，不引战、不使用贬损称呼。"
+    },
+    {
+      "id": 9,
+      "priority": "S",
+      "title": "3人组队和单人去差在哪",
+      "hook": "一个人能去，组队还能继续加抽奖券。",
+      "angle": "解决社恐与组队疑问，讲清单人可参加、3人或5人同行需全部提前报名到场。",
+      "school_adaptation": "按 UQ、QUT、Griffith 设置找队友评论暗号，但不导流私下联系方式。",
+      "images": ["单人vs三人组队对比", "组队前检查清单", "三校找队友评论模板"],
+      "viral_score": 8.9,
+      "risk": "抽奖券数量和审核办法若未公开，不写具体倍数；以现场规则为准。"
+    },
+    {
+      "id": 10,
+      "priority": "A",
+      "title": "新生节早点到能多拿什么",
+      "hook": "5000+份很多，但热门礼物不是无限。",
+      "angle": "从“先到先得”做时间管理提醒，建议为签到、组队、逛摊和抽奖留足时间。",
+      "school_adaptation": "三校分别做出发前 checklist，不提供未经核实的交通路线。",
+      "images": ["14:00入场时间卡", "到场四步清单", "先到先得提醒"],
+      "viral_score": 8.1,
+      "risk": "不要制造踩踏式紧迫感，也不要写“晚到就什么都没有”。"
+    },
+    {
+      "id": 11,
+      "priority": "A",
+      "title": "5000份礼物不是5000个大奖",
+      "hook": "先把最容易误会的一件事说清楚。",
+      "angle": "透明解释5000+现场礼物、摊位福利与四项已公布大奖的不同，建立可信度。",
+      "school_adaptation": "适合品牌号或校园课代表做事实澄清帖。",
+      "images": ["5000+礼物≠5000大奖", "普通礼物类别", "四项已公布大奖"],
+      "viral_score": 8.3,
+      "risk": "标题虽是否定句，但正文要积极，不让用户误读为福利缩水。"
+    },
+    {
+      "id": 12,
+      "priority": "A",
+      "title": "四个大奖你最想抽中哪个",
+      "hook": "Pocket 3、空气炸锅、显示器、健身卡，选一个。",
+      "angle": "用已公布四大奖做投票型内容，评论区自然形成偏好讨论，再落回免费报名。",
+      "school_adaptation": "可统计 UQ、QUT、Griffith 三校各自选择，后续发布投票结果。",
+      "images": ["四大奖品四宫格", "三校选择投票卡", "报名条件提醒"],
+      "viral_score": 8.7,
+      "risk": "奖品图、型号和健身卡权益必须使用官方素材；不写市场价或中奖概率。"
+    },
+    {
+      "id": 13,
+      "priority": "B",
+      "title": "布村物价下的5000份新生礼",
+      "hook": "刚落地才知道，日用品零食都要钱。",
+      "angle": "把礼物价值放进留学生真实生活场景：安家、上课、通勤和社交，但不虚构总价值。",
+      "school_adaptation": "邀请三校新生分享“落地后第一笔意外开销”，增强本地共鸣。",
+      "images": ["新生生活开销场景", "礼物类别对应需求", "免费活动信息卡"],
+      "viral_score": 7.8,
+      "risk": "不编物价数字、不写礼物总价值，避免把活动包装成省钱承诺。"
+    },
+    {
+      "id": 14,
+      "priority": "A",
+      "title": "一个人去也能拿礼物吗",
+      "hook": "可以，一个人来也不用先认识谁。",
+      "angle": "回应社恐新生最真实的问题：单人可报名，到场后从签到、逛摊和任务开始。",
+      "school_adaptation": "面向三校刚到布里斯班、群里不认识人的学生。",
+      "images": ["社恐提问式首图", "单人到场流程", "现场认识同学的低压力动作"],
+      "viral_score": 8.5,
+      "risk": "不要暗示现场一定能交到朋友或拿到特定礼物。"
+    },
+    {
+      "id": 15,
+      "priority": "A",
+      "title": "新生节礼物开箱先蹲这一篇",
+      "hook": "活动前先许愿，活动后现场验货。",
+      "angle": "做前后两篇内容：活动前征集最想要的礼物，活动后用真实战利品和现场画面复盘。",
+      "school_adaptation": "分别邀请 UQ、QUT、Griffith 学生投稿开箱，形成三校UGC系列。",
+      "images": ["活动前愿望清单", "活动当天空白开箱模板", "三校真实开箱拼图"],
+      "viral_score": 8.4,
+      "risk": "活动前不得用模拟图冒充现场实拍；活动后发布需取得参与者肖像授权。"
+    }
+  ],
+  "recommended_first_post": {
+    "candidate_id": 1,
+    "reason": "同时具备最大数字钩子、明确领取路径和三校组队互动，最适合当前报名转化阶段。",
+    "recommended_cover": "5000份礼物｜UQ×QUT×Griffith 新生怎么拿",
+    "recommended_sequence": [1, 2, 12, 9, 14, 10, 15]
+  }
+}
