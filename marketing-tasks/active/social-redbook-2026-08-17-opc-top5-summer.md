@@ -25,7 +25,7 @@ tags:
   - wechat-moments
 createdBy: lightman@jiangren.com.au
 createdAt: 2026-08-17T00:00:00+10:00
-updatedAt: 2026-08-17T00:00:00+10:00
+updatedAt: 2026-08-17T16:30:00+10:00
 ---
 
 ## 描述
@@ -34,12 +34,25 @@ updatedAt: 2026-08-17T00:00:00+10:00
 
 朋友圈海报已完成：[`../assets/2026-08-17-opc-top5-moments/opc-top5-moments-1242x1660.png`](../assets/2026-08-17-opc-top5-moments/opc-top5-moments-1242x1660.png)
 
+可编辑源文件：[`../assets/2026-08-17-opc-top5-moments/poster.html`](../assets/2026-08-17-opc-top5-moments/poster.html)
+
 小红书母稿与 6 张轮播：`jr-omni/new-media/xiaohongshu/jr-academy/posts/2026-08-17-solo-founder-opportunity-radar.md`
+
+## 本期 Top 5 官方来源
+
+| 项目 | 提供方 / 主办方 | 实际收益类型 | 官方页 |
+| --- | --- | --- | --- |
+| Housing Innovation Network Grant | NSW Government · Investment NSW / Homes NSW | 最高 AU$250,000 现金 Grant | https://www.nsw.gov.au/grants-and-funding/housing-innovation-network-grant-program |
+| Clean Technology Innovation Grant | NSW Government · NSW Climate and Energy Action | AU$500,000–5 million matched funding，最高覆盖 50% | https://www.energy.nsw.gov.au/business-and-industry/programs-grants-and-schemes/net-zero-manufacturing/clean-technology-innovation-grant |
+| First Nations Clean Energy Advice Grants | Australian Government · First Nations Clean Energy Strategy | AU$5,000–80,000 现金 Grant，仅限合资格 First Nations 组织 | https://business.gov.au/grants-and-programs/first-nations-clean-energy-advice-grants |
+| AI Builders Hackathon | OSC 主办 · Devpost 承载 | US$4,000 现金大奖；另有最多 100 × US$299 Tin Computer credits，credits 非现金 | https://ai-builders-hackathon-2026.devpost.com/ |
+| AI Capability Pilot Program | Government of South Australia · simplefy.ai 交付 | 9 小时支持 + 6 个月资源，需每人 AU$50 + AU$100 co-contribution，非现金 | https://business.sa.gov.au/programs/ai-capability-pilot-program |
 
 ## Checklist
 
 - [ ] 发布前重新打开 Opportunity 页面，确认 5 条仍为 `open`；任何已过截止时间的条目必须替换
 - [ ] 核对朋友圈海报金额、截止时间、收益类型和资格门槛，没有把 advisory、credits 或 matched funding 写成现金 grant
+- [ ] 逐条打开上方 5 个官方页核验；不得仅凭海报中的短域名发布
 - [ ] 朋友圈发布单图，并配文说明“创业营学员可在课程页查看实时清单”
 - [ ] 小红书轮播发布前按账号当日排期与重复内容检查决定是否发布；不得与朋友圈发布记录混写
 - [ ] 回填朋友圈发布截图或可核验记录；小红书如发布则回填公开 URL
@@ -62,3 +75,5 @@ updatedAt: 2026-08-17T00:00:00+10:00
 - @Lightman 2026-08-17
   > 朋友圈目前不在 MarketingTask `platforms` 枚举中，因此任务以 `xiaohongshu` 主渠道登记，并用 `wechat-moments` tag + Checklist 管理朋友圈人工发布；不得把任务卡 `ready` 误报为平台已发布。
 
+- @Lightman 2026-08-17
+  > 已按新用户阅读顺序重做单图：每项明确写提供方、具体收益、截止信息和官方来源。AI Builders 已修正为 OSC 主办；US$4,000 是现金大奖，100 × US$299 为 Tin Computer credits，不能合并写成现金奖金池。
