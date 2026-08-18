@@ -1,0 +1,22 @@
+{
+  "draft_id": 1,
+  "account": "USYD课代表",
+  "angle": "活动封面",
+  "generated_at": "2026-08-18T09:32:17Z",
+  "model": "built-in imagegen",
+  "feature_key": "xhsPosterImage",
+  "mode": "built-in-imagegen",
+  "total_cost_usd": null,
+  "covers": [
+    {
+      "filename": "cover-A.png",
+      "variant": "悉尼夜景活动主视觉",
+      "quality": "high",
+      "width": 1080,
+      "height": 1440,
+      "regenerated": 0,
+      "selected": true
+    }
+  ],
+  "contents": []
+}
