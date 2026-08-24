@@ -12,7 +12,7 @@
   "pipeline": {
     "topic_at": "2026-08-24T00:00:00+08:00",
     "draft_at": "2026-08-24T00:00:00+08:00",
-    "final_at": null,
+    "final_at": "2026-08-24T00:00:00+08:00",
     "review_at": null,
     "poster_at": null,
     "score_at": null,
