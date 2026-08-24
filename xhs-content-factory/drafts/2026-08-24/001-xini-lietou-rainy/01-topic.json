@@ -1,0 +1,14 @@
+{
+  "topic_id": "001",
+  "title": "发现一个能看LinkedIn薪资的超牛插件",
+  "topic": "PayPeek LinkedIn salary estimation browser extension",
+  "account": "悉尼猎头rainy",
+  "angle": "从猎头视角讲清插件怎么用、适合哪些求职场景，以及为什么估算薪资不能当成真实薪资",
+  "risk": "薪资为AI估算，不是当事人真实收入；免费额度、评分、用户数和隐私条款均为动态信息，发布前需复核。",
+  "verified_at": "2026-08-24",
+  "sources": [
+    "https://chromewebstore.google.com/detail/paypeek-instant-salary-es/aenhepbomobiielgagkkaagkbjaljobj",
+    "https://paypeek.ai/",
+    "https://www.paperclip.fyi/p/privacy"
+  ]
+}

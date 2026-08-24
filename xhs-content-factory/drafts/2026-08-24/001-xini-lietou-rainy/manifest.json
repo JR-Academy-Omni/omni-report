@@ -1,0 +1,31 @@
+{
+  "topic_id": "001",
+  "topic_slug": "linkedin-xinzi-paypeek",
+  "account": "悉尼猎头rainy",
+  "account_slug": "xini-lietou-rainy",
+  "owner": "Lily",
+  "owner_email": "2363843954@qq.com",
+  "date": "2026-08-24",
+  "selected_angle": "C-干货版",
+  "selected_cover": null,
+  "status": "draft",
+  "pipeline": {
+    "topic_at": "2026-08-24T00:00:00+08:00",
+    "draft_at": "2026-08-24T00:00:00+08:00",
+    "final_at": null,
+    "review_at": null,
+    "poster_at": null,
+    "score_at": null,
+    "task_card_at": null
+  },
+  "files": {
+    "topic": "01-topic.json",
+    "draft": "02-draft.md",
+    "final": "03-final.md",
+    "review": "04-review.md",
+    "score": "05-score.md",
+    "poster_prompts": "posters/prompts.md"
+  },
+  "marketing_task_card": null,
+  "score_total": null
+}
