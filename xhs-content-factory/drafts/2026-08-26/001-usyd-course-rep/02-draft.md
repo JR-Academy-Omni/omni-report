@@ -43,6 +43,30 @@ Mascot Library
 3. 门槛卡：成人零基础｜需会员卡｜在线预约｜当前尚未放票。
 4. 尾图：Eventbrite 活动合集页面截图，框出 “Not Yet On Sale”，不放二维码。
 
+## 封面海报文案
+
+**顶部角标**
+
+9月共4场｜成人零基础
+
+**主标题**
+
+悉尼 Mascot图书馆
+
+9月每周二
+
+🆓英语课
+
+**副标题**
+
+从 ABC 开始练日常会话
+
+**底部信息栏**
+
+11:30–12:30｜Mascot Library
+
+需 Bayside Library 会员卡｜提前在线预约
+
 ## 发布前提醒（内部，不复制）
 
 - 官方活动合集：https://www.eventbrite.com.au/cc/free-english-conversation-group-for-adult-beginner-4691513
