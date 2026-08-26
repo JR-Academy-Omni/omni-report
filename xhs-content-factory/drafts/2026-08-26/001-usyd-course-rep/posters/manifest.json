@@ -1,0 +1,20 @@
+{
+  "draft_id": 1,
+  "account": "USYD课代表",
+  "angle": "干货版",
+  "generated_date": "2026-08-26",
+  "model": "built-in image generation",
+  "mode": "built-in-edit",
+  "total_cost_usd": null,
+  "source_image": "new-media/xiaohongshu/usyd-course-rep/posts/assets/2026-08-26-mascot-free-english/source-bayside-english-conversation.png",
+  "covers": [
+    {
+      "filename": "cover-A.png",
+      "variant": "地点与9月场次主导",
+      "width": 1080,
+      "height": 1440,
+      "selected": true
+    }
+  ],
+  "contents": []
+}
