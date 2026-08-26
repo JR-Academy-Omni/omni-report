@@ -40,3 +40,12 @@ Constraints:
 - Bayside Council 标识来自用户提供的原图，未新增其他 Logo。
 - 逐字确认：`9月共4场｜成人零基础`、`悉尼 Mascot图书馆`、`9月每周二`、`🆓英语课`、`11:30–12:30｜Mascot Library`。
 
+## 封面 B｜USYD 品牌色修正版
+
+```text
+Make exactly one targeted brand-color correction to cover A. Replace every dark-green design accent in the lower editorial section with University of Sydney orange-red #EE5D31. Change the top badge, diagonal lines, upper-right rectangle, “英语课” characters, and bottom information strip only. Preserve the classroom photo, people, Bayside Council logo, warm-white background, black text, blue FREE emoji, all wording, character shapes, sizes, spacing, line breaks, alignment, and 3:4 layout. Do not add a USYD logo, crest, university name, extra text, or new decoration.
+```
+
+- 最终尺寸：1080×1440，比例 3:4。
+- 强调色已由 Bayside 深绿改为接近 `#EE5D31` 的 USYD 橙红。
+- 原照片、蓝色 FREE 图标、黑色文字和全部信息层级保持不变。

@@ -10,7 +10,15 @@
   "covers": [
     {
       "filename": "cover-A.png",
-      "variant": "地点与9月场次主导",
+      "variant": "Bayside 绿色初版",
+      "width": 1080,
+      "height": 1440,
+      "selected": false
+    },
+    {
+      "filename": "cover-B-usyd-orange.png",
+      "variant": "USYD 橙红品牌色修正版",
+      "accent_color": "#EE5D31",
       "width": 1080,
       "height": 1440,
       "selected": true
