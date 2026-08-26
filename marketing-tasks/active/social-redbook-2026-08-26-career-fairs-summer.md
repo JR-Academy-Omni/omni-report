@@ -31,7 +31,7 @@ updatedAt: 2026-08-26T14:30:00+10:00
 
 ## 描述
 
-原 Excel 已重做为一份核验到 2026-08-26 的 Markdown 制作 brief。26 场活动中有 19 场已经结束，不能混入当前机会；剩余 7 场已按公开活动、校内限定、资格待确认重新分组。
+原 Excel 已重做为一份核验到 2026-08-26 的 Markdown 制作 brief。Markdown 完整列出全部 26 场活动：19 场明确标为“已结束/归档”，7 场尚未结束并按公开活动、校内限定、资格待确认重新分组。
 
 内部 brief：[`../../../new-media/xiaohongshu/au-shixiyuan/posts/2026-08-26-australia-career-fairs-summer-brief.md`](../../../new-media/xiaohongshu/au-shixiyuan/posts/2026-08-26-australia-career-fairs-summer-brief.md)
 
@@ -43,6 +43,7 @@ updatedAt: 2026-08-26T14:30:00+10:00
 - [ ] 再做 9 月 5 场轮播：Adelaide、Monash、Sydney Japan Career Fair、UWA、RMIT
 - [ ] Japan Career Fair 页面显示 8 月 30 日二次材料节点，发布前再次确认
 - [ ] 每个活动在发布前 24 小时重新打开官方页面，核对日期、时间、地点、报名状态和适用人群
+- [ ] 保留 Markdown 内完整 26 场资料目录，不把 19 场历史活动删除；对外发布时必须清楚标为“已结束/历史参考”
 - [ ] 把“公开可参加”“限本校学生”“岗位资格需逐家确认”明确分开
 - [ ] 不使用“留学生友好”“稳进”“现场拿 offer”“全部雇主支持签证”等无证据表达
 - [ ] 不把 networking expo、career workshop 写成招聘会
