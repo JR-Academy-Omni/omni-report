@@ -7,32 +7,35 @@
 
 ## 标题候选 ×10
 
-1. 悉大CS核心课到底学啥？
-2. USYD CS核心课路线图
-3. 从INFO1110到CS Project
-4. 悉大CS各阶段学什么
-5. 选USYD CS前先看这张图
-6. 悉大CS不只是学写代码
-7. 悉大CS核心路径怎么走
-8. 悉大CS课程内容怎么进阶
-9. INFO1110之后学什么？
-10. 一张图看懂悉大CS主线
+1. 悉大CS这串课到底学啥？
+2. 悉大CS课表翻译成人话
+3. INFO1110之后还有啥？
+4. 悉大CS原来不是只写代码
+5. 选悉大CS前先看这张图
+6. 悉大CS每阶段都在学啥
+7. 悉大CS核心课怎么一路升级
+8. 这7门悉大CS课差在哪？
+9. 一张图捋顺悉大CS主线
+10. 悉大CS新生别被课号吓到
 
 ## 正文
 
-选了 USYD Computer Science，却只知道要学编程？小课翻完 2026 Handbook，把 CS major 的核心路径捋了一遍。📚
+一打开 USYD Handbook，INFO1110、COMP2017、COMP3027……密密麻麻一串课号，谁看谁懵。别急，小课给你翻译成人话：悉大 CS 学的其实是一条“打怪升级路线”。📚
 
-2026 CS major 共 48cp。这篇拆普通版本下常见的 7 门 core / project units，共 42cp；另外还要完成 6cp 的 3000-level selective。
+先说课量：2026 CS major 一共 48cp，可以先理解成 7 门常见 core / project units，再加 1 门 3000-level selective。具体以自己的 degree 为准。
 
-1000-level 先打地基。INFO1110 讲数据类型、循环、函数、递归、内存模型和 Debug；INFO1113 进入 Java 面向对象，学习 class、object、继承、多态、interface 和测试。
+① **先学怎么让电脑听懂你**
+INFO1110 从变量、循环、函数一路讲到递归和 Debug；INFO1113 换到 Java，开始学怎么用 class 和 object 把代码整理得更像一个真正的项目。
 
-2000-level 分成三条线：COMP2017 用 C 和 Unix 学内存、指针、进程、并发与调试；COMP2123 处理数据结构、排序和 Big-O；COMP2022 转向正则表达式、自动机、文法、图灵机和证明。
+② **再学怎么让程序跑得更聪明**
+COMP2017 会碰 C、Unix、指针和内存；COMP2123 研究数据该怎么放、算法怎么少走弯路；COMP2022 更抽象，开始问“什么问题电脑能算，什么问题算不了”。
 
-到 3000-level，COMP3027 学贪心、分治、动态规划、网络流、归约和 NP-hardness；常见 COMP project 路径中的 COMP3888 会完成需求、开发、测试、文档与团队协作。
+③ **最后练怎么解决复杂问题**
+COMP3027 会学贪心、分治、动态规划这些算法思路；常见 COMP project 路径中的 COMP3888，则要和组员一起把需求、开发、测试和文档真正做完。
 
-主线可以记成：**编程基础 → OOP → 系统与数据结构 → 计算理论 → 算法设计 → 项目交付**。Advanced unit 可替代部分标准 unit，修读顺序也会因 degree 和选课安排而变化。
+所以这些课不是七座互不相干的大山，而是一层压一层：**会写代码 → 看懂系统 → 设计算法 → 做出项目**。Advanced unit 和实际修读顺序会因 degree 不同而变化，选课时记得看自己的 Handbook。
 
-你想看哪门课单独拆？评论区扣【CS】，小课按呼声继续更👇
+下一篇想让小课拆哪门？评论区扣【CS】告诉我👇
 
 #悉尼大学 #USYD #ComputerScience #澳洲留学 #悉大选课 #留学学习 #计算机科学
 
@@ -40,14 +43,14 @@
 
 | 页码 | 页面任务 | 主标题 | 可直接上图的正文 | 排版提示 |
 |---|---|---|---|---|
-| 1 | 首图钩子 | 悉大CS核心课到底学啥？ | 从 INFO1110 到 CS Project｜一张图看懂 CS major 常见核心路径 | 大标题居中；底部小字“2026 Handbook版” |
-| 2 | 结构说明 | CS major一共48cp | 12cp：1000-level core｜18cp：2000-level core｜6cp：3000-level core｜6cp：interdisciplinary project｜6cp：3000-level selective | 做成横向学分进度条；明确“不是只有7门课” |
-| 3 | 1000-level① | INFO1110｜让程序跑起来 | 数据类型｜if / loop｜函数｜递归｜数组｜内存模型｜测试与 Debug｜编译基础 | 左侧写unit code，右侧放知识点表格 |
-| 4 | 1000-level② | INFO1113｜从函数走向对象 | Java｜class 与 object｜封装｜继承｜多态｜interface｜exception｜UML｜自动化测试 | 用“程序式 → 面向对象”前后对比 |
-| 5 | 2000-level | 这一阶段分成3条线 | COMP2017：C、Unix、内存与并发｜COMP2123：数据结构、算法与 Big-O｜COMP2022：自动机、文法、图灵机与证明 | 三列表格；每列只保留4个关键词 |
-| 6 | 易混课程 | 这三门到底差在哪？ | COMP2017问：程序怎样贴近系统运行？｜COMP2123问：数据怎样组织才更高效？｜COMP2022问：哪些问题能被计算？ | 做成“课程 / 核心问题 / 关键词”三列表 |
-| 7 | 3000-level | 从会写代码到解决问题 | COMP3027：贪心、分治、动态规划、网络流、NP-hardness｜COMP3888：需求、设计、开发、测试、文档、客户与团队协作 | 标注“以常见COMP project路径为例” |
-| 8 | 收尾提醒 | 还要选1门3000-level selective | ① 按自己的degree查Handbook｜② 核对prerequisite / corequisite｜③ 查看当期公开unit outline｜想看哪门单独拆？评论区扣【CS】 | Checklist + CTA；不列死选修清单，不放二维码 |
+| 1 | 首图钩子 | 悉大CS这串课到底学啥？ | INFO、COMP看得头大？小课给你翻译成人话 | 大标题居中；底部小字“2026 Handbook版” |
+| 2 | 结构说明 | 先别被48cp吓到 | 多数unit是6cp｜7门常见core/project units｜再加1门3000-level selective | 用“7+1”大数字；详细学分结构放底部小字 |
+| 3 | 1000-level① | INFO1110｜教电脑听懂你 | 变量和数据｜if / loop｜函数｜递归｜数组｜Debug｜简单说：从零开始把想法写成能跑的程序 | 左边放知识点，右边放“人话翻译” |
+| 4 | 1000-level② | INFO1113｜代码开始像个项目 | Java｜class和object｜继承｜多态｜interface｜测试｜简单说：不再把所有代码挤在一起 | 用“乱糟糟代码 → 分工清楚”对比 |
+| 5 | 2000-level | 三门课，三种脑回路 | COMP2017：电脑底层怎么跑｜COMP2123：怎么让程序少走弯路｜COMP2022：电脑到底能不能算这道题 | 三列卡片；专业词缩小，人话放大 |
+| 6 | 易混课程 | 三门课到底怎么区分？ | COMP2017盯系统怎么运行｜COMP2123盯程序怎么提速｜COMP2022盯计算能力的边界｜方向不同，准备方法也不同 | 做成“课程 / 核心问题 / 提前准备”表格 |
+| 7 | 3000-level | 开始解决真正的复杂问题 | COMP3027：给难题挑合适的算法｜COMP3888：和组员把一个软件项目真正做完 | 标注“以常见COMP project路径为例” |
+| 8 | 收尾提醒 | 选课前别漏看这3项 | ① 自己degree的Handbook｜② prerequisite / corequisite｜③ 当期公开unit outline｜下一篇想看哪门？扣【CS】 | Checklist + CTA；不列死选修清单，不放二维码 |
 
 ## 事实边界与发布提醒
 
