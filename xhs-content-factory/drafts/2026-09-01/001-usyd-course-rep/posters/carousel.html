@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>悉大CS学习路线图</title>
+<style>
+  :root {
+    --orange: #EE5D31;
+    --charcoal: #252525;
+    --warm: #FFFDFC;
+    --peach: #FBE9E2;
+    --muted: #6E625E;
+    --line: #E9D6CF;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #ddd; font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; color: var(--charcoal); }
+  .page {
+    position: relative; width: 1080px; height: 1440px; overflow: hidden;
+    background: var(--warm); padding: 88px 86px 82px;
+  }
+  .page::before {
+    content: ""; position: absolute; inset: 0;
+    background: url("campus-background.png") center/cover no-repeat;
+    opacity: .13; pointer-events: none;
+  }
+  .page::after {
+    content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 20px;
+    background: var(--orange);
+  }
+  .page > * { position: relative; z-index: 1; }
+  .kicker { font-size: 30px; font-weight: 900; letter-spacing: 2px; color: var(--orange); text-transform: uppercase; }
+  .page-no { position: absolute; top: 64px; right: 72px; font: 900 30px/1 Arial, sans-serif; color: var(--orange); }
+  h1 { margin: 30px 0 22px; font-size: 76px; line-height: 1.12; letter-spacing: -3px; }
+  h2 { margin: 14px 0 20px; font-size: 52px; line-height: 1.18; }
+  p { margin: 0; font-size: 38px; line-height: 1.55; }
+  .orange { color: var(--orange); }
+  .muted { color: var(--muted); }
+  .rule { width: 132px; height: 10px; background: var(--orange); margin: 26px 0 38px; }
+  .badge { display: inline-flex; align-items: center; min-height: 58px; padding: 10px 22px; border: 3px solid var(--orange); color: var(--orange); background: var(--warm); font-size: 30px; font-weight: 900; }
+  .stage { display: inline-flex; padding: 12px 24px; color: #fff; background: var(--orange); font-size: 34px; line-height: 1; font-weight: 900; }
+  .card { background: rgba(255,253,252,.96); border: 3px solid var(--charcoal); box-shadow: 12px 12px 0 var(--orange); padding: 34px 38px; }
+  .card.soft { border-color: var(--line); box-shadow: none; background: rgba(251,233,226,.88); }
+  .checkpoint { margin-top: 38px; background: var(--charcoal); color: #fff; padding: 32px 38px; }
+  .checkpoint .label { color: #FFB49D; font-size: 30px; font-weight: 900; margin-bottom: 12px; }
+  .checkpoint p { font-size: 38px; line-height: 1.45; font-weight: 800; }
+  .pills { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 26px; }
+  .pill { border: 3px solid var(--orange); background: var(--warm); padding: 12px 20px; font: 800 32px/1.2 Arial, "Microsoft YaHei", sans-serif; }
+  .footer { position: absolute; left: 86px; right: 86px; bottom: 42px; display: flex; justify-content: space-between; align-items: center; font-size: 25px; font-weight: 800; color: var(--muted); }
+  .footer .dot { width: 14px; height: 14px; background: var(--orange); display: inline-block; margin-right: 10px; }
+
+  /* Cover */
+  .cover { padding-top: 100px; background: var(--warm); }
+  .cover::before { opacity: .38; }
+  .cover .account { font-size: 32px; font-weight: 900; padding: 15px 24px; background: var(--charcoal); color: #fff; display: inline-block; }
+  .cover h1 { margin-top: 92px; font-size: 158px; line-height: .98; letter-spacing: -10px; max-width: 900px; }
+  .cover .sub { margin-top: 34px; padding: 22px 28px; background: var(--orange); color: #fff; font-size: 42px; font-weight: 900; display: inline-block; }
+  .cover .mini-route { position: absolute; left: 86px; right: 86px; bottom: 142px; display: flex; align-items: center; gap: 14px; padding: 28px; background: rgba(255,253,252,.92); border: 3px solid var(--charcoal); }
+  .cover .node { font-size: 30px; font-weight: 900; white-space: nowrap; }
+  .cover .arrow { color: var(--orange); font-size: 42px; font-weight: 900; }
+
+  /* Overview */
+  .timeline { margin-top: 34px; display: grid; grid-template-columns: 120px 1fr; gap: 18px 26px; }
+  .timeline .num { width: 92px; height: 92px; border-radius: 50%; display: grid; place-items: center; background: var(--orange); color: white; font-size: 42px; font-weight: 900; }
+  .timeline .step { min-height: 92px; padding: 14px 24px; border-left: 5px solid var(--charcoal); background: rgba(255,253,252,.92); }
+  .timeline .step strong { display: block; font-size: 38px; line-height: 1.2; }
+  .timeline .step span { display: block; margin-top: 7px; font-size: 30px; color: var(--muted); }
+  .branch-note { margin-top: 30px; padding: 24px 30px; border: 3px dashed var(--orange); font-size: 34px; font-weight: 800; background: var(--peach); }
+
+  /* Branch */
+  .branches { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 36px; }
+  .branch { min-height: 630px; padding: 28px 22px; background: rgba(255,253,252,.96); border: 3px solid var(--charcoal); }
+  .branch .code { color: var(--orange); font: 900 34px/1.2 Arial, sans-serif; }
+  .branch h2 { min-height: 126px; font-size: 46px; }
+  .branch p { font-size: 31px; line-height: 1.5; }
+  .branch .question { margin-top: 28px; padding-top: 24px; border-top: 4px solid var(--orange); font-size: 31px; font-weight: 900; }
+  .not-choice { margin-top: 34px; background: var(--orange); color: white; padding: 24px 30px; font-size: 38px; font-weight: 900; text-align: center; }
+
+  /* Check list */
+  .checks { display: grid; gap: 24px; margin-top: 38px; }
+  .check { display: grid; grid-template-columns: 76px 1fr; gap: 22px; align-items: start; padding: 28px 30px; background: rgba(255,253,252,.95); border: 3px solid var(--line); }
+  .check .icon { width: 62px; height: 62px; display: grid; place-items: center; background: var(--orange); color: white; font-size: 38px; font-weight: 900; }
+  .check strong { display: block; font-size: 38px; line-height: 1.25; }
+  .check span { display: block; margin-top: 8px; font-size: 30px; color: var(--muted); line-height: 1.45; }
+  .warning { margin-top: 30px; padding: 24px 28px; background: var(--charcoal); color: #fff; font-size: 31px; line-height: 1.45; font-weight: 800; }
+
+  /* Final */
+  .final-route { margin-top: 36px; display: grid; gap: 18px; }
+  .route-row { display: grid; grid-template-columns: 245px 1fr; min-height: 112px; border: 3px solid var(--charcoal); background: rgba(255,253,252,.96); }
+  .route-row .code { display: grid; place-items: center; background: var(--orange); color: #fff; font: 900 34px/1.2 Arial, sans-serif; padding: 12px; text-align: center; }
+  .route-row .meaning { padding: 23px 28px; font-size: 38px; font-weight: 900; display: flex; align-items: center; }
+  .selective { margin-top: 26px; padding: 24px 30px; border: 3px dashed var(--orange); background: var(--peach); font-size: 34px; font-weight: 900; }
+  .cta { margin-top: 24px; font-size: 32px; line-height: 1.4; font-weight: 900; color: var(--muted); }
+  .cta strong { display: block; margin-top: 4px; font-size: 42px; color: var(--orange); }
+</style>
+</head>
+<body>
+
+<section class="page cover">
+  <div class="account">USYD课代表</div>
+  <div class="page-no">01 / 09</div>
+  <h1>悉大CS<br><span class="orange">学习路线图</span></h1>
+  <div class="sub">从 INFO1110 一路走到 COMP Project</div>
+  <div class="mini-route">
+    <span class="node">写得出</span><span class="arrow">→</span>
+    <span class="node">组织好</span><span class="arrow">→</span>
+    <span class="node">懂原理</span><span class="arrow">→</span>
+    <span class="node">做项目</span>
+  </div>
+  <div class="footer"><span><i class="dot"></i>2026 Handbook版</span><span>3:4 ROADMAP</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">THE BIG PICTURE</div><div class="page-no">02 / 09</div>
+  <h1>这7门课，<br>其实是一条线</h1><div class="rule"></div>
+  <div class="timeline">
+    <div class="num">1</div><div class="step"><strong>写得出来</strong><span>INFO1110｜编程入门</span></div>
+    <div class="num">2</div><div class="step"><strong>把代码组织好</strong><span>INFO1113｜面向对象</span></div>
+    <div class="num">3</div><div class="step"><strong>补齐三条能力线</strong><span>COMP2017 / 2123 / 2022</span></div>
+    <div class="num">4</div><div class="step"><strong>会给难题设计解法</strong><span>COMP3027｜算法设计</span></div>
+    <div class="num">5</div><div class="step"><strong>把项目真正交付</strong><span>COMP Project｜常见路径 COMP3888</span></div>
+  </div>
+  <div class="branch-note">重点：第3阶段不是单线升级，而是底层、算法、理论三条线一起补。</div>
+  <div class="footer"><span><i class="dot"></i>先看关系，再学单科</span><span>USYD CS</span></div>
+</section>
+
+<section class="page">
+  <div class="stage">第1关</div><div class="page-no">03 / 09</div>
+  <h1>INFO1110<br><span class="orange">先把代码写出来</span></h1><div class="rule"></div>
+  <div class="card">
+    <div class="kicker">这关学什么</div>
+    <div class="pills"><span class="pill">变量</span><span class="pill">循环</span><span class="pill">函数</span><span class="pill">数组</span><span class="pill">递归</span><span class="pill">Debug</span></div>
+    <h2>不是背语法，<br>是学会“拆问题”</h2>
+    <p class="muted">看到一个小任务，先拆步骤，再把步骤写成电脑能执行的程序。</p>
+  </div>
+  <div class="checkpoint"><div class="label">过关标准 CHECKPOINT</div><p>能独立写出一个小程序，运行失败时知道从哪里开始找错。</p></div>
+  <div class="footer"><span><i class="dot"></i>START HERE</span><span>INFO1110</span></div>
+</section>
+
+<section class="page">
+  <div class="stage">第2关</div><div class="page-no">04 / 09</div>
+  <h1>INFO1113<br><span class="orange">把代码整理清楚</span></h1><div class="rule"></div>
+  <div class="card">
+    <div class="kicker">这关学什么</div>
+    <div class="pills"><span class="pill">Java</span><span class="pill">class</span><span class="pill">object</span><span class="pill">继承</span><span class="pill">多态</span><span class="pill">测试</span></div>
+    <h2>从“会写几行”<br>升级到“会搭小项目”</h2>
+    <p class="muted">不再把所有代码挤在一起，而是拆成职责清楚、可以配合的小模块。</p>
+  </div>
+  <div class="checkpoint"><div class="label">过关标准 CHECKPOINT</div><p>能用 class 和 object 表达现实问题，也能给关键逻辑补上测试。</p></div>
+  <div class="footer"><span><i class="dot"></i>CODE → PROJECT</span><span>INFO1113</span></div>
+</section>
+
+<section class="page">
+  <div class="stage">第3关</div><div class="page-no">05 / 09</div>
+  <h1>到这里，路线分成<br><span class="orange">3条能力线</span></h1>
+  <div class="branches">
+    <div class="branch"><div class="code">COMP2017</div><h2>底层线</h2><p>C、Unix、指针、内存、进程与并发。</p><div class="question">核心问题：<br>程序到底怎么跑？</div></div>
+    <div class="branch"><div class="code">COMP2123</div><h2>算法线</h2><p>数据结构、排序、图、Big-O与基础算法。</p><div class="question">核心问题：<br>怎么少走弯路？</div></div>
+    <div class="branch"><div class="code">COMP2022</div><h2>理论线</h2><p>自动机、形式语言、图灵机与证明。</p><div class="question">核心问题：<br>电脑能算什么？</div></div>
+  </div>
+  <div class="not-choice">这三门不是三选一，而是从三个方向补齐CS思维。</div>
+  <div class="footer"><span><i class="dot"></i>THREE SKILL LINES</span><span>2000-LEVEL</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">STAGE CHECK</div><div class="page-no">06 / 09</div>
+  <h1>2000-level学完，<br><span class="orange">你应该会什么？</span></h1><div class="rule"></div>
+  <div class="checks">
+    <div class="check"><div class="icon">✓</div><div><strong>看懂程序怎么运行</strong><span>不只看到代码，还能想到内存、进程和系统行为。</span></div></div>
+    <div class="check"><div class="icon">✓</div><div><strong>比较两种做法的效率</strong><span>知道该选什么数据结构，也能用 Big-O 解释差别。</span></div></div>
+    <div class="check"><div class="icon">✓</div><div><strong>理解计算能力的边界</strong><span>能用模型和证明说明：有些问题为什么不能直接算。</span></div></div>
+  </div>
+  <div class="warning">排课提醒：这些unit之间有 prerequisite / corequisite。不要只按“课号大小”猜顺序，要看本人degree的Handbook。</div>
+  <div class="footer"><span><i class="dot"></i>CHECK BEFORE ENROLMENT</span><span>USYD CS</span></div>
+</section>
+
+<section class="page">
+  <div class="stage">第4关</div><div class="page-no">07 / 09</div>
+  <h1>COMP3027<br><span class="orange">开始设计解法</span></h1><div class="rule"></div>
+  <div class="card">
+    <div class="kicker">工具箱继续升级</div>
+    <div class="pills"><span class="pill">贪心</span><span class="pill">分治</span><span class="pill">动态规划</span><span class="pill">网络流</span><span class="pill">复杂度</span></div>
+    <h2>题做出来还不够，<br>要会选“为什么这样做”</h2>
+    <p class="muted">同一道难题可能有很多解法。这一关练的是判断、设计和解释，而不是只套模板。</p>
+  </div>
+  <div class="checkpoint"><div class="label">过关标准 CHECKPOINT</div><p>能识别问题结构，选合适的算法，并说明正确性和效率。</p></div>
+  <div class="footer"><span><i class="dot"></i>WRITE CODE → DESIGN SOLUTIONS</span><span>COMP3027</span></div>
+</section>
+
+<section class="page">
+  <div class="stage">第5关</div><div class="page-no">08 / 09</div>
+  <h1>COMP3888<br><span class="orange">把项目真正交付</span></h1><div class="rule"></div>
+  <div class="card">
+    <div class="kicker">常见 COMP PROJECT 路径</div>
+    <h2>这次不是一个人刷题，<br>而是跟组员把软件做完</h2>
+    <div class="pills"><span class="pill">需求</span><span class="pill">设计</span><span class="pill">开发</span><span class="pill">测试</span><span class="pill">文档</span><span class="pill">协作</span></div>
+    <p class="muted" style="margin-top:28px">前面学过的代码、系统、数据结构和算法，会在这里一起被调用。</p>
+  </div>
+  <div class="checkpoint"><div class="label">过关标准 CHECKPOINT</div><p>能和团队把一个需求变成可测试、可解释、可交付的软件项目。</p></div>
+  <div class="footer"><span><i class="dot"></i>PUT IT ALL TOGETHER</span><span>COMP3888</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">YOUR ROADMAP</div><div class="page-no">09 / 09</div>
+  <h1>你的通关顺序，<br><span class="orange">最后复盘一次</span></h1>
+  <div class="final-route">
+    <div class="route-row"><div class="code">INFO1110</div><div class="meaning">先把程序写出来</div></div>
+    <div class="route-row"><div class="code">INFO1113</div><div class="meaning">把代码组织成小项目</div></div>
+    <div class="route-row"><div class="code">2000-level</div><div class="meaning">补底层、算法和理论</div></div>
+    <div class="route-row"><div class="code">COMP3027</div><div class="meaning">给复杂问题设计解法</div></div>
+    <div class="route-row"><div class="code">COMP Project</div><div class="meaning">把软件项目真正交付</div></div>
+  </div>
+  <div class="selective">2026 CS major共48cp，常见路线还包含1门3000-level selective。</div>
+  <div class="cta">实际顺序以本人degree Handbook为准<strong>想看哪门单科路线？</strong></div>
+  <div class="footer"><span><i class="dot"></i>SAVE THIS ROADMAP</span><span>09 / 09</span></div>
+</section>
+
+</body>
+</html>

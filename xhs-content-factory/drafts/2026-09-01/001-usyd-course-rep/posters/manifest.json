@@ -1,0 +1,21 @@
+{
+  "draft_id": "2026-09-01-001-usyd-course-rep",
+  "account": "USYD课代表",
+  "angle": "Roadmap版",
+  "mode": "generated-background-plus-deterministic-layout",
+  "dimensions": "1080x1440",
+  "aspect_ratio": "3:4",
+  "accent_color": "#EE5D31",
+  "logo_used": false,
+  "pages": [
+    { "filename": "01-usyd-cs-roadmap.png", "type": "cover", "task": "学习路线图封面" },
+    { "filename": "02-usyd-cs-roadmap.png", "type": "content", "task": "全局课程路线" },
+    { "filename": "03-usyd-cs-roadmap.png", "type": "content", "task": "INFO1110阶段" },
+    { "filename": "04-usyd-cs-roadmap.png", "type": "content", "task": "INFO1113阶段" },
+    { "filename": "05-usyd-cs-roadmap.png", "type": "content", "task": "2000-level三条能力线" },
+    { "filename": "06-usyd-cs-roadmap.png", "type": "content", "task": "阶段检查点" },
+    { "filename": "07-usyd-cs-roadmap.png", "type": "content", "task": "COMP3027阶段" },
+    { "filename": "08-usyd-cs-roadmap.png", "type": "content", "task": "COMP3888项目阶段" },
+    { "filename": "09-usyd-cs-roadmap.png", "type": "content", "task": "完整路线复盘" }
+  ]
+}
