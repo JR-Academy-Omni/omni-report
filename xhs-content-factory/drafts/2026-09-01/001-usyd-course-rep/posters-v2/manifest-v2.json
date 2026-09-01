@@ -1,0 +1,11 @@
+{
+  "account": "USYD课代表",
+  "topic": "悉大CS学习路线图",
+  "version": 2,
+  "mode": "imagegen-editorial-backgrounds-plus-deterministic-typography",
+  "dimensions": "1080x1440",
+  "aspect_ratio": "3:4",
+  "accent_color": "#EE5D31",
+  "logo_used": false,
+  "design_direction": "bold campus editorial collage; full-bleed; route nodes; minimal copy per page"
+}
