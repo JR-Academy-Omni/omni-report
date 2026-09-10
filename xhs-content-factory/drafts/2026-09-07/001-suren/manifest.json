@@ -1,0 +1,31 @@
+{
+  "topic_id": "001",
+  "topic_slug": "meiguo-stem-2-5wan-scholarship",
+  "account": "素人号",
+  "account_slug": "suren",
+  "owner": "KIKI",
+  "owner_email": "2838684082@qq.com",
+  "date": "2026-09-07",
+  "selected_angle": "C-干货版",
+  "selected_cover": "posters/stem-women-subsidy-details-v2.png",
+  "status": "draft",
+  "pipeline": {
+    "topic_at": "2026-09-07T00:00:00+08:00",
+    "draft_at": "2026-09-07T00:00:00+08:00",
+    "final_at": null,
+    "review_at": null,
+    "poster_at": "2026-09-10T00:00:00+08:00",
+    "score_at": null,
+    "task_card_at": null
+  },
+  "files": {
+    "topic": "01-topic.json",
+    "draft": "02-draft.md",
+    "final": "03-final.md",
+    "review": "04-review.md",
+    "score": "05-score.md",
+    "poster_prompts": "posters/prompts.md"
+  },
+  "marketing_task_card": null,
+  "score_total": null
+}
