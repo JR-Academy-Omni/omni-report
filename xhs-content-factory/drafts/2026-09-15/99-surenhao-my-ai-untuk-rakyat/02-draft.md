@@ -17,11 +17,11 @@ verified_at: 2026-09-15
 
 ### 正文
 
-马来西亚18–30岁的朋友，这项政府AI福利可以去看看！🇲🇾
+马来西亚18–30岁的朋友，这项政府AI福利可以去看看！🇲🇾✨
 
-马来西亚数字部刚推出「AI untuk Rakyat」计划，目标是分阶段让最多10万名本地青年，获得3个月指定AI工具的免费使用权。
+马来西亚数字部刚推出「AI untuk Rakyat」计划📢将分阶段让最多10万名青年，免费使用指定AI工具3个月🤖
 
-申请条件先看清楚：
+申请条件先看清楚📌
 
 ✅ 马来西亚公民
 
@@ -29,9 +29,9 @@ verified_at: 2026-09-15
 
 ✅ 在Rakyat Digital完成并通过指定的6门课程
 
-指定课程包括Generative AI、Agentic AI、AI Safety、CyberSAFE、Cloud和AI Nation 2030。完成后，再按照个人账户页面兑换福利。
+课程包括Generative AI、Agentic AI、AI Safety、CyberSAFE、Cloud和AI Nation 2030📚完成后，按照个人账户页面兑换福利🎁
 
-领取路径：
+领取路径📲
 
 1️⃣ 进入Rakyat Digital官网
 
@@ -43,13 +43,13 @@ verified_at: 2026-09-15
 
 5️⃣ 回到页面查看Redeem／兑换资格
 
-注意：这不是现金补贴，也不是所有AI会员任选。官方写的是指定AI工具免费使用3个月，名额分批开放，最终以账户显示的资格和条款为准。
+⚠️注意：这不是现金补贴，也不是所有AI会员任选。官方写的是指定AI工具免费使用3个月，名额分批开放，最终以账户显示的资格和条款为准。
 
-计划已于8月31日启动，想学AI可以先把免费课程做起来。
+计划已于8月31日启动⏰想学AI可以先把免费课程做起来！
 
-官网：rakyatdigital.gov.my/en/literacy-hub
+🔗官网：rakyatdigital.gov.my/en/literacy-hub
 
-你最想领哪一种AI工具？👀
+你最想领哪一种AI工具？评论区聊聊🙋🏻‍♀️👀
 
 #马来西亚福利 #马来西亚生活 #AI工具 #免费AI课程 #RakyatDigital #AIUntukRakyat #大马资讯
 
