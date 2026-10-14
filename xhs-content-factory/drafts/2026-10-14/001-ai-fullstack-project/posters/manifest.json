@@ -1,0 +1,15 @@
+{
+  "account": "JR匠人学院",
+  "topic": "AI全栈项目班宣传海报",
+  "generated_at": "2026-10-14",
+  "mode": "deterministic-html",
+  "size": "1080x1440",
+  "style": "bright restrained hackathon",
+  "logo_source": "/Users/mtguanli/Desktop/logo.png",
+  "posters": [
+    {"filename": "poster-02-pain.png", "type": "cover", "angle": "痛点"},
+    {"filename": "poster-03-roadmap.png", "type": "content", "subtype": "roadmap"},
+    {"filename": "poster-06-audience.png", "type": "content", "subtype": "audience"},
+    {"filename": "poster-07-comparison.png", "type": "content", "subtype": "comparison"}
+  ]
+}

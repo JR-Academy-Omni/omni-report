@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>AI全栈项目班海报系列</title>
+  <style>
+    :root{--paper:#f8f5ea;--ink:#101114;--lime:#c7ff2f;--blue:#2878ff;--orange:#ff6b2c;--pink:#ff65bd;--muted:#65645f}
+    *{box-sizing:border-box}
+    html,body{margin:0;width:1080px;height:1440px;overflow:hidden;background:var(--paper)}
+    body{font-family:"PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;color:var(--ink)}
+    .poster{display:none;width:1080px;height:1440px;padding:44px 54px 46px;position:relative;overflow:hidden;background-color:var(--paper);background-image:linear-gradient(rgba(16,17,20,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(16,17,20,.055) 1px,transparent 1px);background-size:36px 36px}
+    .poster.active{display:block}
+    .header{height:118px;display:flex;align-items:flex-start;justify-content:space-between;position:relative;z-index:2}
+    .logo{width:300px;height:auto;display:block}
+    .series{border:3px solid var(--ink);background:#fff;padding:10px 16px;font-size:24px;font-weight:900;box-shadow:6px 6px 0 var(--ink)}
+    .kicker{display:inline-block;margin-top:24px;background:var(--lime);border:3px solid var(--ink);padding:9px 16px;font-size:24px;font-weight:900;box-shadow:5px 5px 0 var(--ink)}
+    h1{font-size:76px;line-height:1.08;letter-spacing:-4px;margin:24px 0 22px;font-weight:1000}
+    h1 em{font-style:normal;color:var(--orange)}
+    .lead{font-size:32px;line-height:1.45;font-weight:700;margin:0;color:#323338}
+    .footer{position:absolute;left:54px;right:54px;bottom:34px;border-top:4px solid var(--ink);padding-top:18px;display:flex;justify-content:space-between;align-items:center;font-size:23px;font-weight:900}
+    .footer span:last-child{color:var(--muted);font-size:20px}
+    .tape{position:absolute;height:24px;width:150px;background:var(--pink);opacity:.9;transform:rotate(-7deg)}
+
+    /* Poster 2 */
+    .pain h1{font-size:88px;margin-top:18px}
+    .pain .statement{margin-top:30px;border:4px solid var(--ink);background:#fff;box-shadow:10px 10px 0 var(--ink);padding:26px 30px;font-size:34px;font-weight:900}
+    .skills{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:48px;align-items:center}
+    .skill{height:220px;border:4px solid var(--ink);background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:7px 7px 0 var(--ink);font-size:36px;font-weight:1000}
+    .skill b{font-size:26px;margin-bottom:16px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--lime);border:3px solid var(--ink)}
+    .skill:nth-child(2) b{background:#a7d5ff}.skill:nth-child(3) b{background:#ffd27c}.skill:nth-child(4) b{background:#ffb6df}.skill:nth-child(5){background:var(--lime)}
+    .arrow-row{font-size:44px;font-weight:1000;text-align:center;margin-top:32px;letter-spacing:9px}
+
+    /* Poster 3 */
+    .route h1{font-size:72px;margin-top:14px}
+    .route .lead{font-size:28px}
+    .phases{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:32px}
+    .phase{min-height:278px;border:4px solid var(--ink);background:#fff;box-shadow:8px 8px 0 var(--ink);padding:24px;position:relative}
+    .phase:nth-child(1){border-top:20px solid var(--blue)}.phase:nth-child(2){border-top:20px solid var(--orange)}.phase:nth-child(3){border-top:20px solid var(--pink)}.phase:nth-child(4){border-top:20px solid var(--lime)}
+    .phase .num{font-size:23px;font-weight:1000;color:var(--muted)}
+    .phase h2{font-size:39px;line-height:1.16;margin:6px 0 10px}
+    .phase p{font-size:26px;line-height:1.32;font-weight:800;margin:0}
+    .phase .out{display:inline-block;margin-top:17px;font-size:22px;font-weight:900;background:var(--paper);padding:6px 10px;border:2px solid var(--ink)}
+    .route-line{margin-top:28px;border:4px solid var(--ink);background:var(--ink);color:#fff;padding:16px 20px;text-align:center;font-size:29px;font-weight:900}
+
+    /* Poster 6 */
+    .audience h1{font-size:72px;margin-top:14px}
+    .paths{display:grid;gap:18px;margin-top:34px}
+    .path{display:grid;grid-template-columns:260px 70px 1fr;align-items:center;min-height:150px;border:4px solid var(--ink);background:#fff;box-shadow:7px 7px 0 var(--ink);padding:18px 24px}
+    .path:nth-child(1){border-left:22px solid var(--blue)}.path:nth-child(2){border-left:22px solid var(--orange)}.path:nth-child(3){border-left:22px solid var(--pink)}.path:nth-child(4){border-left:22px solid var(--lime)}
+    .start{font-size:34px;font-weight:1000}.arr{font-size:45px;font-weight:1000;color:var(--blue)}.gain{font-size:31px;line-height:1.3;font-weight:900}
+    .fit{margin-top:32px;background:var(--lime);border:4px solid var(--ink);padding:21px 28px;font-size:30px;font-weight:1000;box-shadow:8px 8px 0 var(--ink);text-align:center}
+
+    /* Poster 7 */
+    .compare h1{font-size:66px;margin-top:14px}
+    .table{margin-top:30px;border:4px solid var(--ink);box-shadow:10px 10px 0 var(--ink);background:#fff}
+    .tr{display:grid;grid-template-columns:1fr 1.18fr;border-bottom:3px solid var(--ink);min-height:134px}
+    .tr:last-child{border-bottom:0}.tr>div{display:flex;align-items:center;padding:18px 22px;font-size:28px;line-height:1.3;font-weight:850}.tr>div+div{border-left:3px solid var(--ink);background:#f3ffe0;font-weight:1000}
+    .tr.head{min-height:98px}.tr.head>div{font-size:30px;background:#dddcd4;font-weight:1000}.tr.head>div+div{background:var(--lime)}
+    .mark{display:inline-block;margin-right:12px;font-size:25px;width:36px;height:36px;line-height:33px;text-align:center;border:2px solid var(--ink);flex:none}.left .mark{background:#dddcd4}.right .mark{background:var(--lime)}
+    .compare .bottom-note{margin-top:30px;font-size:31px;line-height:1.35;font-weight:1000;text-align:center}
+  </style>
+</head>
+<body>
+  <section class="poster pain" id="pain">
+    <div class="header"><img class="logo" src="logo.png" alt="匠人学院 JR Academy"><div class="series">海报 02 · 痛点</div></div>
+    <div class="kicker">会生成 ≠ 会交付</div>
+    <h1><em>AI 会写代码</em><br>不代表你会做产品</h1>
+    <p class="lead">真正的 AI 开发能力，是对每一行产出负责。</p>
+    <div class="statement">从“能跑起来”，走到“能交付、能上线”。</div>
+    <div class="skills">
+      <div class="skill"><b>01</b>看懂</div><div class="skill"><b>02</b>审查</div><div class="skill"><b>03</b>修改</div><div class="skill"><b>04</b>测试</div><div class="skill"><b>05</b>上线</div>
+    </div>
+    <div class="arrow-row">CODE → PRODUCT → SHIP</div>
+    <div class="footer"><span>AI全栈项目班</span><span>先理解代码，再驾驭 AI</span></div>
+  </section>
+
+  <section class="poster route" id="route">
+    <div class="header"><img class="logo" src="logo.png" alt="匠人学院 JR Academy"><div class="series">海报 03 · 路线图</div></div>
+    <div class="kicker">16 场项目直播</div>
+    <h1>从 <em>HTML</em> 一路走到<br><em>RAG</em> 与部署上线</h1>
+    <p class="lead">四个阶段推进同一个产品，每四场完成一次能力跃迁。</p>
+    <div class="phases">
+      <div class="phase"><div class="num">LIVE 01–04</div><h2>Web 基础</h2><p>HTML · CSS<br>响应式 · JavaScript</p><div class="out">做出可交互页面</div></div>
+      <div class="phase"><div class="num">LIVE 05–08</div><h2>工程协作</h2><p>DOM · API<br>Git · 首次上线</p><div class="out">发布手写版产品</div></div>
+      <div class="phase"><div class="num">LIVE 09–12</div><h2>全栈开发</h2><p>React · Node.js<br>MongoDB · 认证</p><div class="out">打通前后端数据</div></div>
+      <div class="phase"><div class="num">LIVE 13–16</div><h2>AI 产品</h2><p>Dashboard · AI<br>RAG · 云端部署</p><div class="out">上线完整 AI 产品</div></div>
+    </div>
+    <div class="route-line">页面 → API → 数据库 → AI/RAG → Cloud</div>
+    <div class="footer"><span>AI全栈项目班</span><span>一个项目贯穿完整技术栈</span></div>
+  </section>
+
+  <section class="poster audience" id="audience">
+    <div class="header"><img class="logo" src="logo.png" alt="匠人学院 JR Academy"><div class="series">海报 06 · 适合人群</div></div>
+    <div class="kicker">找到你的起点</div>
+    <h1>你从哪里开始，<br>就从哪里获得<em>成长</em></h1>
+    <p class="lead">不同基础，共用一条完整项目交付路径。</p>
+    <div class="paths">
+      <div class="path"><div class="start">零基础</div><div class="arr">→</div><div class="gain">看懂并写出基础代码</div></div>
+      <div class="path"><div class="start">学过前端</div><div class="arr">→</div><div class="gain">补齐后端、数据库与部署</div></div>
+      <div class="path"><div class="start">会用 AI 工具</div><div class="arr">→</div><div class="gain">学会审查、调试与验收</div></div>
+      <div class="path"><div class="start">想做产品</div><div class="arr">→</div><div class="gain">独立完成一个上线项目</div></div>
+    </div>
+    <div class="fit">适合愿意动手，并按周完成项目的人</div>
+    <div class="footer"><span>AI全栈项目班</span><span>从当前水平，走向完整交付</span></div>
+  </section>
+
+  <section class="poster compare" id="compare">
+    <div class="header"><img class="logo" src="logo.png" alt="匠人学院 JR Academy"><div class="series">海报 07 · 课程差异</div></div>
+    <div class="kicker">学习方式对比</div>
+    <h1>不是多学一个工具，<br>而是完成一次<em>完整交付</em></h1>
+    <div class="table">
+      <div class="tr head"><div>常见学习方式</div><div>AI全栈项目班</div></div>
+      <div class="tr"><div class="left"><span class="mark">×</span>零散学习多个工具</div><div class="right"><span class="mark">✓</span>一个项目贯穿技术栈</div></div>
+      <div class="tr"><div class="left"><span class="mark">×</span>只看视频</div><div class="right"><span class="mark">✓</span>直播开发并完成作业</div></div>
+      <div class="tr"><div class="left"><span class="mark">×</span>复制 AI 代码</div><div class="right"><span class="mark">✓</span>学会审查、调试和验收</div></div>
+      <div class="tr"><div class="left"><span class="mark">×</span>只做本地 Demo</div><div class="right"><span class="mark">✓</span>部署为可访问产品</div></div>
+      <div class="tr"><div class="left"><span class="mark">×</span>学过但无法证明</div><div class="right"><span class="mark">✓</span>有 GitHub 和线上成果</div></div>
+    </div>
+    <div class="bottom-note">学完不只是“知道”，而是有作品可以证明。</div>
+    <div class="footer"><span>AI全栈项目班</span><span>项目驱动 · 直播带练 · 成果上线</span></div>
+  </section>
+  <script>
+    const id=(location.hash||'#pain').slice(1);
+    (document.getElementById(id)||document.getElementById('pain')).classList.add('active');
+  </script>
+</body>
+</html>
