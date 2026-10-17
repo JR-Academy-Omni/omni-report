@@ -1,0 +1,133 @@
+[
+  {
+    "type": "hackathon",
+    "title": "Amazon「Build, Ship, Shape」Developer Hackathon 2026",
+    "organizer": "Amazon",
+    "prize": "$190K+（含$138K现金 + AWS credits）",
+    "deadline": "2026-10-23T19:00:00.000Z",
+    "url": "https://amazonappdev2026.devpost.com/",
+    "region": "global",
+    "summary": "5赛道含Alexa+ MCP赛道，适合已学MCP协议的JR学员直接参赛；今日开始冲是最后5天"
+  },
+  {
+    "type": "hackathon",
+    "title": "Build With AI: Basics 2026",
+    "organizer": "Devpost",
+    "prize": "$2,500",
+    "deadline": "2026-10-26T23:59:00.000Z",
+    "url": "https://devpost.com/c/artificial-intelligence",
+    "region": "global",
+    "summary": "AI入门级hackathon，低竞争，公开GitHub repo + 3分钟demo视频即可参赛；JR新学员首次参赛首选"
+  },
+  {
+    "type": "hackathon",
+    "title": "AI Genesis 2026 / Rise of AI Agents Hackathon",
+    "organizer": "lablab.ai",
+    "prize": "约$60K（⚠️待官网核实）",
+    "url": "https://lablab.ai/ai-hackathons/ai-genesis-2026",
+    "region": "global",
+    "summary": "自主AI Agent主题；10/26开放报名，build窗口10/26-11/2；迪拜线下Demo Day 11/3（需被邀）"
+  },
+  {
+    "type": "hackathon",
+    "title": "Nebius × NVIDIA Global AI Hackathon 2026",
+    "organizer": "Nebius AI Cloud × NVIDIA",
+    "prize": "$50,000+（大奖$20K + 第二$10K + Jetson Orin Nano kits）",
+    "deadline": "2026-10-30T17:00:00.000Z",
+    "url": "https://nebiusglobalaihackathon.devpost.com/",
+    "region": "global",
+    "summary": "4赛道含Physical AI，参赛者自动获得Nebius $2,500算力credits；须在Nebius Token Factory运行"
+  },
+  {
+    "type": "hackathon",
+    "title": "PayPal AI Hackathon 2026",
+    "organizer": "PayPal / Devpost",
+    "prize": "$67,500",
+    "deadline": "2026-11-12T23:59:00.000Z",
+    "url": "https://developer.paypal.com/community/blog/PayPal_AI_Hackathon",
+    "region": "global",
+    "summary": "须集成PayPal Sandbox API + AI模型；时间充裕，JR Bootcamp毕业项目加PayPal层即可直接提交"
+  },
+  {
+    "type": "prize",
+    "title": "ARC Prize 2026 — ARC-AGI-2",
+    "organizer": "François Chollet × Mike Knoop × Kaggle",
+    "prize": "$700,000（含$275K Progress Prizes）",
+    "deadline": "2026-11-02T23:59:00.000Z",
+    "url": "https://arcprize.org/competitions/2026",
+    "region": "global",
+    "summary": "AI reasoning顶级研究赛；须开源解决方案；1-5人团队；最高学术影响力AI比赛"
+  },
+  {
+    "type": "accelerator",
+    "title": "Antler Australia AUS17",
+    "organizer": "Antler",
+    "prize": "AUD $225K for 12% equity",
+    "url": "https://antler.co/cohort-start-dates",
+    "region": "AU",
+    "summary": "AUS16批次10/26结束，AUS17申请窗口⚠️官网尚无公告；盯antler.co确认；悉尼/墨尔本/布里斯班"
+  },
+  {
+    "type": "accelerator",
+    "title": "Startmate Accelerator 2027",
+    "organizer": "Startmate",
+    "prize": "AUD $120K on SAFE",
+    "url": "https://www.startmate.com/program/accelerator",
+    "region": "AU",
+    "summary": "申请截止⚠️约11/1-11/8（多源冲突，今日核官网）；2027-01-25开营，12周混合制；90秒pitch视频是第一关"
+  },
+  {
+    "type": "grant",
+    "title": "联邦CRC AI Accelerator（$5000万）",
+    "organizer": "澳大利亚联邦政府 / 工业科学部",
+    "prize": "AUD $5000万（计划总额，分轮发放）",
+    "url": "https://www.industry.gov.au/science-technology-and-innovation/cooperative-research-centres",
+    "region": "AU",
+    "summary": "部长10/14宣布，2027年初正式上线；之前先公布小额资助轮；最大澳洲联邦AI研发补贴计划"
+  },
+  {
+    "type": "grant",
+    "title": "CSIRO Kick-Start",
+    "organizer": "CSIRO",
+    "prize": "AUD $10K-$50K配对资金（零股权）",
+    "url": "https://www.csiro.au/en/work-with-us/funding-programs/sme/csiro-kick-start/",
+    "region": "AU",
+    "summary": "随时滚动申请，EOI发kickstart@csiro.au；AI/深科技初创首选政府配对资金"
+  },
+  {
+    "type": "accelerator",
+    "title": "Skalata Ventures Seed Program",
+    "organizer": "Skalata Ventures",
+    "prize": "up to AUD $200K（零股权）",
+    "url": "https://skalata.vc/",
+    "region": "AU",
+    "summary": "随时滚动EOI，零股权；适合早期AI/深科技创业团队；澳洲最佳零股权种子资金来源之一"
+  },
+  {
+    "type": "accelerator",
+    "title": "OpenAI for Startups 澳洲专属计划",
+    "organizer": "OpenAI",
+    "prize": "USD $50K（约AUD $70K）API credits + 10个ChatGPT Business座位",
+    "url": "https://openai.com/global-affairs/openai-for-australia/",
+    "region": "AU",
+    "summary": "Rolling申请；Pre-seed至Series A澳洲公司；AI产品创业首选平台credits"
+  },
+  {
+    "type": "accelerator",
+    "title": "Microsoft Founders Hub",
+    "organizer": "Microsoft",
+    "prize": "最多USD $150,000 Azure credits（零股权）",
+    "url": "https://www.microsoft.com/en-au/startups",
+    "region": "AU",
+    "summary": "澳洲ABN直接申请；零股权；含GitHub Enterprise；适合Azure技术栈AI创业团队"
+  },
+  {
+    "type": "accelerator",
+    "title": "AWS Activate",
+    "organizer": "Amazon Web Services",
+    "prize": "最多USD $200,000 AWS credits",
+    "url": "https://aws.amazon.com/startups/credits",
+    "region": "global",
+    "summary": "Rolling申请；2026新增AI Tier面向GPU密集型任务；参加Amazon Hackathon的学员可叠加申请"
+  }
+]
