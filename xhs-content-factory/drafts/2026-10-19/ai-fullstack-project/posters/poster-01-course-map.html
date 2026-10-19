@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI全栈项目班｜12周课程地图</title>
+  <style>
+    :root{--navy:#10162f;--cream:#fff1e7;--red:#ff5757;--yellow:#ffde59;--blue:#38b6ff;--white:#fff;--black:#000}
+    *{box-sizing:border-box}
+    html,body{margin:0;width:1080px;height:1440px;overflow:hidden;background:var(--cream)}
+    body{font-family:"PingFang SC","Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif;color:var(--navy)}
+    .poster{position:relative;width:1080px;height:1440px;padding:30px 46px 28px;background:var(--cream);overflow:hidden}
+    .poster:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(16,22,47,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(16,22,47,.045) 1px,transparent 1px);background-size:32px 32px;pointer-events:none}
+    .top,.hero,.proof,.journey,.footer{position:relative;z-index:1}
+    .top{height:105px;display:flex;align-items:flex-start;justify-content:space-between}
+    .logo{width:270px;height:auto;display:block}
+    .edition{background:var(--yellow);border:3px solid var(--black);box-shadow:6px 6px 0 var(--black);padding:13px 22px 12px;font-size:25px;font-weight:900;letter-spacing:.3px;transform:rotate(-1deg)}
+    .hero{height:221px;background:var(--navy);color:var(--white);border:3px solid var(--black);box-shadow:8px 8px 0 var(--black);padding:22px 32px 20px;display:flex;align-items:flex-end;justify-content:space-between;overflow:hidden}
+    .hero:after{content:"12";position:absolute;right:13px;top:-48px;font:900 245px/1 Arial;color:rgba(56,182,255,.16)}
+    .eyebrow{display:inline-block;background:var(--red);color:var(--white);border:3px solid var(--black);padding:7px 15px;font-size:24px;font-weight:900;margin-bottom:12px}
+    h1{margin:0;font-size:68px;line-height:.98;letter-spacing:-4px;font-weight:1000;max-width:790px}
+    h1 em{font-style:normal;color:var(--yellow)}
+    .hero-side{position:absolute;right:28px;bottom:25px;width:145px;text-align:right;font:900 22px/1.25 Arial;color:var(--blue)}
+    .proof{height:82px;margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .proof-item{background:var(--white);border:3px solid var(--black);box-shadow:5px 5px 0 var(--black);padding:9px 15px;display:flex;align-items:center;gap:12px}
+    .proof-item b{font:1000 37px/1 Arial;color:var(--red);white-space:nowrap}
+    .proof-item span{font-size:21px;line-height:1.12;font-weight:900}
+    .journey{margin-top:16px;display:grid;gap:12px}
+    .phase{height:247px;border:3px solid var(--black);box-shadow:7px 7px 0 var(--black);padding:11px 14px 12px;background:var(--white);display:grid;grid-template-columns:205px 1fr;gap:16px}
+    .phase-head{border:3px solid var(--black);padding:14px 15px;display:flex;flex-direction:column;justify-content:space-between}
+    .phase:nth-child(1) .phase-head{background:var(--blue)}
+    .phase:nth-child(2) .phase-head{background:var(--yellow)}
+    .phase:nth-child(3) .phase-head{background:var(--red);color:var(--white)}
+    .phase-no{font:1000 19px/1 Arial;letter-spacing:1px}
+    .phase-head h2{font-size:32px;line-height:1.01;margin:0;font-weight:1000;letter-spacing:-1px}
+    .phase-head p{margin:0;font-size:18px;line-height:1.2;font-weight:800}
+    .weeks{display:grid;grid-template-columns:1fr 1fr;gap:9px 11px}
+    .week{position:relative;border:2px solid var(--navy);padding:8px 11px 7px 67px;min-height:78px;background:#fff;display:flex;flex-direction:column;justify-content:center}
+    .week b{position:absolute;left:11px;top:11px;width:43px;height:43px;border:2px solid var(--black);background:var(--navy);color:#fff;display:grid;place-items:center;font:1000 20px/1 Arial}
+    .week strong{display:block;font-size:23px;line-height:1.1;font-weight:1000}
+    .week small{display:block;margin-top:4px;font-size:16px;line-height:1.12;font-weight:750;color:#52586d}
+    .milestone{grid-column:1/-1;background:var(--navy);color:#fff;border:2px solid var(--black);padding:6px 13px;font-size:16px;line-height:1.05;font-weight:900}
+    .milestone i{font-style:normal;color:var(--yellow)}
+    .footer{height:74px;margin-top:14px;background:var(--navy);border:3px solid var(--black);box-shadow:7px 7px 0 var(--black);color:#fff;padding:10px 22px;display:flex;align-items:center;justify-content:space-between}
+    .footer-title{font-size:22px;font-weight:900;color:var(--yellow)}
+    .stack{font:850 20px/1.3 Arial,"PingFang SC",sans-serif;letter-spacing:.2px;text-align:right}
+    .corner{position:absolute;z-index:0;width:120px;height:20px;background:var(--red);border:3px solid var(--black)}
+    .corner.a{left:-34px;top:354px;transform:rotate(-9deg)}
+    .corner.b{right:-38px;bottom:136px;background:var(--blue);transform:rotate(8deg)}
+  </style>
+</head>
+<body>
+  <main class="poster">
+    <div class="corner a"></div><div class="corner b"></div>
+    <header class="top">
+      <img class="logo" src="logo.png" alt="匠人学院">
+      <div class="edition">AI全栈项目班 · 第30期</div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="eyebrow">12-WEEK PRODUCT JOURNEY</div>
+        <h1>12周，把<em>项目经验</em><br>真正做出来</h1>
+      </div>
+      <div class="hero-side">FROM<br>AI CODING<br>TO SHIP</div>
+    </section>
+
+    <section class="proof">
+      <div class="proof-item"><b>11次</b><span>现场带练<br>实时推进项目</span></div>
+      <div class="proof-item"><b>170项</b><span>课程、Lab<br>与练习资源</span></div>
+      <div class="proof-item"><b>≈220h</b><span>完整学习内容<br>按需补齐基础</span></div>
+    </section>
+
+    <section class="journey">
+      <article class="phase">
+        <div class="phase-head"><div class="phase-no">W1—W4 · LIVE BUILD</div><h2>全栈基础<br>AI Coding上手</h2><p>先跑通开发工作流，再连接前端、后端与数据库。</p></div>
+        <div class="weeks">
+          <div class="week"><b>W1</b><strong>Claude Code工作流</strong><small>安装工具 · 人机协作开发</small></div>
+          <div class="week"><b>W2</b><strong>React前端</strong><small>组件 · 状态 · 看懂AI代码</small></div>
+          <div class="week"><b>W3</b><strong>Node.js API</strong><small>请求 · 路由 · 响应</small></div>
+          <div class="week"><b>W4</b><strong>数据库 + CRUD</strong><small>打通第一个全栈闭环</small></div>
+          <div class="milestone"><i>M1</i>　项目立项 · 需求拆解 · 确定MVP范围</div>
+        </div>
+      </article>
+
+      <article class="phase">
+        <div class="phase-head"><div class="phase-no">W5—W8 · PRODUCT</div><h2>做出本期<br>真实产品</h2><p>围绕同一个项目开发，不做彼此无关的小练习。</p></div>
+        <div class="weeks">
+          <div class="week"><b>W5</b><strong>需求拆解 + 数据模型</strong><small>搭建项目脚手架</small></div>
+          <div class="week"><b>W6</b><strong>核心功能前后端</strong><small>完成产品主线功能</small></div>
+          <div class="week"><b>W7</b><strong>登录权限 + AI/RAG</strong><small>接入真正的AI能力</small></div>
+          <div class="week"><b>W8</b><strong>全栈联调 + Debug</strong><small>修正AI生成代码</small></div>
+          <div class="milestone"><i>M2</i>　产品核心功能端到端完成</div>
+        </div>
+      </article>
+
+      <article class="phase">
+        <div class="phase-head"><div class="phase-no">W9—W12 · SHIP</div><h2>上线、迭代<br>完成Demo</h2><p>把本地项目变成能访问、能演示、能继续迭代的产品。</p></div>
+        <div class="weeks">
+          <div class="week"><b>W9</b><strong>AWS + 真实域名</strong><small>部署上线 · 对外可访问</small></div>
+          <div class="week"><b>W10</b><strong>Code Review</strong><small>加功能 · 改需求 · 提质量</small></div>
+          <div class="week"><b>W11</b><strong>Demo Day</strong><small>数据 · 获客 · 商业化思路</small></div>
+          <div class="week"><b>W12</b><strong>项目收尾 + 反馈</strong><small>复盘并规划后续迭代</small></div>
+          <div class="milestone"><i>FINAL</i>　上线产品 · Git记录 · 项目复盘 · 面试故事</div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-title">一个项目贯穿完整技术栈</div>
+      <div class="stack">Claude Code · React · Node.js · Database<br>AI / RAG · AWS · Git · Testing</div>
+    </footer>
+  </main>
+</body>
+</html>
