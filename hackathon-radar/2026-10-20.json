@@ -1,0 +1,104 @@
+[
+  {
+    "type": "hackathon",
+    "title": "Amazon「Build, Ship, Shape」Developer Hackathon 2026",
+    "organizer": "Amazon",
+    "prize": "$190K+（$138K 现金 + AWS credits）",
+    "deadline": "2026-10-23T19:00:00.000Z",
+    "url": "https://amazonappdev2026.devpost.com/",
+    "region": "global",
+    "summary": "5 赛道含 Alexa+ MCP Agent Skills，JR AI Bootcamp 学员直接复用已学 MCP 技能参赛；个人/团队均可；3 天截止"
+  },
+  {
+    "type": "hackathon",
+    "title": "Build With AI: Basics 2026",
+    "organizer": "Devpost",
+    "prize": "$2,500",
+    "url": "https://devpost.com/c/artificial-intelligence",
+    "region": "global",
+    "summary": "AI 入门级低竞争 hackathon；公开 GitHub repo + 1-3 分钟 demo 视频即可；JR 新学员首次参赛最佳起点；10/26 截止"
+  },
+  {
+    "type": "hackathon",
+    "title": "AI Genesis 2026 / Rise of AI Agents Hackathon",
+    "organizer": "lablab.ai × /function1 AI Conference",
+    "prize": "⚠️ 奖金 TBA（往届约 $45,500）",
+    "url": "https://lablab.ai/ai-hackathons/ai-genesis-2026/live",
+    "region": "global",
+    "summary": "自主 AI Agent 主题；10/26 15:00 UTC 开放报名，build 到 11/2；MIT 开源要求；迪拜线下 Demo Day 11/3（按邀）"
+  },
+  {
+    "type": "hackathon",
+    "title": "Nebius × NVIDIA Global AI Hackathon 2026",
+    "organizer": "Nebius AI Cloud × NVIDIA",
+    "prize": "$50,000+（大奖 $20K + 第二 $10K + Jetson Orin Nano kits）",
+    "deadline": "2026-10-30T17:00:00.000Z",
+    "url": "https://nebiusglobalaihackathon.devpost.com/",
+    "region": "global",
+    "summary": "4 赛道含 Physical AI；参赛自动获得 Nebius $2,500 算力 credits；须在 Nebius Token Factory 运行"
+  },
+  {
+    "type": "hackathon",
+    "title": "PayPal AI Hackathon 2026",
+    "organizer": "PayPal / Devpost",
+    "prize": "$67,500",
+    "deadline": "2026-11-12T20:00:00.000Z",
+    "url": "https://developer.paypal.com/community/blog/PayPal_AI_Hackathon",
+    "region": "global",
+    "summary": "须集成 PayPal Sandbox API + AI 模型；JR Bootcamp 毕业项目加 PayPal 支付层即可直接提交；时间充裕适合做完整产品"
+  },
+  {
+    "type": "prize",
+    "title": "ARC Prize 2026 — ARC-AGI-2",
+    "organizer": "François Chollet × Mike Knoop × Kaggle",
+    "prize": "$700,000（含 $275K Progress Prizes）",
+    "url": "https://arcprize.org/competitions/2026",
+    "region": "global",
+    "summary": "AI reasoning 最高学术影响力比赛；须开源解决方案；1-5 人团队；11/2 截止"
+  },
+  {
+    "type": "accelerator",
+    "title": "Startmate Accelerator 2027（1-4 月批次）",
+    "organizer": "Startmate",
+    "prize": "AUD $120K on SAFE（12 周混合制）",
+    "url": "https://www.startmate.com/program/accelerator",
+    "region": "AU",
+    "summary": "澳洲顶级加速器；申请截止 ⚠️ 11/1-11/8 多源冲突须核官网；需要 90 秒 pitch 视频 + traction 数据"
+  },
+  {
+    "type": "grant",
+    "title": "CSIRO Kick-Start",
+    "organizer": "CSIRO",
+    "prize": "$10K-$50K 配对资金（rolling）",
+    "url": "https://www.csiro.au/en/work-with-us/funding-programs/sme/csiro-kick-start/",
+    "region": "AU",
+    "summary": "随时滚动申请；配对资金模式（公司出一份 CSIRO 配一份）；零股权；EOI 发 kickstart@csiro.au"
+  },
+  {
+    "type": "grant",
+    "title": "OpenAI for Startups 澳洲专属计划",
+    "organizer": "OpenAI",
+    "prize": "USD $50K API credits + 10 个 ChatGPT Business 座位（rolling）",
+    "url": "https://openai.com/global-affairs/openai-for-australia/",
+    "region": "AU",
+    "summary": "Pre-seed 至 Series A 澳洲公司；零股权；API credits 直接抵扣；随时滚动申请"
+  },
+  {
+    "type": "grant",
+    "title": "Microsoft Founders Hub",
+    "organizer": "Microsoft",
+    "prize": "最多 $150,000 Azure credits + GitHub Enterprise（rolling）",
+    "url": "https://www.microsoft.com/en-au/startups",
+    "region": "AU",
+    "summary": "澳洲 ABN 直接申请；零股权；含 GitHub Copilot 企业版；适合早期 AI SaaS 创业公司"
+  },
+  {
+    "type": "grant",
+    "title": "AWS Activate",
+    "organizer": "Amazon Web Services",
+    "prize": "最多 $200,000 AWS credits（rolling）",
+    "url": "https://aws.amazon.com/startups/credits",
+    "region": "global",
+    "summary": "2026 新增 AI Tier 面向 GPU 密集型任务；最高档需投资人背书；早期学员可申请 Founders 档位"
+  }
+]
