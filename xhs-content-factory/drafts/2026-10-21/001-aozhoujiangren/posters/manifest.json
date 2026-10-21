@@ -3,10 +3,10 @@
   "account": "澳洲匠人学院",
   "canvas": { "width": 1242, "height": 1660, "ratio": "3:4" },
   "slide_count": 6,
-  "style": "JR Academy Neo-Brutalism + sticky-note zine collage",
+  "style": "mobile notes shopping-list screenshot, white background, yellow highlights",
   "generation": {
-    "background": "OpenAI image generation, no-text collage asset",
-    "typography": "deterministic HTML/CSS rendering"
+    "images": "OpenAI image generation using three user-supplied style references",
+    "postprocess": "resize to 1242x1660 and export JPEG only"
   },
   "files": [
     "01-cover.jpg",
