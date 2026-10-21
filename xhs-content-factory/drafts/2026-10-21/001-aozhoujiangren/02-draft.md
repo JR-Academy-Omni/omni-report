@@ -75,7 +75,7 @@ GitHub Student Pack 提供 70+ 门 Web、Python、Java、Machine Learning 课程
 2. 第一张内页突出 JR Academy 课程原价与活动价对比。
 3. 平台对比卡：Coursera / DataCamp / Udemy / LinkedIn Learning，字段为优惠、截止日期、适合谁、自动续费。
 4. 学生专享卡：Educative / Frontend Masters / Boot.dev / Codédex，统一标注“需 GitHub Student Pack”。
-4. 尾图：黑五下单前四问——证书、续费、地区、学习量。
+5. 尾图：黑五下单前四问——证书、续费、地区、学习量。
 
 ## 官方事实来源（发布时可放评论区或尾图）
 
