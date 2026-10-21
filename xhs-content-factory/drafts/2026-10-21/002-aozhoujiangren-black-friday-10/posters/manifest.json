@@ -1,0 +1,34 @@
+{
+  "draft_id": "002",
+  "account": "澳洲匠人学院",
+  "angle": "2026澳洲黑五教育优惠",
+  "generated_at": "2026-10-21T13:20:00+08:00",
+  "mode": "built-in-imagegen-plus-deterministic-html",
+  "canvas": {
+    "width": 1242,
+    "height": 1660,
+    "ratio": "3:4"
+  },
+  "background": {
+    "filename": "australia-black-friday-bg.png",
+    "generator": "built-in imagegen",
+    "text_free": true
+  },
+  "files": [
+    {"filename": "01-cover.png", "type": "cover", "task": "标题与澳洲黑五视觉"},
+    {"filename": "02-content.png", "type": "content", "task": "JR课程活动价上"},
+    {"filename": "03-content.png", "type": "content", "task": "JR课程活动价下"},
+    {"filename": "04-content.png", "type": "content", "task": "Coursera与DataCamp"},
+    {"filename": "05-content.png", "type": "content", "task": "GitHub学生福利"},
+    {"filename": "06-content.png", "type": "content", "task": "O'Reilly与选课建议"},
+    {"filename": "07-content.png", "type": "content", "task": "事实边界与来源"}
+  ],
+  "source_files": ["render.html", "render.mjs", "prompts.md"],
+  "qa": {
+    "dimensions_verified": true,
+    "content_fact_checked": true,
+    "phone_readability_reviewed": true,
+    "logo_asset": "JR Academy official Chinese logo",
+    "watermark_free": true
+  }
+}
