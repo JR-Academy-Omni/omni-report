@@ -1,0 +1,32 @@
+{
+  "topic_id": "001",
+  "topic_slug": "2026-australia-black-friday-courses",
+  "account": "澳洲匠人学院",
+  "account_slug": "aozhoujiangren",
+  "owner": "Summer",
+  "owner_email": "summer@jiangren.com.au",
+  "date": "2026-10-21",
+  "selected_angle": "C-干货版",
+  "selected_cover": null,
+  "status": "draft",
+  "pipeline": {
+    "topic_at": "2026-10-21T00:00:00+08:00",
+    "draft_at": "2026-10-21T00:00:00+08:00",
+    "final_at": null,
+    "review_at": null,
+    "poster_at": null,
+    "score_at": null,
+    "task_card_at": null
+  },
+  "files": {
+    "topic": "01-topic.json",
+    "draft": "02-draft.md",
+    "final": null,
+    "review": null,
+    "score": null,
+    "poster_prompts": null
+  },
+  "marketing_task_card": null,
+  "score_total": null
+}
+
