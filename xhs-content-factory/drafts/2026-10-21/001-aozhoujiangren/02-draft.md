@@ -7,7 +7,7 @@
 
 ## 标题
 
-2026澳洲黑五12个学习优惠
+澳洲黑五杀疯了！12个留子学习羊毛快薅！
 
 ## 正文
 
@@ -90,11 +90,11 @@ GitHub Student Pack 提供 70+ 门 Web、Python、Java、Machine Learning 课程
 
 ## 配图建议
 
-1. 首图：`2026 澳洲黑五｜12 个学习优惠`，副标题写“课程 / 证书 / 学生会员”。
-2. 第一张内页突出 JR Academy 课程原价与活动价对比。
-3. 平台对比卡：Coursera / DataCamp / Udemy / LinkedIn Learning，字段为优惠、截止日期、适合谁、自动续费。
-4. 学生专享卡：Educative / Frontend Masters / Boot.dev / Codédex，统一标注“需 GitHub Student Pack”。
-5. 尾图：黑五下单前四问——证书、续费、地区、学习量。
+1. 首图：`澳洲黑五杀疯了！12个留子学习羊毛快薅！`，副标题写“课程 / 证书 / 学生会员”。
+2. JR Academy 已确认课程价拆成两张，避免小字堆叠。
+3. 平台课优惠卡：Coursera / DataCamp / Udemy / DataCamp Student。
+4. 学生专享卡：DataCamp / Educative / Frontend Masters / Boot.dev / Codédex，统一标注“需 GitHub Student Pack”。
+5. 尾图：O’Reilly / LinkedIn Learning 试用 + 按学习目标抄作业。
 
 ## 官方事实来源（发布时可放评论区或尾图）
 
@@ -118,7 +118,7 @@ GitHub Student Pack 提供 70+ 门 Web、Python、Java、Machine Learning 课程
 
 ## 自检
 
-- ✅ 标题不超过 20 字，包含“澳洲黑五”“学习优惠”搜索词
+- ✅ 标题使用用户确认版本，包含“澳洲黑五”“学习羊毛”搜索词
 - ✅ 所有具体折扣、日期和资格均来自官方页面
 - ✅ 已提供 12 个优惠，并区分黑五活动、当前促销、学生方案与免费试用
 - ✅ 无就业、收入或证书结果承诺

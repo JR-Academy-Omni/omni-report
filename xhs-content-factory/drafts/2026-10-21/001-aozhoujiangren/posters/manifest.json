@@ -1,0 +1,20 @@
+{
+  "title": "澳洲黑五杀疯了！12个留子学习羊毛快薅！",
+  "account": "澳洲匠人学院",
+  "canvas": { "width": 1242, "height": 1660, "ratio": "3:4" },
+  "slide_count": 6,
+  "style": "JR Academy Neo-Brutalism + sticky-note zine collage",
+  "generation": {
+    "background": "OpenAI image generation, no-text collage asset",
+    "typography": "deterministic HTML/CSS rendering"
+  },
+  "files": [
+    "01-cover.jpg",
+    "02-jr-academy-deals-1.jpg",
+    "03-jr-academy-deals-2.jpg",
+    "04-platform-deals.jpg",
+    "05-student-pack.jpg",
+    "06-choice-guide.jpg"
+  ]
+}
+
