@@ -1,0 +1,124 @@
+[
+  {
+    "type": "hackathon",
+    "title": "OpenCV AI Competition 2026 powered by AWS",
+    "organizer": "OpenCV × Amazon Web Services",
+    "prize": "$20,250 现金奖励（Winners announced Nov 10, 2026）",
+    "deadline": "2026-10-27T07:59:00.000Z",
+    "url": "https://opencv.org/opencv-ai-competition-2026/",
+    "region": "global",
+    "summary": "用 OpenCV 5 + AWS 构建 vision systems（见/推理/行动），须在 AWS 上部署；3 天截止，JR Computer Vision 章节学员可直接参赛"
+  },
+  {
+    "type": "hackathon",
+    "title": "Build With AI: Basics 2026",
+    "organizer": "Devpost",
+    "prize": "$2,500",
+    "deadline": "2026-10-26T22:00:00.000Z",
+    "url": "https://devpost.com/c/artificial-intelligence",
+    "region": "global",
+    "summary": "AI 入门级低竞争赛事；公开 GitHub repo + 3 分钟 demo 视频即可参赛；JR 新学员首次参赛首选，3 天截止"
+  },
+  {
+    "type": "hackathon",
+    "title": "HackerRank Orchestrate β October 2026",
+    "organizer": "HackerRank",
+    "prize": "HackerRank AI 编排技能认证证书 + 奖励待公告",
+    "deadline": "2026-10-25T12:30:00.000Z",
+    "url": "https://internshala.com/competitions/?p=11959",
+    "region": "global",
+    "summary": "今天开始的 24 小时个人 AI 编排技能挑战；零成本，获 HackerRank 认证证书；适合想刷 portfolio 的 JR 学员"
+  },
+  {
+    "type": "hackathon",
+    "title": "AI Genesis 2026 / Rise of AI Agents Hackathon",
+    "organizer": "lablab.ai × /function1 AI Conference",
+    "prize": "奖金 TBA（第三方来源约 $60,000，须核 lablab.ai 官网）",
+    "url": "https://lablab.ai/ai-hackathons/ai-genesis-2026/live",
+    "region": "global",
+    "summary": "10/26 15:00 UTC 开放报名，build 到 11/2；自主 AI Agent 主题，须开源（MIT）；迪拜线下 Demo Day 11/3"
+  },
+  {
+    "type": "hackathon",
+    "title": "Nebius × NVIDIA Global AI Hackathon 2026",
+    "organizer": "Nebius AI Cloud × NVIDIA",
+    "prize": "$50,000+（大奖 $20K + 第二名 $10K + Jetson Orin Nano kits + 参赛自获 $2,500 算力 credits）",
+    "deadline": "2026-10-30T17:00:00.000Z",
+    "url": "https://nebiusglobalaihackathon.devpost.com/",
+    "region": "global",
+    "summary": "4 赛道含 Physical AI；6 天截止；参赛即获 $2,500 Nebius 算力 credits；Physical AI 赛道竞争最少"
+  },
+  {
+    "type": "hackathon",
+    "title": "Vultr: Agent Rush Hackathon",
+    "organizer": "lablab.ai × Vultr",
+    "prize": "奖励 TBA",
+    "url": "https://lablab.ai/ai-hackathons",
+    "region": "global",
+    "summary": "AI Agent on Vultr 云平台；线上 build 11/3–11/8；可与 AI Genesis 11/3 Dubai Demo Day 同期跑"
+  },
+  {
+    "type": "hackathon",
+    "title": "PayPal AI Hackathon 2026",
+    "organizer": "PayPal",
+    "prize": "$67,500",
+    "deadline": "2026-11-12T20:00:00.000Z",
+    "url": "https://developer.paypal.com/community/blog/PayPal_AI_Hackathon",
+    "region": "global",
+    "summary": "须集成 PayPal Sandbox API + AI 模型；JR Bootcamp 毕业项目加 PayPal 层即可直接提交，时间充裕（19 天）"
+  },
+  {
+    "type": "prize",
+    "title": "ARC Prize 2026 — ARC-AGI-2",
+    "organizer": "François Chollet × Mike Knoop × Kaggle",
+    "prize": "$700,000（含 $275K Progress Prizes）",
+    "url": "https://arcprize.org/competitions/2026",
+    "region": "global",
+    "summary": "最高学术影响力 AI reasoning 竞赛；须开源解决方案；Kaggle 线上，9 天截止（11/2）"
+  },
+  {
+    "type": "accelerator",
+    "title": "Startmate Accelerator 2027",
+    "organizer": "Startmate",
+    "prize": "AUD $120,000 on SAFE，12 周混合制（1/25–4/29, 2027）",
+    "url": "https://www.startmate.com/program/accelerator",
+    "region": "AU",
+    "summary": "澳洲顶级加速器；申请截止约 11/8（须核官网确认）；第一道门槛：90 秒 pitch 视频 + traction 数据"
+  },
+  {
+    "type": "grant",
+    "title": "CSIRO Kick-Start",
+    "organizer": "CSIRO",
+    "prize": "$10,000–$50,000 配对资金（政府与企业 1:1 配比）",
+    "url": "https://www.csiro.au/en/work-with-us/funding-programs/sme/csiro-kick-start/",
+    "region": "AU",
+    "summary": "随时滚动申请；EOI 发 kickstart@csiro.au；澳洲中小企业与 CSIRO 联合研究项目，零股权"
+  },
+  {
+    "type": "grant",
+    "title": "OpenAI for Startups 澳洲专属计划",
+    "organizer": "OpenAI",
+    "prize": "USD $50,000（约 AUD $70,000）API credits + 10 个 ChatGPT Business 座位",
+    "url": "https://openai.com/global-affairs/openai-for-australia/",
+    "region": "AU",
+    "summary": "Pre-seed 至 Series A 澳洲公司可申请；随时滚动；零股权"
+  },
+  {
+    "type": "grant",
+    "title": "Microsoft Founders Hub",
+    "organizer": "Microsoft",
+    "prize": "最多 $150,000 Azure credits + GitHub Enterprise",
+    "url": "https://www.microsoft.com/en-au/startups",
+    "region": "AU",
+    "summary": "澳洲 ABN 直接申请；随时滚动；零股权；适合需要云资源的 AI 创业者"
+  },
+  {
+    "type": "grant",
+    "title": "AWS Activate",
+    "organizer": "Amazon Web Services",
+    "prize": "最多 $200,000 AWS credits（2026 新增 AI Tier 面向 GPU 密集型任务）",
+    "url": "https://aws.amazon.com/startups/credits",
+    "region": "global",
+    "summary": "随时滚动；适合需要大量 GPU 计算的 AI 创业项目；新增 AI Tier 对本地模型部署场景友好"
+  }
+]
