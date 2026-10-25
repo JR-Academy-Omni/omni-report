@@ -1,0 +1,98 @@
+[
+  {
+    "type": "hackathon",
+    "title": "AI Genesis 2026 / Rise of AI Agents",
+    "organizer": "lablab.ai × /function1 AI Conference",
+    "prize": "~$60K TBA（往届 $45,500–$60,000）",
+    "deadline": "2026-11-02T23:59:00.000Z",
+    "url": "https://lablab.ai/event/ai-genesis-2026",
+    "region": "global",
+    "summary": "今天（10/26 15:00 UTC）开放报名，线上 build 到 11/2，自主 AI Agent 主题，须开源 MIT；迪拜 Demo Day 11/3，适合 JR AI Agent Bootcamp 学员直接参赛"
+  },
+  {
+    "type": "hackathon",
+    "title": "Nebius × NVIDIA Global AI Hackathon 2026",
+    "organizer": "Nebius AI Cloud × NVIDIA",
+    "prize": "$50,000+（大奖 $20K + 第二 $10K + 第三 $6K + Jetson kits）",
+    "deadline": "2026-10-30T17:00:00.000Z",
+    "url": "https://nebiusglobalaihackathon.devpost.com/",
+    "region": "global",
+    "summary": "4 赛道（Coding & Agentic Engineering / Best Apps & Agents / Personal AI / Physical AI）；参赛自获 $2,500 Nebius credits；Physical AI 赛道竞争最少，适合 JR 有 Computer Vision 基础的学员"
+  },
+  {
+    "type": "hackathon",
+    "title": "Vultr: Agent Rush Hackathon",
+    "organizer": "lablab.ai × Vultr",
+    "prize": "⚠️ 奖励待公告（含 SDKs + credits）",
+    "deadline": "2026-11-08T22:00:00.000Z",
+    "url": "https://lablab.ai/ai-hackathons/vultr-hackathon/live",
+    "region": "global",
+    "summary": "11/3 15:00 UTC 开放报名，11/8 截止；AI Agent on Vultr 云平台；可与 AI Genesis Demo Day 11/3 同期跑，适合已参加 AI Genesis 的学员再刷一场"
+  },
+  {
+    "type": "hackathon",
+    "title": "PayPal AI Hackathon 2026",
+    "organizer": "PayPal / Devpost",
+    "prize": "$67,500+",
+    "deadline": "2026-11-12T20:00:00.000Z",
+    "url": "https://developer.paypal.com/community/blog/PayPal_AI_Hackathon",
+    "region": "global",
+    "summary": "集成 PayPal Sandbox API + AI 模型即可参赛；JR Bootcamp 毕业项目加一层 PayPal 层直接提交；17 天充裕时间，适合刚毕业学员"
+  },
+  {
+    "type": "prize",
+    "title": "ARC Prize 2026 — ARC-AGI-2",
+    "organizer": "François Chollet × Mike Knoop × Kaggle",
+    "prize": "$700,000（含 $275K Progress Prizes）",
+    "deadline": "2026-11-02T23:59:00.000Z",
+    "url": "https://arcprize.org/competitions/2026",
+    "region": "global",
+    "summary": "AI reasoning 最高奖金比赛；须开源解决方案；适合有研究能力或 JR 高阶 AI 学员；今天（10/26）是团队合并最后截止日"
+  },
+  {
+    "type": "accelerator",
+    "title": "Antler Australia AUS17",
+    "organizer": "Antler",
+    "prize": "AUD $225K（约 $260K 看当期条款）for 12% equity，8 周驻场",
+    "url": "https://www.antler.co/cohort-start-dates",
+    "region": "AU",
+    "summary": "AUS16 今天（10/26）结束；下届开营 2027-02-08 已公布；申请窗口预计 4–8 周内开放（历史规律），每日核查官网；适合有技术背景、寻找 co-founder 的 JR 学员"
+  },
+  {
+    "type": "accelerator",
+    "title": "Startmate 2027 Accelerator",
+    "organizer": "Startmate",
+    "prize": "AUD $120K on SAFE，12 周混合制",
+    "deadline": "2026-11-08T23:59:00.000Z",
+    "url": "https://www.startmate.com/program/accelerator",
+    "region": "AU",
+    "summary": "截止约 11/8（须今天核官网确认）；90 秒 pitch 视频 + traction 数据是第一道门槛；2027-01-25 开营；适合有付费用户的 JR OPC 创业营学员"
+  },
+  {
+    "type": "accelerator",
+    "title": "Skalata Ventures Seed Program",
+    "organizer": "Skalata Ventures",
+    "prize": "up to AUD $200K，零股权",
+    "url": "https://skalata.vc/",
+    "region": "AU",
+    "summary": "随时滚动 EOI；零股权资金支持；适合早期 AI 初创、不想稀释股权的 JR 学员"
+  },
+  {
+    "type": "grant",
+    "title": "CSIRO Kick-Start",
+    "organizer": "CSIRO",
+    "prize": "$10K–$50K 配对资金",
+    "url": "https://www.csiro.au/en/work-with-us/funding-programs/sme/csiro-kick-start/",
+    "region": "AU",
+    "summary": "随时滚动，EOI 发 kickstart@csiro.au；配对 R&D 费用；适合用 AI 做有研究成分产品的 JR 学员创业项目"
+  },
+  {
+    "type": "accelerator",
+    "title": "OpenAI for Startups 澳洲专属计划",
+    "organizer": "OpenAI",
+    "prize": "USD $50K（约 AUD $70K）API credits + 10 个 ChatGPT Business 座位",
+    "url": "https://openai.com/global-affairs/openai-for-australia/",
+    "region": "AU",
+    "summary": "Rolling；Pre-seed 至 Series A 澳洲公司；适合正在用 OpenAI API 构建产品的 JR 学员"
+  }
+]
