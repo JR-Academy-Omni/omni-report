@@ -1,0 +1,31 @@
+{
+  "topic_id": "002",
+  "topic_slug": "international-it-employment-gap",
+  "account": "澳洲匠人学院",
+  "account_slug": "aozhoujiangren",
+  "owner": "Summer",
+  "owner_email": "1134583264@qq.com",
+  "date": "2026-10-29",
+  "selected_angle": null,
+  "selected_cover": null,
+  "status": "draft",
+  "pipeline": {
+    "topic_at": "2026-10-29T18:30:00+08:00",
+    "draft_at": "2026-10-29T18:30:00+08:00",
+    "final_at": null,
+    "review_at": null,
+    "poster_at": null,
+    "score_at": null,
+    "task_card_at": null
+  },
+  "files": {
+    "topic": "01-topic.json",
+    "draft": "02-draft.md",
+    "final": null,
+    "review": null,
+    "score": null,
+    "poster_prompts": null
+  },
+  "marketing_task_card": null,
+  "score_total": null
+}

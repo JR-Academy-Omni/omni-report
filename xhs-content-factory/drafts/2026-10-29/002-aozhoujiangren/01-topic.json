@@ -1,0 +1,22 @@
+{
+  "id": "002",
+  "type": "data-career-analysis",
+  "title": "同样读IT，澳洲国际生就业率凭啥低24%？",
+  "account": "澳洲匠人学院",
+  "hook": "同一专业、同一届毕业，国际生与本地生的短期全职就业率为什么会差24.3个百分点",
+  "angle": "用QILT官方数据拆清统计口径，再把差距转成国际生可提前补齐的求职资产",
+  "source": {
+    "publisher": "QILT / Australian Government Department of Education",
+    "report": "2024 Graduate Outcomes Survey International Report",
+    "checked_at": "2026-10-29",
+    "url": "https://www.qilt.edu.au/docs/default-source/default-document-library/2024-gos-international-report.pdf"
+  },
+  "facts": [
+    "2024年澳洲Computing and information systems本科毕业生中，国际生短期全职就业率为43.5%，本地生为67.8%，相差24.3个百分点",
+    "QILT GOS在毕业约4至6个月后调查，反映短期结果，不等于长期就业率",
+    "同一组数据中，国际生总体就业率为63.4%，本地生为80.4%",
+    "国际生全职年薪中位数为63,400澳元，本地生为75,300澳元",
+    "Future Skills Organisation引用GOS指出，IT毕业生约三年后的全职就业结果明显改善；国际毕业生2022和2023年可用数据约为85%"
+  ],
+  "risk": "必须写24.3个百分点，不写低24%；不得把短期全职就业率写成所有IT国际生最终就业率；不得把相关因素写成单一因果或暗示国际生能力较差。"
+}
