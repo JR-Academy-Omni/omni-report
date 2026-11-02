@@ -1,0 +1,53 @@
+{
+  "title": "同样读IT，澳洲国际生就业率凭啥低24%？",
+  "version": "reference-2-and-3-v4",
+  "date": "2026-11-02",
+  "surface": "social-video-cover",
+  "brand": "jr-academy",
+  "register": "B",
+  "mode": "built-in-image-model-complete-cover-with-text",
+  "model_version": "not-returned-by-tool",
+  "company_backend_calls": 0,
+  "cost_usd": null,
+  "prompts": "prompts.md",
+  "review": "REVIEW.md",
+  "postprocessing": "aspect-ratio-preserving size-only export; no crop or text overlay",
+  "variants": [
+    {
+      "reference": "ref2",
+      "file": "02-capsule-comparison/cover-1080x1440.png",
+      "original": "02-capsule-comparison/cover-model-original.png",
+      "preview": "02-capsule-comparison/cover-phone-preview.png",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 1591128,
+      "sha256": "961c50947056a2368f927e4f98251d7ab4d45f206e4806bafa550564068a0755",
+      "downloads": "C:/Users/1/Downloads/同样读IT-小红书封面-参考2横条版-20261102-v4.png",
+      "model_original_downloads": "C:/Users/1/Downloads/同样读IT-小红书封面-参考2横条版-20261102-v4-模型原图.png"
+    },
+    {
+      "reference": "ref3",
+      "file": "03-diagonal-circle/cover-1080x1440.png",
+      "original": "03-diagonal-circle/cover-model-original.png",
+      "preview": "03-diagonal-circle/cover-phone-preview.png",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 1587583,
+      "sha256": "5a2ad9329ef3c9d56fcf1b1fd4d93ff093d55c6fd61d5f6e4e299390d208b97b",
+      "downloads": "C:/Users/1/Downloads/同样读IT-小红书封面-参考3圆形版-20261102-v4.png",
+      "model_original_downloads": "C:/Users/1/Downloads/同样读IT-小红书封面-参考3圆形版-20261102-v4-模型原图.png"
+    }
+  ],
+  "checks": {
+    "title": true,
+    "numbers": true,
+    "same_year": true,
+    "phone_preview": true,
+    "no_jr_logo": true,
+    "precise_statistical_chart": false
+  },
+  "owner_acceptance": false,
+  "platform_client_verified": false,
+  "published": false,
+  "previous_versions_retained": true
+}
