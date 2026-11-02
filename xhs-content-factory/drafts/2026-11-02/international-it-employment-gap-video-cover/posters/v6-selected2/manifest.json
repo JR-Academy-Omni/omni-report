@@ -1,0 +1,61 @@
+{
+  "title": "同样读IT澳洲留学生就业率凭啥低24%？",
+  "version": "v6-selected2",
+  "date": "2026-11-02",
+  "surface": "social-video-cover",
+  "brand": "jr-academy",
+  "register": "B",
+  "selected_base": "v5-clean3/02",
+  "mode": "built-in-image-model-complete-cover-edit",
+  "model_version": "not-returned-by-tool",
+  "company_backend_calls": 0,
+  "cost_usd": null,
+  "file": "cover-1080x1440.png",
+  "width": 1080,
+  "height": 1440,
+  "bytes": 1602800,
+  "sha256": "587b822f59d2d493ea4d70fdc13e97e521d05deebfe0946d008de85175d2c832",
+  "original": "cover-model-original.png",
+  "preview": "cover-phone-preview.png",
+  "prompt": "prompts.md",
+  "review": "REVIEW.md",
+  "downloads": "C:/Users/1/Downloads/同样读IT-留学生-第2版比例修正版-20261102-v6.png",
+  "bar_measurements": [
+    {
+      "row": 1218,
+      "colorLeft": 54,
+      "colorRight": 370,
+      "colorWidth": 317,
+      "trackLeft": 53,
+      "trackRight": 782,
+      "trackWidth": 730,
+      "fraction": 0.43424657534246575
+    },
+    {
+      "row": 1344,
+      "colorLeft": 52,
+      "colorRight": 545,
+      "colorWidth": 494,
+      "trackLeft": 51,
+      "trackRight": 782,
+      "trackWidth": 732,
+      "fraction": 0.674863387978142
+    }
+  ],
+  "geometry_tolerance_percentage_points": 0.5,
+  "geometry_check": "observed endpoint fractions within0.5pp; fill length ratio within0.02%relative; track widths/start positions differ2px",
+  "checks": {
+    "title_no_comma": true,
+    "international_replaced": true,
+    "numbers": true,
+    "phone_preview": true,
+    "no_jr_logo": true,
+    "proportional_fill_within_tolerance": true,
+    "pixel_exact_geometry": false
+  },
+  "owner_selected_base": true,
+  "owner_accepted_this_revision": false,
+  "platform_client_verified": false,
+  "published": false,
+  "previous_versions_retained": true
+}
