@@ -1,0 +1,45 @@
+{
+  "title": "同样读澳洲IT留学生就业率凭啥低24%？",
+  "title_lines": [
+    "同样读澳洲IT",
+    "留学生就业率",
+    "凭啥低24%？"
+  ],
+  "version": "v8-tight-circle",
+  "date": "2026-11-02",
+  "surface": "social-video-cover",
+  "brand": "jr-academy",
+  "register": "B",
+  "selected_base": "v7-selected-circle",
+  "mode": "built-in-image-model-complete-cover-edit",
+  "model_version": "not-returned-by-tool",
+  "company_backend_calls": 0,
+  "cost_usd": null,
+  "file": "cover-1080x1440.png",
+  "width": 1080,
+  "height": 1440,
+  "bytes": 1601738,
+  "sha256": "6e9af33ad07879c7fa0b7f1c162f9e1e4691231133eafd8ee12dda24987683fa",
+  "original": "cover-model-original.png",
+  "preview": "cover-phone-preview.png",
+  "prompt": "prompts.md",
+  "review": "REVIEW.md",
+  "downloads": "C:/Users/1/Downloads/同样读澳洲IT-圆形封面-20261102-v8.png",
+  "bottom_margin_measurement": {
+    "method": "center column x543 saturated cyan endpoint in original1086x1448",
+    "previous_px": 96,
+    "current_px": 27
+  },
+  "checks": {
+    "title_lines": true,
+    "numbers": true,
+    "circle_layout_preserved": true,
+    "bottom_whitespace_reduced": true,
+    "phone_preview": true,
+    "no_jr_logo": true
+  },
+  "owner_accepted_this_revision": false,
+  "platform_client_verified": false,
+  "published": false,
+  "previous_versions_retained": true
+}
