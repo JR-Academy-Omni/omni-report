@@ -1,0 +1,105 @@
+{
+  "title": "同样读澳洲IT留学生就业率凭啥低24%？",
+  "title_lines": [
+    "同样读澳洲IT",
+    "留学生就业率",
+    "凭啥低24%？"
+  ],
+  "version": "v9-independent-pies",
+  "date": "2026-11-03",
+  "timezone": "Asia/Singapore",
+  "surface": "social-video-cover",
+  "brand": "jr-academy",
+  "register": "B",
+  "selected_base": "v8-tight-circle",
+  "mode": "built-in-image-model-complete-cover-edit",
+  "model_version": "not-returned-by-tool",
+  "company_backend_calls": 0,
+  "cost_usd": null,
+  "file": "cover-1080x1440.png",
+  "width": 1080,
+  "height": 1440,
+  "bytes": 1562829,
+  "sha256": "bfbf5e5a1de0ba238004e28a332dc76c6bdc3ec052ad16c44eb9e2652c1c3daf",
+  "original": "cover-model-original.png",
+  "preview": "cover-phone-preview.png",
+  "prompt": "prompts.md",
+  "review": "REVIEW.md",
+  "downloads": "C:/Users/1/Downloads/同样读澳洲IT-蓝色标题-双饼图比例修正-20261103-v9.png",
+  "visual": "two independent pies, each own100%denominator, colored employment rate and gray remainder",
+  "highlight": {
+    "text": "澳洲IT",
+    "color": "blue"
+  },
+  "angle_measurements": [
+    {
+      "group": "international",
+      "centerX": 305,
+      "centerY": 1204,
+      "radius": 100,
+      "observedPercent": 43.611111111111114,
+      "targetPercent": 43.5,
+      "errorPercentagePoints": 0.11111111111111427
+    },
+    {
+      "group": "international",
+      "centerX": 305,
+      "centerY": 1204,
+      "radius": 140,
+      "observedPercent": 43.56944444444444,
+      "targetPercent": 43.5,
+      "errorPercentagePoints": 0.06944444444444287
+    },
+    {
+      "group": "international",
+      "centerX": 305,
+      "centerY": 1204,
+      "radius": 180,
+      "observedPercent": 43.44444444444444,
+      "targetPercent": 43.5,
+      "errorPercentagePoints": -0.055555555555557135
+    },
+    {
+      "group": "domestic",
+      "centerX": 770,
+      "centerY": 1204,
+      "radius": 100,
+      "observedPercent": 68.26388888888889,
+      "targetPercent": 67.8,
+      "errorPercentagePoints": 0.4638888888888886
+    },
+    {
+      "group": "domestic",
+      "centerX": 770,
+      "centerY": 1204,
+      "radius": 140,
+      "observedPercent": 68.20833333333333,
+      "targetPercent": 67.8,
+      "errorPercentagePoints": 0.40833333333333144
+    },
+    {
+      "group": "domestic",
+      "centerX": 770,
+      "centerY": 1204,
+      "radius": 180,
+      "observedPercent": 68.18055555555556,
+      "targetPercent": 67.8,
+      "errorPercentagePoints": 0.38055555555556
+    }
+  ],
+  "angle_sampling_method": "7200points at0.05degrees on100/140/180pxradii, manually identified wedge vertices, saturated color thresholds; not area integration",
+  "tolerance_percentage_points": 0.5,
+  "checks": {
+    "title": true,
+    "numbers": true,
+    "blue_australia_it": true,
+    "independent_denominators": true,
+    "angles_within_sampling_tolerance": true,
+    "phone_preview": true,
+    "no_jr_logo": true
+  },
+  "owner_accepted_this_revision": false,
+  "platform_client_verified": false,
+  "published": false,
+  "previous_versions_retained": true
+}
