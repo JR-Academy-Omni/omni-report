@@ -1,0 +1,69 @@
+[
+  {
+    "type": "hackathon",
+    "title": "Vultr: Agent Rush",
+    "organizer": "lablab.ai × Vultr",
+    "prize": "$14,000 竞赛奖金 + $200 Vultr credits/人",
+    "deadline": "2026-11-08T22:00:00.000Z",
+    "url": "https://lablab.ai/ai-hackathons/vultr-hackathon/live",
+    "region": "global",
+    "summary": "全球线上 AI Agent 比赛，须用 Vultr Serverless Inference 跑 LLM；Solo 或团队均可；适合 AI Agent Bootcamp 学员作为结业项目实战背书"
+  },
+  {
+    "type": "hackathon",
+    "title": "AI Game Jam",
+    "organizer": "lablab.ai",
+    "prize": "⚠️ 奖金 TBA",
+    "url": "https://lablab.ai/event/ai-game-jam",
+    "region": "global",
+    "summary": "11/10 开放，11/17 截止，AI 驱动游戏主题；Vultr Rush 结束后无缝接力参赛，1–6 人或 Solo"
+  },
+  {
+    "type": "hackathon",
+    "title": "Epic Games 2026 AI MegaJam",
+    "organizer": "Epic Games / Unreal Engine",
+    "prize": "$65,000+ USD（含 $50K 开发延续 grant + 分类奖，最佳 Solo $2,500）",
+    "deadline": "2026-11-15T07:00:00.000Z",
+    "url": "https://www.unrealengine.com/news/2026-epic-ai-megajam",
+    "region": "global",
+    "summary": "11/11 直播揭主题，4 天冲刺（11/12–15）；AI 使用可选；1–4 人 + 无限 Agent；Vibe Coding 友好，有 Solo 专属奖项"
+  },
+  {
+    "type": "hackathon",
+    "title": "PayPal AI Hackathon 2026",
+    "organizer": "PayPal / Devpost",
+    "prize": "$60,000+ USD（1st $12K / 2nd $8K / 3rd $5K）",
+    "deadline": "2026-11-12T18:30:00.000Z",
+    "url": "https://paypalaihackathon.devpost.com/",
+    "region": "global",
+    "summary": "须集成 PayPal Sandbox API + AI；全球线上；可能要求开源（核查官方规则）；JR Bootcamp 毕业项目加 PayPal 支付层直接提交"
+  },
+  {
+    "type": "accelerator",
+    "title": "Antler Australia AUS17",
+    "organizer": "Antler",
+    "prize": "AUD $260K 投资，12% equity，8 周多城驻场（悉尼/墨尔本/布里斯班）",
+    "url": "https://www.antler.co/cohort-start-dates",
+    "region": "AU",
+    "summary": "下批开营 2027-02-08，申请页预计 11-12 月开放；按 Antler 半年双批节奏推算，现在可开始准备申请材料"
+  },
+  {
+    "type": "grant",
+    "title": "CSIRO Kick-Start",
+    "organizer": "CSIRO",
+    "prize": "AUD $10K–$50K 配对资金",
+    "url": "https://www.csiro.au/en/work-with-us/funding-programs/sme/csiro-kick-start/",
+    "region": "AU",
+    "summary": "随时滚动 EOI；配对资金（CSIRO 出一半，企业出一半）；适合 AI 初创与 CSIRO 研究机构合作验证技术可行性"
+  },
+  {
+    "type": "grant",
+    "title": "R&D Tax Incentive（RDTI）FY2026",
+    "organizer": "Australian Tax Office",
+    "prize": "43.5% 现金返还（eligible R&D spend，turnover <$20M）",
+    "deadline": "2027-04-30T00:00:00.000Z",
+    "url": "https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/research-and-development-tax-incentive",
+    "region": "AU",
+    "summary": "FY26 研发支出注册截止 2027-04-30；11 月是整理 FY26 研发记录黄金期；适合所有在澳洲注册、有 AI 产品研发支出的初创"
+  }
+]
