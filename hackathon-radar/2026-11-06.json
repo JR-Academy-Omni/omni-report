@@ -1,0 +1,86 @@
+[
+  {
+    "type": "hackathon",
+    "title": "Vultr: Agent Rush",
+    "organizer": "lablab.ai × Vultr",
+    "prize": "$14,000 竞赛奖金 + $200 Vultr credits/人",
+    "deadline": "2026-11-08T22:00:00.000Z",
+    "url": "https://lablab.ai/ai-hackathons/vultr-hackathon/live",
+    "region": "global",
+    "summary": "全球线上 AI Agent 比赛，Challenge 1 须用 Vultr Serverless Inference，$200 credits 建项目足够，适合 JR Bootcamp 在读学员"
+  },
+  {
+    "type": "hackathon",
+    "title": "AI Game Jam",
+    "organizer": "lablab.ai",
+    "prize": "⚠️ 奖金 TBA",
+    "deadline": "2026-11-17T23:59:00.000Z",
+    "url": "https://lablab.ai/event/ai-game-jam",
+    "region": "global",
+    "summary": "11/10 开放，1–6 人团队，AI 驱动游戏 / 生成模型主题，Vultr Rush 结束后无缝接力"
+  },
+  {
+    "type": "hackathon",
+    "title": "2026 Epic AI MegaJam",
+    "organizer": "Epic Games / Unreal Engine",
+    "prize": "$65,000+（$50K 开发延续 grant + $15K 分类奖，Solo Developer 单独 $2,500）",
+    "deadline": "2026-11-15T23:59:00.000Z",
+    "url": "https://www.unrealengine.com/news/2026-epic-ai-megajam",
+    "region": "global",
+    "summary": "11/11 揭主题，11/12–15 冲刺，1–4 人 + 无限 Agent，AI 工具可选，Vibe Coding 友好，Solo 类别门槛低"
+  },
+  {
+    "type": "hackathon",
+    "title": "PayPal AI Hackathon 2026",
+    "organizer": "PayPal / Devpost",
+    "prize": "$60,000+ USD（1st $12K / 2nd $8K / 3rd $5K）",
+    "deadline": "2026-11-12T20:00:00.000Z",
+    "url": "https://paypalaihackathon.devpost.com/",
+    "region": "global",
+    "summary": "须集成 PayPal Sandbox API + AI，全球开放，JR Bootcamp 毕业项目加 PayPal 支付层可直接提交"
+  },
+  {
+    "type": "accelerator",
+    "title": "Antler Australia AUS17",
+    "organizer": "Antler",
+    "prize": "AUD $260,000 资助 + 12% equity，8 周多城驻场",
+    "url": "https://antler.co/cohort-start-dates",
+    "region": "AU",
+    "summary": "开营 2027-02-08，申请页预计 11-12 月开放（截至本期仍未上线），适合有技术背景的早期 founder"
+  },
+  {
+    "type": "accelerator",
+    "title": "Startmate Accelerator（待核实：Autumn '27 截止 11/8？）",
+    "organizer": "Startmate",
+    "prize": "AUD $120,000 on SAFE，$1.5M post-money 估值，14 周 remote-first，零股权",
+    "url": "https://www.startmate.com/accelerator",
+    "region": "AU",
+    "summary": "⚠️ 第三方来源显示 Autumn '27 批次截止 11/8/2026（官网未核实）——今天务必确认；Summer '27 已于 11/1 截止"
+  },
+  {
+    "type": "grant",
+    "title": "CSIRO Kick-Start",
+    "organizer": "CSIRO",
+    "prize": "$10,000–$50,000 配对资金",
+    "url": "https://www.csiro.au/en/work-with-us/funding-programs/sme/csiro-kick-start/",
+    "region": "AU",
+    "summary": "随时滚动申请，配对 SME 自有研发支出，EOI 发 kickstart@csiro.au，零股权"
+  },
+  {
+    "type": "grant",
+    "title": "AI Adopt Programme",
+    "organizer": "Australian Government",
+    "url": "https://business.gov.au/grants-and-programs/artificial-intelligence-ai-adopt-program",
+    "region": "AU",
+    "summary": "SME 免费 AI 就绪评估仍开放（新申请窗口已关），适合有 AI 转型需求的澳洲中小企业"
+  },
+  {
+    "type": "accelerator",
+    "title": "Skalata Ventures Seed Program",
+    "organizer": "Skalata Ventures",
+    "prize": "up to AUD $200,000，零股权",
+    "url": "https://skalata.vc/",
+    "region": "AU",
+    "summary": "随时 EOI，早期澳洲初创团队，无稀释，种子阶段适合"
+  }
+]
