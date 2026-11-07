@@ -1,0 +1,77 @@
+[
+  {
+    "type": "hackathon",
+    "title": "Vultr: Agent Rush",
+    "organizer": "lablab.ai × Vultr",
+    "prize": "$14,000 竞赛奖金 + $200 Vultr credits/人",
+    "deadline": "2026-11-08T22:00:00.000Z",
+    "url": "https://lablab.ai/ai-hackathons/vultr-hackathon/live",
+    "region": "global",
+    "summary": "全球线上 AI Agent 比赛，Challenge 1 须接 Vultr Serverless Inference 跑 Agent LLM；今天截止，参赛中学员须确认 inference endpoint 已验证"
+  },
+  {
+    "type": "hackathon",
+    "title": "Epic Games AI MegaJam 2026",
+    "organizer": "Epic Games / Unreal Engine",
+    "prize": "$65,000+（$50K 开发延续 grant + $15K 分类奖，Solo Developer $2,500 单独类别）",
+    "url": "https://www.unrealengine.com/news/2026-epic-ai-megajam",
+    "region": "global",
+    "summary": "11/11 揭题（Twitch/YouTube/X 11AM PST），11/12–15 冲刺；用 Unreal Engine 或 UEFN 做可玩游戏；AI 工具可选；Vibe Coding 友好；Solo $2,500 类别"
+  },
+  {
+    "type": "hackathon",
+    "title": "AI Game Jam",
+    "organizer": "lablab.ai",
+    "prize": "⚠️ 奖金 TBA",
+    "url": "https://lablab.ai/event/ai-game-jam",
+    "region": "global",
+    "summary": "11/10 开放，11/17 截止；AI 驱动游戏 / 生成模型混合赛道；1–6 人团队；Vultr Rush 结束后无缝接力参赛"
+  },
+  {
+    "type": "prize",
+    "title": "PayPal AI Hackathon 2026",
+    "organizer": "PayPal / Devpost",
+    "prize": "$60,000–$67,500 USD",
+    "deadline": "2026-11-12T20:00:00.000Z",
+    "url": "https://paypalaihackathon.devpost.com/",
+    "region": "global",
+    "summary": "须集成 PayPal Sandbox API + AI；免费参赛；截止 11/12 12PM PT = 澳洲东部 11/13 7AM；获奖结果 12/21"
+  },
+  {
+    "type": "accelerator",
+    "title": "Startmate Summer '27 Accelerator",
+    "organizer": "Startmate",
+    "prize": "AUD $120K on SAFE，$1.5M post-money 估值，零股权，14 周 remote-first（Feb 1 – May 7, 2027）",
+    "deadline": "2026-11-08T12:59:00.000Z",
+    "url": "https://www.startmate.com/accelerator",
+    "region": "AU",
+    "summary": "🔴 今天截止！澳洲最具声望的加速器之一；零股权；remote-first；适合有 AI 产品 traction 的 JR OPC 学员 Solo Founder"
+  },
+  {
+    "type": "accelerator",
+    "title": "Founder Institute Australia 2027",
+    "organizer": "Founder Institute",
+    "prize": "无股权，早鸟 12/8 前免报名费（$799→免费）+ FI Fellowship 资格；程序 2027-02-15 至 04-20",
+    "url": "https://fi.co/apply/Australia",
+    "region": "AU",
+    "summary": "早鸟截止 12/8；hybrid 程序（Feb 15 – Apr 20, 2027）；适合 idea 阶段创始人；无股权要求；JR OPC 学员适合"
+  },
+  {
+    "type": "grant",
+    "title": "CSIRO Kick-Start",
+    "organizer": "CSIRO",
+    "prize": "$10K–$50K 配对资金（rolling，随时申请）",
+    "url": "https://www.csiro.au/en/work-with-us/funding-programs/sme/csiro-kick-start/",
+    "region": "AU",
+    "summary": "随时滚动开放；SME 或初创公司与 CSIRO 合作研发的配对资助；发 EOI 至 kickstart@csiro.au"
+  },
+  {
+    "type": "grant",
+    "title": "AI Adopt Centres 免费 AI 就绪评估",
+    "organizer": "澳洲政府",
+    "prize": "免费 AI 就绪评估服务（无现金补贴）",
+    "url": "https://business.gov.au/grants-and-programs/artificial-intelligence-ai-adopt-program",
+    "region": "AU",
+    "summary": "SME 可申请免费 AI 就绪评估；新申请窗口已关但评估服务仍 rolling 开放"
+  }
+]
