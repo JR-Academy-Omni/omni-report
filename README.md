@@ -5,7 +5,7 @@ JR Academy 运营报告归档仓库。各类站点健康度 / SEO / 数据完整
 ## 目录
 
 ```
-seo-reports/{YYYY-MM-DD}.md          每日 jiangren.com.au sitemap 健康度报告
+seo-reports/{YYYY-MM-DD}.md          每日 jracademy.ai sitemap 健康度报告
 seo-performance/{YYYY-MM-DD}.md      每周一 GSC + DataForSEO + PSI 排名/流量/CWV 周报
 competitor-reports/{YYYY-MM-DD}.md   每周日 23 家竞品 × 5 维度情报简报
 marketing-topics/{YYYY-MM-DD}.md     每周一+三 基于热点 + 竞品周报的内容/活动选题包
@@ -91,7 +91,7 @@ Setup（GSC service account / DataForSEO / PSI key）见 [`scripts/seo-performan
 
 每天 AEST 06:00 由远程 routine 自动跑：
 
-1. 拉 `https://jiangren.com.au/sitemap.xml` index → 递归展开 23 个子 sitemap
+1. 拉 `https://jracademy.ai/sitemap.xml` index → 递归展开 23 个子 sitemap
 2. 并发 HEAD 请求所有 URL（concurrency=20, 10s timeout, 跟随 3xx）
 3. 分类：200 / 3xx / 404 / 410 / 5xx / timeout / DNS-error
 4. diff 昨天的报告 → 标 🆕 新坏 / 🔁 持续坏 / ✨ 已修复

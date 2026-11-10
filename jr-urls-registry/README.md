@@ -21,7 +21,7 @@
 ## 决策树（写文章引用 URL）
 
 ```
-要引用一个 jiangren.com.au URL
+要引用一个 jracademy.ai URL
     ↓
 1. 先 grep INDEX.md（最快，人工精选）
     ↓ 没找到
@@ -66,7 +66,7 @@ bash refresh.sh
 ```
 
 `refresh.sh` 干的事：
-1. curl jiangren.com.au/sitemap.xml 拿 23 个 sub-sitemap 列表
+1. curl jracademy.ai/sitemap.xml 拿 23 个 sub-sitemap 列表
 2. 拉 program-course / certification / roadmap / learn 4 个 sub-sitemap
 3. 重建 program-course.md / certifications.md / roadmaps.md / learn-chapters.md
 4. **不动** INDEX.md（人工维护，里面有规则 + 主力推荐 + GitHub + 待你确认的社交账号）

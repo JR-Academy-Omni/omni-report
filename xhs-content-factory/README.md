@@ -13,7 +13,7 @@ jr-omni/new-media/xiaohongshu/{account-slug}/posts/assets/{YYYY-MM-DD}-{slug}/  
 ```
 
 然后在 jr-omni 根跑 `python3 new-media/xiaohongshu/build_xhs_index.py` + push。
-admin 后台「小红书内容库」（admin.jiangren.com.au → 团队工作台 → 小红书内容库）展示的就是那份索引。
+admin 后台「小红书内容库」（admin.jracademy.ai → 团队工作台 → 小红书内容库）展示的就是那份索引。
 完整规范 → `jr-omni/new-media/xiaohongshu/CONTENT_FORMAT.md`。
 
 ## 路径红线 — 绝不放 curriculum/
