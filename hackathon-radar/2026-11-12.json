@@ -1,0 +1,79 @@
+[
+  {
+    "type": "hackathon",
+    "title": "Epic AI MegaJam 2026",
+    "organizer": "Epic Games / Unreal Engine",
+    "prize": "$65,000+ USD（$50K 开发延续金 + $15K 分类奖，Solo 类别 $2,500）",
+    "deadline": "2026-11-15T23:59:00.000Z",
+    "url": "https://www.unrealengine.com/news/2026-epic-ai-megajam",
+    "region": "global",
+    "summary": "全球线上 Unreal Engine / UEFN 游戏 Jam，11/12–15，AI 工具可选，有 Solo 专属类别；Vibe Coding 学员直接可参加"
+  },
+  {
+    "type": "hackathon",
+    "title": "AI Game Jam",
+    "organizer": "lablab.ai",
+    "prize": "⚠️ 奖金 TBA；含 mentors + workshops",
+    "deadline": "2026-11-17T23:59:00.000Z",
+    "url": "https://lablab.ai/event/ai-game-jam",
+    "region": "global",
+    "summary": "全球线上 AI 游戏 Jam，1-6 人组队免费参赛；从零构建 AI 驱动游戏；11/10–17"
+  },
+  {
+    "type": "hackathon",
+    "title": "Westpac/Griffith Coding Hackathon 2026",
+    "organizer": "Griffith University / Westpac",
+    "prize": "⚠️ 奖金/奖励 2026 版待确认（2024 版含创新奖 $1,000 + People's Choice）",
+    "deadline": "2026-11-17T06:00:00.000Z",
+    "url": "https://www.griffith.edu.au/griffith-sciences/school-information-communication-technology/industry/westpac-hackathon",
+    "region": "AU",
+    "summary": "🇦🇺 线下编程比赛，Gold Coast Griffith University G23 Labs，11/16–17，Awards 11/20；主要面向大学生，JR 学员可联系确认资格"
+  },
+  {
+    "type": "hackathon",
+    "title": "AI Engineer Sydney Hackathon 2026",
+    "organizer": "Web Directions / MLAI",
+    "prize": "入围者获 AI Engineer Sydney 主舞台 pitch 机会 + 大会 Ticket（无现金奖）",
+    "deadline": "2026-12-05T23:59:00.000Z",
+    "url": "https://webdirections.org/ai-engineer/hack-day/",
+    "region": "AU",
+    "summary": "🇦🇺 线下 Stone & Chalk Sydney，Dec 4–5，免费但名额有限；入围者在 AI Engineer Sydney（800+人，全球直播）主舞台 pitch"
+  },
+  {
+    "type": "accelerator",
+    "title": "Antler Australia AUS17",
+    "organizer": "Antler",
+    "prize": "AUD $260,000 / 12% equity，8–10 周多城 Residency",
+    "url": "https://www.antler.co/australia",
+    "region": "AU",
+    "summary": "🇦🇺 Rolling 申请中（开营 2027-02-08），悉尼/墨尔本/布里斯班；无需联创即可申请，Residency 期间组队；越早申请越有优先权"
+  },
+  {
+    "type": "accelerator",
+    "title": "Founder Institute Australia 2027",
+    "organizer": "Founder Institute",
+    "prize": "无股权要求；早鸟报名费 $799（原 $999）+ FI Fellowship 资格",
+    "deadline": "2026-12-08T23:59:00.000Z",
+    "url": "https://fi.co/apply/Australia",
+    "region": "AU",
+    "summary": "🇦🇺 早鸟截止 12/8；Kickoff 2027-02-15，14 周 hybrid；无股权，适合早期创业者；12/8 前省 $200"
+  },
+  {
+    "type": "grant",
+    "title": "CSIRO Kick-Start",
+    "organizer": "CSIRO",
+    "prize": "$10,000–$50,000 AUD 配对资金",
+    "url": "https://www.csiro.au/en/work-with-us/funding-programs/sme/csiro-kick-start/",
+    "region": "AU",
+    "summary": "🇦🇺 滚动开放，小企业与研究机构合作配对资金；EOI 发 kickstart@csiro.au"
+  },
+  {
+    "type": "grant",
+    "title": "AI Adopt Programme",
+    "organizer": "Australian Government / AI Adopt Centres",
+    "prize": "免费 AI 就绪评估 + 实施建议（SME）",
+    "url": "https://business.gov.au/grants-and-programs/artificial-intelligence-ai-adopt-program",
+    "region": "AU",
+    "summary": "🇦🇺 滚动开放，SME 免费申请 AI 就绪评估和落地建议；适合正在引入 AI 工具的澳洲小企业"
+  }
+]
