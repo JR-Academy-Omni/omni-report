@@ -4,7 +4,7 @@
   "generated_at": "2026-11-12",
   "format": "1242x1660",
   "style": "minimal white editorial text note",
-  "revision": "v3 compact normal-flow layout without a cover title",
+  "revision": "v3 compact normal-flow layout without a cover title or rendered URL",
   "mode": "existing-image-model-paper-texture-plus-deterministic-html-text",
   "pages": ["01.png", "02.png", "03.png", "04.png"]
 }
