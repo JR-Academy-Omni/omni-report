@@ -1,0 +1,18 @@
+{
+  "account": "KIKI的分享日记",
+  "topic": "澳洲要被FDE岗位包围了",
+  "generated_at": "2026-11-12",
+  "format": "1080x1440",
+  "mode": "image-model-background-plus-deterministic-html-text",
+  "background_model_use": "warm stationery flat-lay without text",
+  "pages": [
+    { "filename": "01.png", "task": "cover" },
+    { "filename": "02.png", "task": "Australian FDE job signals" },
+    { "filename": "03.png", "task": "plain-language FDE definition" },
+    { "filename": "04.png", "task": "six-step delivery workflow" },
+    { "filename": "05.png", "task": "OpenAI Sydney JD responsibilities" },
+    { "filename": "06.png", "task": "Lyrebird Health role example" },
+    { "filename": "07.png", "task": "why Australia needs FDE" },
+    { "filename": "08.png", "task": "FDE Tech course share" }
+  ]
+}

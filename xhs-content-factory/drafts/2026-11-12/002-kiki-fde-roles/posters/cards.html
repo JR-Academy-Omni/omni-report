@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KIKI · 澳洲 FDE 岗位</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 1080px; height: 1440px; overflow: hidden; }
+    body {
+      font-family: "Microsoft YaHei", "Noto Sans SC", "PingFang SC", Arial, sans-serif;
+      color: #25212a;
+      background: #f7ead9 url("background.png") center/cover no-repeat;
+    }
+    .page { display: none; position: relative; width: 1080px; height: 1440px; padding: 100px 86px 92px; }
+    .page.active { display: block; }
+    .paper {
+      position: relative; width: 100%; min-height: 1180px; padding: 78px 70px 68px;
+      background: rgba(255,253,247,.94); border: 1px solid rgba(123,86,72,.13);
+      border-radius: 18px; box-shadow: 0 24px 60px rgba(108,73,55,.18), 0 4px 14px rgba(108,73,55,.10);
+    }
+    .paper:before, .paper:after { content: ""; position: absolute; top: -20px; width: 122px; height: 48px; background: rgba(255,218,177,.66); border: 1px solid rgba(170,128,89,.08); }
+    .paper:before { left: 96px; transform: rotate(-4deg); }
+    .paper:after { right: 94px; transform: rotate(4deg); }
+    .kicker { font-size: 29px; line-height: 1.2; font-weight: 800; letter-spacing: 2.4px; color: #d95c54; text-transform: uppercase; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin: 38px 0 28px; font-size: 116px; line-height: 1.02; letter-spacing: -5px; font-weight: 900; }
+    h2 { margin: 28px 0 44px; font-size: 72px; line-height: 1.16; letter-spacing: -2px; font-weight: 900; }
+    h3 { margin: 0 0 14px; font-size: 42px; line-height: 1.25; font-weight: 900; }
+    p, li { font-size: 38px; line-height: 1.62; font-weight: 600; }
+    .muted { color: #736a73; }
+    .coral { color: #df5d55; }
+    .purple { color: #7a63b8; }
+    .marker { display: inline; background: linear-gradient(transparent 58%, #ffd98d 58%); }
+    .big-quote { margin: 40px 0; font-size: 56px; line-height: 1.36; font-weight: 900; }
+    .subline { font-size: 40px; line-height: 1.55; font-weight: 700; }
+    .chips { display: flex; flex-wrap: wrap; gap: 16px; margin: 30px 0 34px; }
+    .chip { padding: 12px 21px; border-radius: 999px; background: #f0e7ff; color: #6753a0; font-size: 30px; font-weight: 800; }
+    .chip.coral-bg { background: #ffe0d8; color: #b54c43; }
+    .card-grid { display: grid; gap: 22px; }
+    .info-card { padding: 28px 30px; border-radius: 16px; background: #fff; border: 2px solid rgba(73,57,77,.10); box-shadow: 0 8px 20px rgba(81,57,65,.07); }
+    .info-card p { margin: 0; font-size: 33px; line-height: 1.48; }
+    .company { display: flex; align-items: flex-start; gap: 22px; }
+    .dot { flex: 0 0 18px; width: 18px; height: 18px; margin-top: 16px; border-radius: 50%; background: #de6158; box-shadow: 0 0 0 8px #ffe3dc; }
+    .steps { display: grid; gap: 16px; margin-top: 18px; }
+    .step { display: grid; grid-template-columns: 62px 1fr; gap: 18px; align-items: start; padding: 18px 24px; background: rgba(255,255,255,.83); border: 1.5px solid rgba(83,59,74,.10); border-radius: 14px; }
+    .num { width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; color: #fff; background: #de6158; font: 900 28px/1 Arial; }
+    .step span:last-child { font-size: 33px; line-height: 1.45; font-weight: 750; }
+    .flow { display: grid; grid-template-columns: 1fr; gap: 14px; margin: 38px 0; }
+    .flow-row { padding: 22px 27px; font-size: 35px; font-weight: 850; background: #f3ebff; border-left: 10px solid #8467bd; border-radius: 8px; }
+    .arrow { text-align: center; color: #d65f57; font-size: 34px; font-weight: 900; }
+    .stat { display: grid; place-items: center; padding: 34px; margin-top: 32px; background: #ffe2d7; border-radius: 16px; text-align: center; }
+    .stat b { display: block; font-size: 74px; line-height: 1; color: #c84e48; }
+    .stat span { margin-top: 10px; font-size: 31px; font-weight: 800; }
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin: 42px 0 38px; }
+    .split .info-card { min-height: 320px; display: flex; flex-direction: column; justify-content: center; }
+    .split .info-card strong { font-size: 45px; line-height: 1.3; }
+    .split .info-card small { margin-top: 22px; font-size: 29px; line-height: 1.45; color: #736a73; font-weight: 700; }
+    .versus { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin: 38px 0; }
+    .vs-card { padding: 34px 28px; border-radius: 16px; min-height: 390px; }
+    .vs-card.demo { background: #efe8f8; }
+    .vs-card.prod { background: #ffe0d5; }
+    .vs-card h3 { font-size: 46px; }
+    .vs-card p { margin: 20px 0 0; font-size: 31px; line-height: 1.55; }
+    .course-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; margin: 30px 0 38px; }
+    .course-stat { padding: 26px 12px; border-radius: 14px; text-align: center; background: #fff; border: 2px solid #f0d8d0; }
+    .course-stat b { display: block; font-size: 54px; color: #d85650; }
+    .course-stat span { display: block; margin-top: 8px; font-size: 26px; font-weight: 800; }
+    .course-list { display: flex; flex-wrap: wrap; gap: 12px; margin: 18px 0 34px; }
+    .course-list span { padding: 13px 17px; border-radius: 10px; background: #f0e8f8; color: #675483; font-size: 27px; font-weight: 800; }
+    .cta { padding: 30px 34px; background: #e05e56; color: #fff; border-radius: 16px; font-size: 39px; line-height: 1.45; font-weight: 900; text-align: center; box-shadow: 0 10px 0 #b8433e; }
+    .url { margin-top: 28px; text-align: center; font: 700 25px/1.4 Arial, sans-serif; color: #726a72; }
+    .footer { position: absolute; left: 70px; right: 70px; bottom: 46px; display: flex; justify-content: space-between; align-items: center; color: #847a82; font-size: 23px; font-weight: 800; letter-spacing: 1px; }
+    .flag { position: absolute; right: 56px; top: 52px; width: 116px; height: 72px; border-radius: 6px; background: #102a63 url("https://flagcdn.com/w160/au.png") center/cover no-repeat; box-shadow: 0 8px 16px rgba(41,34,50,.16); transform: rotate(4deg); }
+    .cover .paper { padding-top: 105px; background: rgba(255,250,240,.95); }
+    .cover h1 .fde { display: inline-block; margin: 12px 0; padding: 2px 16px 10px; color: white; background: #df5d55; transform: rotate(-1deg); box-shadow: 9px 9px 0 #f4bc83; }
+    .cover .subline { max-width: 720px; margin-top: 52px; font-size: 43px; }
+    .cover .mini { margin-top: 56px; padding: 24px 28px; max-width: 720px; background: #f0e7ff; border-radius: 14px; color: #665383; font-size: 32px; line-height: 1.5; font-weight: 800; }
+    .page-five .paper { padding-top: 62px; }
+    .page-five h2 { margin: 22px 0 26px; font-size: 64px; }
+    .page-five .flow { gap: 7px; margin: 22px 0; }
+    .page-five .flow-row { padding: 15px 24px; font-size: 31px; }
+    .page-five .arrow { font-size: 25px; line-height: 1; }
+    .page-five .stat { margin-top: 18px; padding: 22px; }
+    .page-five .stat b { font-size: 60px; }
+    .page-five .subline { margin-top: 22px !important; font-size: 31px; line-height: 1.45; }
+    .page-eight .paper { padding-top: 60px; }
+    .page-eight h2 { margin: 18px 0 28px; font-size: 62px; }
+    .page-eight .subline { font-size: 31px; line-height: 1.45; }
+    .page-eight .course-grid { margin: 22px 0 26px; }
+    .page-eight .course-stat { padding: 18px 8px; }
+    .page-eight .course-stat b { font-size: 46px; }
+    .page-eight .course-stat span { font-size: 23px; }
+    .page-eight .course-list { gap: 10px; margin: 14px 0 22px; }
+    .page-eight .course-list span { padding: 10px 14px; font-size: 24px; }
+    .page-eight .cta { padding: 20px 28px; font-size: 33px; line-height: 1.35; }
+    .page-eight .url { margin-top: 20px; font-size: 21px; }
+  </style>
+</head>
+<body>
+  <section class="page cover" data-page="1">
+    <div class="paper">
+      <div class="flag"></div>
+      <div class="kicker">AI CAREER · AUSTRALIA</div>
+      <h1>澳洲要被<br><span class="fde">FDE岗位</span><br>包围了！</h1>
+      <p class="subline">FDE 真的一路从湾区<br>“长”到 Sydney 和 Melbourne 了……</p>
+      <div class="mini">OpenAI、Palantir、本地医疗 AI 公司，都开始出现这个岗位 👀</div>
+      <div class="footer"><span>KIKI'S SHARING NOTE</span><span>01 / 08</span></div>
+    </div>
+  </section>
+
+  <section class="page" data-page="2">
+    <div class="paper">
+      <div class="kicker">刚看到的岗位信号</div>
+      <h2>澳洲的 FDE 岗位，<span class="marker">真的来了</span></h2>
+      <div class="card-grid">
+        <div class="info-card company"><span class="dot"></span><div><h3>OpenAI · Sydney</h3><p>招聘 Forward Deployed Engineer</p></div></div>
+        <div class="info-card company"><span class="dot"></span><div><h3>Palantir · Sydney</h3><p>有澳洲政府方向正式岗，也有 FDE 实习岗</p></div></div>
+        <div class="info-card company"><span class="dot"></span><div><h3>Lyrebird Health · Melbourne</h3><p>医疗 AI 公司也在招 Forward Deployed Engineer</p></div></div>
+      </div>
+      <p class="big-quote">以前听着陌生，现在已经出现在 <span class="coral">AI、政府、医疗</span>这些真实业务里了。</p>
+      <div class="footer"><span>KIKI'S SHARING NOTE</span><span>02 / 08</span></div>
+    </div>
+  </section>
+
+  <section class="page" data-page="3">
+    <div class="paper">
+      <div class="kicker">先用大白话讲清楚</div>
+      <h2>FDE 到底是干嘛的？</h2>
+      <p class="big-quote">客户买了 AI，<br>却不会把它接进自己的公司。</p>
+      <div class="stat"><b>FDE</b><span>就是负责把“最后一公里”走通的人</span></div>
+      <p class="subline" style="margin-top:42px">比如医院想用 AI，但它已经有自己的病历系统、登录权限和数据规范。</p>
+      <p class="subline muted">FDE 不能只做一个 Demo 给客户看，而是要继续把它接进真实流程。</p>
+      <div class="chips"><span class="chip">旧系统</span><span class="chip coral-bg">数据权限</span><span class="chip">真实业务</span><span class="chip coral-bg">安全上线</span></div>
+      <div class="footer"><span>KIKI'S SHARING NOTE</span><span>03 / 08</span></div>
+    </div>
+  </section>
+
+  <section class="page" data-page="4">
+    <div class="paper">
+      <div class="kicker">从需求到交付</div>
+      <h2>一个 FDE，<br>要把这 6 步走完</h2>
+      <div class="steps">
+        <div class="step"><span class="num">1</span><span>跟客户聊清楚：真正需要解决的是什么</span></div>
+        <div class="step"><span class="num">2</span><span>看数据、权限和旧系统能不能接</span></div>
+        <div class="step"><span class="num">3</span><span>设计方案、算成本、定交付范围</span></div>
+        <div class="step"><span class="num">4</span><span>自己写代码，把 AI 接进真实流程</span></div>
+        <div class="step"><span class="num">5</span><span>测试效果，处理失败和异常情况</span></div>
+        <div class="step"><span class="num">6</span><span>上线、培训用户，再把系统交接出去</span></div>
+      </div>
+      <div class="footer"><span>KIKI'S SHARING NOTE</span><span>04 / 08</span></div>
+    </div>
+  </section>
+
+  <section class="page page-five" data-page="5">
+    <div class="paper">
+      <div class="kicker">OPENAI · SYDNEY JD</div>
+      <h2>它既不是纯售前，<br>也不是只会写 Prompt</h2>
+      <div class="flow">
+        <div class="flow-row">Discovery · 调查客户问题</div><div class="arrow">↓</div>
+        <div class="flow-row">Technical Scoping · 确定技术范围</div><div class="arrow">↓</div>
+        <div class="flow-row">System Design & Build · 设计并实现</div><div class="arrow">↓</div>
+        <div class="flow-row">Production Rollout · 推进生产上线</div>
+      </div>
+      <div class="stat"><b>≤ 50%</b><span>岗位甚至可能需要最多 50% 的出差</span></div>
+      <p class="subline muted" style="margin-top:34px">重点不是“讲一个 AI 概念”，而是把客户项目从问题一路做到上线。</p>
+      <div class="footer"><span>KIKI'S SHARING NOTE</span><span>05 / 08</span></div>
+    </div>
+  </section>
+
+  <section class="page" data-page="6">
+    <div class="paper">
+      <div class="kicker">LYREBIRD HEALTH · MELBOURNE</div>
+      <h2>医疗 AI 公司的要求，<br><span class="marker">更直白</span></h2>
+      <div class="split">
+        <div class="info-card"><strong>能写<br><span class="coral">production-grade TypeScript</span></strong><small>不是一次性 Demo，而是能进生产环境的代码</small></div>
+        <div class="info-card"><strong>能和医院 CTO 聊<br><span class="purple">HL7 / FHIR / EMR</span></strong><small>要理解医疗系统怎样接、怎样管数据</small></div>
+      </div>
+      <p class="big-quote">会写代码，<br>还要能走进<span class="coral">客户现场</span>。</p>
+      <p class="subline muted">这才是 FDE 最值得关注的地方 🔥</p>
+      <div class="footer"><span>KIKI'S SHARING NOTE</span><span>06 / 08</span></div>
+    </div>
+  </section>
+
+  <section class="page" data-page="7">
+    <div class="paper">
+      <div class="kicker">为什么澳洲会需要 FDE</div>
+      <h2>真正难的，<br><span class="coral">已经不是 Demo</span></h2>
+      <div class="versus">
+        <div class="vs-card demo"><h3>做出 Demo</h3><p>模型能回答<br>API 能调用<br>流程能跑通一次</p></div>
+        <div class="vs-card prod"><h3>进企业运行</h3><p>接旧系统<br>管数据权限<br>满足 Security & Compliance<br>控制预算与风险</p></div>
+      </div>
+      <p class="big-quote">让 AI 在企业原来的系统里<span class="marker">安全、稳定地跑起来</span>，才是最难的一公里。</p>
+      <p class="subline muted">银行、医疗、政府和大型企业，都绕不开这些现实限制。</p>
+      <div class="footer"><span>KIKI'S SHARING NOTE</span><span>07 / 08</span></div>
+    </div>
+  </section>
+
+  <section class="page page-eight" data-page="8">
+    <div class="paper">
+      <div class="kicker">从会做 DEMO，到负责客户交付</div>
+      <h2><span class="coral">FDE Tech</span><br>职业进阶课</h2>
+      <p class="subline">不是从零教编程，而是给已经能独立开发、调试 AI 应用，想继续往企业客户项目和工程交付走的人。</p>
+      <div class="course-grid"><div class="course-stat"><b>10周</b><span>训练周期</span></div><div class="course-stat"><b>30项</b><span>交付任务</span></div><div class="course-stat"><b>企业</b><span>真实案例思路</span></div></div>
+      <div class="course-list"><span>Discovery</span><span>Proposal</span><span>架构与预算</span><span>系统接入</span><span>AI Evaluation</span><span>试点上线</span><span>Handover</span></div>
+      <p class="subline muted">比较适合已经做过 AI 项目，但不知道怎么从“我会做 Demo”走到“我能负责客户交付”的人。</p>
+      <div class="cta">感兴趣课程的【FDE】呀<br>大家可以自己看看适不适合 👇</div>
+      <div class="url">jracademy.ai/program-course/fde-tech</div>
+      <div class="footer"><span>KIKI'S SHARING NOTE</span><span>08 / 08</span></div>
+    </div>
+  </section>
+  <script>
+    const page = new URLSearchParams(location.search).get('page') || '1';
+    document.querySelector(`[data-page="${page}"]`)?.classList.add('active');
+  </script>
+</body>
+</html>
