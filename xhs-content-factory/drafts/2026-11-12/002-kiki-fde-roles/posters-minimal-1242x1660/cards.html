@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>澳洲 FDE · 极简文字笔记版</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 1242px; height: 1660px; overflow: hidden; }
+    body {
+      background: #fff url("paper-bg.png") center/cover no-repeat;
+      color: #111;
+      font-family: Georgia, "Times New Roman", "STSong", "SimSun", serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      display: none;
+      position: relative;
+      width: 1242px;
+      height: 1660px;
+      padding: 82px 76px 76px;
+    }
+    .page.active { display: block; }
+    h1, h2, p { margin: 0; font-weight: 400; }
+    h1 { font-size: 98px; line-height: 1.28; letter-spacing: -3px; }
+    h2 { font-size: 66px; line-height: 1.38; letter-spacing: -1.5px; }
+    p, li { font-size: 45px; line-height: 1.64; letter-spacing: .2px; }
+    .lead { font-size: 50px; line-height: 1.58; }
+    .small { font-size: 39px; line-height: 1.62; }
+    .hot { color: #df0808; }
+    .heavy { font-weight: 700; }
+    .gap-lg { height: 106px; }
+    .gap-md { height: 66px; }
+    .gap-sm { height: 36px; }
+    .note { margin-top: 42px; }
+    .list { margin: 0; padding: 0; list-style: none; }
+    .list li { margin: 0 0 42px; }
+    .check li::before { content: "✅"; margin-right: 10px; font-family: "Segoe UI Emoji", sans-serif; }
+    .plain li::before { content: "▪️"; margin-right: 10px; font-family: "Segoe UI Emoji", sans-serif; }
+    .route li { margin-bottom: 36px; }
+    .route li::before { content: "→"; margin-right: 18px; color: #df0808; font-family: Georgia, serif; }
+    .flag { width: 112px; height: 70px; display: inline-block; vertical-align: -9px; margin-left: 14px; border-radius: 3px; background: #102a63 url("https://flagcdn.com/w160/au.png") center/cover no-repeat; }
+    .url { position: absolute; left: 76px; bottom: 72px; font-size: 30px; color: #444; font-family: Arial, sans-serif; }
+    .page-no { position: absolute; right: 76px; bottom: 72px; font-size: 27px; color: #777; font-family: Georgia, serif; }
+    .cover { padding-top: 132px; }
+    .cover h1 { font-size: 118px; line-height: 1.22; }
+    .cover .sub { margin-top: 86px; font-size: 53px; line-height: 1.62; }
+    .cover .companies { margin-top: 120px; font-size: 44px; line-height: 1.7; }
+    .cover .flag { width: 132px; height: 82px; vertical-align: -12px; }
+    .course h2 { font-size: 74px; }
+    .course .list li { margin-bottom: 26px; }
+  </style>
+</head>
+<body>
+  <section class="page cover" data-page="1">
+    <h1>澳洲要被<br><span class="heavy">FDE岗位</span><br>包围了<span class="hot">❗</span><span class="flag"></span></h1>
+    <p class="sub">刚看到澳洲最近这批 AI 岗位，FDE 真的一路从湾区“长”到 Sydney 和 Melbourne 了……</p>
+    <p class="companies">OpenAI、Palantir、本地医疗 AI 公司，都开始出现这个岗位了<span class="hot">🔥</span></p>
+    <span class="page-no">01 / 08</span>
+  </section>
+
+  <section class="page" data-page="2">
+    <p class="lead">澳洲的 FDE 岗位，真的来了<span class="hot">❗</span></p>
+    <div class="gap-md"></div>
+    <p>OpenAI 在 Sydney 招 Forward Deployed Engineer。</p>
+    <div class="gap-md"></div>
+    <p>Palantir 有澳洲政府方向的正式岗，也有 FDE 实习岗。</p>
+    <div class="gap-md"></div>
+    <p>Melbourne 的医疗 AI 公司 Lyrebird Health 也在招。</p>
+    <div class="gap-lg"></div>
+    <p>这个岗位以前听着还有点陌生，现在已经开始出现在 AI、政府、医疗这些真实业务里了👀</p>
+    <span class="page-no">02 / 08</span>
+  </section>
+
+  <section class="page" data-page="3">
+    <h2>FDE 到底是干嘛的？</h2>
+    <div class="gap-md"></div>
+    <p>简单讲：客户买了 AI，但不会把它接进自己的公司，FDE 就是负责把最后这段路走通的人。</p>
+    <div class="gap-lg"></div>
+    <p>比如一家医院想用 AI，但它已经有自己的病历系统、登录权限和数据规范。</p>
+    <div class="gap-md"></div>
+    <p>FDE 不能只做一个 Demo 给客户看，而是要继续把它接进真实流程👇</p>
+    <span class="page-no">03 / 08</span>
+  </section>
+
+  <section class="page" data-page="4">
+    <p class="lead">一个 FDE，要把这 6 步走完👇</p>
+    <div class="gap-md"></div>
+    <ul class="list plain">
+      <li>先跟客户聊清楚，真正需要解决的是什么</li>
+      <li>看数据、权限和旧系统能不能接</li>
+      <li>设计方案、算成本、定交付范围</li>
+      <li>自己写代码，把 AI 接进真实流程</li>
+      <li>测试效果，处理失败和异常情况</li>
+      <li>最后上线、培训用户，再把系统交接出去</li>
+    </ul>
+    <span class="page-no">04 / 08</span>
+  </section>
+
+  <section class="page" data-page="5">
+    <p class="lead">所以它既不是纯售前，也不是只会写 Prompt 的 AI Engineer。</p>
+    <div class="gap-lg"></div>
+    <p>OpenAI 的 Sydney JD 里，FDE 要从 Discovery、Technical Scoping 一直负责做到 Production Rollout。</p>
+    <div class="gap-md"></div>
+    <ul class="list route">
+      <li>Discovery：调查客户问题</li>
+      <li>Technical Scoping：确定技术范围</li>
+      <li>System Design & Build：设计并实现</li>
+      <li>Production Rollout：推进生产上线</li>
+    </ul>
+    <div class="gap-sm"></div>
+    <p>这个岗位甚至可能有最多 50% 的出差<span class="hot">❗</span></p>
+    <span class="page-no">05 / 08</span>
+  </section>
+
+  <section class="page" data-page="6">
+    <p class="lead">Lyrebird Health 的要求更具体👇</p>
+    <div class="gap-md"></div>
+    <ul class="list check">
+      <li>能写 production-grade TypeScript，不是一次性 Demo，而是能进生产环境的代码</li>
+      <li>能跟医院 CTO 聊 HL7、FHIR 和 EMR，理解医疗系统怎样接、怎样管数据</li>
+    </ul>
+    <div class="gap-lg"></div>
+    <p>会写代码，还要能走进客户现场。</p>
+    <div class="gap-md"></div>
+    <p>我觉得这才是 FDE 最值得关注的地方<span class="hot">🔥</span></p>
+    <span class="page-no">06 / 08</span>
+  </section>
+
+  <section class="page" data-page="7">
+    <h2>真正难的，已经不是“做出一个 AI Demo”。</h2>
+    <div class="gap-lg"></div>
+    <p>而是让它在企业原来的系统里安全、稳定地跑起来。</p>
+    <div class="gap-md"></div>
+    <p>特别是澳洲的银行、医疗、政府和大型企业，绕不开旧系统、数据权限、Security、Compliance 和预算。</p>
+    <div class="gap-lg"></div>
+    <p>能同时理解客户、设计方案、写代码并把项目推上线的人，真的不太容易被普通开发替代。</p>
+    <span class="page-no">07 / 08</span>
+  </section>
+
+  <section class="page course" data-page="8">
+    <h2>最近也看到一门<br><span class="heavy">FDE Tech 职业进阶课</span>。</h2>
+    <div class="gap-md"></div>
+    <p class="small">它不是从零教编程，而是给已经能独立开发、调试 AI 应用，想继续往企业客户项目和工程交付走的人。</p>
+    <div class="gap-md"></div>
+    <p class="small">10 周会练这些内容👇</p>
+    <div class="gap-sm"></div>
+    <ul class="list check small">
+      <li>Enterprise Discovery、Proposal</li>
+      <li>架构与预算、系统接入</li>
+      <li>AI Evaluation、试点上线和 Handover</li>
+      <li>30 项企业工程交付任务</li>
+    </ul>
+    <div class="gap-md"></div>
+    <p class="small">比较适合已经做过 AI 项目，但不知道怎么从“我会做 Demo”走到“我能负责客户交付”的人。</p>
+    <div class="gap-md"></div>
+    <p class="small">感兴趣课程的【FDE】呀，大家可以自己看看适不适合👇</p>
+    <div class="url">jracademy.ai/program-course/fde-tech</div>
+    <span class="page-no">08 / 08</span>
+  </section>
+
+  <script>
+    const page = new URLSearchParams(location.search).get("page") || "1";
+    document.querySelector(`[data-page="${page}"]`)?.classList.add("active");
+  </script>
+</body>
+</html>
