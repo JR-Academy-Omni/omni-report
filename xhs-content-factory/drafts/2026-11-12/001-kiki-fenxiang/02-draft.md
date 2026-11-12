@@ -9,92 +9,107 @@ status: draft
 
 ## 标题
 
-SWE、AI工程师、FDE到底谁干啥？
+OpenAI正在全球抢FDE🔥
 
 ## 正文
 
-假设一家公司说：
+AI Engineer 还没研究明白，大厂已经开始抢下一种人了：FDE。
 
-“我们想做一个 AI 客服。”
+我刚查了 OpenAI 的招聘页。截至 11 月 12 日，搜索 `forward deployed`，官网显示 41 个相关岗位。
 
-Software Engineer、AI Engineer 和 FDE 听到的是同一句话，但三个人接下来做的事完全不一样。
+不只旧金山和纽约，悉尼、新加坡、东京、首尔、伦敦都在招；岗位也已经拆进金融、医疗、法律、网络安全、生命科学和 AI 基础设施。
 
-这可能是理解三个岗位最简单的方式👇
+Atlassian 在招 Principal FDE，Figma 的招聘页也出现了 Forward Deployed Engineer。
 
-💻 Software Engineer：先把“客服系统”搭起来
+这个信号其实很明显：模型越来越强以后，企业真正缺的已经不只是“会做一个 AI Demo 的人”，而是能把 AI 接进真实业务、推到生产环境、最后让员工真的用起来的人。
 
-他会关心：用户怎么登录？聊天记录存在哪里？怎么连接订单系统？谁能查看客户资料？同时来一万人，系统会不会挂？
+这就是 FDE 值钱的地方。
 
-他负责的是软件本身能不能稳定运行。
+先用一个 AI 客服项目讲清楚，Software Engineer、AI Engineer 和 FDE 到底差在哪👇
 
-最后交付的，是账号、权限、数据库、接口和后台服务。即使把 AI 拿掉，这些东西也必须存在。
+💻 Software Engineer：把系统建稳
 
-所以 SWE 更像在修路、搭桥、盖房子的主体结构。重点是稳、快、以后方便继续改。
+他负责账号、权限、数据库、订单接口和后台服务。用户同时涌进来，系统不能挂；以后增加新功能，代码不能全部推倒重写。
 
-🤖 AI Engineer：让“AI 客服”真的会回答
+简单说，SWE 负责的是“这个软件能不能长期稳定运行”。
 
-系统搭好不等于 AI 能用。
+🤖 AI Engineer：让 AI 回答靠谱
 
-AI 可能看不懂公司的产品资料，可能编答案，也可能明明能查订单，却不知道什么时候应该调用订单工具。
+他负责让模型读懂公司资料、正确调用订单工具，准备测试题检查回答质量，再监控它上线后经常在哪些问题上出错。
 
-AI Engineer 要解决这些问题：
+RAG、Agent、Tool Calling、Evals，都是在解决同一件事：AI 不能只在 Demo 里看起来聪明，还得能测试、能追踪、出错后知道怎么改。
 
-把公司资料接给模型，让它先查资料再回答；给 Agent 配好可以调用的工具；准备一批真实问题，测试它答对了多少；上线后监控哪些问题经常答错。
+简单说，AI Engineer 负责的是“这个 AI 到底能不能用”。
 
-这些工作常被叫作 RAG、Tool Calling、Evals 和 Monitoring。名字听起来复杂，其实核心就一句话：让 AI 的回答有依据、能测试、出了错能找到原因。
+🚀 FDE：让整套方案解决客户的问题
 
-所以 AI Engineer 负责的不是“系统能不能打开”，而是“AI 到底靠不靠谱”。
+客户说“我要做 AI 客服”，FDE 不会立刻开始写代码。
 
-🚀 FDE：先判断这个 AI 客服值不值得做、怎么才能真正用起来
+他会先问：客服最浪费时间的是退款、查物流还是改地址？哪些回答可以自动发？哪些必须人工确认？资料在哪个系统？谁有权批准上线？做完以后，用什么数字判断项目成功？
 
-FDE 全称 Forward Deployed Engineer。他通常会直接进入客户的业务现场。
+接着他要决定先做哪一段、预算花在哪里、哪些功能暂时不做，再带着工程团队把 AI 接进客户已有的 CRM、工单和审批流程。
 
-他不会听完“做 AI 客服”就马上开工，而是继续问：
+上线后还没完。他要继续看员工有没有使用、流程有没有变快、失败时谁接手、客户团队能不能自己维护。
 
-客服每天最浪费时间的是哪类问题？退款、查物流还是改地址？哪些回答可以自动发，哪些必须让人工确认？资料散落在哪些系统？做完以后，用什么数字判断它真的有用？
+所以 FDE 不是普通售前，也不是只负责写 Agent 的 AI Engineer。
 
-问清楚后，FDE 才会决定先做哪一小段，再把 AI 接进客户已经在用的 CRM、工单系统和审批流程。
+他从客户还没把问题说清楚时就进场，一直负责到系统进入生产、产生可衡量的业务结果，再把现场反复出现的问题带回 Product 和 Research，变成下一版产品能力。
 
-上线也不代表结束。他还要看客服愿不愿意用、哪里总是卡住、哪些做法可以整理成通用功能，交回产品团队继续完善。
+为什么这类岗位薪资高？
 
-所以 FDE 很像“会写代码的产品经理＋技术顾问＋交付工程师”，但他的核心仍然是亲手把方案推到生产环境，而不是只做 PPT 或讲概念。
+因为企业同时要求他具备四种能力：
 
-同一个 AI 客服项目，三个人可以这样分工：
+1️⃣ 能写 production-grade 前后端代码；  
+2️⃣ 懂 LLM、Agent 和模型评估；  
+3️⃣ 能跟客户一起拆业务、范围和预算；  
+4️⃣ 能在需求不断变化时，把项目真正交付。
 
-SWE：把客服平台建稳；  
-AI Engineer：让 AI 回答得准；  
-FDE：确保这套东西解决了客户的问题，而且真的有人用。
+这四种能力分开并不少见，集中在同一个人身上就很稀缺。
 
-这也是为什么 FDE 不是 AI Engineer 的“高级版”。
+OpenAI Seattle 的 FDE 岗位公开基本工资是 US$185K–300K，股权另计。要求也很直接：5 年以上工程或技术交付经验，能写生产级代码，并负责 discovery、technical scoping、system design、build 和 production rollout。
 
-AI Engineer 可以长期负责一个公司的 AI 产品；FDE 更常围绕具体客户和具体业务，从需求没说清楚的时候介入，一直跟到落地。
+注意，这是美国单个岗位的公开区间，不是所有地区的平均工资，更不代表学完就能拿到这个数字。
 
-我自己的判断是：
+但 FDE 的职业前景已经不只是一种猜测：同一家公司正在把岗位扩到不同国家和行业，还继续往 Deployment Lead、FDE Manager 和行业专精方向拆。
 
-喜欢安静打磨系统、研究架构 → SWE  
-喜欢测试模型、研究 AI 为什么答错 → AI Engineer  
-喜欢跟人聊需求、处理混乱现场、把项目推上线 → FDE
+真正的门槛也在这里——会开发 AI 应用，只是起点。
 
-不同公司的岗位边界会重叠，最终还是要看 JD。但看到这里，应该不会再把这三个岗位当成同一份工作了 hhh。
+你还要会判断这个问题值不值得做、现有系统能不能接、预算够不够、权限和风险怎么处理、客户最后能不能接手。
 
-你最想做哪一个？【SWE / AI / FDE】👀
+这也是 JR Academy 新开的 FDE Tech 职业进阶班重点训练的部分。
+
+它不是零基础 AI 课，而是给已经能独立开发、调试 AI 应用，希望从 AI Engineering 走向企业客户交付的工程师。
+
+整个训练周期 10 周。每轮从一份企业 Client Brief 开始：你要调查现状、找出缺失信息、提出 Solution Proposal，再做 Present & Pitch，接受导师和同学的 Technical Review，最后根据质询修改方案并推进交付。
+
+课程里有 30 项工程交付任务，覆盖客户调查、架构取舍、系统接入、Agent 控制、质量评估、试点与交接。不是只交一份能跑的代码，而是要留下预算、风险、验收、回滚、Runbook 和客户接手需要的完整证据。
+
+首期预购 A$4,400。课程面向澳洲 A$200,000+、北美 US$250,000+ 的求职目标，但这是岗位定位，不是入职或薪资保证。
+
+如果你已经会做 RAG、Agent 和 AI 应用，却发现自己还不会面对企业客户、讲清方案、控制预算并把项目推到上线，这门课补的就是中间这段差距。
+
+想看完整 10 周安排，课程名是【FDE Tech 职业进阶班】。感兴趣评论区留【FDE】👀
 
 ## 话题
 
-#AIEngineer #软件工程师 #FDE #程序员转型 #AI求职 #职业规划 #科技行业
+#FDE #AIEngineer #软件工程师 #AI求职 #程序员转型 #澳洲求职 #人工智能
 
 ## 自检
 
-- ✅ 开头直接进入同一个 AI 客服场景
-- ✅ 三个岗位使用同一项目进行横向比较
-- ✅ 专业词均用中文解释实际作用
-- ✅ 有 KIKI 的第一人称判断和轻互动 CTA
-- ✅ 未虚构岗位数量、薪资或就业结果
-- ✅ 明确岗位边界需结合具体公司 JD
+- ✅ 开头用当前官方招聘数量建立岗位需求信号
+- ✅ 先用同一项目讲清 SWE、AI Engineer、FDE 的差别
+- ✅ 薪资注明地区、口径和非保证边界
+- ✅ 课程定位、周期、任务与价格均来自当前课程页
+- ✅ 没有包就业、保证薪资或夸大岗位结果
+- ✅ CTA 直接承接 FDE Tech 课程
 
 ## 内部事实来源（发布时不复制）
 
+- OpenAI Careers｜Forward Deployed 搜索结果：https://openai.com/careers/search/?q=forward+deployed
 - OpenAI｜Forward Deployed Engineering：https://openai.com/business/forward-deployed-engineering/
 - OpenAI｜Forward Deployed Engineer (FDE) - Seattle：https://openai.com/careers/forward-deployed-engineer-%28fde%29-seattle-seattle/
-- Microsoft Learn｜Training for AI engineers：https://learn.microsoft.com/en-us/training/career-paths/ai-engineer
+- Atlassian｜Meet the Forward Deployed Engineer：https://www.atlassian.com/blog/how-we-build/meet-the-forward-deployed-engineer
+- Atlassian｜Principal Forward Deployed Engineer：https://www.atlassian.com/company/careers/details/27179
+- Figma Careers：https://www.figma.com/careers/
+- JR Academy｜FDE Tech 职业进阶班：https://jracademy.ai/program-course/fde-tech
 
