@@ -2,7 +2,7 @@
   "draft_id": 1,
   "account": "KIKI的分享日记",
   "angle": "澳洲FDE岗位趋势",
-  "generated_at": "2026-11-12T14:48:07+08:00",
+  "generated_at": "2026-11-12T15:00:34+08:00",
   "model": "built-in image generation",
   "mode": "built-in",
   "total_cost_usd": null,
@@ -23,13 +23,27 @@
       "variant": "专业编辑标题",
       "type": "cover",
       "quality": "high",
-      "selected": true,
+      "selected": false,
       "dimensions": "1080x1440",
       "reference_image": "cover-A.png",
       "visible_account_label": false,
       "visible_disclaimer": false,
       "headline": "澳洲已经被FDE岗位包围了！",
       "regenerated": 1
+    },
+    {
+      "filename": "cover-C.png",
+      "variant": "澳洲要被＋国旗",
+      "type": "cover",
+      "quality": "high",
+      "selected": true,
+      "dimensions": "1080x1440",
+      "reference_image": "cover-B.png",
+      "visible_account_label": false,
+      "visible_disclaimer": false,
+      "headline": "澳洲要被FDE岗位包围了！",
+      "country_marker": "Australian national flag",
+      "regenerated": 2
     }
   ],
   "contents": []
