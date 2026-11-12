@@ -1,0 +1,23 @@
+{
+  "draft_id": 1,
+  "account": "KIKI的分享日记",
+  "angle": "澳洲FDE岗位趋势",
+  "generated_at": "2026-11-12T14:25:27+08:00",
+  "model": "built-in image generation",
+  "mode": "built-in",
+  "total_cost_usd": null,
+  "covers": [
+    {
+      "filename": "cover-A.png",
+      "variant": "密集岗位地图",
+      "type": "cover",
+      "quality": "high",
+      "selected": true,
+      "dimensions": "1080x1440",
+      "reference_image": "codex-clipboard-5e583f3a-6365-47cf-9196-c740e6099208.png",
+      "disclaimer": "岗位分布趋势示意｜非精确数量",
+      "regenerated": 0
+    }
+  ],
+  "contents": []
+}

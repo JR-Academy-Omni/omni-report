@@ -7,14 +7,14 @@
   "owner_email": "1134583264@qq.com",
   "date": "2026-11-12",
   "selected_angle": "KIKI-发现式对比",
-  "selected_cover": null,
+  "selected_cover": "posters/cover-A.png",
   "status": "draft",
   "pipeline": {
     "topic_at": "2026-11-12T12:30:00+08:00",
     "draft_at": "2026-11-12T12:30:00+08:00",
     "final_at": null,
     "review_at": null,
-    "poster_at": null,
+    "poster_at": "2026-11-12T14:25:27+08:00",
     "score_at": null,
     "task_card_at": null
   },
@@ -24,9 +24,8 @@
     "final": null,
     "review": null,
     "score": null,
-    "poster_prompts": null
+    "poster_prompts": "posters/prompts.md"
   },
   "marketing_task_card": null,
   "score_total": null
 }
-
