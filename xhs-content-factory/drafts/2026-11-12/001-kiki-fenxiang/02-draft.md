@@ -9,69 +9,86 @@ status: draft
 
 ## 标题
 
-软件工程师、AI工程师、FDE差在哪🤯
+SWE、AI工程师、FDE到底谁干啥？
 
 ## 正文
 
-如果你把 SWE → AI Engineer → FDE 理解成一条“升级路线”，那从投岗位的第一步就可能搞错了。
+假设一家公司说：
 
-这三种人都写代码，技术栈甚至会重叠。真正的分界线是：公司把哪一种“不确定性”交给你负责。
+“我们想做一个 AI 客服。”
 
-💻 Software Engineer｜解决软件系统的不确定性
+Software Engineer、AI Engineer 和 FDE 听到的是同一句话，但三个人接下来做的事完全不一样。
 
-产品方向通常已经相对明确：要做支付、搜索、权限还是消息系统。SWE 的任务，是把需求变成可长期运行的工程系统。
+这可能是理解三个岗位最简单的方式👇
 
-他更关心：架构能不能扩、接口会不会崩、数据是否一致、代码能否维护。写出来的能力通常要服务一类用户，而不是只解决某一个客户的问题。
+💻 Software Engineer：先把“客服系统”搭起来
 
-所以 SWE 的核心交付物不是“功能做出来了”，而是一套可复用、可维护、能持续演进的系统。
+他会关心：用户怎么登录？聊天记录存在哪里？怎么连接订单系统？谁能查看客户资料？同时来一万人，系统会不会挂？
 
-🤖 AI Engineer｜解决模型行为的不确定性
+他负责的是软件本身能不能稳定运行。
 
-到了 AI 产品，最大的问题变成：同一个输入，模型不一定每次都给你稳定答案。
+最后交付的，是账号、权限、数据库、接口和后台服务。即使把 AI 拿掉，这些东西也必须存在。
 
-AI Engineer 不只是接个 API。他要处理 RAG 的召回质量、Agent 的工具调用、Prompt 和 Model Routing、Evals、Tracing、Guardrails、延迟与成本。
+所以 SWE 更像在修路、搭桥、盖房子的主体结构。重点是稳、快、以后方便继续改。
 
-普通软件常问“代码有没有按逻辑运行”；AI 系统还要问“答案到底好不好、坏在哪里、换模型后有没有退化”。
+🤖 AI Engineer：让“AI 客服”真的会回答
 
-所以 AI Engineer 的核心交付物，是一套可以被评估、监控和持续改进的 AI 能力。
+系统搭好不等于 AI 能用。
 
-🚀 FDE｜解决客户业务与落地的不确定性
+AI 可能看不懂公司的产品资料，可能编答案，也可能明明能查订单，却不知道什么时候应该调用订单工具。
 
-FDE 接到的问题，往往连需求本身都没定义清楚。
+AI Engineer 要解决这些问题：
 
-客户说“我们想做一个 AI 助手”，FDE 不能马上开始写 Agent。他得先进入真实工作流：谁在用？数据在哪？哪个环节最耗时间？哪些错误必须人工审批？接进 CRM 后谁负责维护？
+把公司资料接给模型，让它先查资料再回答；给 Agent 配好可以调用的工具；准备一批真实问题，测试它答对了多少；上线后监控哪些问题经常答错。
 
-然后他才会做 technical scoping、Prototype、系统集成、Evals、权限、监控和 production rollout。上线以后还要看 adoption——员工到底有没有用，业务流程有没有真的改变。
+这些工作常被叫作 RAG、Tool Calling、Evals 和 Monitoring。名字听起来复杂，其实核心就一句话：让 AI 的回答有依据、能测试、出了错能找到原因。
 
-更关键的是，FDE 还要把客户现场反复出现的问题带回 Product 和 Research：哪些是单个客户的定制需求，哪些应该沉淀成所有客户都能用的 building block。
+所以 AI Engineer 负责的不是“系统能不能打开”，而是“AI 到底靠不靠谱”。
 
-所以 FDE 不是“更高级的 AI Engineer”，也不是只会讲方案的售前。他负责的是从模糊业务问题，到系统真正被使用的整段结果。
+🚀 FDE：先判断这个 AI 客服值不值得做、怎么才能真正用起来
 
-举个理赔 AI 的例子👇
+FDE 全称 Forward Deployed Engineer。他通常会直接进入客户的业务现场。
 
-SWE 会搭账号、权限、审计日志和稳定的服务接口；  
-AI Engineer 会处理保单检索、引用准确率、幻觉测试和人工兜底；  
-FDE 会跟理赔团队一起重画流程，找出哪些案件能自动化、哪些必须升级给人工，再把系统接进现有工具并推到实际使用。
+他不会听完“做 AI 客服”就马上开工，而是继续问：
 
-我觉得选岗位时，别先问“哪个更火”，先问自己喜欢哪种工作节奏：
+客服每天最浪费时间的是哪类问题？退款、查物流还是改地址？哪些回答可以自动发，哪些必须让人工确认？资料散落在哪些系统？做完以后，用什么数字判断它真的有用？
 
-喜欢长期打磨底层系统、抽象共性 → SWE  
-喜欢研究模型表现、用实验和指标迭代 → AI Engineer  
-喜欢面对客户、拆模糊问题、端到端推上线 → FDE
+问清楚后，FDE 才会决定先做哪一小段，再把 AI 接进客户已经在用的 CRM、工单系统和审批流程。
 
-最后看 JD 里的动词：反复出现 platform、scalability、maintainability，多半偏 SWE；出现 eval、model quality、RAG、Agent，多半偏 AI Engineer；出现 discovery、scoping、customer adoption、production rollout，多半偏 FDE。
+上线也不代表结束。他还要看客服愿不愿意用、哪里总是卡住、哪些做法可以整理成通用功能，交回产品团队继续完善。
 
-这比只看岗位 title 准多了。你更适合哪一种？【SWE / AI / FDE】👀
+所以 FDE 很像“会写代码的产品经理＋技术顾问＋交付工程师”，但他的核心仍然是亲手把方案推到生产环境，而不是只做 PPT 或讲概念。
+
+同一个 AI 客服项目，三个人可以这样分工：
+
+SWE：把客服平台建稳；  
+AI Engineer：让 AI 回答得准；  
+FDE：确保这套东西解决了客户的问题，而且真的有人用。
+
+这也是为什么 FDE 不是 AI Engineer 的“高级版”。
+
+AI Engineer 可以长期负责一个公司的 AI 产品；FDE 更常围绕具体客户和具体业务，从需求没说清楚的时候介入，一直跟到落地。
+
+我自己的判断是：
+
+喜欢安静打磨系统、研究架构 → SWE  
+喜欢测试模型、研究 AI 为什么答错 → AI Engineer  
+喜欢跟人聊需求、处理混乱现场、把项目推上线 → FDE
+
+不同公司的岗位边界会重叠，最终还是要看 JD。但看到这里，应该不会再把这三个岗位当成同一份工作了 hhh。
+
+你最想做哪一个？【SWE / AI / FDE】👀
 
 ## 话题
 
-#AIEngineer #软件工程师 #FDE #程序员转型 #AI求职 #科技行业
+#AIEngineer #软件工程师 #FDE #程序员转型 #AI求职 #职业规划 #科技行业
 
 ## 自检
 
-- ✅ 第一段直接打破“岗位升级路线”误区
-- ✅ 保留 RAG、Agent、Evals 等具体技术信息
-- ✅ 有 KIKI 的第一人称判断和选择偏好
+- ✅ 开头直接进入同一个 AI 客服场景
+- ✅ 三个岗位使用同一项目进行横向比较
+- ✅ 专业词均用中文解释实际作用
+- ✅ 有 KIKI 的第一人称判断和轻互动 CTA
 - ✅ 未虚构岗位数量、薪资或就业结果
 - ✅ 明确岗位边界需结合具体公司 JD
 
@@ -80,5 +97,4 @@ FDE 会跟理赔团队一起重画流程，找出哪些案件能自动化、哪�
 - OpenAI｜Forward Deployed Engineering：https://openai.com/business/forward-deployed-engineering/
 - OpenAI｜Forward Deployed Engineer (FDE) - Seattle：https://openai.com/careers/forward-deployed-engineer-%28fde%29-seattle-seattle/
 - Microsoft Learn｜Training for AI engineers：https://learn.microsoft.com/en-us/training/career-paths/ai-engineer
-
 
