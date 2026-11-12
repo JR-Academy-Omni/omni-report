@@ -1,0 +1,32 @@
+{
+  "topic_id": "001",
+  "topic_slug": "software-ai-engineer-fde",
+  "account": "Kiki的分享日记",
+  "account_slug": "kiki-fenxiang",
+  "owner": "Summer",
+  "owner_email": "1134583264@qq.com",
+  "date": "2026-11-12",
+  "selected_angle": "KIKI-发现式对比",
+  "selected_cover": null,
+  "status": "draft",
+  "pipeline": {
+    "topic_at": "2026-11-12T12:30:00+08:00",
+    "draft_at": "2026-11-12T12:30:00+08:00",
+    "final_at": null,
+    "review_at": null,
+    "poster_at": null,
+    "score_at": null,
+    "task_card_at": null
+  },
+  "files": {
+    "topic": "01-topic.json",
+    "draft": "02-draft.md",
+    "final": null,
+    "review": null,
+    "score": null,
+    "poster_prompts": null
+  },
+  "marketing_task_card": null,
+  "score_total": null
+}
+
