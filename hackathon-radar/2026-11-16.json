@@ -1,0 +1,96 @@
+[
+  {
+    "type": "hackathon",
+    "title": "Westpac/Griffith Innovation & Coding Hackathon 2026",
+    "organizer": "Griffith University / Westpac / UQ / QUT",
+    "prize": "$2,500 第一名 + $1,000 第二名 + People's Choice 奖包",
+    "deadline": "2026-11-17T03:00:00.000Z",
+    "url": "https://www.griffith.edu.au/griffith-sciences/school-information-communication-technology/industry/westpac-hackathon",
+    "region": "AU",
+    "summary": "昆州三校（Griffith/UQ/QUT）联合办，今明两天（11/16–17）Gold Coast G23 Computer Labs 线下举办，Solo 官方帮组队，颁奖 11/20。"
+  },
+  {
+    "type": "hackathon",
+    "title": "AI Engineer Sydney Hackathon (Hack Day)",
+    "organizer": "Web Directions / Stone & Chalk",
+    "prize": "入围者上 12/7 AI Engineer Sydney 主舞台（800+ 澳洲 AI 领域人士）+ 大会 Ticket（$795+）",
+    "deadline": "2026-12-05T14:00:00.000Z",
+    "url": "https://webdirections.org/ai-engineer/hack-day/",
+    "region": "AU",
+    "summary": "12/4–5 Stone & Chalk 悉尼免费 Hackathon，名额有限，RSVP 现已开放，入围者上 12/7 大会主舞台 pitch 给 800+ 澳洲 AI 人。"
+  },
+  {
+    "type": "hackathon",
+    "title": "ElevenLabs × BlackBird Foundry Worldwide Hackathon（AU 分赛道）",
+    "organizer": "ElevenLabs / BlackBird Foundry / AI Tinkerers",
+    "prize": "$200,000+ 全球奖池；本地分赛道奖励 ⚠️ 待各城市官方公布",
+    "url": "https://sydney.aitinkerers.org/hackathons/h_wbUH8g89uD0",
+    "region": "AU",
+    "summary": "语音 AI 方向，$200K+ 全球奖池，AU 线下分赛道：悉尼/墨尔本/奥克兰，⚠️ 本地日期待确认，速查 AI Tinkerers 各城市页。"
+  },
+  {
+    "type": "hackathon",
+    "title": "hackaTUM 2026",
+    "organizer": "TUM（慕尼黑工业大学）",
+    "prize": "⚠️ 奖金 TBA；含食宿",
+    "deadline": "2026-11-29T22:00:00.000Z",
+    "url": "https://hackatum.de/",
+    "region": "DE",
+    "summary": "11/27–29 慕尼黑 Garching，免费含食宿，AI 企业赞助题目历年均有，适合欧洲学员或计划赴欧的学员。"
+  },
+  {
+    "type": "prize",
+    "title": "Nebius × NVIDIA Global AI Hackathon 2026",
+    "organizer": "Nebius / NVIDIA",
+    "prize": "$20,000 大奖 / $10,000 第二名 / $6,000 第三名（USD）",
+    "url": "https://internshala.com/competitions/nebius-x-nvidia-global-ai-hackathon-2026/",
+    "region": "global",
+    "summary": "提交 10/30 截止，评奖期 12/1–15，已参赛学员关注 12/1 结果公告。"
+  },
+  {
+    "type": "prize",
+    "title": "PayPal AI Hackathon 2026",
+    "organizer": "PayPal",
+    "prize": "$60,000–$67,500 USD",
+    "url": "https://paypalaihackathon.devpost.com/",
+    "region": "global",
+    "summary": "11/13 已截止，12/21 公布结果，已参赛者关注结果公告。"
+  },
+  {
+    "type": "accelerator",
+    "title": "Antler Australia AUS17",
+    "organizer": "Antler",
+    "prize": "AUD $260K / 12% equity，8–10 周 Residency",
+    "url": "https://www.antler.co/australia",
+    "region": "AU",
+    "summary": "Rolling 申请中，开营 2027-02-08，悉尼/墨尔本/布里斯班三城，越早申请越有优先权。"
+  },
+  {
+    "type": "accelerator",
+    "title": "Founder Institute Australia 2027",
+    "organizer": "Founder Institute",
+    "prize": "无股权；早鸟报名费 $799（12/8 前，原 $999）",
+    "deadline": "2026-12-07T13:00:00.000Z",
+    "url": "https://fi.co/apply/Australia",
+    "region": "AU",
+    "summary": "早鸟截止 12/8（22 天倒计时），Kickoff 2027-02-15，无股权，$799 报名费（原 $999）。"
+  },
+  {
+    "type": "grant",
+    "title": "CSIRO Kick-Start",
+    "organizer": "CSIRO",
+    "prize": "$10,000–$50,000 配对资金（澳洲政府 R&D 配对计划）",
+    "url": "https://www.csiro.au/en/work-with-us/funding-programs/sme/csiro-kick-start/",
+    "region": "AU",
+    "summary": "随时滚动申请，EOI 发 kickstart@csiro.au，配对合作研究经费，适合有研发项目的 SME。"
+  },
+  {
+    "type": "grant",
+    "title": "AI Adopt Programme（澳洲）",
+    "organizer": "澳洲联邦政府 / AI Adopt Centres",
+    "prize": "SME 免费 AI 就绪评估 + 实施建议",
+    "url": "https://business.gov.au/grants-and-programs/artificial-intelligence-ai-adopt-program",
+    "region": "AU",
+    "summary": "Rolling，SME 可申请免费 AI 就绪评估，不限行业，适合有 AI 转型需求的中小企业。"
+  }
+]
