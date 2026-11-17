@@ -1,0 +1,77 @@
+[
+  {
+    "type": "hackathon",
+    "title": "AI Engineer Sydney Hackathon",
+    "organizer": "Web Directions / Stone & Chalk",
+    "prize": "入围者：12/7 AI Engineer Sydney 主舞台 pitch + 大会 Ticket（$795+）；无现金奖",
+    "deadline": "2026-12-05T22:00:00.000Z",
+    "url": "https://webdirections.org/ai-engineer/hack-day/",
+    "region": "AU",
+    "summary": "悉尼 Stone & Chalk 线下，12/4–5 两天，免费参加但名额有限；入围者 12/7 在 800+ 澳洲 AI 人面前 pitch，适合 AI 产品工程师和创始人"
+  },
+  {
+    "type": "hackathon",
+    "title": "ElevenLabs × BlackBird Foundry Worldwide Hackathon（AU 分赛道）",
+    "organizer": "ElevenLabs / BlackBird Foundry / AI Tinkerers",
+    "prize": "$200,000+ 全球奖池；本地分赛道奖励待确认",
+    "url": "https://sydney.aitinkerers.org/hackathons/h_wbUH8g89uD0",
+    "region": "AU",
+    "summary": "语音 AI / 对话 Agent 方向；悉尼/墨尔本/奥克兰本地分赛道日期待各城市 AI Tinkerers 官方公布，查询前请核实最新状态"
+  },
+  {
+    "type": "hackathon",
+    "title": "hackaTUM 2026",
+    "organizer": "TUM（慕尼黑工大）",
+    "prize": "⚠️ 奖金 TBA；含食宿免费",
+    "deadline": "2026-11-29T23:59:00.000Z",
+    "url": "https://hackatum.de/",
+    "region": "DE",
+    "summary": "慕尼黑 Garching 线下（部分线上），Nov 27–29，免费含食宿；TUM 背景，企业赞助 AI 题目，适合欧洲学员"
+  },
+  {
+    "type": "accelerator",
+    "title": "Antler Australia AUS17",
+    "organizer": "Antler",
+    "prize": "AUD $260,000 / 12% equity",
+    "url": "https://www.antler.co/australia",
+    "region": "AU",
+    "summary": "悉尼/墨尔本/布里斯班，开营 2027-02-08，8–10 周 Residency，Rolling 申请；适合有 AI 技术背景的早期创始人"
+  },
+  {
+    "type": "accelerator",
+    "title": "Founder Institute Australia 2027",
+    "organizer": "Founder Institute",
+    "prize": "无股权；早鸟报名费 AUD $799（原 $999），application fee 免除",
+    "deadline": "2026-12-08T23:59:00.000Z",
+    "url": "https://fi.co/apply/Australia",
+    "region": "AU",
+    "summary": "悉尼/珀斯/墨尔本，Kickoff 2027-02-15，无股权要求；12/8 前报名便宜 $200，适合早期创业想法阶段的创始人"
+  },
+  {
+    "type": "grant",
+    "title": "CSIRO Kick-Start",
+    "organizer": "CSIRO",
+    "prize": "AUD $10,000–$50,000 配对资金",
+    "url": "https://www.csiro.au/en/work-with-us/funding-programs/sme/csiro-kick-start/",
+    "region": "AU",
+    "summary": "Rolling 申请（EOI 发 kickstart@csiro.au），配对 SME 研发投入；AI 项目可申请，适合有原型/MVP 的初创团队"
+  },
+  {
+    "type": "grant",
+    "title": "AI Adopt Programme",
+    "organizer": "Australian Government / DCCEEW",
+    "prize": "免费 AI 就绪评估 + 实施支持（rolling）",
+    "url": "https://business.gov.au/grants-and-programs/artificial-intelligence-ai-adopt-program",
+    "region": "AU",
+    "summary": "SME 可申请免费 AI 能力评估，Rolling；适合还未正式引入 AI 工具流的中小企业或学员所在的公司"
+  },
+  {
+    "type": "prize",
+    "title": "Nebius × NVIDIA Global AI Hackathon 2026",
+    "organizer": "Nebius / NVIDIA",
+    "prize": "大奖 $20,000 USD，第二名 $10,000，第三名 $6,000",
+    "url": "https://internshala.com/competitions/nebius-x-nvidia-global-ai-hackathon-2026/",
+    "region": "global",
+    "summary": "提交已截止（10/30），评奖期 12/1–15；已参赛学员关注结果；本期不收新参赛"
+  }
+]
