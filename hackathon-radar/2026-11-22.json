@@ -1,0 +1,97 @@
+[
+  {
+    "type": "hackathon",
+    "title": "AI Engineer Sydney Hackathon",
+    "organizer": "Web Directions / MLAI",
+    "prize": "入围者：12/7 AI Engineer Sydney 主舞台 pitch + 大会 Ticket（$795+），无现金奖但曝光价值极高（800+ 澳洲 AI 人）",
+    "deadline": "2026-12-05T23:59:00.000Z",
+    "url": "https://webdirections.org/ai-engineer/hack-day/",
+    "region": "AU",
+    "summary": "12/4–5 石头粉笔线下 Hackathon，入围者上 12/7 AI Engineer Sydney 主舞台 pitch；免费参加，名额有限，RSVP 本周末是安全线；适合 AI 产品工程师和创始人"
+  },
+  {
+    "type": "hackathon",
+    "title": "Google #BuildHybridAI Hackathon 2026",
+    "organizer": "Google（Devpost）",
+    "prize": "$30,000 USD 奖池，单项最高 $10,000",
+    "deadline": "2026-11-30T22:00:00.000Z",
+    "url": "https://devpost.com/hackathons",
+    "region": "global",
+    "summary": "纯线上全球 Hackathon，本周日（11/30）截止提交；用 Gemini 4 / Vertex AI 构建混合 AI 应用；Solo 可参加，三天可完成一个作品，适合 JR 学员快速攒 portfolio"
+  },
+  {
+    "type": "hackathon",
+    "title": "Kiroween / Kiro + AWS AI IDE Challenge",
+    "organizer": "Kiro / AWS",
+    "prize": "$100,000 USD 总奖池",
+    "url": "https://devpost.com/hackathons",
+    "region": "global",
+    "summary": "AWS / Kiro AI IDE 生态挑战赛，12/22 截止（部分来源显示 12/4，以官网为准）；适合喜欢工具链 / AI IDE 开发的工程师，Solo 可参加"
+  },
+  {
+    "type": "hackathon",
+    "title": "GenHacks 2026",
+    "organizer": "社区主办（Devpost）",
+    "prize": "⚠️ 日期待确认",
+    "deadline": "2026-12-26T23:59:00.000Z",
+    "url": "https://genhacks-open.devpost.com/",
+    "region": "global",
+    "summary": "纯线上全球开放 Hackathon，涵盖 AI、Agent、Cybersecurity、Dev Tools；学生友好，无须有产品经验；开放到 12/26"
+  },
+  {
+    "type": "hackathon",
+    "title": "hackaTUM 2026",
+    "organizer": "TUM（慕尼黑工大）",
+    "prize": "⚠️ 日期待确认；含免费食宿",
+    "deadline": "2026-11-29T23:59:00.000Z",
+    "url": "https://hackatum.de/",
+    "region": "DE",
+    "summary": "慕尼黑工大年度 Hackathon，11/27–29 线下（Garching），部分线上；免费含食宿；企业赞助 AI 题目历年均有，适合欧洲学员或有计划去欧洲的学员"
+  },
+  {
+    "type": "accelerator",
+    "title": "Antler Australia AUS17",
+    "organizer": "Antler",
+    "prize": "AUD $260,000 投资 / 12% equity",
+    "url": "https://www.antler.co/australia",
+    "region": "AU",
+    "summary": "澳洲顶级 AI 创业加速器，Rolling 申请（无固定截止），AUS17 预计 2027-02 开营；悉尼/墨尔本/布里斯班三城；越早申请通过率越高"
+  },
+  {
+    "type": "accelerator",
+    "title": "Founder Institute Australia Summer 2027",
+    "organizer": "Founder Institute",
+    "prize": "无股权要求；创业孵化 + FI 全球网络 + VCs 对接",
+    "deadline": "2026-12-08T23:59:00.000Z",
+    "url": "https://fi.co/apply/Australia",
+    "region": "AU",
+    "summary": "悉尼/墨尔本/珀斯三城，12/8 前早鸟报名费 $799（之后 $999）；无股权要求；悉尼 2027-02-15 开课；适合有技术背景但刚起步的创始人"
+  },
+  {
+    "type": "accelerator",
+    "title": "Google for Startups AI First Australia 2027 Interest List",
+    "organizer": "Google",
+    "prize": "零股权；Google Cloud credits + 导师资源 + Google 合作伙伴网络",
+    "url": "https://startup.google.com/programs/accelerator/ai-first/australia",
+    "region": "AU",
+    "summary": "2026 cohort 11 月 Demo Day 结束，2027 Interest List 现已可登记；历史申请窗口约在 2027-06，Seed/Series A AI 创业公司适用；提前登记可获优先通知"
+  },
+  {
+    "type": "grant",
+    "title": "CSIRO Kick-Start",
+    "organizer": "CSIRO",
+    "prize": "$10,000–$50,000 AUD 配对资金（Rolling）",
+    "url": "https://www.csiro.au/en/work-with-us/funding-programs/sme/csiro-kick-start/",
+    "region": "AU",
+    "summary": "澳洲 SME 配套研发资助，Rolling 申请无截止，发 EOI 至 kickstart@csiro.au 即可启动；适合有 R&D 需求的技术型创业公司"
+  },
+  {
+    "type": "grant",
+    "title": "Anthropic for Startups（API Credits）",
+    "organizer": "Anthropic",
+    "prize": "Claude API Credits（rolling，金额视申请而定）",
+    "url": "https://www.anthropic.com/startups",
+    "region": "global",
+    "summary": "Anthropic IPO 后 API 生态更稳定，Rolling 申请；适合用 Claude API 构建产品的 AI 创业公司；现在申请是 IPO 蜜月期"
+  }
+]
